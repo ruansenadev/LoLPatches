@@ -1,6 +1,7 @@
 // const axios = require('axios')
 // const cheerio = require('cheerio')
 const pupp = require('puppeteer')
+const fs = require('fs')
 
 const baseURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates'
 // const chromeW_Ua = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
@@ -12,35 +13,63 @@ var ATTS = []
 // page structure
 // const CONTENT = "[class*='Body']";
 // const BODYCONTAINER = "#___gatsby";
-const LOAD = "[class*='LoadMoreButton']";
+const LOAD = "[class*='LoadMoreButton']"
 
-(async () => {
+;(async () => {
+	const brow = await pupp.launch({ headless: false })
+	const [pagina] = await brow.pages()
+	await pagina.goto(baseURL, { timeout: 90000 })
 	try {
-		const brow = await pupp.launch({ headless: false })
-		const [pagina] = await brow.pages()
-		await pagina.goto(baseURL, {timeout: 60000})
-
-		await pagina.$eval('body', body => {
-			let content = body.querySelector("[class*='Body']");
+		await pagina.$eval('body', (body) => {
+			// formata body
+			let content = body.querySelector("[class*='Body']")
 			body.appendChild(content)
 			body.querySelector('#___gatsby').remove()
-		})
-        let atts = await pagina.$$eval('a', atts => atts.map(att => {
-			return {
-				uri: att.href,
-				img: att.querySelector('img').src,
-				titulo: att.querySelector('h2').innerText,
-				autor: att.querySelector("[class*='Author']").innerText,
-				data: att.querySelector('time').dateTime
-			}
-		}))
-        // const load = await content.$(LOAD)
-		ATTS = ATTS.concat(atts)
-		console.log(ATTS)
 
-		// await pagina.click(atts);
+			// abre atualizacoes
+			body.querySelector('ol').querySelector('li:nth-child(2) button').click()
+		})
+		await pagina.waitFor(10000)
+
+		ATTS = ATTS.concat(
+			await pagina.$$eval('a', (atts) =>
+				atts.map((att) => {
+					let prev = {
+						uri: att.href,
+						img: att.querySelector('img').src,
+						titulo: att.querySelector('h2').innerText,
+						autor: att.querySelector("[class*='Author']").innerText,
+						data: att.querySelector('time').dateTime,
+					}
+					att.remove()
+					return prev
+				})
+			)
+		)
+
+		await pagina.click(LOAD)
+		await pagina.waitForSelector('a')
+
+		ATTS = ATTS.concat(
+			await pagina.$$eval('a', (atts) =>
+				atts.map((att) => {
+					let prev = {
+						uri: att.href,
+						img: att.querySelector('img').src,
+						titulo: att.querySelector('h2').innerText,
+						autor: att.querySelector("[class*='Author']").innerText,
+						data: att.querySelector('time').dateTime,
+					}
+					// att.remove()
+					return prev
+				})
+			)
+		)
 	} catch (error) {
+		brow.close()
 		console.error(error)
+	} finally {
+		console.log(ATTS)
 	}
 })()
 
