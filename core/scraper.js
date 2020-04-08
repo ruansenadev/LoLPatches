@@ -5,7 +5,6 @@ const fs = require('fs')
 
 const baseURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates'
 // const chromeW_Ua = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
-var ATTS = []
 // env vars
 // axios.defaults.baseURL = baseURL
 // axios.defaults.headers.common['User-Agent'] = chromeW_Ua
@@ -15,6 +14,7 @@ var ATTS = []
 // const BODYCONTAINER = "#___gatsby";
 const LOAD = "[class*='LoadMoreButton']"
 
+var ATTS = []
 ;(async () => {
 	const brow = await pupp.launch({ headless: false })
 	const [pagina] = await brow.pages()
@@ -29,46 +29,46 @@ const LOAD = "[class*='LoadMoreButton']"
 			// abre atualizacoes
 			body.querySelector('ol').querySelector('li:nth-child(2) button').click()
 		})
-		await pagina.waitFor(10000)
+		
+		async function scraperAtts(atts = []) {
+			async function fetcher() {
+				// tempo que espero q carregue as imagens dsgrç
+				await pagina.waitFor(5000)
 
-		ATTS = ATTS.concat(
-			await pagina.$$eval('a', (atts) =>
-				atts.map((att) => {
-					let prev = {
-						uri: att.href,
-						img: att.querySelector('img').src,
-						titulo: att.querySelector('h2').innerText,
-						autor: att.querySelector("[class*='Author']").innerText,
-						data: att.querySelector('time').dateTime,
-					}
-					att.remove()
-					return prev
-				})
-			)
-		)
+				let agg = await pagina.$$eval('a', (atts) =>
+					atts.map((att) => {
+						let autor = att.querySelector("[class*='Author']")
+						let prev = {
+							uri: att.href,
+							img: att.querySelector('img').src,
+							titulo: att.querySelector('h2').innerText,
+							autor: autor ? autor.innerText : "",
+							data: att.querySelector('time').dateTime,
+						}
+						att.remove()
+						return prev
+					})
+				)
+				// so para de concatenar quando nao tiver mais o botao taok
+				if((await pagina.$(LOAD)) == null) {
+					return agg
+				} else {
+					await pagina.click(LOAD)
+					await pagina.waitForSelector('a')
+					// concatena com retorno nova chamada de fetcher
+					return agg.concat(await fetcher())
+				}
+			}
+			return atts.concat(await fetcher())
+		}
 
-		await pagina.click(LOAD)
-		await pagina.waitForSelector('a')
-
-		ATTS = ATTS.concat(
-			await pagina.$$eval('a', (atts) =>
-				atts.map((att) => {
-					let prev = {
-						uri: att.href,
-						img: att.querySelector('img').src,
-						titulo: att.querySelector('h2').innerText,
-						autor: att.querySelector("[class*='Author']").innerText,
-						data: att.querySelector('time').dateTime,
-					}
-					// att.remove()
-					return prev
-				})
-			)
-		)
+		ATTS = await scraperAtts()
+		
 	} catch (error) {
 		brow.close()
 		console.error(error)
 	} finally {
+		fs.writeFileSync('patches.json', JSON.stringify(ATTS, null, 2), 'utf-8')
 		console.log(ATTS)
 	}
 })()
