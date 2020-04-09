@@ -10,6 +10,10 @@ axios.defaults.headers.common['User-Agent'] =
 	'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
 
 var patchesDir = 'patches'
+var folder
+var SCRAP = {
+	champs: []
+}
 
 axios
 	.get(attURL, {
@@ -20,13 +24,10 @@ axios
 			let page = cheerio.load(data)
 			// create path for patch data
 			let title = page('h1').text()
-			let folder = title.replace(/\s(?=\d)/, "").replace(/\s/g, "_").toLowerCase()
+			folder = title.replace(/\s(?=\d)/, "").replace(/\s/g, "_").toLowerCase()
 			fs.mkdir(patchesDir, {recursive: true}, (err) => {
 				if(err) console.error(err)
-				fs.mkdir(path.join(patchesDir, folder), {recursive: true}, (err) => {
-					if(err) console.error(err)
-					console.log(`Gonna write ${title} at path: ${path.join(__dirname, patchesDir, folder)}`)
-				})
+				fs.mkdirSync(path.join(patchesDir, folder), {recursive: true})
 			})
 			// slice page content
 			page = page('#patch-notes-container').html()
@@ -36,10 +37,45 @@ axios
 	.then((res) => {
 		const $ = cheerio.load(res.data)
 
-		// Champions section
+		// --Champions--
 		let patchFeatured = $('h3[id^="patch-"]')
 		// filter by patch id with only a followed name that's the champ
 		const champions = patchFeatured.toArray().filter((cEl) => $(cEl).attr('id').indexOf('-') == $(cEl).attr('id').lastIndexOf('-'))
 		console.log($(champions).length + ' Champions')
+		// format data for each note
+		champions.reduce((champs, champ, i) => {
+			champs.push({
+				campeao: $(champ).text(),
+				img: $(champ).siblings('a').children('img').attr('src'),
+				mod: $(champ).siblings('.summary').text(),
+				nota: $(champ).siblings('blockquote').text().trim()
+			})
+			let changes = $(champ).siblings('h4').map((i, title) => {
+				let attrs = $(title).nextUntil('h4,hr').map((i, atr) => {
+					return {
+						atributo: $(atr).children(':first-child').text(),
+						antes: $(atr).children(':nth-child(2)').text(),
+						depois: $(atr).children(':last-child').text()
+					}
+				}).toArray()
+				attrs.forEach(a => {
+					let rotulo = /novo|new|removido|removed/i.exec(a.atributo)
+					if(rotulo) {
+						a.atributo = a.atributo.split(rotulo[0])[1]
+						a.rotulo = rotulo[0]
+					}
+				})
+				return {nome: $(title).text(), alteracoes: attrs}
+			}).toArray()
+			champs[i].alteracoes = changes
+			return champs
+		}, SCRAP.champs)
+
 	})
 	.catch(console.error)
+	.finally(() => {
+		// console.log(SCRAP.champs)
+		fs.writeFile('data.json', JSON.stringify(SCRAP, null, 2), (err) => {
+			console.log(`Writed data at path: ${path.join(__dirname, patchesDir, folder, "data.json")}`)
+		})
+	})
