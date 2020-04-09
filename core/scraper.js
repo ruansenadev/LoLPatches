@@ -4,7 +4,7 @@ const path = require('path')
 const fs = require('fs')
 
 const attURL =
-	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-1/'
+	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-1'
 
 axios.defaults.headers.common['User-Agent'] =
 	'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
@@ -47,7 +47,7 @@ axios
 			champs.push({
 				campeao: $(champ).text(),
 				img: $(champ).siblings('a').children('img').attr('src'),
-				mod: $(champ).siblings('.summary').text(),
+				mod: $(champ).siblings('p').text(),
 				nota: $(champ).siblings('blockquote').text().trim()
 			})
 			let changes = $(champ).siblings('h4').map((i, title) => {
@@ -59,15 +59,16 @@ axios
 					}
 				}).toArray()
 				attrs.forEach(a => {
-					let rotulo = /novo|new|removido|removed/i.exec(a.atributo)
+					let rotulo = /[a-z]{2,}/.exec(a.atributo)
 					if(rotulo) {
 						a.atributo = a.atributo.split(rotulo[0])[1]
 						a.rotulo = rotulo[0]
 					}
 				})
-				return {nome: $(title).text(), alteracoes: attrs}
+				let img = $(title).children('img').attr('src')
+				return {nome: $(title).text(), img, alteracoes: attrs}
 			}).toArray()
-			champs[i].alteracoes = changes
+			champs[i].habilidades = changes
 			return champs
 		}, SCRAP.champs)
 
@@ -75,7 +76,7 @@ axios
 	.catch(console.error)
 	.finally(() => {
 		// console.log(SCRAP.champs)
-		fs.writeFile('data.json', JSON.stringify(SCRAP, null, 2), (err) => {
+		fs.writeFile(path.join(patchesDir, folder, 'data.json'), JSON.stringify(SCRAP, null, 2), (err) => {
 			console.log(`Writed data at path: ${path.join(__dirname, patchesDir, folder, "data.json")}`)
 		})
 	})
