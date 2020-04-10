@@ -1,0 +1,652 @@
+{
+  "champs": [
+    {
+      "campeao": "Kalista",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Kalista.png&resize=64:",
+      "mod": "DdA base, crescimento de DdA e crescimento de Velocidade de Ataque aumentados; DdA adicional do W em Juramento removido. Dano do Q aumentado. O E causa menos dano a monstros épicos.",
+      "nota": "Quando falamos da Kalista, os veteranos do League logo pensam \"aquela que foi nerfada por causa do cenário profissional\". Já faz um tempinho desde que tentamos trocar a força dela para um poder menos dependente de coordenação de equipe, mas estamos fazendo uma tentativa renovada aqui. O poder ofensivo da Kalista não está mais ligado a estar próximo do seu aliado Em Juramento e sua habilidade de tornar Lacerar em um Golpear melhorado foi reduzida fortemente. Mas, para compensar, ela está ganhando muito poder pessoal que pode ser utilizado em qualquer situação.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "alteracoes": [
+            {
+              "atributo": "DANO DE ATAQUE BASE",
+              "antes": "62",
+              "depois": "67"
+            },
+            {
+              "atributo": "CRESCIMENTO DE DANO DE ATAQUE",
+              "antes": "3,6",
+              "depois": "4"
+            },
+            {
+              "atributo": "CRESCIMENTO DE VELOCIDADE DE ATAQUE",
+              "antes": "3,5%",
+              "depois": "4%"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Perfurar",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/KalistaMysticShot.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "10/70/130/190/250",
+              "depois": "20/85/150/215/280"
+            }
+          ]
+        },
+        {
+          "nome": "W - Vigia",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/KalistaW.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "FORTALECIMENTO DO ALIADO EM JURAMENTO",
+              "antes": "Kalista deixa de receber 5/10/15/20/25 de DdA enquanto seu aliado Em Juramento estiver por perto",
+              "depois": "Kalista deixa de receber 5/10/15/20/25 de DdA enquanto seu aliado Em Juramento estiver por perto",
+              "rotulo": "removido"
+            }
+          ]
+        },
+        {
+          "nome": "E - Lacerar",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/KalistaExpungeWrapper.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "PULSO FRACO",
+              "antes": "Lacerar agora causa 50% de dano a monstros épicos",
+              "depois": "Lacerar agora causa 50% de dano a monstros épicos",
+              "rotulo": "novo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Ornn",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Ornn.png&resize=64:",
+      "mod": "Durabilidade base aumentada. Os itens de Ornn são aprimorados no nível 13 (máximo de 2); ele pode aprimorar o item de um aliado por nível no nível 14+. Mais aprimoramentos adicionados. Custo, dano e redução de velocidade do Q reduzidos. W deixa de conceder um escudo, mas torna Ornn incontrolável. Redução de velocidade e arremesso ao ar do R reduzidos.",
+      "nota": "Embora Ornn não possua uma longa história de problemas no competitivo como a Kalista, similarmente ele mostrou resultados muito mais fortes no cenário profissional. Ele não possui rivais à altura quando forte, o que o torna uma escolha sem riscos em qualquer composição, sem mencionar sua ult que pode manter os inimigos parados no lugar de longe para que os aliados garantam os abates sem que Ornn realmente esteja fazendo seu trabalho como um tanque. Estamos reduzindo essas forças e investindo esse poder na passiva do Ornn. Trocar para um sistema de aprimoramentos grátis permite a Ornn ter uma habilidade única de estimular o escalamento de itens tanto para ele quanto para seu time: em vez de adiar o progresso para quando a itemização estiver completa, aprimorar um item agora é claramente uma vantagem.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "alteracoes": [
+            {
+              "atributo": "CRESCIMENTO DE VIDA",
+              "antes": "90",
+              "depois": "95"
+            },
+            {
+              "atributo": "REGENERAÇÃO DE VIDA BASE",
+              "antes": "1,4",
+              "depois": "1,8"
+            },
+            {
+              "atributo": "CRESCIMENTO DE REGENERAÇÃO DE VIDA",
+              "antes": "0,142",
+              "depois": "0,18"
+            },
+            {
+              "atributo": "CRESCIMENTO DE ARMADURA",
+              "antes": "3",
+              "depois": "4"
+            },
+            {
+              "atributo": "DANO DE ATAQUE BASE",
+              "antes": "67",
+              "depois": "69"
+            }
+          ]
+        },
+        {
+          "nome": "Passiva - Forja Viva",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/passive/OrnnP.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "MÃOS CALEJADAS",
+              "antes": "Ornn agora recebe 10% de Armadura e Resistência Mágica adicionais de itens",
+              "depois": "Ornn agora recebe 10% de Armadura e Resistência Mágica adicionais de itens",
+              "rotulo": "novo"
+            },
+            {
+              "atributo": "TROCA DE CONHECIMENTO",
+              "antes": "No nível 13, qualquer item aprimorável que Ornn possua ou compre pelo resto do jogo é aprimorado de graça (Ornn pode ter até dois itens aprimorados)",
+              "depois": "No nível 13, qualquer item aprimorável que Ornn possua ou compre pelo resto do jogo é aprimorado de graça (Ornn pode ter até dois itens aprimorados)",
+              "rotulo": "novo"
+            },
+            {
+              "atributo": "BENFEITOR",
+              "antes": "Em cada nível a partir do 14 em diante, Ornn pode aprimorar um dos itens aprimoráveis de um dos seus aliados ao estar em 600 de alcance e clicando neles (aliados só podem possuir um item aprimorado)",
+              "depois": "Em cada nível a partir do 14 em diante, Ornn pode aprimorar um dos itens aprimoráveis de um dos seus aliados ao estar em 600 de alcance e clicando neles (aliados só podem possuir um item aprimorado)",
+              "rotulo": "novo"
+            },
+            {
+              "atributo": "ORDEM DE COMPRA",
+              "antes": "Ornn e seus aliados não podem mais pagar para aprimorar seus itens",
+              "depois": "Ornn e seus aliados não podem mais pagar para aprimorar seus itens",
+              "rotulo": "removido"
+            },
+            {
+              "atributo": "ITENS",
+              "antes": "Ornn pode aprimorar novos itens! Adicionais listados abaixo:",
+              "depois": "Ornn pode aprimorar novos itens! Adicionais listados abaixo:",
+              "rotulo": "novo"
+            }
+          ],
+          "propagado": [
+            {
+              "nome": "Punho Congelado",
+              "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Iceborn_Gauntlet.png&resize=32:",
+              "alteracoes": [
+                {
+                  "atributo": "ARMADURA",
+                  "antes": "65",
+                  "depois": "95"
+                },
+                {
+                  "atributo": "MANA",
+                  "antes": "500",
+                  "depois": "700"
+                }
+              ]
+            },
+            {
+              "nome": "Lâmina da Ira de Youmuu",
+              "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Youmuus_Ghostblade.png&resize=32:",
+              "alteracoes": [
+                {
+                  "atributo": "DANO DE ATAQUE",
+                  "antes": "55",
+                  "depois": "75"
+                },
+                {
+                  "atributo": "LETALIDADE",
+                  "antes": "18",
+                  "depois": "25"
+                }
+              ]
+            },
+            {
+              "nome": "Poderio do Rei Destruído",
+              "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Blade_of_the_Ruined_King.png&resize=32:",
+              "alteracoes": [
+                {
+                  "atributo": "DANO DE ATAQUE",
+                  "antes": "40",
+                  "depois": "55"
+                },
+                {
+                  "atributo": "VELOCIDADE DE ATAQUE",
+                  "antes": "25%",
+                  "depois": "40%"
+                }
+              ]
+            },
+            {
+              "nome": "Pulso de Luden",
+              "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Ludens_Echo.png&resize=32:",
+              "alteracoes": [
+                {
+                  "atributo": "PODER DE HABILIDADE",
+                  "antes": "90",
+                  "depois": "120"
+                },
+                {
+                  "atributo": "MANA",
+                  "antes": "600",
+                  "depois": "850"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nome": "Q - Ruptura Vulcânica",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/OrnnQ.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "CUSTO",
+              "antes": "55 de Mana",
+              "depois": "45 de Mana"
+            },
+            {
+              "atributo": "DANO BASE",
+              "antes": "20/50/80/110/140",
+              "depois": "20/45/70/95/120"
+            },
+            {
+              "atributo": "REDUÇÃO DE VELOCIDADE",
+              "antes": "40/45/50/55/60%",
+              "depois": "40% em todos os níveis"
+            }
+          ]
+        },
+        {
+          "nome": "W - Fôlego do Fole",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/OrnnW.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "ESCUDO",
+              "antes": "Ornn deixa de receber 80/125/170/215/260 de escudo (+0,4 de Armadura adicional)(+0,4 de Resistência Mágica adicional)",
+              "depois": "Ornn deixa de receber 80/125/170/215/260 de escudo (+0,4 de Armadura adicional)(+0,4 de Resistência Mágica adicional)",
+              "rotulo": "removido"
+            },
+            {
+              "atributo": "INCONTROLÁVEL",
+              "antes": "Ornn agora é incontrolável durante o W",
+              "depois": "Ornn agora é incontrolável durante o W",
+              "rotulo": "new"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "17/15/13/11/9 segundos",
+              "depois": "12 segundos"
+            },
+            {
+              "atributo": "DURAÇÃO",
+              "antes": "1 segundo (ciclo a cada 0,2 segundo)",
+              "depois": "0,75 segundo (ciclo a cada 0,15 segundo)"
+            },
+            {
+              "atributo": "REDUÇÃO DE VELOCIDADE PRÓPRIA",
+              "antes": "50%",
+              "depois": "35%"
+            },
+            {
+              "atributo": "DANO DE ATIVAÇÃO DO FRÁGIL",
+              "antes": "7% a 12% da Vida máxima do alvo (nível 1 a 18)",
+              "depois": "12% a 20,5% da Vida máxima do alvo (nível 1 a 18)"
+            }
+          ]
+        },
+        {
+          "nome": "E - Investida Calcinante",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/OrnnE.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "CUSTO",
+              "antes": "50 de Mana em todos os níveis",
+              "depois": "35/40/45/50/55 de Mana"
+            },
+            {
+              "atributo": "SÓ MAIS UM POUQUINHO",
+              "antes": "Se um pilar do Q estiver para desaparecer quando Ornn conjurar o E, agora ele dura até o avanço de Ornn terminar",
+              "depois": "Se um pilar do Q estiver para desaparecer quando Ornn conjurar o E, agora ele dura até o avanço de Ornn terminar",
+              "rotulo": "novo"
+            }
+          ]
+        },
+        {
+          "nome": "R - Chamado do Deus da Forja",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/OrnnR.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "REDUÇÃO DE VELOCIDADE DA PRIMEIRA CONJURAÇÃO",
+              "antes": "40/60/80%",
+              "depois": "10% escalando até 40/60/80% com base na distância percorrida"
+            },
+            {
+              "atributo": "ARREMESSO AO AR DA SEGUNDA CONJURAÇÃO",
+              "antes": "1,5 segundos em todos os inimigos atingidos",
+              "depois": "1 segundo no primeiro inimigo atingido, 0,5 segundo nos inimigos depois do primeiro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Sejuani",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Sejuani.png&resize=64:",
+      "mod": "Durabilidade base aumentada. Passiva concede menos atributos, mas dura mais tempo. Dano do Q aumentado. Dano do W2 aumentado, mas a redução de velocidade cai imediatamente. O E causa mais dano, mas o alcance e atordoamento foram reduzidos.",
+      "nota": "Em terceiro lugar no nosso elenco de \"forte no profissional e fraco no normal\" está a Sejuani. A maior abordagem dessas mudanças é \"reduzir o Controle de Grupo e aumentar o dano\" para tornar o sucesso da Sejuani menos dependente do acompanhamento dos aliados (ou preparação no caso dos aliados corpo a corpo com prioridade no E). Também estamos reduzindo o enorme pico de defesas da Armadura Congelada para aumentar sua duração e dar à Sejuani mais durabilidade base. Isto deixa a responsabilidade de Sejuani de absorver dano menos ligada à iniciação perfeitamente coordenada de confronto de equipe, permitindo a ela ser um melhor tanque para sua equipe durante o combate prolongado.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "alteracoes": [
+            {
+              "atributo": "CRESCIMENTO DE VIDA",
+              "antes": "88",
+              "depois": "105"
+            },
+            {
+              "atributo": "ARMADURA BASE",
+              "antes": "31",
+              "depois": "34"
+            },
+            {
+              "atributo": "CRESCIMENTO DE ARMADURA",
+              "antes": "3",
+              "depois": "4,25"
+            },
+            {
+              "atributo": "RESISTÊNCIA MÁGICA BASE",
+              "antes": "27,1",
+              "depois": "32,1"
+            },
+            {
+              "atributo": "CRESCIMENTO DE RESISTÊNCIA MÁGICA",
+              "antes": "0,75",
+              "depois": "1,25"
+            },
+            {
+              "atributo": "CRESCIMENTO DE DANO DE ATAQUE",
+              "antes": "3",
+              "depois": "4"
+            }
+          ]
+        },
+        {
+          "nome": "Passiva - Fúria do Norte",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/passive/Sejuani_passive.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "RESISTÊNCIAS DA ARMADURA CONGELADA",
+              "antes": "20/70/120 de Armadura e Resistência Mágica (+100% do total de Armadura e Resistência Mágica)",
+              "depois": "20 de Armadura e Resistência Mágica (+25% adicional de Armadura e Resistência Mágica)"
+            },
+            {
+              "atributo": "PERMANÊNCIA DA ARMADURA CONGELADA",
+              "antes": "2 segundos",
+              "depois": "3 segundos"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Ataque do Ártico",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/SejuaniQ.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "60/90/120/150/180",
+              "depois": "80/120/160/200/240"
+            }
+          ]
+        },
+        {
+          "nome": "W - Ira do Inverno",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/SejuaniW.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "DANO BASE DO SEGUNDO ACERTO",
+              "antes": "30/65/100/135/170",
+              "depois": "30/70/110/150/190"
+            },
+            {
+              "atributo": "DURAÇÃO DA REDUÇÃO DE VELOCIDADE DO SEGUNDO ACERTO",
+              "antes": "Normalizado para 0,25 segundos (anteriormente poderia durar um pouco mais dependendo do tempo do servidor)",
+              "depois": "Normalizado para 0,25 segundos (anteriormente poderia durar um pouco mais dependendo do tempo do servidor)"
+            }
+          ]
+        },
+        {
+          "nome": "E - Congelação Permanente",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/SejuaniE.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "DURAÇÃO DO ATORDOAMENTO",
+              "antes": "1/1,1/1,2/1,3/1,4 segundos",
+              "depois": "1 segundo em todos os níveis"
+            },
+            {
+              "atributo": "ALCANCE",
+              "antes": "850",
+              "depois": "600"
+            },
+            {
+              "atributo": "DANO",
+              "antes": "20/35/50/65/80",
+              "depois": "40/80/120/160/200 (Dano inalterado do Gelo Picado ao despedaçar um alvo atordoado)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Ashe",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Ashe.png&resize=64:",
+      "mod": "O E concede assistências se os inimigos estivessem fora de visão.",
+      "nota": "Estamos adicionando um pouco de recompensa pessoal por Olhares do Falcão que permitem que o time da Ashe consiga um abate. (A mudança no Q é um melhoramento de qualidade de vida.)",
+      "habilidades": [
+        {
+          "nome": "Q - Concentração",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/AsheQ.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "ALÔ!",
+              "antes": "A moldura do ícone da habilidade agora pisca quando o Q é conjurável com máximo de acúmulos",
+              "depois": "A moldura do ícone da habilidade agora pisca quando o Q é conjurável com máximo de acúmulos"
+            }
+          ]
+        },
+        {
+          "nome": "E - Olhar do Falcão",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/AsheSpiritOfTheHawk.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "EU AJUDEI, VIU",
+              "antes": "Ashe agora recebe crédito de assistência se um inimigo que estava fora de visão for abatido dentro de 10 segundos após ser revelado por Olhar do Falcão",
+              "depois": "Ashe agora recebe crédito de assistência se um inimigo que estava fora de visão for abatido dentro de 10 segundos após ser revelado por Olhar do Falcão"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Jinx",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Jinx.png&resize=64:",
+      "mod": "Tempo de conjuração do W agora escala com Velocidade de Ataque.",
+      "nota": "Vamos ajudar o tempo de conjuração do Zap! a acompanhar a Jinx para que conjurações no meio/fim de jogo não façam ela ficar parada tempo demais.",
+      "habilidades": [
+        {
+          "nome": "W - Zap!",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/JinxW.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "TEMPO DE CONJURAÇÃO",
+              "antes": "0,6 segundos",
+              "depois": "0,6 segundos - 0,4 segundos, com base na Velocidade de Ataque (limite em 250% de Velocidade de Ataque adicional, incluindo o adicional recebido de Trocando!)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Jayce",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Jayce.png&resize=64:",
+      "mod": "Combo Q+E agora pode ser sequenciado.",
+      "nota": "",
+      "habilidades": [
+        {
+          "nome": "E - Portão Acelerador",
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Jayce_E.jpg&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "SEQUENCIANDO",
+              "antes": "Se Jayce conjurar Portão Acelerador durante a conjuração de Disparo Chocante, ele agora ignorará comandos de movimento até que ambas as habilidades tenham sido conjuradas",
+              "depois": "Se Jayce conjurar Portão Acelerador durante a conjuração de Disparo Chocante, ele agora ignorará comandos de movimento até que ambas as habilidades tenham sido conjuradas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Katarina",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Katarina.png&resize=64:",
+      "mod": "O E teleporta imediatamente; tempo de conjuração agora é inteiramente após o teleporte. O ativo da Pistola Laminar agora pode ser sequenciado.",
+      "nota": "Essas mudanças farão com que seja mais responsivo jogar com a Katarina sem tirar a habilidade dos oponentes de reagir às decisões dela.",
+      "habilidades": [
+        {
+          "nome": "E - Shunpo",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/KatarinaEWrapper.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "TEMPO DE CONJURAÇÃO",
+              "antes": "0,075 segundos antes de teleportar e 0,075 segundos depois de teleportar",
+              "depois": "0,15 segundos depois de teleportar (Katarina agora teleporta imediatamente ao apertar o E)"
+            },
+            {
+              "atributo": "SEQUENCIANDO",
+              "antes": "Katarina agora pode sequenciar o ativo da Pistola Laminar para disparar depois que o tempo da conjuração do Shunpo terminar",
+              "depois": "Katarina agora pode sequenciar o ativo da Pistola Laminar para disparar depois que o tempo da conjuração do Shunpo terminar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Nasus",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Nasus.png&resize=64:",
+      "mod": "Acúmulos do Q de grandes abates aumentado.",
+      "nota": "Estamos aumentando a recompensa que os bons jogadores de Nasus recebem ao priorizar os ataques finais em grandes inimigos. Isso não afeta os acúmulos de unidades menores, então o cachorrão precisa acertar esses canhões direito para fazer uso desse fortalecimento. Mais 12!",
+      "habilidades": [
+        {
+          "nome": "Q - Ataque Sifão",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/NasusQ.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "ACÚMULO POR GRANDE ABATE",
+              "antes": "6 por abate de Campeão, tropa grande ou monstro grande",
+              "depois": "12 por abate de Campeão, tropa grande ou monstro grande"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Sivir",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Sivir.png&resize=64:",
+      "mod": "Acertos em Campeões não reduzem o dano do Q.",
+      "nota": "Estamos fortalecendo o Q dos sonhos que atinge os cinco Campeões inimigos no confronto de equipes.",
+      "habilidades": [
+        {
+          "nome": "Q - Lâmina Bumerangue",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/SivirQ.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "DIMINUIÇÃO DO DANO",
+              "antes": "Atingir um Campeão inimigo deixa de reduzir o dano da Lâmina Bumerangue contra os próximos alvos (a dica flutuante será atualizada na 9.2)",
+              "depois": "Atingir um Campeão inimigo deixa de reduzir o dano da Lâmina Bumerangue contra os próximos alvos (a dica flutuante será atualizada na 9.2)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Vayne",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Vayne.png&resize=64:",
+      "mod": "Tempo de Recarga do Q reduzido enquanto o R estiver ativo.",
+      "nota": "Esse é um fortalecimento caprichado para o potencial de confronto de equipes da Vayne durante o meio/fim de jogo para jogadores que conseguem abater inimigos durante a Hora Final sem serem explodidos no processo. Para todas as Vaynes do mundo: \"Vaynezar\" ainda é algo muito comum, então vamos tomar cuidado pra não cair de cambalhota direto na cova, OK? Ao mesmo tempo, não seja inconstante. Se você fez um Rolamento e não atacou depois, você não vai tirar nenhum proveito desse fortalecimento.",
+      "habilidades": [
+        {
+          "nome": "R - Hora Final",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/VayneInquisition.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "CONTINUE A ROLAR, CONTINUE A ROLAR",
+              "antes": "O Tempo de Recarga de Rolamento é reduzido em 50% enquanto Hora Final estiver ativada (lembrete: o Tempo de Recarga do rolamento não começa até que Vayne tenha disparado seu ataque fortalecido)",
+              "depois": "O Tempo de Recarga de Rolamento é reduzido em 50% enquanto Hora Final estiver ativada (lembrete: o Tempo de Recarga do rolamento não começa até que Vayne tenha disparado seu ataque fortalecido)",
+              "rotulo": "novo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Xayah",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Xayah.png&resize=64:",
+      "mod": "Duração do enraizamento do E aumentado.",
+      "nota": "Estamos aumentando a habilidade única da Xayah entre os Atiradores de manter os inimigos onde ela quer enquanto arremessa e puxa suas penas de volta.",
+      "habilidades": [
+        {
+          "nome": "E - Invocadora das Lâminas",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/XayahE.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "DURAÇÃO DO ENRAIZAMENTO",
+              "antes": "1 segundo",
+              "depois": "1,25 segundos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Zyra",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/champion/Zyra.png&resize=64:",
+      "mod": "Combos E+W e Q+E agora podem ser sequenciados.",
+      "nota": "",
+      "habilidades": [
+        {
+          "nome": "W - Crescimento Desenfreado",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/8.24.1/img/spell/ZyraW.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "SEQUENCIANDO",
+              "antes": "Se Zyra conjurar Crescimento Desenfreado durante a conjuração de Farpas Mortais ou Pântano das Raízes, ela agora ignorará comandos de movimento até que ambas as habilidades tenham sido conjuradas",
+              "depois": "Se Zyra conjurar Crescimento Desenfreado durante a conjuração de Farpas Mortais ou Pântano das Raízes, ela agora ignorará comandos de movimento até que ambas as habilidades tenham sido conjuradas"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "runes": [
+    {
+      "runa": "Chuva de Lâminas",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Hail_of_Blades_Rune.jpg&resize=64:",
+      "mod": "Velocidade de Ataque adicional maior inicialmente e menor mais adiante. Reinicializações de ataques deixam de consumir um acúmulo.",
+      "nota": "Parte da razão em que, historicamente, a Chuva de Lâminas teve problemas para achar seu nicho é que se você é um Campeão que se importa com Velocidade de Ataque, você normalmente vai escolher a runa Precisão. Atributos de runas resolveram essa tensão, mas deixaram a Chuva de Lâminas um pouco de lado: Campeões que querem lutas abertas com uma rápida explosão de ataques possuem habilidades que reiniciam esses ataques e passam por cima dos ataques fortalecidos da Chuva de Lâminas. Estamos mudando a Chuva de Lâminas para ter uma melhor sinergia com as reinicializações de ataques em vez de competir com elas.",
+      "alteracoes": [
+        {
+          "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
+          "antes": "75-125% (níveis 1 a 18)",
+          "depois": "110% em todos os níveis"
+        },
+        {
+          "atributo": "novoTEMPESTADE DE GRANIZO",
+          "antes": "Ataques que se beneficiam de reinicialização de ataques (ex: o W - Energizar do Jax) deixam de consumir um acúmulo de Chuva de Lâminas",
+          "depois": "Ataques que se beneficiam de reinicialização de ataques (ex: o W - Energizar do Jax) deixam de consumir um acúmulo de Chuva de Lâminas"
+        }
+      ]
+    },
+    {
+      "runa": "Atributos das runas",
+      "mod": "Atributo da runa de Velocidade de Ataque aumentado.",
+      "nota": "Até mesmo Campeões focados em Velocidade de Ataque estão preferindo Força Adaptativa em seu espaço ofensivo, então estamos fortalecendo o atributo de runa de Velocidade de Ataque para ele se tornar mais atraente.",
+      "alteracoes": [
+        {
+          "atributo": "ATRIBUTO DE RUNA DE VELOCIDADE DE ATAQUE",
+          "antes": "9%",
+          "depois": "10%"
+        }
+      ]
+    },
+    {
+      "runa": "Celeridade",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Celerity_Rune.jpg&resize=64:",
+      "mod": "Multiplicador de Velocidade de Movimento adicional aumentado.",
+      "nota": "A Celeridade estabeleceu alguns usuários frequentes depois da atualização: Hecarim (obviamente), além de Sivir, Aurelion Sol e mais uma dúzia de outros. Um pequeno fortalecimento deve ajudar a runa a ser uma opção em usos situacionais para outros Campeões.",
+      "alteracoes": [
+        {
+          "atributo": "MULTIPLICADOR DE VELOCIDADE DE MOVIMENTO ADICIONAL",
+          "antes": "8%",
+          "depois": "10%"
+        }
+      ]
+    },
+    {
+      "runa": "Golpe de Escudo",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Shield_Bash_Rune.jpg&resize=64:",
+      "mod": "Dano aumentado.",
+      "nota": "Golpe de Escudo está se saindo bem para tanques graças ao seu multiplicador de Vida máxima, mas queremos que seja uma boa opção para usuários/recebedores de escudos também.",
+      "alteracoes": [
+        {
+          "atributo": "DANO",
+          "antes": "4-21 (nos níveis 1 a 18)",
+          "depois": "5-30 (nos níveis 1 a 18)"
+        }
+      ]
+    }
+  ]
+}

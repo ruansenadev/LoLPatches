@@ -1,0 +1,34 @@
+(16:11:44): 
+https://br.leagueoflegends.com/pt-br/news/game-updatess
+Error: Evaluation failed: TypeError: Failed to execute 'appendChild' on 'Node': parameter 1 is not of type 'Node'.
+    at HTMLBodyElement.nrWrapper [as appendChild] (https://br.leagueoflegends.com/pt-br/news/game-updatess/:28:18664)
+    at __puppeteer_evaluation_script__:4:9
+🔚🔚🔚🔚
+(16:27:38): 
+https://br.leagueoflegends.com/pt-br/news/game-updatess - Page formatting
+Error: Evaluation failed: TypeError: Failed to execute 'appendChild' on 'Node': parameter 1 is not of type 'Node'.
+    at HTMLBodyElement.nrWrapper [as appendChild] (https://br.leagueoflegends.com/pt-br/news/game-updatess/:28:18664)
+    at __puppeteer_evaluation_script__:3:9
+🔚🔚🔚🔚
+(16:31:21): 
+https://br.leagueoflegends.com/pt-br/news/game-updatess - Page formatting
+Error: Evaluation failed: TypeError: Failed to execute 'appendChild' on 'Node': parameter 1 is not of type 'Node'.
+    at HTMLBodyElement.nrWrapper [as appendChild] (https://br.leagueoflegends.com/pt-br/news/game-updatess/:28:18664)
+    at __puppeteer_evaluation_script__:3:9
+🔚🔚🔚🔚
+(16:33:24): 
+https://br.leagueoflegends.com/pt-br/news/game-updatess - Page formatting
+Error: Evaluation failed: TypeError: Failed to execute 'appendChild' on 'Node': parameter 1 is not of type 'Node'.
+    at HTMLBodyElement.nrWrapper [as appendChild] (https://br.leagueoflegends.com/pt-br/news/game-updatess/:28:18664)
+    at __puppeteer_evaluation_script__:3:9
+🔚🔚🔚🔚
+(16:33:24): 
+https://br.leagueoflegends.com/pt-br/news/game-updatess - Fetching/Scraping
+undefined
+🔚🔚🔚🔚
+(16:35:34): 
+https://br.leagueoflegends.com/pt-br/news/game-updatess - Page formatting
+Error: Evaluation failed: TypeError: Failed to execute 'appendChild' on 'Node': parameter 1 is not of type 'Node'.
+    at HTMLBodyElement.nrWrapper [as appendChild] (https://br.leagueoflegends.com/pt-br/news/game-updatess/:28:18664)
+    at __puppeteer_evaluation_script__:3:9
+🔚🔚🔚🔚

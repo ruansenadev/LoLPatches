@@ -1,0 +1,330 @@
+{
+  "champs": [
+    {
+      "campeao": "Fiddlesticks",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/March/pn107/Fiddlesticks_Thumbnail.png",
+      "mod": "O Terror Ancestral",
+      "nota": "Esse espantalho assustador começará a colher cérebros na 10.7, agora 100% mais bicho e 120% mais papão.\n\t\t\t\t\n\t\t\t\t\tIlustrações atualizadas do Fiddlesticks em alta definição estão disponíveis no League Displays!",
+      "habilidades": []
+    },
+    {
+      "campeao": "Akali",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Akali.png",
+      "mod": "Tempo de Recarga do R reduzido.",
+      "nota": "Anteriormente, ajustamos a ultimate da Akali para que sua conjuração não tivesse um acesso tão livre, criando um grande custo para a habilidade que antes era usada tão facilmente. Porém, notamos que a ultimate é uma parte importante da satisfação de mecânica de jogo da Campeã e, por isso, nosso objetivo é suavizar um pouco o Tempo de Recarga e encorajar sua utilização.",
+      "habilidades": [
+        {
+          "nome": "R - Execução Perfeita",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/AkaliR.png",
+          "alteracoes": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "120/90/60s",
+              "depois": "100/80/60s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Corki",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Corki.png",
+      "mod": "Duração da queima de acerto direto do W aumentada.",
+      "nota": "Os jogadores de Corki andam se divertindo bastante desde o último fortalecimento, mas achamos que o Campeão ainda tem espaço para outro. Round 2! Entrega Especial!",
+      "habilidades": [
+        {
+          "nome": " W - Entrega Especial",
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/March/pn107/special_delivery.png",
+          "alteracoes": [
+            {
+              "atributo": "DURAÇÃO DA QUEIMA DE ACERTO DIRETO",
+              "antes": "1,5s",
+              "depois": "2s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Galio",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Galio.png",
+      "mod": "R agora concede um escudo contra Dano Mágico para todos os aliados na área.",
+      "nota": "Galio anda em uma situação ruim e temos tentado reacender sua essência como um guardião antimagia. Nossos fortalecimentos anteriores não pareceram surtir efeito, então tentaremos algo mais ousado dessa vez: daremos a ele, e à equipe em que ele estiver, a habilidade de enfrentar oponentes com Dano Mágico de forma mais eficaz.",
+      "habilidades": [
+        {
+          "nome": "R - Entrada Heroica",
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/March/pn107/heros_entrance.png",
+          "alteracoes": [
+            {
+              "atributo": "BASTIÃO ANTIMAGIA",
+              "antes": "Habilidade agora concede o escudo contra Dano Mágico do passivo do W - Escudo de Durand para todos os Campeões aliados na área de conjuração por 5s.",
+              "depois": "Habilidade agora concede o escudo contra Dano Mágico do passivo do W - Escudo de Durand para todos os Campeões aliados na área de conjuração por 5s.",
+              "rotulo": "novo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Garen",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Garen.png",
+      "mod": "Tempo de Recarga da passiva aumentado. Duração da Velocidade de Movimento do Q reduzida nos primeiros níveis, mas escala mais no último nível.",
+      "nota": "Nosso soldado da Vanguarda superou todos os enfraquecimentos da 10.6 e continuou passando dos limites, principalmente na rota do meio. Tentaremos colocá-lo na linha novamente ao reduzir sua utilidade no início de jogo.",
+      "habilidades": [
+        {
+          "nome": "Passiva - Perseverança",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/passive/Garen_Passive.png",
+          "alteracoes": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "7s",
+              "depois": "8s"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Acerto Decisivo",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/GarenQ.png",
+          "alteracoes": [
+            {
+              "atributo": "DURAÇÃO DA VELOCIDADE DE MOVIMENTO",
+              "antes": "1,5/2/2,5/3/3,5s",
+              "depois": "1/1,65/2,3/2,95/3,6s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Ivern",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Ivern.png",
+      "mod": "Dano base do E aumentado. Tempo de Recarga do R reduzido.",
+      "nota": "Depois das mudanças recentes no sistema da selva, Ivern parece estar em um mato sem cachorro, mas isso não vai ficar assim! Tentaremos fortalecê-lo um pouco mais.",
+      "habilidades": [
+        {
+          "nome": "E - Semente Engatilhada",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/IvernE.png",
+          "alteracoes": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "60/80/100/120/140",
+              "depois": "70/95/120/145/170"
+            }
+          ]
+        },
+        {
+          "nome": "R - Margarida!",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/IvernR.png",
+          "alteracoes": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "160/140/120s",
+              "depois": "140/130/120s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Kai'Sa",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.4.1/img/champion/Kaisa.png",
+      "mod": "Tempo de Recarga do E reduzido nos últimos níveis.",
+      "nota": "Sobrecarga? Sobrecarregadora! Daremos a Kai'Sa mais oportunidades de jogadas no fim de jogo, mas preservaremos seu potencial de eliminação.",
+      "habilidades": [
+        {
+          "nome": "E - Sobrecarga",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/KaisaE.png",
+          "alteracoes": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "16/15,5/15/14,5/14s",
+              "depois": "16/15/14/13/12s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Nasus",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Nasus.png",
+      "mod": "Alcance do W aumentado. Multiplicador de redução de Armadura do E aumentado.",
+      "nota": "Queremos aumentar a utilidade do Nasus, já que essa é a qualidade mais valorizada pelos jogadores mais experientes.",
+      "habilidades": [
+        {
+          "nome": "W - Murchar",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/NasusW.png",
+          "alteracoes": [
+            {
+              "atributo": "ALCANCE",
+              "antes": "600",
+              "depois": "700"
+            }
+          ]
+        },
+        {
+          "nome": "E - Fogo Espiritual",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/NasusE.png",
+          "alteracoes": [
+            {
+              "atributo": "REDUÇÃO DE ARMADURA",
+              "antes": "15/20/25/30/35%",
+              "depois": "25/30/35/40/45%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Nocturne",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Nocturne.png",
+      "mod": "Regeneração de Vida base e crescimento de Resistência Mágica reduzidos.",
+      "nota": "Nocturne na rota do meio passou de meme para pesadelo e, convenhamos, Fiddlesticks já vai botar pânico o suficiente no Rift. Reduziremos um pouco de seu poder geral, permitindo que ele seja tirado da rota por seus oponentes e controlando o escalamento antes que tudo fique na ESCURIDÃO.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "alteracoes": [
+            {
+              "atributo": "REGENERAÇÃO DE VIDA",
+              "antes": "8,5",
+              "depois": "7"
+            },
+            {
+              "atributo": "CRESCIMENTO DE RESISTÊNCIA MÁGICA",
+              "antes": "1,25",
+              "depois": "0,75"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Riven",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Riven.png",
+      "mod": "Vida base e Regeneração de Vida aumentadas.",
+      "nota": "Riven anda sofrendo na fase de rotas e, por isso, vamos devolver (com muito cuidado!) um pouco do seu poder, aumentando seu espaço de manobra para coletar.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "alteracoes": [
+            {
+              "atributo": "VIDA BASE",
+              "antes": "555,48",
+              "depois": "560"
+            },
+            {
+              "atributo": "REGENERAÇÃO DE VIDA",
+              "antes": "7",
+              "depois": "8,5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Talon",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/Talon.png",
+      "mod": "Dano base de ida e dano base de retorno do W reduzidos; multiplicador de dano aumentado.",
+      "nota": "Sabemos que Talon gosta muito de suas lâminas, mas, dessa vez, elas foram longe demais. O Campeão está se mostrando uma ameaça em partidas de alto nível de habilidade, com sua limpeza no início de jogo permitindo que ele se movimente pelo mapa com maior frequência e antes dos outros. Reduziremos a confiança depositada nessas lâminas para que ele permaneça na linha (e na rota).",
+      "habilidades": [
+        {
+          "nome": "W - Ancinho",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/TalonW.png",
+          "alteracoes": [
+            {
+              "atributo": "DANO DE IDA",
+              "antes": "50/65/80/95/110 (+0,4 de Dano de Ataque adicional)",
+              "depois": "45/60/75/90/105 (+0,4 de Dano de Ataque adicional)"
+            },
+            {
+              "atributo": "DANO DE RETORNO",
+              "antes": "70/85/100/115/130 (+0,6 de Dano de Ataque adicional)",
+              "depois": "45/65/85/105/125 (+0,7 de Dano de Ataque adicional)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Wukong",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/MonkeyKing.png",
+      "mod": "Armadura adicional da Passiva reduzida nos últimos níveis. Dano base do E reduzido nos últimos níveis; agora permite que o W e R sejam sequenciados durante o avanço.",
+      "nota": "Apesar de termos conseguido equilibrar o poder entre suas múltiplas posições, Wukong tem superado nossas expectativas desde o pequeno rework da 10.6. Por isso, continuaremos a ajustá-lo conforme os jogadores forem dominando as mudanças.",
+      "habilidades": [
+        {
+          "nome": "Passiva - Pele de Pedra",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/passive/MonkeyKingStoneSkin.png",
+          "alteracoes": [
+            {
+              "atributo": "ARMADURA ADICIONAL",
+              "antes": "5 - 11 (níveis 1 a 18)",
+              "depois": "5 - 9 (níveis 1 a 18)"
+            }
+          ]
+        },
+        {
+          "nome": "E - Resplendor das Nuvens",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/spell/MonkeyKingNimbus.png",
+          "alteracoes": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "80/120/160/200/240",
+              "depois": "80/110/140/170/200"
+            },
+            {
+              "atributo": "SEQUENCIAMENTO DE HABILIDADES",
+              "antes": "As habilidades W - Guerreiro Trapaceiro e R - Ciclone de Wukong agora podem ser sequenciadas durante o avanço.",
+              "depois": "As habilidades W - Guerreiro Trapaceiro e R - Ciclone de Wukong agora podem ser sequenciadas durante o avanço."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Xin Zhao",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/champion/XinZhao.png",
+      "mod": "Cura base da passiva aumentada nos últimos níveis.",
+      "nota": "Queremos tornar nosso guerreiro de Demacia mais atraente aumentando sua durabilidade em lutas difíceis.",
+      "habilidades": [
+        {
+          "nome": "Passiva - Determinação",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.6.1/img/passive/XinZhaoP.png",
+          "alteracoes": [
+            {
+              "atributo": "CURA BASE",
+              "antes": "10 - 78 (níveis 1 a 18)",
+              "depois": "10 - 112 (níveis 1 a 18)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "runes": [
+    {
+      "runa": "Condicionamento",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/March/pn107/Conditioning_rune.png",
+      "mod": "Tempo de ativação aumentado.",
+      "nota": "A runa Condicionamento disparou nossos alertas, principalmente quando utilizada por tanques ou lutadores. Achamos que seu custo deve ser um pouco maior devido ao que ela pode oferecer no fim de jogo, já que, além de ser uma boa escolha para qualquer um, ela é praticamente obrigatória para as classes mencionadas, destacando-se mais do que todas as outras runas.",
+      "alteracoes": [
+        {
+          "atributo": "TEMPO DE ATIVAÇÃO",
+          "antes": "Com 10min de partida",
+          "depois": "Com 12min de partida"
+        }
+      ]
+    },
+    {
+      "runa": "Ímpeto Gradual",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Phase_Rush_rune.png",
+      "mod": "Velocidade de Movimento para Campeões de ataque corpo a corpo aumentada.",
+      "nota": "Ímpeto Gradual permanece sendo uma escolha ruim para atacantes corpo a corpo e até mesmo para os Campeões que tradicionalmente optavam por esse tipo de Runa Essencial. Com isso em mente, tentaremos aproximá-la do nível das outras.",
+      "alteracoes": [
+        {
+          "atributo": "VELOCIDADE DE MOVIMENTO",
+          "antes": "30% - 50% para Campeões de ataque corpo a corpo",
+          "depois": "40% - 60% para Campeões de ataque corpo a corpo"
+        }
+      ]
+    }
+  ]
+}

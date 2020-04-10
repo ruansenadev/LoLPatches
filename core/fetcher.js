@@ -2,20 +2,33 @@ const pupp = require('puppeteer')
 const path = require('path')
 const fs = require('fs')
 
-const baseURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates'
+const baseURL = 'https://br.leagueoflegends.com/pt-br/news/game-updatess'
+const d = new Date()
+
+const errorsDir = 'erros'
 const patchesDir = 'patches'
 
 var localATTS = []
 var lastATT
 var ATTS
 
+function createLog(e, frag='') {
+	fs.mkdir(path.join(patchesDir, errorsDir), {recursive: true}, (err) => {
+		if(err) throw err;
+		let logFile = d.toLocaleDateString().replace(/\//g, '_').concat('_fetch_log.txt')
+		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): \r\n${baseURL}${frag?" - "+frag:""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
+			if(err) throw err;
+			console.log('Erro :T\tlog do erro: ' + path.join(patchesDir, errorsDir, logFile))
+		})
+	})
+}
 
-exports.fetch = async function(callback = (err, message) => {
-    if (err) {return console.error(err)}
-    return console.log(message)
+exports.fetch = async function(callback = (data, message) => {
+	console.log(message)
+	return data
 }) {
 	fs.mkdir(patchesDir, {recursive: true}, (err) => {
-		if(err) console.error(err)
+		if(err) throw err;
 		fs.readFile(path.join(patchesDir, "data.json"), 'utf-8', (err, data) => {
             if(err) {
                 console.log('No local file, gonna fetch all..')
@@ -27,18 +40,16 @@ exports.fetch = async function(callback = (err, message) => {
 	})
     const brow = await pupp.launch({ headless: false })
 	const [pagina] = await brow.pages()
-	await pagina.goto(baseURL, { timeout: 90000 })
+	await pagina.goto(baseURL, { timeout: 90000 }).catch(e => {throw createLog(e, 'Page request')})
     const LOAD = "[class*='LoadMoreButton']"
 	try {
 		await pagina.$eval('body', (body) => {
-			// format page
 			let content = body.querySelector("[class*='Body']")
 			body.appendChild(content)
 			body.querySelector('#___gatsby').remove()
 
-			// open att tab
 			body.querySelector('ol').querySelector('li:nth-child(2) button').click()
-		})
+		}).catch(e => {throw createLog(e, "Page formatting")})
 
         // recursive async fx
 		async function fetcher() {
@@ -58,7 +69,7 @@ exports.fetch = async function(callback = (err, message) => {
 					att.remove()
 					return prev
 				})
-			)
+			).catch(e => createLog(e, 'Preview patch scraping'))
 			if (lastATT) {
 				for (let i = 0; i < agg.length; i++) {
 					if (agg[i].data === lastATT.data) {
@@ -81,33 +92,29 @@ exports.fetch = async function(callback = (err, message) => {
 		}
 		ATTS = await fetcher()
 	} catch (error) {
-		brow.close()
-		callback(error)
+		if(error) {
+			createLog(error, 'Fetching/Scraping')
+		}
 	} finally {
+		brow.close()
         let message = ""
 		if (ATTS.length) {
 			message += ATTS.length + ' new patches\n'
 			ATTS = ATTS.concat(localATTS)
 			lastATT = ATTS[0]
-			fs.writeFile(
-				path.join(patchesDir, 'data.json'),
-				JSON.stringify(ATTS, null, 2),
-				'utf-8',
-				(e) => {
-					if (e) {
-						callback(e)
-					}
-				}
-            )
+			fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(ATTS, null, 2), 'utf-8', (err) => {
+				if(err) {throw createLog(err, 'Writting data')}
+			})
             message += `Patches updated with success ^-^\n`
 		} else {
 			message += 'Apparently you already have all patches saved, nice!\n'
 		}
 		// if not last att fetched or local log error 
 		if (!lastATT) {
-			throw new Error('Neither fetched patch nor local patch')
+			let erro = new Error('Neither fetched patch nor local patch')
+			throw createLog(erro)
 		}
         message += `Last patch date: ${new Date(lastATT.data).toLocaleDateString()}`
-        callback(null, message)
+        callback(ATTS, message)
 	}
 }
