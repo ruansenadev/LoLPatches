@@ -3,22 +3,20 @@ const path = require('path')
 const fs = require('fs')
 
 const baseURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates'
+const patchesDir = 'patches'
 
 var localATTS = []
 var lastATT
 var ATTS
 
 
-exports.fetch = async function(patches_path = 'patches.json', callback = (err, message) => {
+exports.fetch = async function(callback = (err, message) => {
     if (err) {return console.error(err)}
     return console.log(message)
 }) {
-    fs.access(patches_path, (err) => {
-        if(err) {
-            patches_path = 'patches.json'
-            console.log('No such path, gonna write at '+ path.join(__dirname, patches_path))
-        }
-        fs.readFile(patches_path, 'utf-8', (err, data) => {
+	fs.mkdir(patchesDir, {recursive: true}, (err) => {
+		if(err) console.error(err)
+		fs.readFile(path.join(patchesDir, "data.json"), 'utf-8', (err, data) => {
             if(err) {
                 console.log('No local file, gonna fetch all..')
             } else {
@@ -26,7 +24,7 @@ exports.fetch = async function(patches_path = 'patches.json', callback = (err, m
                 lastATT = localATTS[0]
             }
         })
-    })
+	})
     const brow = await pupp.launch({ headless: false })
 	const [pagina] = await brow.pages()
 	await pagina.goto(baseURL, { timeout: 90000 })
@@ -92,7 +90,7 @@ exports.fetch = async function(patches_path = 'patches.json', callback = (err, m
 			ATTS = ATTS.concat(localATTS)
 			lastATT = ATTS[0]
 			fs.writeFile(
-				patches_path,
+				path.join(patchesDir, 'data.json'),
 				JSON.stringify(ATTS, null, 2),
 				'utf-8',
 				(e) => {
@@ -101,9 +99,13 @@ exports.fetch = async function(patches_path = 'patches.json', callback = (err, m
 					}
 				}
             )
-            message += `Patches updated at "${patches_path}" with success ^-^\n`
+            message += `Patches updated with success ^-^\n`
 		} else {
 			message += 'Apparently you already have all patches saved, nice!\n'
+		}
+		// if not last att fetched or local log error 
+		if (!lastATT) {
+			throw new Error('Neither fetched patch nor local patch')
 		}
         message += `Last patch date: ${new Date(lastATT.data).toLocaleDateString()}`
         callback(null, message)

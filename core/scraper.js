@@ -4,12 +4,12 @@ const path = require('path')
 const fs = require('fs')
 
 const attURL =
-	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-7/'
+	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-7'
 
 axios.defaults.headers.common['User-Agent'] =
 	'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
 
-var patchesDir = 'patches'
+const patchesDir = 'patches'
 var folder
 var SCRAP = {
 	champs: [],
@@ -52,7 +52,7 @@ axios
 				nota: $(champ).siblings('blockquote').text().trim()
 			})
 			let changes = $(champ).siblings('h4').map((i, title) => {
-				let attrs = $(title).nextUntil('h4,hr').map((i, atr) => {
+				let attrs = $(title).nextUntil('div+:not(div)').map((i, atr) => {
 					return {
 						atributo: $(atr).children(':first-child').text(),
 						antes: $(atr).children(':nth-child(2)').text(),
@@ -98,7 +98,7 @@ axios
 		// --Runas--
 		patchFeatured = $("[id*='runes']").parent()
 		// select runes block wrapper
-		const runes = patchFeatured.nextUntil('header').map((i, cEl) => {
+		const runes = patchFeatured.nextUntil('div+:not(div)').map((i, cEl) => {
 			return $('h3', cEl).parent()
 		}).toArray()
 		console.log(runes.length + ' Runas')
@@ -120,9 +120,9 @@ axios
 			return runs
 		}, SCRAP.runes)
 	})
-	.catch(console.error)
-	.finally(() => {
+	.then(() => {
 		fs.writeFile(path.join(patchesDir, folder, 'data.json'), JSON.stringify(SCRAP, null, 2), (err) => {
-			console.log(`Writed data at path: ${path.join(__dirname, patchesDir, folder, "data.json")}`)
+			console.log(`Writed data at path: ${path.join(patchesDir, folder, "data.json")}`)
 		})
 	})
+	.catch(console.error)

@@ -1,3 +1,3 @@
 const fetcher = require('./fetcher')
 
-fetcher.fetch('pora')
+fetcher.fetch()
