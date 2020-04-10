@@ -4,7 +4,7 @@ const path = require('path')
 const fs = require('fs')
 
 const attURL =
-	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-1'
+	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-7/'
 
 axios.defaults.headers.common['User-Agent'] =
 	'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
@@ -12,7 +12,8 @@ axios.defaults.headers.common['User-Agent'] =
 var patchesDir = 'patches'
 var folder
 var SCRAP = {
-	champs: []
+	champs: [],
+	runes: []
 }
 
 axios
@@ -68,8 +69,8 @@ axios
 				let img = $(title).children('img').attr('src')
 				let habilidade = {nome: $(title).text(), img, alteracoes: attrs}
 				// check if is propagated changes
-				if((!$(title).prev().is('hr'))) {
-					habilidade.propagado = $(title).prevUntil('hr', 'h4').last().text()
+				if(($(title).prev().is(':not(hr)'))) {
+					if($(title).prev().is(':not(blockquote)')) habilidade.propagado = true
 				}
 				$(title).prev
 				return habilidade
@@ -94,10 +95,33 @@ axios
 			return champs
 		}, SCRAP.champs)
 
+		// --Runas--
+		patchFeatured = $("[id*='runes']").parent()
+		// select runes block wrapper
+		const runes = patchFeatured.nextUntil('header').map((i, cEl) => {
+			return $('h3', cEl).parent()
+		}).toArray()
+		console.log(runes.length + ' Runas')
+		runes.reduce((runs, run, i) => {
+			runs.push({
+				runa: $('h3', run).text(),
+				img: $('a > img', run).attr('src'),
+				mod: $('p', run).text(),
+				nota: $('blockquote', run).text().trim()
+			})
+			let changes = $('div', run).map((i, chng) => {
+				return {
+					atributo: $(chng).children(':first-child').text(),
+					antes: $(chng).children(':nth-child(2)').text(),
+					depois: $(chng).children(':last-child').text()
+				}
+			}).toArray()
+			runs[i].alteracoes = changes
+			return runs
+		}, SCRAP.runes)
 	})
 	.catch(console.error)
 	.finally(() => {
-		// console.log(SCRAP.champs)
 		fs.writeFile(path.join(patchesDir, folder, 'data.json'), JSON.stringify(SCRAP, null, 2), (err) => {
 			console.log(`Writed data at path: ${path.join(__dirname, patchesDir, folder, "data.json")}`)
 		})
