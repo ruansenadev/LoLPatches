@@ -4,7 +4,7 @@ const path = require('path')
 const fs = require('fs')
 
 const attURL =
-	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-2/'
+	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-19/'
 
 axios.defaults.headers.common['User-Agent'] =
 	'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
@@ -92,32 +92,12 @@ axios
 					})
 					let img = $(title).children('img').attr('src')
 					let habilidade = {nome: $(title).text(), img, alteracoes: attrs}
-					// check if is propagated changes
-					if(($(title).prev().is(':not(hr)'))) {
-						if($(title).prev().is(':not(blockquote)')) habilidade.propagado = true
-					}
-					$(title).prev
+
 					return habilidade
 				}).toArray()
 			} catch (error) {
 				throw createLog(error, 'Champion skills scraping')
 			}
-
-			// format propagated skill for its parent
-			changes = changes.reduce((skills, skill) => {
-				if(skill.propagado) {
-					delete skill.propagado
-					if(skills[skills.length-1].propagado) {
-						skills[skills.length-1].propagado.push(skill)
-					} else { 
-						skills[skills.length-1].propagado = [skill]
-					}
-					return skills
-				} else {
-					skills.push(skill)
-					return skills
-				}
-			}, [])
 
 			champs[i].habilidades = changes
 			return champs

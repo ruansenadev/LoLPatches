@@ -133,71 +133,69 @@
               "depois": "Ornn pode aprimorar novos itens! Adicionais listados abaixo:",
               "rotulo": "novo"
             }
-          ],
-          "propagado": [
+          ]
+        },
+        {
+          "nome": "Punho Congelado",
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Iceborn_Gauntlet.png&resize=32:",
+          "alteracoes": [
             {
-              "nome": "Punho Congelado",
-              "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Iceborn_Gauntlet.png&resize=32:",
-              "alteracoes": [
-                {
-                  "atributo": "ARMADURA",
-                  "antes": "65",
-                  "depois": "95"
-                },
-                {
-                  "atributo": "MANA",
-                  "antes": "500",
-                  "depois": "700"
-                }
-              ]
+              "atributo": "ARMADURA",
+              "antes": "65",
+              "depois": "95"
             },
             {
-              "nome": "Lâmina da Ira de Youmuu",
-              "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Youmuus_Ghostblade.png&resize=32:",
-              "alteracoes": [
-                {
-                  "atributo": "DANO DE ATAQUE",
-                  "antes": "55",
-                  "depois": "75"
-                },
-                {
-                  "atributo": "LETALIDADE",
-                  "antes": "18",
-                  "depois": "25"
-                }
-              ]
+              "atributo": "MANA",
+              "antes": "500",
+              "depois": "700"
+            }
+          ]
+        },
+        {
+          "nome": "Lâmina da Ira de Youmuu",
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Youmuus_Ghostblade.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "DANO DE ATAQUE",
+              "antes": "55",
+              "depois": "75"
             },
             {
-              "nome": "Poderio do Rei Destruído",
-              "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Blade_of_the_Ruined_King.png&resize=32:",
-              "alteracoes": [
-                {
-                  "atributo": "DANO DE ATAQUE",
-                  "antes": "40",
-                  "depois": "55"
-                },
-                {
-                  "atributo": "VELOCIDADE DE ATAQUE",
-                  "antes": "25%",
-                  "depois": "40%"
-                }
-              ]
+              "atributo": "LETALIDADE",
+              "antes": "18",
+              "depois": "25"
+            }
+          ]
+        },
+        {
+          "nome": "Poderio do Rei Destruído",
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Blade_of_the_Ruined_King.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "DANO DE ATAQUE",
+              "antes": "40",
+              "depois": "55"
             },
             {
-              "nome": "Pulso de Luden",
-              "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Ludens_Echo.png&resize=32:",
-              "alteracoes": [
-                {
-                  "atributo": "PODER DE HABILIDADE",
-                  "antes": "90",
-                  "depois": "120"
-                },
-                {
-                  "atributo": "MANA",
-                  "antes": "600",
-                  "depois": "850"
-                }
-              ]
+              "atributo": "VELOCIDADE DE ATAQUE",
+              "antes": "25%",
+              "depois": "40%"
+            }
+          ]
+        },
+        {
+          "nome": "Pulso de Luden",
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/pn901/Ludens_Echo.png&resize=32:",
+          "alteracoes": [
+            {
+              "atributo": "PODER DE HABILIDADE",
+              "antes": "90",
+              "depois": "120"
+            },
+            {
+              "atributo": "MANA",
+              "antes": "600",
+              "depois": "850"
             }
           ]
         },
