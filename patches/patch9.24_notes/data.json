@@ -1,0 +1,720 @@
+{
+  "note": "Hello friends! It's the last patch of the year! As with most patches following a huge shakedown like Preseason, we have a lot of changes and tweaks in this patch after assessing some of the initial data and your general feedback. We've also already adjusted the knobs on the some of the new drakes, monsters, and pacing components of the game in 9.23 that we're including again here in case you missed it. And while this is technically the last patch of the year, you may see an end-of-year \"9.24b\" balance patch (a patch with no skins or features) based off of how the game is in a couple of weeks. There'll be a separate set of patch notes for that, so keep an eye out! Before we go, make sure to hold on to your poison because everyone's new favorite edgy boy (and his sister), Aphelios joins the Rift in 9.24! Following her Lunari brethren's release, Diana is also getting an overhaul to her kit, VFX, SFX, and ability icons to exude more of the moonly glow of her people. Last, but not least, Poro King is back for a limited time! Get your snowballs ready for more fun with everyone's favorite royal fluffball. Take this portal if you're looking for TFT's patch notes!",
+  "ft": {
+    "media": "https://www.youtube.com/embed/fUXibd5kAlo",
+    "mod": "Dawnbringer Soraka, Nidalee, and Karma, and Nightbringer Aphelios, Vladimir, Lee Sin, and Soraka will be available on December 12, 2019. Sugar Rush Ziggs, Zilean, Braum, and Sugar Rush Evelynn will be available on December 17, 2019."
+  },
+  "champs": [
+    {
+      "campeao": "Aphelios",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/december/pn24/Aphelios.png?v=1",
+      "mod": "The Weapon of the Faithful",
+      "nota": "Aphelios and Alune will find victory in the whispers of the moon in 9.24.High-res versions of Aphelios' splash arts are available on League Displays!",
+      "habilidades": []
+    },
+    {
+      "campeao": "Akali",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Akali.png",
+      "mod": "Removed the hitbox behind Akali so her Q only goes forward; Q minion and monster damage decreased. ",
+      "nota": "This is a pro-facing specific change we're making since many pro players use this uniquely shaped hitbox to waveclear optimally, while most other players have a hard time accessing and utilizing it properly.",
+      "habilidades": [
+        {
+          "nome": "Q - Five Point Strike",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/AkaliQ.png",
+          "alteracoes": [
+            {
+              "atributo": "HITBOX",
+              "antes": "Removed the hitbox behind her",
+              "depois": "Removed the hitbox behind her",
+              "rotulo": "removed"
+            },
+            {
+              "atributo": "RANK 5 MINION AND MONSTER DAMAGE",
+              "antes": "33% bonus magic damage",
+              "depois": "25% bonus magic damage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Amumu",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Amumu.png",
+      "mod": "Q cooldown decreased early. ",
+      "nota": "Sad mummy is due for a buff given his state post-Preseason.",
+      "habilidades": [
+        {
+          "nome": "Q - Bandage Toss",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/BandageToss.png",
+          "alteracoes": [
+            {
+              "atributo": "COOLDOWN",
+              "antes": "12/11/10/9/8 seconds",
+              "depois": "10/9.5/9/8.5/8 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Braum",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Braum.png",
+      "mod": "Base health per level and health regen increased. W cooldown decreased, cost flattened, resistance ratios to ally and self flattened. R base damage increased later, knockup now lasts longer.",
+      "nota": "Braum is a warden—a tanky champion that excels at protecting their allies. Most wardens are great at dealing with melee enemies that try to dive their backline, but bad at dealing with ranged opponents because of their limited range and mobility. However, Braum is an exception to this generalization due to his E, which makes him uniquely good at dealing with ranged threats as well.\n                    \n                    We don't want to remove the very thing that makes Braum unique, so we're leaning harder into it while lowering his ability to deal with melee champions relative to other wardens. This should then allow us to also buff him in other ways without having him stay as a default, safe pick in pro play.",
+      "habilidades": [
+        {
+          "nome": "Base Stats",
+          "alteracoes": [
+            {
+              "atributo": "HEALTH GROWTH",
+              "antes": "87",
+              "depois": "98"
+            },
+            {
+              "atributo": "HEALTH REGEN",
+              "antes": "8",
+              "depois": "8.5"
+            }
+          ]
+        },
+        {
+          "nome": "W - Stand Behind Me",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/BraumW.png",
+          "alteracoes": [
+            {
+              "atributo": "COOLDOWN",
+              "antes": "14/13/12/11/10 seconds",
+              "depois": "12/11/10/9/8 seconds"
+            },
+            {
+              "atributo": "COST",
+              "antes": "50/55/60/65/70 mana",
+              "depois": "40 mana at all ranks"
+            },
+            {
+              "atributo": "RESISTANCES TO ALLY",
+              "antes": "10/14/18/22/26 (+10/11.5/13/14.5/16% bonus resistances)",
+              "depois": "10/14/18/22/26 (+12% bonus resistances)"
+            },
+            {
+              "atributo": "RESISTANCES TO SELF",
+              "antes": "10/14/18/22/26 (+10/11.5/13/14.5/16% bonus resistances)",
+              "depois": "10/14/18/22/26 (+36% bonus resistances)"
+            }
+          ]
+        },
+        {
+          "nome": "R - Glacial Fissure",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/BraumRWrapper.png",
+          "alteracoes": [
+            {
+              "atributo": "BASE DAMAGE",
+              "antes": "150/250/350",
+              "depois": "150/300/450"
+            },
+            {
+              "atributo": "TARGET KNOCKUP",
+              "antes": "0.25 seconds for those hit in the fissure, general knock up for those in close vicinity",
+              "depois": "1-1.5 seconds at all ranks based on distance from Braum for the first target hit in the fissure, every other target hit or within close vicinity is knocked up for 0.25 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Diana",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Diana.png",
+      "mod": "VFX and SFX updated. Lunar Rush and Moonfall now switched keys. Passive now grants attack speed. Diana's old ultimate!Diana's old E! ",
+      "nota": "Some of you may already know that we've been working on changing up Diana's kit for awhile now. As promised, we've made some changes aimed at helping Diana’s pre-level-6 lane, and making both the playing as and against Diana experiences less of a feast or famine. By giving her access to Lunar Rush as a basic ability, we're unlocking one of Diana's core mechanics earlier and in the laning phase, allowing her to fight against and interact with enemies before she hits level 6. The change also allows her to effectively gank early as a jungler too, which is a massive increase to her effectiveness in that role.\n                    \n                    Additionally, Diana's new ultimate now significantly opens her up to more options as the game progresses, giving her both teamfight and skirmish capabilities that were previously inaccessible to her. This also adds a lot of variety to how she approaches fights, so her goal isn't always to nuke a single person with a full combo.\n                    \n                    Overall, the goal of these changes was to preserve what people loved about Diana while giving her both the tools and the variety that champions should have. We want Diana players to be comfortable with what they already know, but with a kit that may be more fun and rewarding for new Diana players as well.",
+      "habilidades": [
+        {
+          "nome": "VFX Updates",
+          "alteracoes": [
+            {
+              "atributo": "ABILITY ICONS",
+              "antes": "Brand new ability icons to bring it up to modern standards",
+              "depois": "Brand new ability icons to bring it up to modern standards"
+            },
+            {
+              "atributo": "ABILITY VFX",
+              "antes": "Touched up the VFX of all her abilities, including a brand new VFX for her ultimate and better visuals on her passive",
+              "depois": "Touched up the VFX of all her abilities, including a brand new VFX for her ultimate and better visuals on her passive"
+            },
+            {
+              "atributo": "ABILITY SFX",
+              "antes": "Touched up all the SFX of all her abilities, most notably the shield and her dashes, as well as brand new SFX for her ultimate and passive",
+              "depois": "Touched up all the SFX of all her abilities, most notably the shield and her dashes, as well as brand new SFX for her ultimate and passive"
+            }
+          ]
+        },
+        {
+          "nome": "Base Stats",
+          "alteracoes": [
+            {
+              "atributo": "MANA",
+              "antes": "372",
+              "depois": "420"
+            },
+            {
+              "atributo": "MANA GROWTH",
+              "antes": "20",
+              "depois": "25"
+            },
+            {
+              "atributo": "ATTACK DAMAGE",
+              "antes": "53.04",
+              "depois": "57.04"
+            }
+          ]
+        },
+        {
+          "nome": "Passive - Moonsilver Blade",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/passive/Diana_Passive_LunarBlade.png",
+          "alteracoes": [
+            {
+              "atributo": "MOON PRISM POWER",
+              "antes": "Gain 10-40% attack speed (levels 1-18)",
+              "depois": "Gain 10-40% attack speed (levels 1-18)",
+              "rotulo": "new"
+            },
+            {
+              "atributo": "INNATE",
+              "antes": "Casting an ability grants Diana 30-90% attack speed (based on Moonfall's rank) for her next three basic attacks",
+              "depois": "Casting an ability triples the attack speed Diana gains from Moonsilver Blade for 3 seconds"
+            },
+            {
+              "atributo": "SERENITY NOW",
+              "antes": "Every third strike cleaves nearby enemies for 20-250 (levels 1-18) (+0.8 ability power) additional magic damage and restores (+0.15 ability power) mana.",
+              "depois": "Every third strike cleaves nearby enemies for 20-250 (+0.4 ability power) additional magic damage"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Crescent Strike",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/DianaQ.png",
+          "alteracoes": [
+            {
+              "atributo": "COST",
+              "antes": "55",
+              "depois": "50"
+            }
+          ]
+        },
+        {
+          "nome": "W - Pale Cascade",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/DianaOrbs.png",
+          "alteracoes": [
+            {
+              "atributo": "COOLDOWN",
+              "antes": "10 seconds at all ranks",
+              "depois": "15/13.5/12/10.5/9 seconds"
+            },
+            {
+              "atributo": "BASE SHIELD",
+              "antes": "40/55/70/85/100 (total shield 80/110/140/170/200)",
+              "depois": "30/45/60/75/90 (total shield 60/90/120/150/180)"
+            },
+            {
+              "atributo": "ORB DAMAGE RATIO",
+              "antes": "0.2 ability power (total 0.6 ability power)",
+              "depois": "0.15 ability power (total 0.45 ability power)"
+            },
+            {
+              "atributo": "SHIELD RATIO",
+              "antes": "0.1 bonus health (total 0.2 bonus health)",
+              "depois": "0.1 bonus health (total 0.2 bonus health)",
+              "rotulo": "new"
+            }
+          ]
+        },
+        {
+          "nome": "newE - Lunar Rush",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/DianaTeleport.png",
+          "alteracoes": [
+            {
+              "atributo": "",
+              "antes": "",
+              "depois": ""
+            },
+            {
+              "atributo": "COOLDOWN",
+              "antes": "25/20/15 seconds",
+              "depois": "22/20/18/16/14 seconds"
+            },
+            {
+              "atributo": "COST",
+              "antes": "50/65/80 mana",
+              "depois": "40/45/50/55/60 mana"
+            },
+            {
+              "atributo": "DAMAGE",
+              "antes": "100/160/220",
+              "depois": "40/60/80/100/120"
+            },
+            {
+              "atributo": "DAMAGE RATIO",
+              "antes": "0.6 ability power",
+              "depois": "0.4 ability power"
+            }
+          ]
+        },
+        {
+          "nome": "newR - Moonfall",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/DianaVortex.png",
+          "alteracoes": [
+            {
+              "atributo": "",
+              "antes": "",
+              "depois": ""
+            },
+            {
+              "atributo": "COOLDOWN",
+              "antes": "26/24/22/20/18 seconds",
+              "depois": "100/90/80 seconds"
+            },
+            {
+              "atributo": "COST",
+              "antes": "70 mana",
+              "depois": "100 mana"
+            },
+            {
+              "atributo": "SLOW",
+              "antes": "35/40/45/50/55%",
+              "depois": "40/50/60%"
+            },
+            {
+              "atributo": "MOON LANDING",
+              "antes": "If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after 1 second, dealing 200/300/400 (+0.6 ability power) magic damage in an area around her, increased by 35/60/85 (+0.15 ability power) for each target beyond the first pulled",
+              "depois": "If Diana pulls in one or more enemy champions, the moonlight crashes down onto her after 1 second, dealing 200/300/400 (+0.6 ability power) magic damage in an area around her, increased by 35/60/85 (+0.15 ability power) for each target beyond the first pulled",
+              "rotulo": "new"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Garen",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Garen.png",
+      "mod": "Additional E spins and spin damage decreased. ",
+      "nota": "Garen is one of the biggest winners from the Conqueror changes, climbing well above our acceptable limits. As a result, builds relying on attack speed are dominating his itemization choices. While we wanted attack speed builds to be viable, we don't want glass cannon Garen to be the only Garen people build, so we're targeting that specific approach to increase build diversity.",
+      "habilidades": [
+        {
+          "nome": "E - Judgment",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/GarenE.png",
+          "alteracoes": [
+            {
+              "atributo": "NUMBER OF SPINS",
+              "antes": "7 (+1 spin per 20% attack speed)",
+              "depois": "7 (+1 spin per 25% attack speed)"
+            },
+            {
+              "atributo": "SPIN DAMAGE",
+              "antes": "4/8/12/16/20 (+0-8.2 based on level) (+0.32-0.4 attack damage)",
+              "depois": "4/8/12/16/20 (+0-6.6 based on level) (+0.32-0.4 attack damage)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Karma",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Karma.png",
+      "mod": "E base shield increased. ",
+      "nota": "We're buffing Karma in a way that those who build more supportive items on her will appreciate.",
+      "habilidades": [
+        {
+          "nome": "E - Inspire",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/KarmaSolKimShield.png",
+          "alteracoes": [
+            {
+              "atributo": "BASE SHIELD",
+              "antes": "70/95/120/145/170",
+              "depois": "80/110/140/170/200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Kassadin",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Kassadin.png",
+      "mod": "Q cooldown now scales. W mana restore decreased later. ",
+      "nota": "Kassadin is too strong at the moment, being good at both surviving lane and plowing through teamfights.",
+      "habilidades": [
+        {
+          "nome": "Q - Null Sphere",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/NullLance.png",
+          "alteracoes": [
+            {
+              "atributo": "COOLDOWN",
+              "antes": "9 seconds at all ranks",
+              "depois": "11/10.5/10/9.5/9 seconds"
+            }
+          ]
+        },
+        {
+          "nome": "W - Nether Blade",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/NetherBlade.png",
+          "alteracoes": [
+            {
+              "atributo": "MANA RESTORE",
+              "antes": "4/5/6/7/8% of missing mana",
+              "depois": "4/4.5/5/5.5/6% of missing mana (quintupled on champions)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Rammus",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Rammus.png",
+      "mod": "Base health growth increased. E cooldown now scales. ",
+      "nota": "Raising Rammus' influence in mid-game teamfights and his late game durability.",
+      "habilidades": [
+        {
+          "nome": "Base Stats",
+          "alteracoes": [
+            {
+              "atributo": "HEALTH GROWTH",
+              "antes": "86",
+              "depois": "95"
+            }
+          ]
+        },
+        {
+          "nome": "E - Frenzying Taunt",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/PuncturingTaunt.png",
+          "alteracoes": [
+            {
+              "atributo": "COOLDOWN",
+              "antes": "12 seconds at all ranks",
+              "depois": "12/11.5/11/10.5/10 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Ryze",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Ryze.png",
+      "mod": "Q base damage decreased. ",
+      "nota": "Ryze's early damage and waveclear are too high for a scaling mage. We're also nerfing his best-performing rune (Conqueror), so some might call this the Riot special, but he deserved this change based on his Phase Rush performance as well.",
+      "habilidades": [
+        {
+          "nome": "Q - Overload",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/RyzeQWrapper.png",
+          "alteracoes": [
+            {
+              "atributo": "BASE DAMAGE",
+              "antes": "80/105/130/155/180",
+              "depois": "65/90/115/140/165"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Senna",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Senna.png",
+      "mod": "Recommended items updated. Passive Mist Wraiths drop less often on minions Senna kills and no longer drop from champion clones. Q damage and W root duration decreased. R damage ratio increased. ",
+      "nota": "Senna is too powerful as both a support and ADC, but Senna in the latter role is especially strong. We're nerfing her this patch in ways that will affect both roles, but should affect her ADC role more. Specifically, we're targeting her safety, her poke and waveclear, and the amount of souls she gets in a game. All these changes should amount to non-overwhelming Senna, regardless of what role she's in.",
+      "habilidades": [
+        {
+          "nome": "Base Stats",
+          "alteracoes": [
+            {
+              "atributo": "HEALTH GROWTH",
+              "antes": "85",
+              "depois": "75"
+            }
+          ]
+        },
+        {
+          "nome": "Passive - Absolution",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/passive/Senna_Passive.Senna.png",
+          "alteracoes": [
+            {
+              "atributo": "MIST WRAITH DROP CHANCE",
+              "antes": "5.55% on minions Senna kills",
+              "depois": "1.67% on minions Senna kills"
+            },
+            {
+              "atributo": "POOR UNFORTUNATE SOULS",
+              "antes": "Champion clones no longer drop Mist Wraiths",
+              "depois": "Champion clones no longer drop Mist Wraiths",
+              "rotulo": "removed"
+            },
+            {
+              "atributo": "BUGFIX",
+              "antes": "Allied Bard can no longer kill Mist Wraiths with his Q",
+              "depois": "Allied Bard can no longer kill Mist Wraiths with his Q"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Piercing Darkness",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/SennaQ.png",
+          "alteracoes": [
+            {
+              "atributo": "DAMAGE",
+              "antes": "50/80/110/140/170 (+0.5 bonus attack damage)",
+              "depois": "40/70/100/130/160 (+0.4 bonus attack damage)"
+            }
+          ]
+        },
+        {
+          "nome": "W - Last Embrace",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/SennaW.png",
+          "alteracoes": [
+            {
+              "atributo": "ROOT DURATION",
+              "antes": "1.45/1.65/1.85/2.05/2.25 seconds",
+              "depois": "1.25/1.50/1.75/2/2.25 seconds"
+            }
+          ]
+        },
+        {
+          "nome": "R - Dawning Shadow",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/SennaR.png",
+          "alteracoes": [
+            {
+              "atributo": "DAMAGE RATIO",
+              "antes": "0.4 ability power",
+              "depois": "0.5 ability power"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Sivir",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Sivir.png",
+      "mod": "Base attack damage increased.",
+      "nota": "A small buff for Sivir!",
+      "habilidades": [
+        {
+          "nome": "Base Stats",
+          "alteracoes": [
+            {
+              "atributo": "ATTACK DAMAGE",
+              "antes": "61",
+              "depois": "63"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Yuumi",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Yuumi.png",
+      "mod": "Passive restores mana once again. Q cost increased, damage decreased. Yuumi no longer teleports with her Anchor. E now grants attack speed, no longer stocks charges, and costs much more mana. ",
+      "nota": "We're encouraging Yuumi to be the enchanter she was meant to be by buffing her supportive capabilities at the cost of damage (and that means Summon: Aery is a lot more optimal on her, not Arcane Comet). However, to access all her power, she'll have to sit on squishier champions instead of being an untargetable damage source on top of an already unkillable champion, like Garen. We're also asking her to sometimes expose herself to real danger by allowing attentive opponents to have actual kill threat on an unattached Yuumi.\n                    \n                    And seriously, we have the data. Yuumi is a really weird case where taking the wrong rune is negatively and drastically causing people to think she is worse than she actually is. Please take Aery instead of Comet!",
+      "habilidades": [
+        {
+          "nome": "Passive - Bop 'n' Block",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/passive/YuumiP.png",
+          "alteracoes": [
+            {
+              "atributo": "BACK TO THE OG",
+              "antes": "Now restores 50-160 (levels 1-18) mana",
+              "depois": "Now restores 50-160 (levels 1-18) mana",
+              "rotulo": "new"
+            },
+            {
+              "atributo": "BASE SHIELD",
+              "antes": "50-300 (levels 1-18)",
+              "depois": "60-400 (levels 1-18)"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Prowling Projectile",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/YuumiQ.png",
+          "alteracoes": [
+            {
+              "atributo": "COST",
+              "antes": "75/80/85/90/95/100 mana",
+              "depois": "85/90/95/100/105/110 mana"
+            },
+            {
+              "atributo": "DAMAGE RATIO",
+              "antes": "0.45 ability power",
+              "depois": "0.3 ability power"
+            },
+            {
+              "atributo": "EMPOWERED DAMAGE",
+              "antes": "50/85/120/155/190/225 (+0.65 ability power)",
+              "depois": "50/95/140/185/230/275 (+0.4 ability power)"
+            },
+            {
+              "atributo": "MISSILE DURATION",
+              "antes": "3 seconds",
+              "depois": "2 seconds"
+            }
+          ]
+        },
+        {
+          "nome": "W - You and Me!",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/YuumiW.png",
+          "alteracoes": [
+            {
+              "atributo": "CHANNEL",
+              "antes": "Now has a channel time of 0.25 seconds when attaching from an unattached state",
+              "depois": "Now has a channel time of 0.25 seconds when attaching from an unattached state",
+              "rotulo": "new"
+            },
+            {
+              "atributo": "LEAVE ME",
+              "antes": "Yuumi no longer teleports with her Anchor when attached",
+              "depois": "Yuumi no longer teleports with her Anchor when attached",
+              "rotulo": "removed"
+            },
+            {
+              "atributo": "SURPRISED ELECTRIC RAT FACE",
+              "antes": "Immobilizing Yuumi places this ability on a 5 second cooldown",
+              "depois": "Immobilizing Yuumi places this ability on a 5 second cooldown",
+              "rotulo": "new"
+            },
+            {
+              "atributo": "ADAPTIVE FORCE",
+              "antes": "Yuumi and her ally grant each other 5/7/9/11/13 adaptive force (+4/7/10/13/16% of their respective adaptive force",
+              "depois": "Yuumi increases her ally's adaptive force by 12/14/16/18/20 (+12/14/16/18/20% of her attached ally's adaptive force) (Yuumi grants herself the same amount)",
+              "rotulo": "updated"
+            }
+          ]
+        },
+        {
+          "nome": "E - Zoomies",
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/spell/YuumiE.png",
+          "alteracoes": [
+            {
+              "atributo": "ATTACK ZOOMS",
+              "antes": "Grants 25/30/35/40/45% attack speed to herself or the Anchored target",
+              "depois": "Grants 25/30/35/40/45% attack speed to herself or the Anchored target",
+              "rotulo": "new"
+            },
+            {
+              "atributo": "PASSIVE",
+              "antes": "No longer stocks charges",
+              "depois": "No longer stocks charges",
+              "rotulo": "removed"
+            },
+            {
+              "atributo": "INCREASED HEAL",
+              "antes": "No longer increases Yuumi's healing based on the target's missing health",
+              "depois": "No longer increases Yuumi's healing based on the target's missing health",
+              "rotulo": "removed"
+            },
+            {
+              "atributo": "HEAL",
+              "antes": "30/40/50/60/70 (+0.1 ability power)",
+              "depois": "70/110/150/190/230 (+0.3 ability power)"
+            },
+            {
+              "atributo": "COOLDOWN",
+              "antes": "18/17/16/15/14 seconds",
+              "depois": "12/11/10/9/8 seconds"
+            },
+            {
+              "atributo": "COST",
+              "antes": "30/40/50/60/70 mana",
+              "depois": "100/115/130/145/160 mana"
+            },
+            {
+              "atributo": "MOVEMENT SPEED",
+              "antes": "25%, decays over time",
+              "depois": "15%, no longer decays over time"
+            },
+            {
+              "atributo": "DURATION",
+              "antes": "2 seconds",
+              "depois": "3 seconds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Lux",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.23.1/img/champion/Lux.png",
+      "mod": "",
+      "nota": "We improved gameplay readability on Lux's abilities while bringing them up to today's standards. Also, more rainbows!",
+      "habilidades": []
+    },
+    {
+      "campeao": "Conqueror",
+      "img": "https://am-a.akamaihd.net/image?f=https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png",
+      "mod": "Buff duration decreased. Heal for ranged champions decreased. ",
+      "nota": "Conqueror is overperforming on a number of ranged champions, and is slightly too strong in general. We're making it last a shorter period of time, which hits ranged champions more since they're able to take full advantage of the long duration in lane, as well as directly nerfing the healing for ranged champions.",
+      "habilidades": []
+    }
+  ],
+  "runes": [
+    {
+      "runa": "Conqueror",
+      "img": "https://am-a.akamaihd.net/image?f=https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png",
+      "mod": "Buff duration decreased. Heal for ranged champions decreased. ",
+      "nota": "Conqueror is overperforming on a number of ranged champions, and is slightly too strong in general. We're making it last a shorter period of time, which hits ranged champions more since they're able to take full advantage of the long duration in lane, as well as directly nerfing the healing for ranged champions.",
+      "alteracoes": [
+        {
+          "atributo": "DURATION",
+          "antes": "8 seconds",
+          "depois": "6 seconds"
+        },
+        {
+          "atributo": "HEAL",
+          "antes": "Ranged champions now heal for",
+          "depois": "8% of damage dealt"
+        }
+      ]
+    },
+    {
+      "runa": "Prototype: Omnistone",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/pn23/Prototype_Omnistone.png",
+      "mod": "",
+      "nota": "We've adjusted Omnistone to be a little bit smarter at giving you the right Keystone at the right time. Below are some guidelines you can count on when taking Prototype: Omnistone.",
+      "alteracoes": [
+        {
+          "atributo": "WARDED",
+          "antes": "Now tells you how much damage it has dealt and how many buffs it has granted. Buffs include: Lethal Tempo's attack speed, Fleet Footwork's Haste, Press the Attack's Vulnerable, Conqueror's Enrage, Hail of Blades' attack speed, Predator's Haste, Phase Rush's Haste, Summon Aery's shield, Aftershock's resistances, or Glacial Augment's slow",
+          "depois": "Now tells you how much damage it has dealt and how many buffs it has granted. Buffs include: Lethal Tempo's attack speed, Fleet Footwork's Haste, Press the Attack's Vulnerable, Conqueror's Enrage, Hail of Blades' attack speed, Predator's Haste, Phase Rush's Haste, Summon Aery's shield, Aftershock's resistances, or Glacial Augment's slow"
+        },
+        {
+          "atributo": "PREDATOR",
+          "antes": "More likely to get Predator when not near enemy champions, and less likely to get it when in combat with nearby enemy champions",
+          "depois": "More likely to get Predator when not near enemy champions, and less likely to get it when in combat with nearby enemy champions"
+        },
+        {
+          "atributo": "DARK HARVEST",
+          "antes": "More likely to get Dark Harvest when near low health enemy champions",
+          "depois": "More likely to get Dark Harvest when near low health enemy champions"
+        },
+        {
+          "atributo": "HAIL OF BLADES",
+          "antes": "More likely to get Hail of Blades when near low health enemy champions and building attack speed or attack damage",
+          "depois": "More likely to get Hail of Blades when near low health enemy champions and building attack speed or attack damage"
+        },
+        {
+          "atributo": "CONQUEROR",
+          "antes": "More likely to get Conqueror when both you and enemies have high health (increased chance if you're a melee champion)",
+          "depois": "More likely to get Conqueror when both you and enemies have high health (increased chance if you're a melee champion)"
+        },
+        {
+          "atributo": "FLEET FOOTWORK",
+          "antes": "More likely to get Fleet Footwork if you are low health and below level 9",
+          "depois": "More likely to get Fleet Footwork if you are low health and below level 9"
+        },
+        {
+          "atributo": "GLACIAL AUGMENT",
+          "antes": "More likely to get Glacial Augment if you have a Glacial item off cooldown",
+          "depois": "More likely to get Glacial Augment if you have a Glacial item off cooldown"
+        },
+        {
+          "atributo": "SUMMON AERY",
+          "antes": "More likely to get Summon Aery when you have healing/shielding power and are near a low health ally who is in combat",
+          "depois": "More likely to get Summon Aery when you have healing/shielding power and are near a low health ally who is in combat"
+        }
+      ]
+    }
+  ]
+}

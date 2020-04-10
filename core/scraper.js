@@ -3,8 +3,7 @@ const cheerio = require('cheerio')
 const path = require('path')
 const fs = require('fs')
 
-const attURL =
-	'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-19/'
+const attURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-3/'
 
 axios.defaults.headers.common['User-Agent'] =
 	'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
@@ -14,17 +13,19 @@ const errorsDir = 'erros'
 const patchesDir = 'patches'
 var folder
 var SCRAP = {
+	note: "",
+	ft: {},
 	champs: [],
 	runes: []
 }
 
 function createLog(e, frag = '') {
 	fs.mkdir(path.join(patchesDir, errorsDir), {recursive: true}, (err) => {
-		if(err) throw err;
+		if(err) {throw err}
 		let logFile = d.toLocaleDateString().replace(/\//g, '_').concat('_scrap_log.txt')
 		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): \r\n${attURL}${frag?" - "+frag:""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
-			if(err) throw err;
-			console.log('Erro :T\tlog do erro: ' + path.join(patchesDir, errorsDir, logFile))
+			if(err) {throw err}
+			console.log('\nErro :T\tlog do erro: ' + path.join(patchesDir, errorsDir, logFile))
 		})
 	})
 }
@@ -40,13 +41,10 @@ axios
 			let title = page('h1').text()
 			folder = title.replace(/\s(?=\d)/, "").replace(/\s/g, "_").toLowerCase()
 			if(/\d{3}/.test(folder)) {
-				folder = errorsDir
-				throw new Error(title)
+				let err = new Error(title);
+				throw createLog(err, "Page initial content")
 			}
-			fs.mkdir(patchesDir, {recursive: true}, (err) => {
-				if(err) throw err;
-				fs.mkdirSync(path.join(patchesDir, folder), {recursive: true})
-			})
+			console.log(title)
 			// slice page content
 			page = page('#patch-notes-container').html()
 			return page
@@ -54,9 +52,24 @@ axios
 	})
 	.then((res) => {
 		const $ = cheerio.load(res.data)
+		// --Note--
+		SCRAP.note = $('#patch-top').next().text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
+		console.log('Note length: '+ SCRAP.note.length)
+
+		// --Featured--
+		let patchFeatured = $('h2[id*="highlights"]').parent().next().first()
+		try {
+			let media = patchFeatured.find('iframe')
+			SCRAP.ft.media = media.length ? media.attr('src') : patchFeatured.find('img').attr('src') 
+		} catch (error) {
+			throw createLog(error, 'Featured media')
+		} finally {
+			SCRAP.ft.mod = patchFeatured.text().trim()
+		}
+		console.log('Featured media: '+ /youtube|(?<=\.)[a-z]*$/.exec(SCRAP.ft.media)[0])	
 
 		// --Champions--
-		let patchFeatured = $('h3[id^="patch-"]')
+		patchFeatured = $('h3[id^="patch-"]')
 		// filter by patch id with only a followed name that's the champ
 		const champions = patchFeatured.toArray().filter((cEl) => $(cEl).attr('id').indexOf('-') == $(cEl).attr('id').lastIndexOf('-'))
 		console.log($(champions).length + ' Champions')
@@ -67,7 +80,7 @@ axios
 					campeao: $(champ).text(),
 					img: $(champ).siblings('a').children('img').attr('src'),
 					mod: $(champ).siblings('p').text(),
-					nota: $(champ).siblings('blockquote').text().trim()
+					nota: $(champ).siblings('blockquote').text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
 				})
 			} catch (error) {
 				throw createLog(error, "Champion introduce scraping")
@@ -139,9 +152,12 @@ axios
 		}, SCRAP.runes)
 	})
 	.then(() => {
-		fs.writeFile(path.join(patchesDir, folder, 'data.json'), JSON.stringify(SCRAP, null, 2), (err) => {
-			if(err) {throw createLog(err, 'Writting data')}
-			console.log(`Writed data at path: ${path.join(patchesDir, folder, "data.json")}`)
+		fs.mkdir(path.join(patchesDir, folder), {recursive: true}, (err) => {
+			if(err) {throw err}
+			fs.writeFile(path.join(patchesDir, folder, 'data.json'), JSON.stringify(SCRAP, null, 2), (err) => {
+				if(err) {return createLog(err, 'Writting data')}
+				console.log(`Writed data at path: ${path.join(patchesDir, folder, "data.json")}`)
+			})
 		})
 	})
 	.catch(e => {
