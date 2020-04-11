@@ -57,7 +57,7 @@ axios
 		console.log('Note length: '+ SCRAP.note.length)
 
 		// --Featured--
-		let patchFeatured = $('h2[id*="highlights"]').parent().next().first()
+		let patchFeatured = $('h2[id*="highlights"]').parent().next().not(':not(div)').first()
 		try {
 			let media = patchFeatured.find('iframe')
 			SCRAP.ft.media = media.length ? media.attr('src') : patchFeatured.find('img').attr('src') 
@@ -88,30 +88,30 @@ axios
 			
 			let changes
 			try {
-				changes = $(champ).siblings('h4').map((i, title) => {
-					let attrs = $(title).nextUntil('div+:not(div)').map((i, atr) => {
-						return {
-							atributo: $(atr).children(':first-child').text(),
+				// changes may not be in abillities but the self champ
+				changes = $(champ).siblings('h4').length ? $(champ).siblings('h4') : $(champ)
+				changes = changes.map((i, title) => {
+					// all followed divs and not any other tag
+					let attrs = $(title).nextUntil('div+:not(div)').not(':not(div)').map((i, atr) => {
+						let tag = $(atr).children(':first-child').text().match(/^[a-z]{2,}/)
+						atr =  {
+							atributo: tag ? tag.input.split(tag[0])[1] : $(atr).children(':first-child').text(),
 							antes: $(atr).children(':nth-child(2)').text(),
-							depois: $(atr).children(':last-child').text()
+							depois: $(atr).children(':last-child').text(),
 						}
+						if(tag) atr.rotulo = tag[0]
+						return atr
 					}).toArray()
-					attrs.forEach(a => {
-						let rotulo = /[a-z]{2,}/.exec(a.atributo)
-						if(rotulo) {
-							a.atributo = a.atributo.split(rotulo[0])[1]
-							a.rotulo = rotulo[0]
-						}
-					})
 					let img = $(title).children('img').attr('src')
-					let habilidade = {nome: $(title).text(), img, alteracoes: attrs}
-
+					let tag = $(title).text().match(/^[a-z]{2,}/)
+					let habilidade = {nome: tag ? tag.input.split(tag[0])[1] : $(title).text() != $(champ).text() ? $(title).text() : 'Efeitos', alteracoes: attrs}
+					if(img) habilidade.img = img
+					if(tag) habilidade.rotulo = tag[0]
 					return habilidade
 				}).toArray()
 			} catch (error) {
 				throw createLog(error, 'Champion skills scraping')
 			}
-
 			champs[i].habilidades = changes
 			return champs
 		}, SCRAP.champs)
@@ -119,7 +119,7 @@ axios
 		// --Runas--
 		patchFeatured = $("[id*='runes']").parent()
 		// select runes block wrapper
-		const runes = patchFeatured.nextUntil('div+:not(div)').map((i, cEl) => {
+		const runes = patchFeatured.nextUntil('div+:not(div)').not(':not(div)').map((i, cEl) => {
 			return $('h3', cEl).parent()
 		}).toArray()
 		console.log(runes.length + ' Runas')
