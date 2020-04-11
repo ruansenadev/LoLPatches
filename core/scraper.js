@@ -3,7 +3,7 @@ const cheerio = require('cheerio')
 const path = require('path')
 const fs = require('fs')
 
-const attURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-4/'
+const attURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-4'
 
 axios.defaults.headers.common['User-Agent'] =
 	'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
@@ -16,7 +16,8 @@ var SCRAP = {
 	note: "",
 	ft: {},
 	champs: [],
-	runes: []
+	runes: [],
+	fixes: []
 }
 
 function createLog(e, frag = '') {
@@ -78,41 +79,87 @@ axios
 			try {
 				champs.push({
 					campeao: $(champ).text(),
-					img: $(champ).siblings('a').children('img').attr('src'),
-					mod: $(champ).siblings('p').text(),
+					img: $(champ).siblings('a').first().children('img').attr('src'),
+					mod: $(champ).siblings('p').first().text(),
 					nota: $(champ).siblings('blockquote').text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
 				})
 			} catch (error) {
 				throw createLog(error, "Champion introduce scraping")
 			}
 			
-			let changes
-			try {
-				// changes may not be in abillities but the self champ
-				changes = $(champ).siblings('h4').length ? $(champ).siblings('h4') : $(champ)
-				changes = changes.map((i, title) => {
-					// all followed divs and not any other tag
-					let attrs = $(title).nextUntil('div+:not(div)').not(':not(div)').map((i, atr) => {
-						let tag = $(atr).children(':first-child').text().match(/^[a-z]{2,}/)
-						let befr = $(atr).children(':nth-child(2)')
+			// possible change content
+			if($(champ).siblings('ul').find('a').length) {
+				let refs
+				try {
+					refs = $(champ).siblings('ul').find('a').map((i, ref) => {
+						return {item: $(ref).text(), link: $(ref).attr('href')}
+					}).toArray()
+					refs.forEach(ref => {
+						if(!(ref.item) || !(ref.link)) {
+							throw new Error('not content assign')
+						}
+					})
+				} catch (error) {
+					throw createLog(error, 'Champion list references scraping')
+				}
+				champs[i].links = refs
+			}
+			if ($(champ).siblings('h4').length) {
+				let skills
+				try {
+					skills = $(champ).siblings('h4').map((i, title) => {
+						// all followed divs and not any other tag
+						let attrs = $(title).nextUntil('div+:not(div)').not(':not(div)').map((i, atr) => {
+							let tag = $(atr).children(':first-child').text().match(/^[a-z]{2,}/)
+							let befr = $(atr).children(':nth-child(2)')
+							atr = {
+								atributo: tag ? tag.input.split(tag[0])[1] : $(atr).children(':first-child').text(),
+								rotulo: tag ? tag[0] : undefined,
+								antes: befr.is(':last-of-type') ? undefined : befr.text(),
+								depois: $(atr).children(':last-child').text(),
+							}
+							if(!atr.atributo && atr.depois) {
+								// changed must be first word
+								atr.atributo = atr.depois.slice(0, atr.depois.indexOf(' '))
+								atr.depois = atr.depois.slice(atr.depois.indexOf(' ')+1)
+							}
+							return atr
+						}).toArray()
+						attrs.forEach((atr) => {
+							if(!(atr.depois)) {
+								throw new Error('not content assign')
+							}
+						})
+						let img = $(title).children('img').attr('src')
+						let tag = $(title).text().match(/^[a-z]{2,}/)
+						let change = {nome: tag ? tag.input.split(tag[0])[1] : $(title).text(), atributos: attrs}
+						if(img) change.img = img
+						if(tag) change.rotulo = tag[0]
+						return change
+					}).toArray()
+				} catch (error) {
+					throw createLog(error, 'Champion skills scraping')
+				}
+				champs[i].habilidades = skills
+			} else if($(champ).next('[class*="change"]').length) {
+				let fxs
+				try {
+					fxs = $(champ).nextUntil('div+:not(div)').not(':not([class*="change"])').map((i, atr) => {
 						return {
-							atributo: tag ? tag.input.split(tag[0])[1] : $(atr).children(':first-child').text(),
-							rotulo: tag ? tag[0] : undefined,
-							antes: befr.is(':last-of-type') ? undefined : befr.text(),
-							depois: $(atr).children(':last-child').text(),
+							atributo: $(atr).children(':first-child').text(),
+							agora: $(atr).children(':last-child').text(),
 						}
 					}).toArray()
-					let img = $(title).children('img').attr('src')
-					let tag = $(title).text().match(/^[a-z]{2,}/)
-					let habilidade = {nome: tag ? tag.input.split(tag[0])[1] : $(title).text() != $(champ).text() ? $(title).text() : 'Efeitos', alteracoes: attrs}
-					if(img) habilidade.img = img
-					if(tag) habilidade.rotulo = tag[0]
-					return habilidade
-				}).toArray()
-			} catch (error) {
-				throw createLog(error, 'Champion skills scraping')
+					fxs.forEach(fx => {
+						if(!(fx.atributo) || !(fx.agora)) {
+							throw new Error('not content assign')
+						}
+					})
+				} catch (error) {
+					throw createLog(error, 'Champion effects scraping')
+				}
+				champs[i].efeitos = fxs
 			}
-			champs[i].habilidades = changes
 			return champs
 		}, SCRAP.champs)
 
@@ -128,7 +175,7 @@ axios
 				runs.push({
 					runa: $('h3', run).text(),
 					img: $('a > img', run).attr('src'),
-					mod: $('p', run).text(),
+					mod: $('p', run).first().text(),
 					nota: $('blockquote', run).text().trim()
 				})
 			} catch (error) {
@@ -153,6 +200,28 @@ axios
 			runs[i].alteracoes = changes
 			return runs
 		}, SCRAP.runes)
+
+		// --Fixes--
+		patchFeatured = $("[id*='bugfixes']").parent().next('div').first()
+		const fixes = $('ul > li', patchFeatured)
+		console.log(fixes.length + ' Fixes')
+		try {
+			SCRAP.fixes = fixes.map((i, fix) => {
+				fix = {note:$(fix).text().trim()}
+				let related = []
+				// looks for related champ changed in the patch
+				SCRAP.champs.forEach(champ => {
+					if(fix.note.includes(champ.campeao)) {
+						related.push(champ.campeao)
+					}
+				})
+				if(related.length) fix.champs = related
+				return fix
+			}).toArray()
+		} catch (error) {
+			throw createLog(error, 'Bug fixes')
+		}
+
 	})
 	.then(() => {
 		fs.mkdir(path.join(patchesDir, folder), {recursive: true}, (err) => {

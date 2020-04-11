@@ -13,7 +13,7 @@
       "habilidades": [
         {
           "nome": "Q - Lançar Bandagens",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE AVANÇO",
               "antes": "1350 depois de atingir um inimigo",
@@ -24,7 +24,7 @@
         },
         {
           "nome": "R - A Maldição da Múmia Triste",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "TEMPO DE RECARGA",
               "antes": "150/130/110s",
@@ -48,7 +48,7 @@
       "habilidades": [
         {
           "nome": "O Assassino e a Profetisa",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VISUALIZAÇÃO DA ARMA",
               "rotulo": "novo",
@@ -59,7 +59,7 @@
         },
         {
           "nome": "Calibrum, o Rifle de Precisão",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "REDEFINIÇÃO DE ATAQUE BÁSICO",
               "rotulo": "removido",
@@ -70,7 +70,7 @@
         },
         {
           "nome": "Crescendum, o Chakram",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VERMELHO VS. AZUL",
               "depois": "Os indicadores de Alcance da atalaia de Aphelios agora ficam vermelhos para os inimigos quando não estiver ativa."
@@ -99,7 +99,7 @@
         },
         {
           "nome": "R - Vigília do Plenilúnio",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "ALCANCE",
               "antes": "1600",
@@ -118,7 +118,7 @@
       "habilidades": [
         {
           "nome": "W - Expansão Celestial",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO DAS ESTRELAS AO ATIVAR",
               "antes": "Aumenta o dano total em",
@@ -137,7 +137,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
               "antes": "10% no nível 1",
@@ -155,7 +155,7 @@
       "habilidades": [
         {
           "nome": "Q - Acerto Decisivo",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "MULTIPLICADOR DE DANO DE ATAQUE DO ATAQUE BÁSICO FORTALECIDO",
               "antes": "0,4 de Dano de Ataque",
@@ -166,7 +166,7 @@
         },
         {
           "nome": "W - Coragem",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "SANGUE DOS INIMIGOS",
               "rotulo": "novo",
@@ -190,7 +190,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE MOVIMENTO",
               "antes": "325",
@@ -200,7 +200,7 @@
         },
         {
           "nome": "Passiva - Fúria Genética",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
               "antes": "10 - 30 (nos níveis 1 a 18) na forma Mini-Gnar",
@@ -211,7 +211,7 @@
         },
         {
           "nome": "R - GNAR!",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "MULTIPLICADOR DE DANO",
               "antes": "0,2 do Dano de Ataque total e 0,5 de Poder de Habilidade",
@@ -230,7 +230,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "MANA",
               "antes": "357,2",
@@ -245,7 +245,7 @@
         },
         {
           "nome": "Q - Aos Céus!",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE",
               "antes": "45/80/115/150/185/220",
@@ -264,7 +264,7 @@
       "habilidades": [
         {
           "nome": "Q - Ligação da Luz",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE",
               "antes": "70/115/170/205/250",
@@ -285,7 +285,7 @@
         },
         {
           "nome": "R - Centelha Final",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CADA MERGULHO É UM FLASH",
               "rotulo": "novo",
@@ -304,7 +304,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE ATAQUE",
               "antes": "0,625",
@@ -327,7 +327,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VIDA",
               "antes": "610",
@@ -350,7 +350,7 @@
       "habilidades": [
         {
           "nome": "Q - Hino do Valor",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "RESTAURAÇÃO DE MANA",
               "rotulo": "novo",
@@ -366,7 +366,7 @@
         },
         {
           "nome": "W - Ária da Perseverança",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "RESTAURAÇÃO DE MANA",
               "rotulo": "novo",
@@ -382,7 +382,7 @@
         },
         {
           "nome": "E - Canção da Celeridade",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "RESTAURAÇÃO DE MANA",
               "rotulo": "novo",
@@ -401,7 +401,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VIDA",
               "antes": "529,04",
@@ -431,7 +431,7 @@
         },
         {
           "nome": "Q - Chamado Estelar",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "AUTOCURA",
               "antes": "60/80/100/120/140 (+0,5 de Poder de Habilidade)",
@@ -457,7 +457,7 @@
         },
         {
           "nome": "W - Infusão Astral",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "EUZINHA DEPOIS DE UMA MASSAGEM E UM SORVETE",
               "rotulo": "novo",
@@ -481,7 +481,7 @@
       "habilidades": [
         {
           "nome": "Q - Correntes-Chicote",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE",
               "antes": "40/55/70/85/100",
@@ -500,7 +500,7 @@
       "habilidades": [
         {
           "nome": "Passiva - Agilidade do Macaco",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "LIGANDO O MOTORZÃO",
               "rotulo": "novo",
@@ -626,6 +626,65 @@
           "depois": "Agora concede corretamente 10% de resistência contra redução de velocidade por Feitiço de Invocador em Tempo de Recarga."
         }
       ]
+    }
+  ],
+  "fixes": [
+    {
+      "note": "O W - Cristalizar da Anivia de Rapina agora usa devidamente os efeitos da skin."
+    },
+    {
+      "note": "Corrigido um erro em que a penalidade de dano do Dr. Mundo não era devidamente aplicada no ARAM."
+    },
+    {
+      "note": "Os indicadores de execução de Pyke, Cho'Gath e Urgot agora são exibidos devidamente."
+    },
+    {
+      "note": "O W - Mergulho Fantasma do PROJETO: Pyke agora exibe a camada de interface PROJETO."
+    },
+    {
+      "note": "A camada de interface do R - Ás na Manga da Pulsefire Caitlyn agora é exibida corretamente ao conjurar a habilidade.",
+      "champs": [
+        "Caitlyn"
+      ]
+    },
+    {
+      "note": "A interface do R - Hora Final da PROJETO: Vayne deixa de desaparecer antecipadamente."
+    },
+    {
+      "note": "Remover um amigo, ser removido ou ser bloqueado por alguém deixa de interromper o painel Social e a janela de chat."
+    },
+    {
+      "note": "Sett agora não pode ser interrompido ao conjurar R - Hora do Show e suprime Tahm Kench durante a conjuração do W - Devorar."
+    },
+    {
+      "note": "Atacar um cogumelo do R - Armadilha Venenosa do Teemo com uma Glaive Sombria agora causa o triplo de dano corretamente."
+    },
+    {
+      "note": "Quando Qiyana conjurar seu R - Suprema Demonstração de Talento no rio ou em arbustos, ele deixa de interromper animações e habilidades que não podem ser interrompidas."
+    },
+    {
+      "note": "O E - Quebra-crânio do Sett agora atordoa apenas se ele conseguir pegar um inimigo de cada lado."
+    },
+    {
+      "note": "Quando Qiyana conjurar seu R - Suprema Demonstração de Talento em direção a uma parede quase dentro do alcance do W - Parede de Vento do Yasuo, ela deixa de conseguir explodir a parede."
+    },
+    {
+      "note": "Campeões deixam de ficar em ''pose de T'' pelo resto da partida se forem comidos pelo W - Devorar do Tahm Kench."
+    },
+    {
+      "note": "O indicador de Tempo de Recarga da Passiva - Privilégio da Realeza da Qiyana Chefona deixa de ficar quase invisível dentro de arbustos."
+    },
+    {
+      "note": "Habilidades que não podem ter aliados como alvo deixam de ativar a runa Guardião."
+    },
+    {
+      "note": "As habilidades do Lee Sin agora são devidamente contadas a cada uso para ativar a runa Eletrocutar."
+    },
+    {
+      "note": "Wukong agora pode conjurar seu R - Ciclone corretamente mesmo que o uso ocorra imediatamente antes de ser abatido por um arremesso ao ar."
+    },
+    {
+      "note": "O Q - Quebra-Cofres da Vi deixa de fazer com que seu próximo ataque básico falhe na ativação de runas."
     }
   ]
 }

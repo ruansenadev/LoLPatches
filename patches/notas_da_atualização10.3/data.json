@@ -13,7 +13,7 @@
       "habilidades": [
         {
           "nome": "Q - Golpe dos Cinco Pontos",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CUSTO",
               "antes": "100/95/90/85/80 de Energia",
@@ -24,7 +24,7 @@
         },
         {
           "nome": "W - Proteção do Crepúsculo",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE MOVIMENTO NA PROTEÇÃO",
               "antes": "20/25/30/35/40% de Velocidade de Movimento",
@@ -35,7 +35,7 @@
         },
         {
           "nome": "R - Execução Perfeita",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "ALVO DO R1",
               "antes": "Direção-alvo",
@@ -63,7 +63,7 @@
       "habilidades": [
         {
           "nome": "Q - Calibrum, o Rifle de Precisão",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "ALCANCE DE ATAQUE EM INIMIGOS MARCADOS",
               "antes": "Infinito",
@@ -82,7 +82,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "MANA",
               "antes": "438",
@@ -92,7 +92,7 @@
         },
         {
           "nome": "R - Decreto do Imperador",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "TAMANHO DA PAREDE",
               "antes": "5/6/7 soldados",
@@ -111,7 +111,7 @@
       "habilidades": [
         {
           "nome": "W - Entrega Especial",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "MULTIPLICADOR DE DANO POR SEGUNDO",
               "antes": "0,375 de Dano de Ataque adicional e 0,05 de Poder de Habilidade adicional",
@@ -140,7 +140,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "MANA",
               "antes": "420",
@@ -150,7 +150,7 @@
         },
         {
           "nome": "W - Cascata Lívida",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO POR ORBE",
               "antes": "22/34/46/58/70",
@@ -169,7 +169,7 @@
       "habilidades": [
         {
           "nome": "Passiva - Ressonância Revo-Z",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO DE ACÚMULO DA RESSONÂNCIA",
               "antes": "200% contra monstros",
@@ -188,7 +188,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CRESCIMENTO DE MANA",
               "antes": "42",
@@ -211,7 +211,7 @@
       "habilidades": [
         {
           "nome": "Q - Ventos de Guerra",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DURAÇÃO DO TORNADO",
               "antes": "1,5s",
@@ -235,7 +235,7 @@
       "habilidades": [
         {
           "nome": "W - Eclipse",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO",
               "antes": "60/100/140/180/220",
@@ -246,7 +246,7 @@
         },
         {
           "nome": "E - Lâmina Zênite",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO",
               "antes": "60/100/140/180/220",
@@ -265,7 +265,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "ARMADURA",
               "antes": "30,88",
@@ -280,7 +280,7 @@
         },
         {
           "nome": "W - Escudo de Sucata",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
               "antes": "20/25/30/35/40% (30/37,5/45/52,5/60% quando aprimorada)",
@@ -304,7 +304,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
               "antes": "0% no nível 1",
@@ -314,7 +314,7 @@
         },
         {
           "nome": "Passiva - Fúria do Norte",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "REMOÇÃO DA ARMADURA CONGELADA",
               "antes": "Ao sofrer dano de monstros épicos ou Campeões inimigos",
@@ -328,12 +328,12 @@
     {
       "campeao": "Senna",
       "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Senna.png",
-      "mod": "Chance de surgimento de Espectros da Névoa ajustada. Despojos de Guerra agora contam como abate, reduzindo a chance de aparecimento de Espectros da Névoa. Correção de bug no E. \n                    ",
+      "mod": "Chance de surgimento de Espectros da Névoa ajustada. Despojos de Guerra agora contam como abate, reduzindo a chance de aparecimento de Espectros da Névoa. Correção de bug no E. ",
       "nota": "Apesar de amarmos a flexibilidade da Senna em suas funções, ela está forte demais como atiradora. Ajustaremos a chance de aparecimento de Espectros da Névoa para ajudar sua função como suporte.",
       "habilidades": [
         {
           "nome": "Passiva - Absolvição",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CHANCE DE SURGIMENTO DE ESPECTROS DA NÉVOA",
               "antes": "20% em tropas que Senna não abater, 100% em tropas de cerco que Senna abater",
@@ -349,7 +349,7 @@
         },
         {
           "nome": "E - Maldição da Névoa Negra",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CORREÇÃO DE BUG",
               "depois": "Aliados camuflados pela Maldição da Névoa Negra deixam de ficar invisíveis se Senna morrer durante o efeito da habilidade"
@@ -367,7 +367,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "REGENERAÇÃO DE VIDA",
               "antes": "9,25",
@@ -377,7 +377,7 @@
         },
         {
           "nome": "W - Casca-Grossa",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "TEMPO DE RECARGA",
               "antes": "16/14/12/10/8s",
@@ -401,7 +401,7 @@
       "habilidades": [
         {
           "nome": "E - Canção da Celeridade",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE MOVIMENTO EM SI MESMA",
               "antes": "25% (+0,04 a cada 100 de Poder de Habilidade)",
@@ -420,7 +420,7 @@
       "habilidades": [
         {
           "nome": "Q - Projétil Errante",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO FORTALECIDO",
               "antes": "50/95/140/185/230/275 (+0,4 de Poder de Habilidade)",
@@ -436,18 +436,18 @@
         },
         {
           "nome": "W - Você e Eu!",
-          "alteracoes": [
+          "atributos": [
             {
-              "atributo": "",
+              "atributo": "Silenciamento",
               "rotulo": "novo",
-              "depois": "Silenciamento deixa de agir como efeito imobilizante que coloca Você e Eu! em Tempo de Recarga por 5s"
+              "depois": "deixa de agir como efeito imobilizante que coloca Você e Eu! em Tempo de Recarga por 5s"
             }
           ],
           "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/YuumiW.png"
         },
         {
           "nome": "E - Frenética!",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CURA",
               "antes": "70/110/150/190/230 (+0,3 de Poder de Habilidade)",
@@ -463,75 +463,70 @@
       "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Annie.png",
       "mod": "",
       "nota": "",
-      "habilidades": [
+      "efeitos": [
         {
-          "nome": "Efeitos",
-          "alteracoes": [
-            {
-              "atributo": "ATAQUE BÁSICO",
-              "depois": "Novos projéteis e efeitos de acerto"
-            },
-            {
-              "atributo": "PASSIVA - PIROMANIA",
-              "depois": "Indicador mais limpo e adição de uma camada de efeitos de acerto em quem for atordoado por Annie"
-            },
-            {
-              "atributo": "Q - DESINTEGRAR",
-              "depois": "Novos projéteis e efeitos de acerto; agora tem um pequeno efeito de conjuração"
-            },
-            {
-              "atributo": "W - INCINERAR",
-              "depois": "Área de ação em cone atualizada de forma a representar a caixa de colisão verdadeira; efeitos de acerto adicionados; novo indicador de UI de conjuração rápida"
-            },
-            {
-              "atributo": "E - ESCUDO FUNDIDO",
-              "depois": "Adicionado o efeito ondular modernizado, normalmente utilizado em escudos de redução de dano"
-            },
-            {
-              "atributo": "R - INVOCAR: TIBBERS",
-              "depois": "Novo efeito de conjuração exibindo melhor a caixa de colisão; novos efeitos de ócio no Tibbers; adicionado efeito de fogo ao redor de Tibbers para indicar melhor o alcance do dano em área de ação"
-            },
-            {
-              "atributo": "EFEITOS DE ÓCIO",
-              "depois": "Efeitos de ócio com fogo modernizados"
-            },
-            {
-              "atributo": "TODAS AS SKINS",
-              "depois": "Efeitos mais limpos e adaptados para as mudanças base"
-            },
-            {
-              "atributo": "ANNIE GÓTICA",
-              "depois": "Novas cores"
-            },
-            {
-              "atributo": "ANNIE NO PAÍS DAS MARAVILHAS",
-              "depois": "Novos efeitos visuais no kit, dança e Retorno"
-            },
-            {
-              "atributo": "ANNIE DO RAIO DE GELO",
-              "depois": "Novas cores"
-            },
-            {
-              "atributo": "ANNIE FRANKENTIBBERS",
-              "depois": "Efeitos visuais com novas cores para combinar com a skin"
-            },
-            {
-              "atributo": "ANNIE PANDA",
-              "depois": "Efeitos mais limpos e adaptados para as mudanças base"
-            },
-            {
-              "atributo": "ANNIE HEXTEC",
-              "depois": "Caixa de colisão do W ajustada; efeitos mais limpos e adaptados para as mudanças base"
-            },
-            {
-              "atributo": "ANNIE SUPERGALÁCTICA",
-              "depois": "Efeitos mais limpos e adaptados para as mudanças base"
-            },
-            {
-              "atributo": "ANNIEVERSÁRIO",
-              "depois": "Efeitos adaptados para as mudanças base"
-            }
-          ]
+          "atributo": "ATAQUE BÁSICO",
+          "agora": "Novos projéteis e efeitos de acerto"
+        },
+        {
+          "atributo": "PASSIVA - PIROMANIA",
+          "agora": "Indicador mais limpo e adição de uma camada de efeitos de acerto em quem for atordoado por Annie"
+        },
+        {
+          "atributo": "Q - DESINTEGRAR",
+          "agora": "Novos projéteis e efeitos de acerto; agora tem um pequeno efeito de conjuração"
+        },
+        {
+          "atributo": "W - INCINERAR",
+          "agora": "Área de ação em cone atualizada de forma a representar a caixa de colisão verdadeira; efeitos de acerto adicionados; novo indicador de UI de conjuração rápida"
+        },
+        {
+          "atributo": "E - ESCUDO FUNDIDO",
+          "agora": "Adicionado o efeito ondular modernizado, normalmente utilizado em escudos de redução de dano"
+        },
+        {
+          "atributo": "R - INVOCAR: TIBBERS",
+          "agora": "Novo efeito de conjuração exibindo melhor a caixa de colisão; novos efeitos de ócio no Tibbers; adicionado efeito de fogo ao redor de Tibbers para indicar melhor o alcance do dano em área de ação"
+        },
+        {
+          "atributo": "EFEITOS DE ÓCIO",
+          "agora": "Efeitos de ócio com fogo modernizados"
+        },
+        {
+          "atributo": "TODAS AS SKINS",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "ANNIE GÓTICA",
+          "agora": "Novas cores"
+        },
+        {
+          "atributo": "ANNIE NO PAÍS DAS MARAVILHAS",
+          "agora": "Novos efeitos visuais no kit, dança e Retorno"
+        },
+        {
+          "atributo": "ANNIE DO RAIO DE GELO",
+          "agora": "Novas cores"
+        },
+        {
+          "atributo": "ANNIE FRANKENTIBBERS",
+          "agora": "Efeitos visuais com novas cores para combinar com a skin"
+        },
+        {
+          "atributo": "ANNIE PANDA",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "ANNIE HEXTEC",
+          "agora": "Caixa de colisão do W ajustada; efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "ANNIE SUPERGALÁCTICA",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "ANNIEVERSÁRIO",
+          "agora": "Efeitos adaptados para as mudanças base"
         }
       ]
     },
@@ -540,55 +535,50 @@
       "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Malphite.png",
       "mod": "",
       "nota": "",
-      "habilidades": [
+      "efeitos": [
         {
-          "nome": "Efeitos",
-          "alteracoes": [
-            {
-              "atributo": "ATAQUES BÁSICOS",
-              "depois": "Adicionados efeitos de peso e tamanho para movimentos de ataque e acertos"
-            },
-            {
-              "atributo": "PASSIVA - ESCUDO DE GRANITO",
-              "depois": "Adicionados efeitos sonoros de ativação e desativação"
-            },
-            {
-              "atributo": "Q - FRAGMENTO SÍSMICO",
-              "depois": "Efeitos mais limpos e novo som quando a aceleração é ativada"
-            },
-            {
-              "atributo": "W - TROVOADA",
-              "depois": "Efeitos atualizados para conjuração, ciclo e novo efeito ao acertar o W fortalecido e ataque básico"
-            },
-            {
-              "atributo": "E - ESTRONDAR TERRENO",
-              "depois": "Efeitos mais limpos"
-            },
-            {
-              "atributo": "R - FORÇA INCONTROLÁVEL",
-              "depois": "Efeitos atualizados ao conjurar e ao errar/acertar a habilidade"
-            },
-            {
-              "atributo": "TODAS AS SKINS",
-              "depois": "Efeitos mais limpos e adaptados para as mudanças base"
-            },
-            {
-              "atributo": "MALPHITE GLACIAL",
-              "depois": "Nova conjuração e ciclo do W e efeito ao errar a ult"
-            },
-            {
-              "atributo": "MECH MALPHITE",
-              "depois": "Novo efeito personalizado quando a Passiva é ativada; novo ciclo do W e efeito ao errar a ult"
-            },
-            {
-              "atributo": "MALPHITE BARCA DE FERRO",
-              "depois": "Novo efeito da Passiva quando ativada; novo ciclo do W"
-            },
-            {
-              "atributo": "MALPHITE ODISSEIA",
-              "depois": "Novo efeito quando a Passiva é ativada; efeito ao acertar o W atualizado"
-            }
-          ]
+          "atributo": "ATAQUES BÁSICOS",
+          "agora": "Adicionados efeitos de peso e tamanho para movimentos de ataque e acertos"
+        },
+        {
+          "atributo": "PASSIVA - ESCUDO DE GRANITO",
+          "agora": "Adicionados efeitos sonoros de ativação e desativação"
+        },
+        {
+          "atributo": "Q - FRAGMENTO SÍSMICO",
+          "agora": "Efeitos mais limpos e novo som quando a aceleração é ativada"
+        },
+        {
+          "atributo": "W - TROVOADA",
+          "agora": "Efeitos atualizados para conjuração, ciclo e novo efeito ao acertar o W fortalecido e ataque básico"
+        },
+        {
+          "atributo": "E - ESTRONDAR TERRENO",
+          "agora": "Efeitos mais limpos"
+        },
+        {
+          "atributo": "R - FORÇA INCONTROLÁVEL",
+          "agora": "Efeitos atualizados ao conjurar e ao errar/acertar a habilidade"
+        },
+        {
+          "atributo": "TODAS AS SKINS",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "MALPHITE GLACIAL",
+          "agora": "Nova conjuração e ciclo do W e efeito ao errar a ult"
+        },
+        {
+          "atributo": "MECH MALPHITE",
+          "agora": "Novo efeito personalizado quando a Passiva é ativada; novo ciclo do W e efeito ao errar a ult"
+        },
+        {
+          "atributo": "MALPHITE BARCA DE FERRO",
+          "agora": "Novo efeito da Passiva quando ativada; novo ciclo do W"
+        },
+        {
+          "atributo": "MALPHITE ODISSEIA",
+          "agora": "Novo efeito quando a Passiva é ativada; efeito ao acertar o W atualizado"
         }
       ]
     },
@@ -597,42 +587,117 @@
       "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Nautilus.png",
       "mod": "",
       "nota": "",
-      "habilidades": [
+      "efeitos": [
         {
-          "nome": "Efeitos",
-          "alteracoes": [
-            {
-              "atributo": "ATAQUES BÁSICOS",
-              "depois": "Novos efeitos de impacto e rastros"
-            },
-            {
-              "atributo": "PASSIVO - ÂNCORA IMPACTANTE",
-              "depois": "Novo efeito por acerto e enraizamento"
-            },
-            {
-              "atributo": "Q - LANÇAR ÂNCORA",
-              "depois": "Novo projétil que representa a verdadeira caixa de colisão; flecha da UI de conjuração rápida ajustada para representar melhor a largura e o comprimento do novo projétil"
-            },
-            {
-              "atributo": "W - IRA DO TITÃ",
-              "depois": "Efeitos mais limpos com novo efeito de escudo; substituição da âncora flutuante do dano ao longo do tempo por um raio de luz escura mais sutil; efeitos dos olhos mais limpos durante a ativação; novo efeito de acerto em área de ação que representa seu verdadeiro tamanho"
-            },
-            {
-              "atributo": "E - CORRENTEZA",
-              "depois": "Efeitos levemente mais limpos"
-            },
-            {
-              "atributo": "R - CARGA DE PROFUNDIDADE",
-              "depois": "Tamanhos das explosões ajustados para representar melhor as caixas de colisão; novo indicador no alvo (também representando a verdadeira caixa de colisão)"
-            },
-            {
-              "atributo": "TODAS AS SKINS",
-              "depois": "Efeitos mais limpos e adaptados para as mudanças base"
-            }
-          ]
+          "atributo": "ATAQUES BÁSICOS",
+          "agora": "Novos efeitos de impacto e rastros"
+        },
+        {
+          "atributo": "PASSIVO - ÂNCORA IMPACTANTE",
+          "agora": "Novo efeito por acerto e enraizamento"
+        },
+        {
+          "atributo": "Q - LANÇAR ÂNCORA",
+          "agora": "Novo projétil que representa a verdadeira caixa de colisão; flecha da UI de conjuração rápida ajustada para representar melhor a largura e o comprimento do novo projétil"
+        },
+        {
+          "atributo": "W - IRA DO TITÃ",
+          "agora": "Efeitos mais limpos com novo efeito de escudo; substituição da âncora flutuante do dano ao longo do tempo por um raio de luz escura mais sutil; efeitos dos olhos mais limpos durante a ativação; novo efeito de acerto em área de ação que representa seu verdadeiro tamanho"
+        },
+        {
+          "atributo": "E - CORRENTEZA",
+          "agora": "Efeitos levemente mais limpos"
+        },
+        {
+          "atributo": "R - CARGA DE PROFUNDIDADE",
+          "agora": "Tamanhos das explosões ajustados para representar melhor as caixas de colisão; novo indicador no alvo (também representando a verdadeira caixa de colisão)"
+        },
+        {
+          "atributo": "TODAS AS SKINS",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
         }
       ]
     }
   ],
-  "runes": []
+  "runes": [],
+  "fixes": [
+    {
+      "note": "O esticamento do pescoço do Lee Sin Emissário da Escuridão Edição de Prestígio foi reduzido em várias animações (Ócio1, Ócio2 e corrida)."
+    },
+    {
+      "note": "O efeito passivo do Poderio do Rei Destruído aprimorado do Ornn deixa de acumular com o efeito passivo da Lâmina do Rei Destruído."
+    },
+    {
+      "note": "O Tempo de Recarga do R - Canhão de Mercúrio/Martelo de Mercúrio do Jayce agora é devidamente reduzido em 10% com o efeito do Dragão das Nuvens."
+    },
+    {
+      "note": "Efeitos visuais e sonoros da Alma Infernal deixam de ser vistos pelos inimigos através da Névoa de Guerra."
+    },
+    {
+      "note": "A duração do atordoamento da Passiva - Golpes Concussivos do Braum agora é reduzida corretamente por Tenacidade."
+    },
+    {
+      "note": "Se Sett não tiver pontos no W - Casca-Grossa, o E - Teste de Espírito da Illaoi expulsará seu espírito corretamente.",
+      "champs": [
+        "Sett"
+      ]
+    },
+    {
+      "note": "Os efeitos sonoros da PROJETO: Jinx deixam de ser mais altos do que os efeitos sonoros de suas outras skins."
+    },
+    {
+      "note": "O R - Hora do Show do Sett não pode mais suprimir Mordekaiser quando estiver conjurando R - Reino da Morte.",
+      "champs": [
+        "Sett"
+      ]
+    },
+    {
+      "note": "Os indicadores de alcance do R - Furor da Caçada e da Passiva - Predador Oculto do Rengar Guardião das Areias deixam de pulsar e aumentar seus tamanhos intermitentemente."
+    },
+    {
+      "note": "Yuumi deixa de ficar presa no R - Reino da Morte do Mordekaiser aliado ao conjurar W - Você e Eu! em sua direção quando ele for revivido pelo R - Alteração Temporal do Zilean.",
+      "champs": [
+        "Yuumi"
+      ]
+    },
+    {
+      "note": "O E - Singularidade Lucente da Lux agora revela o arbusto dentro de sua zona de dano e redução de velocidade"
+    },
+    {
+      "note": "Campeões não podem mais ativar Aperto dos Mortos-Vivos várias vezes através de Protótipo: Onirruna em uma única rotação."
+    },
+    {
+      "note": "As adagas da Passiva - Ciclone das Adagas da Katarina deixam de receber 2 acúmulos de Conquistador por alvo atingido e passam a receber corretamente 2 acúmulos por conjuração."
+    },
+    {
+      "note": "Katarina deixa de tentar causar ataques básicos ao seu último alvo depois do E - Shunpo, a menos que ele esteja dentro do Alcance de Ataque."
+    },
+    {
+      "note": "O Q - Acerto Decisivo de Garen não é mais cancelado no meio do ataque quando seu alvo se teleportar para longe."
+    },
+    {
+      "note": "Solucionamos um ponto cego próximo da parede ao norte (perto da entrada inferior da selva no lado vermelho) para que armadilhas, mascotes, Campeões etc. sejam visíveis para os jogadores que estiverem no rio."
+    },
+    {
+      "note": "Habilidades ao contato de Campeões agora recebem corretamente acúmulos de Energia vindos de itens e runas com a habilidade Passivo ÚNICO - Energizado."
+    },
+    {
+      "note": "Campeões com ataques duplos agora recebem a quantidade correta de acúmulos de Passivo ÚNICO - Energizado ao realizar dois ataques."
+    },
+    {
+      "note": "Campeões abatidos deixam de atrair o foco de ataque das torres."
+    },
+    {
+      "note": "Campeões cegos pelo Q - Dardo Ofuscante do Teemo agora deixam de causar dano crítico ou fortalecido contra seus oponentes."
+    },
+    {
+      "note": "A Passiva - Ascensão das Trevas de Mordekaiser agora causa dano contra seus inimigos apenas quando a habilidade estiver ativa."
+    },
+    {
+      "note": "O Barão Na'Shor deixa de causar dano ou conceder visão ao seu redor para jogadores atrás do covil que não o tiverem em seu campo de visão original."
+    },
+    {
+      "note": "Destruir uma torre ou uma barricada com o Arauto do Vale agora concede aos jogadores a quantidade correta de ouro, mesmo quando estiverem mais distantes da torre."
+    }
+  ]
 }
