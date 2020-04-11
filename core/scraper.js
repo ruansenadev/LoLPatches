@@ -3,7 +3,7 @@ const cheerio = require('cheerio')
 const path = require('path')
 const fs = require('fs')
 
-const attURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-3/'
+const attURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-4/'
 
 axios.defaults.headers.common['User-Agent'] =
 	'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
@@ -94,13 +94,13 @@ axios
 					// all followed divs and not any other tag
 					let attrs = $(title).nextUntil('div+:not(div)').not(':not(div)').map((i, atr) => {
 						let tag = $(atr).children(':first-child').text().match(/^[a-z]{2,}/)
-						atr =  {
+						let befr = $(atr).children(':nth-child(2)')
+						return {
 							atributo: tag ? tag.input.split(tag[0])[1] : $(atr).children(':first-child').text(),
-							antes: $(atr).children(':nth-child(2)').text(),
+							rotulo: tag ? tag[0] : undefined,
+							antes: befr.is(':last-of-type') ? undefined : befr.text(),
 							depois: $(atr).children(':last-child').text(),
 						}
-						if(tag) atr.rotulo = tag[0]
-						return atr
 					}).toArray()
 					let img = $(title).children('img').attr('src')
 					let tag = $(title).text().match(/^[a-z]{2,}/)
@@ -122,7 +122,7 @@ axios
 		const runes = patchFeatured.nextUntil('div+:not(div)').not(':not(div)').map((i, cEl) => {
 			return $('h3', cEl).parent()
 		}).toArray()
-		console.log(runes.length + ' Runas')
+		console.log(runes.length + ' Runes')
 		runes.reduce((runs, run, i) => {
 			try {
 				runs.push({
@@ -138,9 +138,12 @@ axios
 			let changes
 			try {
 				changes = $('div', run).map((i, chng) => {
+					let tag = $(chng).children(':first-child').text().match(/^[a-z]{2,}/)
+					let befr = $(chng).children(':nth-child(2)')
 					return {
-						atributo: $(chng).children(':first-child').text(),
-						antes: $(chng).children(':nth-child(2)').text(),
+						atributo: tag ? tag.input.split(tag[0])[1] : $(chng).children(':first-child').text(),
+						rotulo: tag ? tag[0] : undefined,
+						antes: befr.is(':last-of-type') ? undefined : befr.text(),
 						depois: $(chng).children(':last-child').text()
 					}
 				}).toArray()

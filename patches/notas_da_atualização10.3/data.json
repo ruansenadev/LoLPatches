@@ -43,13 +43,11 @@
             },
             {
               "atributo": "ALCANCE DO R1",
-              "antes": "675",
-              "depois": "675",
-              "rotulo": "novo"
+              "rotulo": "novo",
+              "depois": "675"
             },
             {
               "atributo": "DISTÂNCIA DE AVANÇO DO R1",
-              "antes": "675 - 825 com base na distância do inimigo",
               "depois": "675 - 825 com base na distância do inimigo"
             }
           ],
@@ -126,9 +124,8 @@
             },
             {
               "atributo": "POMBO-CORREIO",
-              "antes": "Agora reduz a velocidade dos Campeões atingidos diretamente e empurrados durante 1,5s",
-              "depois": "Agora reduz a velocidade dos Campeões atingidos diretamente e empurrados durante 1,5s",
-              "rotulo": "novo"
+              "rotulo": "novo",
+              "depois": "Agora reduz a velocidade dos Campeões atingidos diretamente e empurrados durante 1,5s"
             }
           ],
           "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/February/pn103/Special_Delivery.png"
@@ -344,9 +341,8 @@
             },
             {
               "atributo": "CHANCE DE SURGIMENTO DE ESPECTROS DA NÉVOA (DESPOJOS DE GUERRA)",
-              "antes": "Abates de tropas concedidos à Senna através de Despojos de Guerra (Escudo Relicário e Guarda-ombros de Aço) agora contam como abates realizados por ela, reduzindo a chance de surgimento para 1,67%",
-              "depois": "Abates de tropas concedidos à Senna através de Despojos de Guerra (Escudo Relicário e Guarda-ombros de Aço) agora contam como abates realizados por ela, reduzindo a chance de surgimento para 1,67%",
-              "rotulo": "novo"
+              "rotulo": "novo",
+              "depois": "Abates de tropas concedidos à Senna através de Despojos de Guerra (Escudo Relicário e Guarda-ombros de Aço) agora contam como abates realizados por ela, reduzindo a chance de surgimento para 1,67%"
             }
           ],
           "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/passive/Senna_Passive.Senna.png"
@@ -356,7 +352,6 @@
           "alteracoes": [
             {
               "atributo": "CORREÇÃO DE BUG",
-              "antes": "Aliados camuflados pela Maldição da Névoa Negra deixam de ficar invisíveis se Senna morrer durante o efeito da habilidade",
               "depois": "Aliados camuflados pela Maldição da Névoa Negra deixam de ficar invisíveis se Senna morrer durante o efeito da habilidade"
             }
           ],
@@ -444,9 +439,8 @@
           "alteracoes": [
             {
               "atributo": "",
-              "antes": "Silenciamento deixa de agir como efeito imobilizante que coloca Você e Eu! em Tempo de Recarga por 5s",
-              "depois": "Silenciamento deixa de agir como efeito imobilizante que coloca Você e Eu! em Tempo de Recarga por 5s",
-              "rotulo": "novo"
+              "rotulo": "novo",
+              "depois": "Silenciamento deixa de agir como efeito imobilizante que coloca Você e Eu! em Tempo de Recarga por 5s"
             }
           ],
           "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/YuumiW.png"
@@ -475,82 +469,66 @@
           "alteracoes": [
             {
               "atributo": "ATAQUE BÁSICO",
-              "antes": "Novos projéteis e efeitos de acerto",
               "depois": "Novos projéteis e efeitos de acerto"
             },
             {
               "atributo": "PASSIVA - PIROMANIA",
-              "antes": "Indicador mais limpo e adição de uma camada de efeitos de acerto em quem for atordoado por Annie",
               "depois": "Indicador mais limpo e adição de uma camada de efeitos de acerto em quem for atordoado por Annie"
             },
             {
               "atributo": "Q - DESINTEGRAR",
-              "antes": "Novos projéteis e efeitos de acerto; agora tem um pequeno efeito de conjuração",
               "depois": "Novos projéteis e efeitos de acerto; agora tem um pequeno efeito de conjuração"
             },
             {
               "atributo": "W - INCINERAR",
-              "antes": "Área de ação em cone atualizada de forma a representar a caixa de colisão verdadeira; efeitos de acerto adicionados; novo indicador de UI de conjuração rápida",
               "depois": "Área de ação em cone atualizada de forma a representar a caixa de colisão verdadeira; efeitos de acerto adicionados; novo indicador de UI de conjuração rápida"
             },
             {
               "atributo": "E - ESCUDO FUNDIDO",
-              "antes": "Adicionado o efeito ondular modernizado, normalmente utilizado em escudos de redução de dano",
               "depois": "Adicionado o efeito ondular modernizado, normalmente utilizado em escudos de redução de dano"
             },
             {
               "atributo": "R - INVOCAR: TIBBERS",
-              "antes": "Novo efeito de conjuração exibindo melhor a caixa de colisão; novos efeitos de ócio no Tibbers; adicionado efeito de fogo ao redor de Tibbers para indicar melhor o alcance do dano em área de ação",
               "depois": "Novo efeito de conjuração exibindo melhor a caixa de colisão; novos efeitos de ócio no Tibbers; adicionado efeito de fogo ao redor de Tibbers para indicar melhor o alcance do dano em área de ação"
             },
             {
               "atributo": "EFEITOS DE ÓCIO",
-              "antes": "Efeitos de ócio com fogo modernizados",
               "depois": "Efeitos de ócio com fogo modernizados"
             },
             {
               "atributo": "TODAS AS SKINS",
-              "antes": "Efeitos mais limpos e adaptados para as mudanças base",
               "depois": "Efeitos mais limpos e adaptados para as mudanças base"
             },
             {
               "atributo": "ANNIE GÓTICA",
-              "antes": "Novas cores",
               "depois": "Novas cores"
             },
             {
               "atributo": "ANNIE NO PAÍS DAS MARAVILHAS",
-              "antes": "Novos efeitos visuais no kit, dança e Retorno",
               "depois": "Novos efeitos visuais no kit, dança e Retorno"
             },
             {
               "atributo": "ANNIE DO RAIO DE GELO",
-              "antes": "Novas cores",
               "depois": "Novas cores"
             },
             {
               "atributo": "ANNIE FRANKENTIBBERS",
-              "antes": "Efeitos visuais com novas cores para combinar com a skin",
               "depois": "Efeitos visuais com novas cores para combinar com a skin"
             },
             {
               "atributo": "ANNIE PANDA",
-              "antes": "Efeitos mais limpos e adaptados para as mudanças base",
               "depois": "Efeitos mais limpos e adaptados para as mudanças base"
             },
             {
               "atributo": "ANNIE HEXTEC",
-              "antes": "Caixa de colisão do W ajustada; efeitos mais limpos e adaptados para as mudanças base",
               "depois": "Caixa de colisão do W ajustada; efeitos mais limpos e adaptados para as mudanças base"
             },
             {
               "atributo": "ANNIE SUPERGALÁCTICA",
-              "antes": "Efeitos mais limpos e adaptados para as mudanças base",
               "depois": "Efeitos mais limpos e adaptados para as mudanças base"
             },
             {
               "atributo": "ANNIEVERSÁRIO",
-              "antes": "Efeitos adaptados para as mudanças base",
               "depois": "Efeitos adaptados para as mudanças base"
             }
           ]
@@ -568,57 +546,46 @@
           "alteracoes": [
             {
               "atributo": "ATAQUES BÁSICOS",
-              "antes": "Adicionados efeitos de peso e tamanho para movimentos de ataque e acertos",
               "depois": "Adicionados efeitos de peso e tamanho para movimentos de ataque e acertos"
             },
             {
               "atributo": "PASSIVA - ESCUDO DE GRANITO",
-              "antes": "Adicionados efeitos sonoros de ativação e desativação",
               "depois": "Adicionados efeitos sonoros de ativação e desativação"
             },
             {
               "atributo": "Q - FRAGMENTO SÍSMICO",
-              "antes": "Efeitos mais limpos e novo som quando a aceleração é ativada",
               "depois": "Efeitos mais limpos e novo som quando a aceleração é ativada"
             },
             {
               "atributo": "W - TROVOADA",
-              "antes": "Efeitos atualizados para conjuração, ciclo e novo efeito ao acertar o W fortalecido e ataque básico",
               "depois": "Efeitos atualizados para conjuração, ciclo e novo efeito ao acertar o W fortalecido e ataque básico"
             },
             {
               "atributo": "E - ESTRONDAR TERRENO",
-              "antes": "Efeitos mais limpos",
               "depois": "Efeitos mais limpos"
             },
             {
               "atributo": "R - FORÇA INCONTROLÁVEL",
-              "antes": "Efeitos atualizados ao conjurar e ao errar/acertar a habilidade",
               "depois": "Efeitos atualizados ao conjurar e ao errar/acertar a habilidade"
             },
             {
               "atributo": "TODAS AS SKINS",
-              "antes": "Efeitos mais limpos e adaptados para as mudanças base",
               "depois": "Efeitos mais limpos e adaptados para as mudanças base"
             },
             {
               "atributo": "MALPHITE GLACIAL",
-              "antes": "Nova conjuração e ciclo do W e efeito ao errar a ult",
               "depois": "Nova conjuração e ciclo do W e efeito ao errar a ult"
             },
             {
               "atributo": "MECH MALPHITE",
-              "antes": "Novo efeito personalizado quando a Passiva é ativada; novo ciclo do W e efeito ao errar a ult",
               "depois": "Novo efeito personalizado quando a Passiva é ativada; novo ciclo do W e efeito ao errar a ult"
             },
             {
               "atributo": "MALPHITE BARCA DE FERRO",
-              "antes": "Novo efeito da Passiva quando ativada; novo ciclo do W",
               "depois": "Novo efeito da Passiva quando ativada; novo ciclo do W"
             },
             {
               "atributo": "MALPHITE ODISSEIA",
-              "antes": "Novo efeito quando a Passiva é ativada; efeito ao acertar o W atualizado",
               "depois": "Novo efeito quando a Passiva é ativada; efeito ao acertar o W atualizado"
             }
           ]
@@ -636,37 +603,30 @@
           "alteracoes": [
             {
               "atributo": "ATAQUES BÁSICOS",
-              "antes": "Novos efeitos de impacto e rastros",
               "depois": "Novos efeitos de impacto e rastros"
             },
             {
               "atributo": "PASSIVO - ÂNCORA IMPACTANTE",
-              "antes": "Novo efeito por acerto e enraizamento",
               "depois": "Novo efeito por acerto e enraizamento"
             },
             {
               "atributo": "Q - LANÇAR ÂNCORA",
-              "antes": "Novo projétil que representa a verdadeira caixa de colisão; flecha da UI de conjuração rápida ajustada para representar melhor a largura e o comprimento do novo projétil",
               "depois": "Novo projétil que representa a verdadeira caixa de colisão; flecha da UI de conjuração rápida ajustada para representar melhor a largura e o comprimento do novo projétil"
             },
             {
               "atributo": "W - IRA DO TITÃ",
-              "antes": "Efeitos mais limpos com novo efeito de escudo; substituição da âncora flutuante do dano ao longo do tempo por um raio de luz escura mais sutil; efeitos dos olhos mais limpos durante a ativação; novo efeito de acerto em área de ação que representa seu verdadeiro tamanho",
               "depois": "Efeitos mais limpos com novo efeito de escudo; substituição da âncora flutuante do dano ao longo do tempo por um raio de luz escura mais sutil; efeitos dos olhos mais limpos durante a ativação; novo efeito de acerto em área de ação que representa seu verdadeiro tamanho"
             },
             {
               "atributo": "E - CORRENTEZA",
-              "antes": "Efeitos levemente mais limpos",
               "depois": "Efeitos levemente mais limpos"
             },
             {
               "atributo": "R - CARGA DE PROFUNDIDADE",
-              "antes": "Tamanhos das explosões ajustados para representar melhor as caixas de colisão; novo indicador no alvo (também representando a verdadeira caixa de colisão)",
               "depois": "Tamanhos das explosões ajustados para representar melhor as caixas de colisão; novo indicador no alvo (também representando a verdadeira caixa de colisão)"
             },
             {
               "atributo": "TODAS AS SKINS",
-              "antes": "Efeitos mais limpos e adaptados para as mudanças base",
               "depois": "Efeitos mais limpos e adaptados para as mudanças base"
             }
           ]
