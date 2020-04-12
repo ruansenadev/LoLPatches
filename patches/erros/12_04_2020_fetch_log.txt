@@ -1,0 +1,4 @@
+(10:33:28): 
+https://br.leagueoflegends.com/pt-br/news/game-updates - Page request
+Error: Navigation failed because browser has disconnected!
+🔚🔚🔚🔚

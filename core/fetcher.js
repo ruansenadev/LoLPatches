@@ -2,7 +2,7 @@ const pupp = require('puppeteer')
 const path = require('path')
 const fs = require('fs')
 
-const baseURL = 'https://br.leagueoflegends.com/pt-br/news/game-updatess'
+const baseURL = 'https://br.leagueoflegends.com/pt-br/news/game-updates'
 const d = new Date()
 
 const errorsDir = 'erros'
@@ -60,7 +60,7 @@ exports.fetch = async function(callback = (data, message) => {
 				atts.map((att) => {
 					let autor = att.querySelector("[class*='Author']")
 					let prev = {
-						uri: att.href,
+						url: att.href,
 						img: att.querySelector('img').src,
 						titulo: att.querySelector('h2').innerText,
 						autor: autor ? autor.innerText : '',
@@ -97,12 +97,11 @@ exports.fetch = async function(callback = (data, message) => {
 		}
 	} finally {
 		brow.close()
-        let message = ""
+        let message = "	📃 Fetching done 📃	📃\n"
 		if (ATTS.length) {
 			message += ATTS.length + ' new patches\n'
-			ATTS = ATTS.concat(localATTS)
 			lastATT = ATTS[0]
-			fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(ATTS, null, 2), 'utf-8', (err) => {
+			fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(ATTS.concat(localATTS), null, 2), 'utf-8', (err) => {
 				if(err) {throw createLog(err, 'Writting data')}
 			})
             message += `Patches updated with success ^-^\n`
@@ -115,6 +114,6 @@ exports.fetch = async function(callback = (data, message) => {
 			throw createLog(erro)
 		}
         message += `Last patch date: ${new Date(lastATT.data).toLocaleDateString()}`
-        callback(ATTS, message)
+        return callback(ATTS, message)
 	}
 }
