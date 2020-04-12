@@ -24,23 +24,31 @@ function createLog(e, frag = '') {
 // calls fetcher module and craw images
 async function fetchNewPatches() {
     let data = await fetcher.fetch()
-    if (data.length) {
+    if (data[0].length) {
         try {
             fs.mkdir(path.join(patchesDir, imagesDir), { recursive: true }, (err) => {
                 if (err) throw err
             })
-            console.log(`Gonna download ${data.length} banner images`)
-            async.map(data, (patch, cb) => {
+            console.log(`Gonna download ${data[0].length} banners in parallel`)
+            async.map(data[0], (patch, cb) => {
                 let img
                 axios({ method: 'get', url: patch.img, responseType: 'stream' })
                     .then(res => {
                         img = res.headers['content-disposition'].split('filename=')[1]
-                        res.data.pipe(fs.createWriteStream(path.join(patchesDir, imagesDir, img)).on('open', () => console.log('downloading ' + img)))
+                        res.data.pipe(fs.createWriteStream(path.join(patchesDir, imagesDir, img)).on('open', () => console.log('downloading ' + img)).on('close', () => cb(null, img)))
                     })
                     .catch(cb)
-            }, (erro) => {
+            }, (erro, imgs) => {
                 if (erro) { throw erro }
-                console.log("All images saved at " + path.join(patchesDir, imagesDir))
+                imgs.forEach((img, i) => {
+                    data[0][i].img = img
+                })
+                // images mapped so write
+                fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0].concat(data[1]), null, 2), 'utf-8', (err) => {
+                    if (err) { throw err }
+                    console.log('\nPatches updated with success ^-^')
+                    console.log("all images saved at " + path.join(patchesDir, imagesDir))
+                })
             })
         } catch (error) {
             createLog(error, 'Patches images')
@@ -48,7 +56,6 @@ async function fetchNewPatches() {
     } else {
         console.log('Your file is up-to-date, nice!')
     }
-    return data
 }
 fetchNewPatches()
 // scraper.scrap('https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-4')

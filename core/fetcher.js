@@ -98,19 +98,7 @@ exports.fetch = async function(callback = (data, message) => {
 	} finally {
 		brow.close()
         let message = "	📃 Fetching done 📃	📃\n"
-		if (ATTS.length) {
-			message += ATTS.length + ' new patches\n'
-			lastATT = ATTS[0]
-			fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(ATTS.concat(localATTS), null, 2), 'utf-8', (err) => {
-				if(err) {createLog(err, 'Writting data')}
-			})
-            message += `Patches updated with success ^-^\n`
-		}
-		// if not lastatt fetched or local log error 
-		if (!lastATT) {
-			let erro = new Error('Neither fetched patch nor local patch')
-			createLog(erro)
-		}
-        return callback(ATTS, message)
+		if (ATTS.length) message += ATTS.length + ' new patches\n'	
+        return callback([ATTS, localATTS], message)
 	}
 }
