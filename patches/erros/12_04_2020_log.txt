@@ -1,0 +1,8 @@
+(18:11:31): 
+ - Fetching patches images
+TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+🔚🔚🔚🔚
+(18:24:48): 
+ - Fetching patches images
+TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+🔚🔚🔚🔚

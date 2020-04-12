@@ -24,9 +24,9 @@ function createLog(e, frag = '') {
 	fs.mkdir(path.join(patchesDir, errorsDir), { recursive: true }, (err) => {
 		if (err) { throw err }
 		let logFile = d.toLocaleDateString().replace(/\//g, '_').concat('_scrap_log.txt')
-		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): \r\n${attURL}${frag ? " - " + frag : ""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
+		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): \r\n${frag ? " - " + frag : ""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
 			if (err) { throw err }
-			console.log('\nErro :T\tlog do erro: ' + path.join(patchesDir, errorsDir, logFile))
+			console.log('\nErro :T	log do erro: ' + path.join(patchesDir, errorsDir, logFile))
 		})
 	})
 }
@@ -47,7 +47,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 				folder = title.replace(/\s(?=\d)/, "").replace(/\s/g, "_").toLowerCase()
 				if (/\d{3}/.test(folder)) {
 					let err = new Error(title);
-					throw createLog(err, "Page initial content")
+					throw createLog(err, "Page formatting")
 				}
 				msg += title + ':\n'
 				// slice page content
@@ -59,7 +59,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 			const $ = cheerio.load(res.data)
 			// --Note--
 			SCRAP.note = $('#patch-top').next().text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
-			msg += 'Note length: ' + SCRAP.note.length +'\n'
+			msg += 'note length: ' + SCRAP.note.length +'\n'
 
 			// --Featured--
 			let patchFeatured = $('h2[id*="highlights"]').parent().next().not(':not(div)').first()
@@ -67,17 +67,17 @@ exports.scrap = function (url = '', callback = (data, message) => {
 				let media = patchFeatured.find('iframe')
 				SCRAP.ft.media = media.length ? media.attr('src') : patchFeatured.find('img').attr('src')
 			} catch (error) {
-				throw createLog(error, 'Featured media')
+				createLog(error, 'Featured media')
 			} finally {
 				SCRAP.ft.mod = patchFeatured.text().trim()
 			}
-			msg += 'Featured media: ' + /youtube|(?<=\.)[a-z]*$/.exec(SCRAP.ft.media)[0] +'\n'
+			msg += 'featured media: ' + /youtube|(?<=\.)[a-z]*$/.exec(SCRAP.ft.media)[0] +'\n'
 
 			// --Champions--
 			patchFeatured = $('h3[id^="patch-"]')
 			// filter by patch id with only a followed name that's the champ
 			const champions = patchFeatured.toArray().filter((cEl) => $(cEl).attr('id').indexOf('-') == $(cEl).attr('id').lastIndexOf('-'))
-			msg += $(champions).length + ' Champions\n'
+			msg += $(champions).length + ' champions\n'
 			// format data for each note
 			champions.reduce((champs, champ, i) => {
 				try {
@@ -88,7 +88,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 						nota: $(champ).siblings('blockquote').text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
 					})
 				} catch (error) {
-					throw createLog(error, "Champion introduce scraping")
+					createLog(error, "Champion introduce scraping")
 				}
 
 				// possible change content
@@ -105,7 +105,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 							}
 						})
 					} catch (error) {
-						throw createLog(error, 'Champion list references scraping')
+						createLog(error, 'Champion list references scraping')
 					}
 					champs[i].links = refs
 				}
@@ -144,7 +144,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 							return change
 						}).toArray()
 					} catch (error) {
-						throw createLog(error, 'Champion skills scraping')
+						createLog(error, 'Champion skills scraping')
 					}
 					champs[i].habilidades = skills
 					// self champ changes (effects)
@@ -163,7 +163,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 							}
 						})
 					} catch (error) {
-						throw createLog(error, 'Champion effects scraping')
+						createLog(error, 'Champion effects scraping')
 					}
 					champs[i].efeitos = fxs
 				}
@@ -176,7 +176,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 			const runes = patchFeatured.nextUntil('div+:not(div)').not(':not(div)').map((i, cEl) => {
 				return $('h3', cEl).parent()
 			}).toArray()
-			msg += runes.length + ' Runes\n'
+			msg += runes.length + ' runes\n'
 			runes.reduce((runs, run, i) => {
 				try {
 					runs.push({
@@ -186,7 +186,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 						nota: $('blockquote', run).text().trim()
 					})
 				} catch (error) {
-					throw createLog(error, "Rune introduce scraping")
+					createLog(error, "Rune introduce scraping")
 				}
 
 				let changes
@@ -202,7 +202,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 						}
 					}).toArray()
 				} catch (error) {
-					throw createLog(error, "Rune attributes scraping")
+					createLog(error, "Rune attributes scraping")
 				}
 				runs[i].alteracoes = changes
 				return runs
@@ -211,7 +211,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 			// --Fixes--
 			patchFeatured = $("[id*='bugfixes']").parent().next('div').first()
 			const fixes = $('ul > li', patchFeatured)
-			msg += fixes.length + ' Bug fixes\n'
+			msg += fixes.length + ' bug fixes\n'
 			try {
 				SCRAP.fixes = fixes.map((i, fix) => {
 					fix = { note: $(fix).text().trim() }
@@ -226,16 +226,16 @@ exports.scrap = function (url = '', callback = (data, message) => {
 					return fix
 				}).toArray()
 			} catch (error) {
-				throw createLog(error, 'Bug fixes')
+				createLog(error, 'Bug fixes')
 			}
 
 		})
 		.then(() => {
-			msg += '📰	📰 Scraping Done 📰'
+			msg += '📰	📰 Scraping done 📰\n'
 			fs.mkdir(path.join(patchesDir, folder), { recursive: true }, (err) => {
 				if (err) { throw err }
 				fs.writeFile(path.join(patchesDir, folder, 'data.json'), JSON.stringify(SCRAP, null, 2), (err) => {
-					if (err) { return createLog(err, 'Writting data') }
+					if (err) { throw err }
 					msg += `Writed data at path: ${path.join(patchesDir, folder, "data.json")}`
 				})
 			})

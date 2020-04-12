@@ -16,9 +16,9 @@ function createLog(e, frag='') {
 	fs.mkdir(path.join(patchesDir, errorsDir), {recursive: true}, (err) => {
 		if(err) throw err;
 		let logFile = d.toLocaleDateString().replace(/\//g, '_').concat('_fetch_log.txt')
-		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): \r\n${baseURL}${frag?" - "+frag:""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
+		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): \r\n${frag?" - "+frag:""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
 			if(err) throw err;
-			console.log('Erro :T\tlog do erro: ' + path.join(patchesDir, errorsDir, logFile))
+			console.log('Erro :T	log do erro: ' + path.join(patchesDir, errorsDir, logFile))
 		})
 	})
 }
@@ -40,7 +40,7 @@ exports.fetch = async function(callback = (data, message) => {
 	})
     const brow = await pupp.launch({ headless: false })
 	const [pagina] = await brow.pages()
-	await pagina.goto(baseURL, { timeout: 90000 }).catch(e => {throw createLog(e, 'Page request')})
+	await pagina.goto(baseURL, { timeout: 90000 }).catch(e => {createLog(e, 'Page request')})
     const LOAD = "[class*='LoadMoreButton']"
 	try {
 		await pagina.$eval('body', (body) => {
@@ -49,7 +49,7 @@ exports.fetch = async function(callback = (data, message) => {
 			body.querySelector('#___gatsby').remove()
 
 			body.querySelector('ol').querySelector('li:nth-child(2) button').click()
-		}).catch(e => {throw createLog(e, "Page formatting")})
+		}).catch(e => {createLog(e, "Page formatting")})
 
         // recursive async fx
 		async function fetcher() {
@@ -102,18 +102,15 @@ exports.fetch = async function(callback = (data, message) => {
 			message += ATTS.length + ' new patches\n'
 			lastATT = ATTS[0]
 			fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(ATTS.concat(localATTS), null, 2), 'utf-8', (err) => {
-				if(err) {throw createLog(err, 'Writting data')}
+				if(err) {createLog(err, 'Writting data')}
 			})
             message += `Patches updated with success ^-^\n`
-		} else {
-			message += 'Apparently you already have all patches saved, nice!\n'
 		}
-		// if not last att fetched or local log error 
+		// if not lastatt fetched or local log error 
 		if (!lastATT) {
 			let erro = new Error('Neither fetched patch nor local patch')
-			throw createLog(erro)
+			createLog(erro)
 		}
-        message += `Last patch date: ${new Date(lastATT.data).toLocaleDateString()}`
         return callback(ATTS, message)
 	}
 }
