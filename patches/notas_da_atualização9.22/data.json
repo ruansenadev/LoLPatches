@@ -10,10 +10,18 @@
       "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/pn22/Senna.png&resize=64:",
       "mod": "A Redentora",
       "nota": "Senna escapa da lanterna no dia 10 de novembro!",
-      "habilidades": [
+      "links": [
         {
-          "nome": "Efeitos",
-          "alteracoes": []
+          "item": "Trailer de Campeão",
+          "link": "https://www.youtube.com/watch?v=ZjvDFvzfxsQ"
+        },
+        {
+          "item": "Seção do Universo",
+          "link": "https://universe.leagueoflegends.com/en_US/story/champion/senna/"
+        },
+        {
+          "item": "Análise de Campeão",
+          "link": "https://nexus.leagueoflegends.com/en-us/2019/10/senna/"
         }
       ]
     },
@@ -25,7 +33,7 @@
       "habilidades": [
         {
           "nome": "W - Rajada",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CUSTO",
               "antes": "50 de Mana",
@@ -44,7 +52,7 @@
       "habilidades": [
         {
           "nome": "Q - Puxão Biônico",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE",
               "antes": "80/135/190/245/300",
@@ -63,7 +71,7 @@
       "habilidades": [
         {
           "nome": "Q - Encantador de Raízes",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DEIXEM ESPAÇO PARA A MARGARIDA",
               "depois": "Agora, Ivern sempre avançará até chegar à distância corpo a corpo do alvo"
@@ -89,7 +97,7 @@
       "habilidades": [
         {
           "nome": "Q - Chuva Icathiana",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO DO PROJÉTIL COM MÚLTIPLOS ACERTOS EM NÃO TROPAS",
               "antes": "30%",
@@ -108,7 +116,7 @@
       "habilidades": [
         {
           "nome": "W - Vigia",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO ADICIONAL EM ALVOS MARCADOS",
               "antes": "5/7,5/10/12,5/15% da Vida máxima do alvo",
@@ -132,7 +140,7 @@
       "habilidades": [
         {
           "nome": "Q - Explosão Radiante",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE",
               "antes": "70/115/160/205/250",
@@ -143,7 +151,7 @@
         },
         {
           "nome": "W - Bênção Celestial",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CUSTO",
               "antes": "60/70/80/90/100 de Mana",
@@ -162,7 +170,7 @@
       "habilidades": [
         {
           "nome": "R - Força Incontrolável",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "MULTIPLICADOR",
               "antes": "1,0 de Poder de Habilidade",
@@ -181,7 +189,7 @@
       "habilidades": [
         {
           "nome": "R - Carga de Profundidade",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE AO ALVO PRIMÁRIO",
               "antes": "200/325/450",
@@ -200,7 +208,7 @@
       "habilidades": [
         {
           "nome": "Q - Lança Meteórica",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "REDUÇÃO DE DANO EM TROPAS",
               "antes": "20%",
@@ -216,7 +224,7 @@
         },
         {
           "nome": "W - Escudo-Cometa",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "NÃO TE ULTRAPASSA MAIS",
               "rotulo": "removido",
@@ -235,7 +243,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO DE ATAQUE",
               "antes": "64",
@@ -255,7 +263,7 @@
         },
         {
           "nome": "Q - Ataque do Ártico",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO",
               "antes": "80/120/160/200/240 (+0,4 de Poder de Habilidade)",
@@ -266,7 +274,7 @@
         },
         {
           "nome": "E - Congelação Permanente",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CORREÇÃO DE BUG",
               "depois": "Agora a Passiva reinicia devidamente a duração do efeito negativo quando reaplicada com o máximo de acúmulos."
@@ -284,7 +292,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "REGENERAÇÃO DE VIDA",
               "antes": "7",
@@ -304,7 +312,7 @@
         },
         {
           "nome": "W - Regicida",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CUSTO",
               "antes": "50/55/60/65/70 de Mana",
@@ -323,7 +331,7 @@
       "habilidades": [
         {
           "nome": "E - Esfolar",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "LARGURA",
               "depois": "Para melhorar a clareza da mecânica de jogo, aumentamos a largura da habilidade para condizer com a verdadeira caixa de colisão."
@@ -341,7 +349,7 @@
       "habilidades": [
         {
           "nome": "W - Plumagem Mortífera",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
               "antes": "40/47,5/55/62,5/70%",

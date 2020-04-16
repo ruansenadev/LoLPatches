@@ -1,4 +1,9 @@
 {
+  "note": "Fala, galerinha! Como estão as resoluções de 2020? Acham que vão conseguir sair do pratinha esse ano? Eu acredito em vocês, hein! Falando na escalada, sugerimos que todos joguem suas partidas de colocação o quanto antes! O Clash será lançado ainda esse ano e não queremos que percam toda a diversão porque procrastinaram (igual suas resoluções de ano-novo). Não sejam como eu, que falhei em aprender a pintar com aquarela porque o ano acabou rápido demais. Nesta Atualização, temos ajustes de acompanhamento para Aphelios, enfraquecimentos para Qiyana e Nautilus, além de fortalecimentos para Sona (sim, para Sona, minha main, minha queridinha, minha Campeã favorita no universo!). Jinx também receberá uma mudança na Passiva para que fique ainda mais... Jinx. Além disso, o Arauto do Vale se esforçará mais para chamar a atenção. Também fizemos algumas atualizações de acompanhamento nos Rifts Elementais, de forma a deixá-los mais claros e definidos. Em particular, os Rifts da Montanha e Infernal devem ter uma mecânica de jogo mais clara e texturas mais polidas. É isso que temos para a 10.2! Comecem a escalar e nos vemos em duas semanas! Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
+  "ft": {
+    "media": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/riot-bra/LoL/NotasdeAtualizacao102/Patch_10_2_Infographic_1080x1080PT-BR.jpg",
+    "mod": "Janna, Ryze e Rengar Guardiões das Areias estarão disponíveis em 22 de janeiro de 2020. Olaf, Diana e Trundle Caçadores de Dragões estarão disponíveis em 30 de janeiro de 2020."
+  },
   "champs": [
     {
       "campeao": "Aphelios",
@@ -8,8 +13,7 @@
       "habilidades": [
         {
           "nome": "Calibrum, o Rifle de Precisão",
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Calibrum.jpg",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO DO ATAQUE BÁSICO DA MARCA",
               "antes": "20/25/30/35/40 (+0,3 de Dano de Ataque adicional) (níveis 1 a 9)",
@@ -20,29 +24,30 @@
               "antes": "9/8,25/7,5/6,75/6s (níveis 1 a 9)",
               "depois": "10/9,5/9/8,5/8s (níveis 1 a 9)"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Calibrum.jpg"
         },
         {
           "nome": "Crescendum, o Chakram",
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Crescendum.jpg",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO DO ATAQUE BÁSICO",
               "antes": "130% - 264% do Dano de Ataque total (chakrans espelhados 1 - 10)",
               "depois": "130% - 223% do Dano de Ataque total (chakrans espelhados 1 - 10)"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Crescendum.jpg"
         },
         {
           "nome": "Severum, a Pistola-Foice",
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Severum.jpg",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO DO ATAQUE DO Q",
               "antes": "10/15/20/25/30 (+0,35 de Dano de Ataque adicional) por acerto (níveis 1 a 9)",
               "depois": "10/15/20/25/30 (+0,3 de Dano de Ataque adicional) por acerto (níveis 1 a 9)"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Severum.jpg"
         }
       ]
     },
@@ -54,14 +59,14 @@
       "habilidades": [
         {
           "nome": "R - Reta da Morte",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/DravenRCast.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO",
               "antes": "175/275/375 (+1,1 de Dano de Ataque adicional)",
               "depois": "175/275/375 (+1,1/1,3/1,5 de Dano de Ataque adicional)"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/DravenRCast.png"
         }
       ]
     },
@@ -73,14 +78,14 @@
       "habilidades": [
         {
           "nome": "Passiva - Anime-se!",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/passive/Jinx_Passive.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
               "antes": "Sempre que Jinx causar dano contra Campeões inimigos, torres ou inibidores",
               "depois": "Campeões inimigos, torres, inibidores ou monstros épicos dentro de 3s antes do abate (por ela ou por sua equipe)"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/passive/Jinx_Passive.png"
         }
       ]
     },
@@ -92,25 +97,25 @@
       "habilidades": [
         {
           "nome": "Q - Chama Interior",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/KarmaQ.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE",
               "antes": "80/125/170/215/260",
               "depois": "90/135/180/225/270"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/KarmaQ.png"
         },
         {
           "nome": "W - Decisão Absorta",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/KarmaSpiritBind.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE",
               "antes": "30/55/80/105/130",
               "depois": "40/65/90/115/140"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/KarmaSpiritBind.png"
         }
       ]
     },
@@ -122,7 +127,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "ARMADURA",
               "antes": "28,22",
@@ -137,14 +142,14 @@
         },
         {
           "nome": "E - Socorro, Pix!",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/LuluE.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "TEMPO DE RECARGA",
               "antes": "10s",
               "depois": "8s"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/LuluE.png"
         }
       ]
     },
@@ -156,14 +161,14 @@
       "habilidades": [
         {
           "nome": "Q - Lançar Âncora",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/NautilusAnchorDrag.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO BASE",
               "antes": "80/130/180/230/280",
               "depois": "70/115/160/205/250"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/NautilusAnchorDrag.png"
         }
       ]
     },
@@ -175,14 +180,14 @@
       "habilidades": [
         {
           "nome": "W - Terraforme",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/QiyanaW.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE ATAQUE DO PASSIVO",
               "antes": "20%",
               "depois": "5/10/15/20/25%"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/QiyanaW.png"
         }
       ]
     },
@@ -194,14 +199,14 @@
       "habilidades": [
         {
           "nome": "E - Canção da Celeridade",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/SonaE.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE MOVIMENTO EM SI MESMA",
               "antes": "10/11/12/13/14% (+0,03 a cada 100 de Poder de Habilidade)",
               "depois": "25% (+0,04 a cada 100 de Poder de Habilidade)"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/SonaE.png"
         }
       ]
     },
@@ -213,35 +218,31 @@
       "habilidades": [
         {
           "nome": "Q - Sentença",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ThreshQ.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "EFEITOS VISUAIS",
-              "antes": "Adicionados indicadores de largura no Q das skins Pulsefire Thresh e Pulsefire Thresh Edição de Prestígio.",
               "depois": "Adicionados indicadores de largura no Q das skins Pulsefire Thresh e Pulsefire Thresh Edição de Prestígio."
             },
             {
               "atributo": "CORREÇÃO DE BUG",
-              "antes": "Pulsefire Thresh agora usa corretamente seu novo efeito de conjuração do Q.",
               "depois": "Pulsefire Thresh agora usa corretamente seu novo efeito de conjuração do Q."
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ThreshQ.png"
         },
         {
           "nome": "E - Esfolar",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ThreshE.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "EFEITOS VISUAIS",
-              "antes": "Adicionado um novo indicador de conjuração rápida em todas as skins.",
               "depois": "Adicionado um novo indicador de conjuração rápida em todas as skins."
             },
             {
               "atributo": "EFEITOS VISUAIS PULSEFIRE THRESH",
-              "antes": "Adicionados círculos ao redor do E do Pulsefire Thresh e Pulsefire Thresh Edição de Prestígio para deixá-las como as outras skins.",
               "depois": "Adicionados círculos ao redor do E do Pulsefire Thresh e Pulsefire Thresh Edição de Prestígio para deixá-las como as outras skins."
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ThreshE.png"
         }
       ]
     },
@@ -253,25 +254,25 @@
       "habilidades": [
         {
           "nome": "W - Domínio Congelado",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/trundledesecrate.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VELOCIDADE DE MOVIMENTO",
               "antes": "20/25/30/35/40%",
               "depois": "30/35/40/45/50%"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/trundledesecrate.png"
         },
         {
           "nome": "E - Pilar do Gelo",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/TrundleCircle.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "REDUÇÃO DE VELOCIDADE",
               "antes": "15/25/35/45/55%",
               "depois": "20/30/40/50/60%"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/TrundleCircle.png"
         }
       ]
     },
@@ -283,14 +284,13 @@
       "habilidades": [
         {
           "nome": "Passiva - Evolução Gloriosa",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/passive/Viktor_Passive.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "CORREÇÃO DE BUG",
-              "antes": "Viktor deixa de perder uma quantidade significativa de Mana ao aprimorar o Núcleo Hex Protótipo no início de jogo.",
               "depois": "Viktor deixa de perder uma quantidade significativa de Mana ao aprimorar o Núcleo Hex Protótipo no início de jogo."
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/passive/Viktor_Passive.png"
         }
       ]
     },
@@ -302,36 +302,36 @@
       "habilidades": [
         {
           "nome": "Q - Bomba Saltitante",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsQ.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DANO",
               "antes": "75/120/165/210/255",
               "depois": "85/130/175/220/265"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsQ.png"
         },
         {
           "nome": "W - Carga Concentrada",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsW.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "DISTÂNCIA DO EMPURRÃO DE INIMIGOS",
               "antes": "400",
               "depois": "500"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsW.png"
         },
         {
           "nome": "E - Campo Minado de Hexplosivos",
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsE.png",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "REDUÇÃO DE VELOCIDADE",
               "antes": "20/25/30/35/40%",
               "depois": "30/35/40/45/50%"
             }
-          ]
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsE.png"
         }
       ]
     },
@@ -339,8 +339,7 @@
       "campeao": "Chuva de Canivete",
       "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/item/3095.png",
       "mod": "",
-      "nota": "Já que seu desempenho tem passado um pouco dos limites, enfraqueceremos a Chuva de Canivete considerando seu DdA e mantendo sua utilidade única e impactante de redução de velocidade.",
-      "habilidades": []
+      "nota": "Já que seu desempenho tem passado um pouco dos limites, enfraqueceremos a Chuva de Canivete considerando seu DdA e mantendo sua utilidade única e impactante de redução de velocidade."
     },
     {
       "campeao": "Arauto do Vale",
@@ -350,7 +349,7 @@
       "habilidades": [
         {
           "nome": "Atributos base",
-          "alteracoes": [
+          "atributos": [
             {
               "atributo": "VIDA",
               "antes": "5500 (8250 - 16500 nos níveis 6 a 12)",
@@ -361,5 +360,61 @@
       ]
     }
   ],
-  "runes": []
+  "runes": [],
+  "fixes": [
+    {
+      "note": "Caitlyn deixa de conseguir Tiros na Cabeça adicionais ao realizar o comando de ataque-movimento próximo do alvo enquanto ele estiver preso na armadilha e afetado pela rede simultaneamente."
+    },
+    {
+      "note": "Caitlyn deixa de conseguir usar o comando de ataque-movimento para atacar alvos presos na armadilha ou afetados pela rede enquanto ela estiver sofrendo CG."
+    },
+    {
+      "note": "Braum não pode mais interceptar a bola de fogo do Dragão Ancião com o E - Inquebrável e morrer por causa dela no lugar do aliado que ele estava protegendo."
+    },
+    {
+      "note": "Depois de conjurar W - Armadilha Mecânica Yordle e depois Q - Pacificadora de Piltover, os ataques básicos de Caitlyn deixam de ser temporariamente mais lentos do que deveriam."
+    },
+    {
+      "note": "O W - Regicida do Sylas agora entra em Tempo de Recarga, causa dano e o cura corretamente se ele atingir o mesmo alvo com o E2 - Evasão."
+    },
+    {
+      "note": "Sylas agora é incapaz de conjurar E2 - Evasão e depois Q - Correntes-Chicote após utilizar uma ultimate roubada, já que perdeu a habilidade de fazer isso na 10.1."
+    },
+    {
+      "note": "Os ataques básicos de Miss Fortune deixam de continuar a aplicar o dano adicional da Passiva - Batida do Amor depois de consumir os três acúmulos do E - Bênção da Conjuradora de Nami."
+    },
+    {
+      "note": "Sentinelas aprimoradas do Gume do Ladrão Arcano, Escudo Relicário, Foice Espectral e Guarda-ombros de Aço agora mostram devidamente o indicador de alcance de visão."
+    },
+    {
+      "note": "O E - Singularidade Lucente da Lux deixa de revelar áreas fora do seu alcance."
+    },
+    {
+      "note": "A runa Predador concedida por Protótipo: Onirruna agora tem um Tempo de Recarga adequado independentemente de quando seu usuário aprimora suas botas."
+    },
+    {
+      "note": "O Q - Acerto Decisivo de Garen deixa de ser bloqueado por Campeões afetados por escudo de feitiço."
+    },
+    {
+      "note": "Cassiopeia agora se cura na quantidade correta ao conjurar E - Presas Duplas em monstros grandes."
+    },
+    {
+      "note": "Usar o E - Shunpo para abater um alvo deixa de travar Katarina por um momento."
+    },
+    {
+      "note": "O dano máximo do R - Guilhotina de Noxus de Darius agora sempre leva em consideração a Passiva - Poder de Noxus, não apenas quando ela estiver ativa."
+    },
+    {
+      "note": "Campeões não podem mais ignorar qualquer efeito de Controle de Grupo forçado (ex.: Provocação, Medo, Encanto) ao utilizar qualquer Feitiço de Invocador alvejável (ex.: Golpear, Incendiar, Exaustão) em um alvo que está fora de alcance."
+    },
+    {
+      "note": "Conjurar Q - Espeto de Osso deixa de travar Pyke por um momento."
+    },
+    {
+      "note": "Várias habilidades de Campeões deixam de ficar visíveis ou audíveis na Névoa de Guerra se forem conjuradas fora do campo de visão."
+    },
+    {
+      "note": "Concluir qualquer missão de item de suporte e depois vendê-lo para recomprar um item de suporte diferente deixará de concluir a missão deste segundo item automaticamente."
+    }
+  ]
 }

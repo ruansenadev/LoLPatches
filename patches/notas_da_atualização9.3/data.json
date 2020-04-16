@@ -1,0 +1,372 @@
+{
+  "note": "Boas-vindas à Atualização 9.3! Essa daqui vai parecer aquele remédio que muito arde, mas é necessário. Falando sobre Campeões, estamos finalizando uma limpeza nas mecânicas de Aatrox, Akali e Irelia para garantir que eles tenham fraquezas significativas que possam ser aproveitadas pelos oponentes. Falando sobre itens, estamos fazendo uma passagem profunda nos itens de atirador para resolver os problemas de satisfação das itemizações deles, um motivo de frustração desde a meia-temporada. Também estamos mudando as recompensas por coletar para que jogadores que consigam se recuperar de um déficit não sejam tratados como os Campeões com grandes vantagens de coleta desde o começo da partida. Então aguente firme e comece a leitura!",
+  "ft": {
+    "media": "https://www.youtube.com/embed/QxBAw4fF7Y0?rel=0",
+    "mod": ""
+  },
+  "champs": [
+    {
+      "campeao": "Aatrox",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Aatrox.png&resize=64:",
+      "mod": "Regeneração de Vida aumentada. Aatrox deixa de se curar com o dano causado em não Campeões. O E deixa de armazenar cargas, mas seu Tempo de Recarga é mais rápido do que as antigas cargas.",
+      "nota": "Na última Atualização focamos em reduzir o poder bruto do Aatrox, já nessa vamos focar em expor melhor as fraquezas da Espada Darkin. Estamos trocando a habilidade de sustentação através das tropas por uma linha de base de regeneração mais alta, assim ele não ficará tão para trás se ficar coletando passivamente e poderá se recuperar da agressão inimiga. Remover a segunda carga de Avanço Umbral faz com que Aatrox precise conferir suas habilidades se quiser acertar bem os três golpes do Q, além de, se os inimigos conseguirem fazer com que ele use o avanço, ele não terá uma segunda carga para usar de escape.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "REGENERAÇÃO DE VIDA",
+              "antes": "5",
+              "depois": "8"
+            },
+            {
+              "atributo": "CRESCIMENTO DE REGENERAÇÃO DE VIDA",
+              "antes": "0,25",
+              "depois": "0,75"
+            }
+          ]
+        },
+        {
+          "nome": "E - Avanço Umbral",
+          "atributos": [
+            {
+              "atributo": "CURA COM DANO EM NÃO CAMPEÕES",
+              "rotulo": "removido",
+              "depois": "Aatrox deixa de se curar em 3/3,34/3,75/4,13/4,5% do dano causado em não Campeões"
+            },
+            {
+              "atributo": "CARGAS",
+              "rotulo": "removido",
+              "depois": "Aatrox deixa de armazenar uma carga de Avanço Umbral a cada 26/22/18/14/10 segundos"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "3/2,5/2/1,5/1 segundos",
+              "depois": "9/8/7/6/5 segundos, agora é afetado por Redução do Tempo de Recarga (RTR anteriormente afetava a frequência de cargas em vez do Tempo de Recarga)"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/AatroxE.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Akali",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Akali.png&resize=64:",
+      "mod": "Regeneração de Vida aumentada. O Q deixa de curar. Torres passam a revelar Akali dentro do W. Tempo de Recarga do W aumentado nos últimos níveis.",
+      "nota": "Logo de primeira: estamos removendo a habilidade da Akali de se esconder embaixo de Torres, a parte mais polêmica do seu rework. Muitos estão perguntando porque demoramos meio ano até chegar aqui e a resposta é: Akali dependia dessa mecânica para mergulhar efetivamente como os outros assassinos. Mas, no fim, Akali possui tantos pontos fortes (trocar de alvos no meio do confronto sem comprometer pressão de abate, quatro formas de mobilidade e etc.) que ela não precisa também ser uma mergulhadora tão confiável. E já que ela se sai melhor em lutas mais longas do que outros assassinos, a curta duração dos mergulhos nas torres faz sentido como uma fraqueza, como será de agora em diante. O enfraquecimento no Tempo de Recarga é mais simples: estamos reduzindo o acesso dela à defesa do W no fim de jogo. Com isso já explicado... Enfraquecimento do Golpe dos Cinco Pontos. Akali se tornou uma escolha segura demais em altos níveis de jogo e a cura do Q é uma grande parte disso: sustentação contra tropas permite que Akali sobreviva a duelos onde ela deveria ser expulsa da rota ou certamente morreria de tanta agressão. Estamos dando a ela mais Regeneração de Vida para aliviar essa mudança, mas sabemos bem que é um enfraquecimento no geral. Estamos observando de perto como Akali fica tanto no cenário profissional quanto no regular (será que a mudança no W reduz frustração? Será que a mudança no Q permite contra-escolhas significativas? Por enquanto, você já pode parar de banir a ninja rebelde em toda santa partida.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "REGENERAÇÃO DE VIDA",
+              "antes": "3,5",
+              "depois": "6"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Golpe dos Cinco Pontos",
+          "atributos": [
+            {
+              "atributo": "CURA",
+              "rotulo": "removido",
+              "depois": "Akali deixa de se curar em 5/10/15/20/25 (+0,2/0,25/0,3/0,35/0,4 do Dano de Ataque total) (+0,2/0,25/0,3/0,35/0,4 do Poder de Habilidade) se Golpe dos Cinco Pontos atingir pelo menos um inimigo quando conjurado com 180 de Energia ou mais"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/AkaliQ.png&resize=32:"
+        },
+        {
+          "nome": "W - Proteção do Crepúsculo",
+          "atributos": [
+            {
+              "atributo": "FURTIVIDADE EMBAIXO DE TORRES",
+              "rotulo": "removido",
+              "depois": "Proteção do Crepúsculo deixa de impedir que torres revelem Akali"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "21/18,5/16/13,5/11 segundos",
+              "depois": "21/19/17/15/13 segundos"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/AkaliW.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Camille",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Camille.png&resize=64:",
+      "mod": "O E deixa de atordoar tropas e monstros.",
+      "nota": "A posição de Camille entre os melhores caçadores chegou ao ponto de que não conseguimos balanceá-la nessa posição sem prejudicar sua posição na rota superior. Estamos escolhendo priorizar a Camille da rota superior daqui pra frente, mas isso provavelmente permitirá que ela ainda seja uma caçadora de nicho, na melhor das hipóteses.",
+      "habilidades": [
+        {
+          "nome": "E - Disparo de Gancho",
+          "atributos": [
+            {
+              "atributo": "ATORDOAMENTO EM NÃO CAMPEÃO",
+              "rotulo": "removido",
+              "depois": "Disparo de Gancho deixa de atordoar tropas e monstros"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/CamilleE.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Cassiopeia",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Cassiopeia.png&resize=64:",
+      "mod": "Dano base do Q reduzido nos últimos níveis; multiplicador aumentado. Dano do W reduzido nos últimos níveis; custo aumentado nos últimos níveis.",
+      "nota": "Cobras mudam de pele, mas continuam as mesmas, não é? (segunda vez que fazemos essa alteração recentemente). Cassiopeia ainda é muito forte quando luta de distâncias extremamente seguras.",
+      "habilidades": [
+        {
+          "nome": "Q - Explosão Venenosa",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "75/120/165/210/255",
+              "depois": "75/110/145/180/215"
+            },
+            {
+              "atributo": "MULTIPLICADOR",
+              "antes": "0,8 de Poder de Habilidade",
+              "depois": "0,9 de Poder de Habilidade"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/CassiopeiaQ.png&resize=32:"
+        },
+        {
+          "nome": "W - Miasma",
+          "atributos": [
+            {
+              "atributo": "CUSTO",
+              "antes": "70 de Mana em todos os níveis",
+              "depois": "70/80/90/100/110 de Mana"
+            },
+            {
+              "atributo": "DANO POR SEGUNDO",
+              "antes": "20/30/40/50/60",
+              "depois": "20/25/30/35/40"
+            },
+            {
+              "atributo": "DANO MÁXIMO",
+              "antes": "100/150/200/250/300",
+              "depois": "100/125/150/175/200"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/CassiopeiaW.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Irelia",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Irelia.png&resize=64:",
+      "mod": "Armadura e crescimento de Vida aumentados. Limite de acúmulos da passiva aumentado; acúmulos concedem Velocidade de Ataque em vez de dano; máximo de acúmulo concede dano adicional em vez de Velocidade de Ataque. Dano adicional do Q em tropas aumentado. W reduz mais Dano Físico, mas deixa de reduzir Dano Mágico.",
+      "nota": "Esse é um acompanhamento da última Atualização 9.2 que removeu o excesso de mecânicas do kit da Irelia e reduziu sua limpeza de rotas no fim do jogo. Nosso objetivo era dar a ela fraquezas mais acentuadas e torná-la menos amplamente poderosa, algo que estamos levando até à 9.3. Entre as duas Atualizações, inimigos devem sentir que possuem melhores maneiras de lidar com a Irelia, tanto a Seleção de Campeões quanto na rota e nos confrontos de equipe. Então o que vamos fazer nessa Atualização? Estamos trocando os efeitos do Fervor Ioniano, agora Velocidade de Ataque por acúmulo e dano ao contato com máximo de acúmulos, para reduzir o poder explosivo dos seus combos de iniciação e para dar aos inimigos um período maior antes que o dano dela esteja no máximo. (O dano em tropas de Surto da Lâmina está aumentando para amenizar o impacto em sua limpeza de rotas já enfraquecida.) Também estamos fazendo da Dança Desafiadora uma defesa mais forte contra Dano Físico mas sem proteção contra Dano Mágico, assim ela terá uma fraqueza contra magos e assassinos de PdH, e ao mesmo tempo, uma força maior na habilidade de contra-atacar ameaças de DdA.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "CRESCIMENTO DE VIDA",
+              "antes": "85",
+              "depois": "95"
+            },
+            {
+              "atributo": "ARMADURA",
+              "antes": "34",
+              "depois": "36"
+            }
+          ]
+        },
+        {
+          "nome": "Passiva - Fervor Ioniano",
+          "atributos": [
+            {
+              "atributo": "POR ACÚMULO",
+              "antes": "4-17 (níveis 1 a 18) (+0,04 de Dano de Ataque adicional) de dano ao contato",
+              "depois": "8/10/12% (níveis 1/7/13) de Velocidade de Ataque"
+            },
+            {
+              "atributo": "LIMITE DE ACÚMULOS",
+              "antes": "4",
+              "depois": "5"
+            },
+            {
+              "atributo": "MÁXIMO DE ACÚMULOS",
+              "antes": "16-68 (níveis 1 a 18) (+0,16 de Dano de Ataque adicional) de dano ao contato",
+              "depois": "40%/50/60% (níveis 1/7/13) de Velocidade de Ataque"
+            },
+            {
+              "atributo": "EFEITO COM MÁXIMO DE ACÚMULOS",
+              "antes": "30/40/50% (níveis 1/7/13) de Velocidade de Ataque",
+              "depois": "15-66 (níveis 1 a 18) (+0,25 de Dano de Ataque adicional) de dano ao contato"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/passive/Irelia_Passive.png&resize=32:"
+        },
+        {
+          "nome": "Q - Surto da Lâmina",
+          "atributos": [
+            {
+              "atributo": "DANO ADICIONAL EM TROPAS",
+              "antes": "45/60/75/90/105",
+              "depois": "55/75/95/115/135"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/IreliaQ.png&resize=32:"
+        },
+        {
+          "nome": "W - Dança Desafiadora",
+          "atributos": [
+            {
+              "atributo": "REDUÇÃO DE DANO",
+              "antes": "40% de redução de Dano Físico e Mágico",
+              "depois": "50% de redução de Dano Físico, 0% de redução de Dano Mágico"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/IreliaW.png&resize=32:"
+        },
+        {
+          "nome": "E - Dueto Impecável",
+          "atributos": [
+            {
+              "atributo": "VISUAL",
+              "depois": "Efeitos da caixa de colisão são mais fáceis de ver"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/IreliaE.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Chuva de Canivete",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/item/3095.png&resize=64:",
+      "mod": "Agora amplifica seus efeitos Energizados e faz com que causem redução de velocidade no alvo. Deixa de conceder um Acerto Crítico garantido depois de não usar um ataque básico por alguns segundos.",
+      "nota": "A Chuva de Canivete foi criada para ajudar os estilos de jogo dos atiradores que focam mais em conduzir ao redor da luta em vez de simplesmente atacar o tempo todo, mas acabou se tornando um primeiro item predominante nas itemizações de crítico devido a sua combinação de impacto rápido e escalamento de crítico. Manteremos a ideia de “ataques super poderosos ocasionalmente”, mas o moveremos do sistema crítico para o sistema Energizado para que não seja um empecilho das itemizações com Gume do Infinito."
+    },
+    {
+      "campeao": "Zelo",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/item/3086.png&resize=64:",
+      "mod": "",
+      "nota": "",
+      "efeitos": [
+        {
+          "atributo": "CUSTO TOTAL",
+          "agora": "1200 de ouro"
+        }
+      ]
+    },
+    {
+      "campeao": "Lissandra",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Lissandra.png&resize=64:",
+      "mod": "Custo do Q aumentado nos últimos níveis. Dano do E reduzido nos últimos níveis.",
+      "nota": "Muito do papel dominante da Lissandra na rota do meio vem da sua habilidade de empurrar a rota até a torre inimiga rapidamente e por um custo bem baixo, permitindo que ela se movimente pelo mapa consistentemente com bastante Mana para os eventuais confrontos. Um custo maior no Estilhaço de Gelo e um dano menor no Caminho Glacial farão com que ela tenha que investir mais tempo e recursos na própria rota antes que possa pressionar outras. Além das mudanças na limpeza de rota, o indicador da ponta final de Caminho Glacial agora é sempre visível se você estiver próximo. Isso é destinado principalmente aos casos onde os jogadores de Lissandra podem esconder a ponta final da habilidade dentro de um terreno, mas estamos resolvendo também os casos envolvendo arbustos e linhas de visão.",
+      "habilidades": [
+        {
+          "nome": "Q - Estilhaço de Gelo",
+          "atributos": [
+            {
+              "atributo": "CUSTO",
+              "antes": "60/63/66/69/72 de Mana",
+              "depois": "60/65/70/75/80 de Mana"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/LissandraQ.png&resize=32:"
+        },
+        {
+          "nome": "E - Caminho Glacial",
+          "atributos": [
+            {
+              "atributo": "DANO",
+              "antes": "70/115/160/205/250",
+              "depois": "70/105/140/175/210"
+            },
+            {
+              "atributo": "CLAREZA",
+              "depois": "A extremidade final de Caminho Glacial agora aparece através de terreno, Névoa de Guerra e arbustos para inimigos dentro de 600 de alcance"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/LissandraE.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Sion",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Sion.png&resize=64:",
+      "mod": "Dano do Q reduzido. Tempo de Recarga do W aumentado nos primeiros níveis.",
+      "nota": "Vamos enfraquecer o início da fase de rotas do Sion para que duelos ruins possam puni-lo devidamente.",
+      "habilidades": [
+        {
+          "nome": "Q - Golpe Demolidor",
+          "atributos": [
+            {
+              "atributo": "DANO MÍNIMO",
+              "antes": "30/50/70/90/110",
+              "depois": "20/40/60/80/100"
+            },
+            {
+              "atributo": "DANO COMPLETAMENTE CARREGADO",
+              "antes": "90/150/210/270/330",
+              "depois": "60/120/180/240/300"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/SionQ.png&resize=32:"
+        },
+        {
+          "nome": "W - Fornalha da Alma",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "11 segundos em todos os níveis",
+              "depois": "15/14/13/12/11 segundos"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/spell/SionW.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Zyra",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.2.1/img/champion/Zyra.png&resize=64:",
+      "mod": "Dano das plantas reduzido.",
+      "nota": "Pegamos leve com o enfraquecimento na Regeneração de Mana da última Atualização, o que fazia com que Zyra fosse um pouco mais cuidadosa com seus Tempos de Recarga. Dessa vez vamos pegar mais pesado, visando a agressividade das suas plantas que mantêm os inimigos longe, mesmo quando ela erra suas habilidades.",
+      "habilidades": [
+        {
+          "nome": "Geral",
+          "atributos": [
+            {
+              "atributo": "DANO DAS PLANTAS",
+              "antes": "24-109 (níveis 1 a 18)",
+              "depois": "20-100 (níveis 1 a 18)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "runes": [],
+  "fixes": [
+    {
+      "note": "As marcas do Q - Sigilo de Malícia e do Q - Sigilo de Malícia com ult de LeBlanc deixam de ser consumidas quando E - Correntes Etéreas, E - Correntes Etéreas com ult ou Q - Sigilo de Malícia com ult as ativariam, mas são bloqueadas por um escudo de feitiço."
+    },
+    {
+      "note": "Escudo Relicário deixa de relatar o dobro da quantidade de ouro gerado por Despojos de Guerra na tela de fim de jogo."
+    },
+    {
+      "note": "Aatrox base pode novamente ativar suas Asas Bandeira",
+      "champs": [
+        "Aatrox"
+      ]
+    },
+    {
+      "note": "A cor do projétil de E - Condenar da Vayne Fogos de Artifício Edição de Prestígio foi levemente alterada para se diferenciar dos ataques básicos de R - Hora Final."
+    },
+    {
+      "note": "A dublagem do R - Último Suspiro do Yasuo Emissário da Escuridão foi restaurada."
+    },
+    {
+      "note": "Escolher um novo plano de fundo para seu perfil novamente é atualizado imediatamente em vez de exigir que você saia e volte para a aba do seu perfil."
+    }
+  ]
+}
