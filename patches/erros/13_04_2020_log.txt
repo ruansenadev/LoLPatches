@@ -1,0 +1,16 @@
+(12:36:20): 
+ - Patch crawling
+TypeError: Cannot read property '1' of undefined
+🔚🔚🔚🔚
+(12:46:08): 
+ - Patch crawling
+TypeError: Cannot convert undefined or null to object
+🔚🔚🔚🔚
+(15:24:35): 
+ - Patch crawling
+TypeError: Cannot read property '1' of undefined
+🔚🔚🔚🔚
+(16:28:42): 
+ - Patches images
+TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+🔚🔚🔚🔚

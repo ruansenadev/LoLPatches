@@ -1,0 +1,24 @@
+(11:27:03): 
+ - Patches crawling
+TypeError: cb is not a function
+🔚🔚🔚🔚
+(11:29:44): 
+ - Patches crawling
+TypeError: cb is not a function
+🔚🔚🔚🔚
+(13:12:51): 
+ - Patches crawling
+TypeError: Cannot convert undefined or null to object
+🔚🔚🔚🔚
+(13:43:37): 
+ - Patches crawling
+TypeError: cb is not a function
+🔚🔚🔚🔚
+(13:56:27): 
+ - Patches crawling
+TypeError: cb is not a function
+🔚🔚🔚🔚
+(14:55:51): 
+ - Patches crawling
+[object Object],notas_da_atualização10.4
+🔚🔚🔚🔚

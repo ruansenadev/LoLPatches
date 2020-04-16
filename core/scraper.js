@@ -12,28 +12,28 @@ const d = new Date()
 const errorsDir = 'erros'
 const patchesDir = 'patches'
 var folder
-var SCRAP = {
-	note: "",
-	ft: {},
-	champs: [],
-	runes: [],
-	fixes: []
-}
 
 function createLog(e, frag = '') {
 	fs.mkdir(path.join(patchesDir, errorsDir), { recursive: true }, (err) => {
 		if (err) { throw err }
 		let logFile = d.toLocaleDateString().replace(/\//g, '_').concat('_scrap_log.txt')
-		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): \r\n${frag ? " - " + frag : ""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
+		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): ${frag ? " - " + frag : ""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
 			if (err) { throw err }
 			console.log('\nErro :T	log do erro: ' + path.join(patchesDir, errorsDir, logFile))
 		})
 	})
 }
-exports.scrap = function (url = '', callback = (data, message) => {
+exports.scrap = async function (url = '', callback = (data, message) => {
 	console.log(message)
 	return data
 }) {
+	let SCRAP = {
+		note: "",
+		ft: {},
+		champs: [],
+		runes: [],
+		fixes: []
+	}
 	let msg = "	📜 Scraping	📜\n"
 	axios
 		.get(url, {
@@ -59,10 +59,10 @@ exports.scrap = function (url = '', callback = (data, message) => {
 			const $ = cheerio.load(res.data)
 			// --Note--
 			SCRAP.note = $('#patch-top').next().text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
-			msg += 'note length: ' + SCRAP.note.length +'\n'
+			msg += 'note length: ' + SCRAP.note.length + '\n'
 
 			// --Featured--
-			let patchFeatured = $('h2[id*="highlights"]').parent().next().not(':not(div)').first()
+			let patchFeatured = $('h2[id*="highlights"]').filter((i, title) => { let txt = $(title).text().toLowerCase(); return txt.includes('destaques') || txt.includes('highlights') }).parent().next().not(':not(div)').first()
 			try {
 				let media = patchFeatured.find('iframe')
 				SCRAP.ft.media = media.length ? media.attr('src') : patchFeatured.find('img').attr('src')
@@ -71,7 +71,7 @@ exports.scrap = function (url = '', callback = (data, message) => {
 			} finally {
 				SCRAP.ft.mod = patchFeatured.text().trim()
 			}
-			msg += 'featured media: ' + /youtube|(?<=\.)[a-z]*$/.exec(SCRAP.ft.media)[0] +'\n'
+			msg += 'featured media: ' + /youtube|(?<=\.)[a-z]*$/.exec(SCRAP.ft.media)[0] + '\n'
 
 			// --Champions--
 			patchFeatured = $('h3[id^="patch-"]')
@@ -244,6 +244,6 @@ exports.scrap = function (url = '', callback = (data, message) => {
 			if (e) createLog(e)
 		})
 		.finally(() => {
-			callback(SCRAP, msg)
+			callback([SCRAP, folder], msg)
 		})
 }
