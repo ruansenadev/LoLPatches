@@ -1,13 +1,13 @@
 {
   "note": "Fala, galera! As Notas das Atualizações de hoje estão bem grandes. Falaremos de todas as correções de bugs, da Edição de Prestígio da skin True Damage da Senna, das alterações na Akali (o que fizeram com você, minha garotinha ninja?) e dos fortalecimentos na selva! Mas, talvez, o mais importante sejam as incríveis atualizações de efeitos visuais em alguns dos Campeões mais velhos e queridos do lolzinho. Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
   "ft": {
-    "media": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/riot-bra/LoL/NotasdeAtualizacao1003/Patch_10_3_Infographic_1080x1080_crop_por-BR.jpg",
+    "img": "Patch_10_3_Infographic_1080x1080_crop_por-BR.jpg",
     "mod": "Jinx e Yuumi Cupidos Mortais e Senna True Damage Edição de Prestígio estarão disponíveis em 6 de fevereiro de 2020."
   },
   "champs": [
     {
       "campeao": "Akali",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Akali.png",
+      "img": "champs/Akali.png",
       "mod": "Custo do Q aumentado. Velocidade de Movimento do W aumentada e agora decai. R agora tem como alvo Campeões, não uma direção.",
       "nota": "Como prometido, nessa Atualização fizemos grandes alterações na Akali. Essas mudanças são o resultado da presença dela no cenário profissional e têm como objetivo moderar seu poder nessa área (mais do que nas partidas normais). Tendo isso em mente, um dos maiores problemas que queríamos resolver era a grande quantidade de opções que ela tinha tanto para entrar nas lutas quanto para sobreviver em situações complicadas. Nossa ninja estava flexível demais, contribuindo com investidas divididas, confrontos de equipe e, ao mesmo tempo, não se limitando a um estilo de jogo específico (ótimo início de jogo, escalamento, etc.).",
       "habilidades": [
@@ -20,7 +20,7 @@
               "depois": "120/115/110/105/100 de Energia"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/AkaliQ.png"
+          "img": "skills/AkaliQ.png"
         },
         {
           "nome": "W - Proteção do Crepúsculo",
@@ -31,7 +31,7 @@
               "depois": "30/35/40/45/50% de Velocidade de Movimento que decai ao longo de 2s ao conjurar"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/AkaliW.png"
+          "img": "skills/AkaliW.png"
         },
         {
           "nome": "R - Execução Perfeita",
@@ -51,13 +51,13 @@
               "depois": "675 - 825 com base na distância do inimigo"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/AkaliR.png"
+          "img": "skills/AkaliR.png"
         }
       ]
     },
     {
       "campeao": "Aphelios",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Aphelios.png",
+      "img": "champs/Aphelios.png",
       "mod": "Alcance de Ataque deixa de ser infinito em inimigos marcados pelo Q. ",
       "nota": "Vamos limitar os poderes do Aphelios para não parecer que ele está atirando lá da lua.",
       "habilidades": [
@@ -70,13 +70,13 @@
               "depois": "1800"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Calibrum.jpg"
+          "img": "skills/Calibrum.jpg"
         }
       ]
     },
     {
       "campeao": "Azir",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Azir.png",
+      "img": "champs/Azir.png",
       "mod": "Mana base aumentada. Número de soldados do R aumentado.",
       "nota": "O imperador já teve dias melhores e, por isso, vamos fortalecê-lo com cuidado, já que existe o risco de que ele enlouqueça com o poder.",
       "habilidades": [
@@ -99,13 +99,13 @@
               "depois": "6/7/8 soldados"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/AzirR.png"
+          "img": "skills/AzirR.png"
         }
       ]
     },
     {
       "campeao": "Corki",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Corki.png",
+      "img": "champs/Corki.png",
       "mod": "Multiplicador de dano por segundo do W aumentado; duração da queima aumentada e agora aplica redução de velocidade.",
       "nota": "Vamos incentivar um uso mais agressivo da Entrega Especial do Corki contra seus inimigos.",
       "habilidades": [
@@ -128,13 +128,13 @@
               "depois": "Agora reduz a velocidade dos Campeões atingidos diretamente e empurrados durante 1,5s"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/February/pn103/Special_Delivery.png"
+          "img": "skills/Special_Delivery.png"
         }
       ]
     },
     {
       "campeao": "Diana",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Diana.png",
+      "img": "champs/Diana.png",
       "mod": "Mana base reduzida. Dano por orbe do W reduzido. ",
       "nota": "Mercúrio está retrógrado e isso significa que a Diana será enfraquecida.",
       "habilidades": [
@@ -157,13 +157,13 @@
               "depois": "18/30/42/54/66"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/DianaOrbs.png"
+          "img": "skills/DianaOrbs.png"
         }
       ]
     },
     {
       "campeao": "Ekko",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Ekko.png",
+      "img": "champs/Ekko.png",
       "mod": "Dano do acúmulo da Passiva reduzido em monstros.",
       "nota": "Queremos atingir especificamente o Ekko caçador. ALERTA DE SPOILER: também traremos mudanças na selva que devolverão um pouco de EXP para os caçadores mais cedo na partida.",
       "habilidades": [
@@ -176,13 +176,13 @@
               "depois": "150% contra monstros"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/passive/Ekko_P.png"
+          "img": "skills/Ekko_P.png"
         }
       ]
     },
     {
       "campeao": "Ezreal",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Ezreal.png",
+      "img": "champs/Ezreal.png",
       "mod": "Crescimento de Mana base e VdA aumentado. ",
       "nota": "MF ultrapassada, ok. Aphelios solado, ok. Itemização fechada, ok. Brotando na rota inferior pro desespero de vocês.",
       "habilidades": [
@@ -205,7 +205,7 @@
     },
     {
       "campeao": "Galio",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Galio.png",
+      "img": "champs/Galio.png",
       "mod": "Duração e ciclos de dano do tornado do Q aumentados.",
       "nota": "Em partidas normais de alto nível, tentamos ajudar os jogadores de Galio que sabem aproveitar bem o seu tornado.",
       "habilidades": [
@@ -223,13 +223,13 @@
               "depois": "4"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/GalioQ.png"
+          "img": "skills/GalioQ.png"
         }
       ]
     },
     {
       "campeao": "Leona ",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Leona.png",
+      "img": "champs/Leona.png",
       "mod": "Dano do W e do E reduzido.",
       "nota": "O dano da Leona está ofuscando as barras de Vida dos oponentes.",
       "habilidades": [
@@ -242,7 +242,7 @@
               "depois": "60/95/130/165/200"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/LeonaSolarBarrier.png"
+          "img": "skills/LeonaSolarBarrier.png"
         },
         {
           "nome": "E - Lâmina Zênite",
@@ -253,13 +253,13 @@
               "depois": "50/90/130/170/210"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/LeonaZenithBlade.png"
+          "img": "skills/LeonaZenithBlade.png"
         }
       ]
     },
     {
       "campeao": "Rumble",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Rumble.png",
+      "img": "champs/Rumble.png",
       "mod": "Atributos base arredondados. Velocidade de Movimento adicional e escudo do W reduzidos. ",
       "nota": "Arredondaremos alguns atributos e enfraqueceremos as defesas do W para que ele não toque o terror na rota do meio.",
       "habilidades": [
@@ -292,13 +292,13 @@
               "depois": "60/95/130/165/200"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/RumbleShield.png"
+          "img": "skills/RumbleShield.png"
         }
       ]
     },
     {
       "campeao": "Sejuani",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Sejuani.png",
+      "img": "champs/Sejuani.png",
       "mod": "Agora conta com VdA adicional no nível 1. Armadura Congelada agora é removida quando sofre dano de qualquer monstro ou Campeão. ",
       "nota": "Fortalecemos a Sejuani com muito cuidado. Também removemos alguns dos elementos da Passiva que não eram intuitivos ou aproveitados pela maioria dos jogadores. Se removermos esses elementos agora, teremos mais espaço para fortalecimentos no futuro, já que os jogadores profissionais não explorarão a segurança que eles trazem.",
       "habilidades": [
@@ -321,13 +321,13 @@
               "depois": "Ao sofrer dano de qualquer monstro ou Campeão inimigo"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/passive/Sejuani_passive.png"
+          "img": "skills/Sejuani_passive.png"
         }
       ]
     },
     {
       "campeao": "Senna",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Senna.png",
+      "img": "champs/Senna.png",
       "mod": "Chance de surgimento de Espectros da Névoa ajustada. Despojos de Guerra agora contam como abate, reduzindo a chance de aparecimento de Espectros da Névoa. Correção de bug no E. ",
       "nota": "Apesar de amarmos a flexibilidade da Senna em suas funções, ela está forte demais como atiradora. Ajustaremos a chance de aparecimento de Espectros da Névoa para ajudar sua função como suporte.",
       "habilidades": [
@@ -345,7 +345,7 @@
               "depois": "Abates de tropas concedidos à Senna através de Despojos de Guerra (Escudo Relicário e Guarda-ombros de Aço) agora contam como abates realizados por ela, reduzindo a chance de surgimento para 1,67%"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/passive/Senna_Passive.Senna.png"
+          "img": "skills/Senna_Passive.Senna.png"
         },
         {
           "nome": "E - Maldição da Névoa Negra",
@@ -355,13 +355,13 @@
               "depois": "Aliados camuflados pela Maldição da Névoa Negra deixam de ficar invisíveis se Senna morrer durante o efeito da habilidade"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/February/pn103/SennaE.png"
+          "img": "skills/SennaE.png"
         }
       ]
     },
     {
       "campeao": "Sett",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Sett.png",
+      "img": "champs/Sett.png",
       "mod": "Regeneração de Vida base reduzida. Tempo de Recarga do W aumentado; dano base reduzido nos últimos níveis. ",
       "nota": "Sett está arrebentando a cara de todo mundo com muita facilidade. Apesar de ter estilo, ele não está sendo desafiado direito. Vamos dar a ele um ou dois enfraquecimentos com o objetivo de tornar seu Casca-Grossa mais difícil de ser utilizado várias vezes em uma luta.",
       "habilidades": [
@@ -389,13 +389,13 @@
               "depois": "90/120/150/180/210"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/SettW.png"
+          "img": "skills/SettW.png"
         }
       ]
     },
     {
       "campeao": "Sona",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Sona.png",
+      "img": "champs/Sona.png",
       "mod": "Velocidade de Movimento do E em si mesma reduzida. ",
       "nota": "O Carnaval nem chegou e a Sona já estava frenética! Falando sério, os novos tênis de corrida da nossa Mestra das Cordas estavam fora de controle. Vamos reverter um pouco esse fortalecimento, já que ela estava rápida demais.",
       "habilidades": [
@@ -408,13 +408,13 @@
               "depois": "20% (+0,03 a cada 100 de Poder de Habilidade)"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/SonaE.png"
+          "img": "skills/SonaE.png"
         }
       ]
     },
     {
       "campeao": "Yuumi",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Yuumi.png",
+      "img": "champs/Yuumi.png",
       "mod": "Dano fortalecido do Q reduzido e agora leva em consideração a Vida do alvo; custo padronizado. W deixa de entrar em Tempo de Recarga ao ser silenciado. Cura base do E reduzida e multiplicador aumentado. ",
       "nota": "Ela não é mais apenas uma fonte de cura ambulante (gatos costumam fazer só o que dá na telha, né?). Seu Q deve ser mais satisfatório mesmo no meio/fim de partida.",
       "habilidades": [
@@ -432,7 +432,7 @@
               "depois": "90 de Mana em todos os níveis"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/YuumiQ.png"
+          "img": "skills/YuumiQ.png"
         },
         {
           "nome": "W - Você e Eu!",
@@ -443,7 +443,7 @@
               "depois": "deixa de agir como efeito imobilizante que coloca Você e Eu! em Tempo de Recarga por 5s"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/YuumiW.png"
+          "img": "skills/YuumiW.png"
         },
         {
           "nome": "E - Frenética!",
@@ -454,13 +454,13 @@
               "depois": "70/100/130/160/190 (+0,4 de Poder de Habilidade)"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/spell/YuumiE.png"
+          "img": "skills/YuumiE.png"
         }
       ]
     },
     {
       "campeao": "Annie",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Annie.png",
+      "img": "champs/Annie.png",
       "mod": "",
       "nota": "",
       "efeitos": [
@@ -532,7 +532,7 @@
     },
     {
       "campeao": "Malphite",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Malphite.png",
+      "img": "champs/Malphite.png",
       "mod": "",
       "nota": "",
       "efeitos": [
@@ -584,7 +584,7 @@
     },
     {
       "campeao": "Nautilus",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.2.1/img/champion/Nautilus.png",
+      "img": "champs/Nautilus.png",
       "mod": "",
       "nota": "",
       "efeitos": [

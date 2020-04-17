@@ -1,13 +1,13 @@
 {
   "note": "Fala, galerinha! Como estão as resoluções de 2020? Acham que vão conseguir sair do pratinha esse ano? Eu acredito em vocês, hein! Falando na escalada, sugerimos que todos joguem suas partidas de colocação o quanto antes! O Clash será lançado ainda esse ano e não queremos que percam toda a diversão porque procrastinaram (igual suas resoluções de ano-novo). Não sejam como eu, que falhei em aprender a pintar com aquarela porque o ano acabou rápido demais. Nesta Atualização, temos ajustes de acompanhamento para Aphelios, enfraquecimentos para Qiyana e Nautilus, além de fortalecimentos para Sona (sim, para Sona, minha main, minha queridinha, minha Campeã favorita no universo!). Jinx também receberá uma mudança na Passiva para que fique ainda mais... Jinx. Além disso, o Arauto do Vale se esforçará mais para chamar a atenção. Também fizemos algumas atualizações de acompanhamento nos Rifts Elementais, de forma a deixá-los mais claros e definidos. Em particular, os Rifts da Montanha e Infernal devem ter uma mecânica de jogo mais clara e texturas mais polidas. É isso que temos para a 10.2! Comecem a escalar e nos vemos em duas semanas! Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
   "ft": {
-    "media": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/riot-bra/LoL/NotasdeAtualizacao102/Patch_10_2_Infographic_1080x1080PT-BR.jpg",
+    "img": "Patch_10_2_Infographic_1080x1080PT-BR.jpg",
     "mod": "Janna, Ryze e Rengar Guardiões das Areias estarão disponíveis em 22 de janeiro de 2020. Olaf, Diana e Trundle Caçadores de Dragões estarão disponíveis em 30 de janeiro de 2020."
   },
   "champs": [
     {
       "campeao": "Aphelios",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Aphelios.png",
+      "img": "champs/Aphelios.png",
       "mod": "Dano do ataque básico da marca de Calibrum padronizado; Tempo de Recarga do Q de Calibrum aumentado. Os chakrans espelhados de Crescendum causam menos dano depois do primeiro. Multiplicador de dano da Chacina de Severum reduzido.",
       "nota": "Estamos dando seguimento aos ajustes do Aphelios com base em seu desempenho desde o lançamento e em como ele tem se saído depois de algumas correções de bugs/alterações realizadas no começo do ano.",
       "habilidades": [
@@ -25,7 +25,7 @@
               "depois": "10/9,5/9/8,5/8s (níveis 1 a 9)"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Calibrum.jpg"
+          "img": "skills/Calibrum.jpg"
         },
         {
           "nome": "Crescendum, o Chakram",
@@ -36,7 +36,7 @@
               "depois": "130% - 223% do Dano de Ataque total (chakrans espelhados 1 - 10)"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Crescendum.jpg"
+          "img": "skills/Crescendum.jpg"
         },
         {
           "nome": "Severum, a Pistola-Foice",
@@ -47,13 +47,13 @@
               "depois": "10/15/20/25/30 (+0,3 de Dano de Ataque adicional) por acerto (níveis 1 a 9)"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Severum.jpg"
+          "img": "skills/Severum.jpg"
         }
       ]
     },
     {
       "campeao": "Draven",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Draven.png",
+      "img": "champs/Draven.png",
       "mod": "Agora o multiplicador de dano do R escala.",
       "nota": "Parece que Draven não aproveitou tão bem as mudanças nos itens da pré-temporada.",
       "habilidades": [
@@ -66,13 +66,13 @@
               "depois": "175/275/375 (+1,1/1,3/1,5 de Dano de Ataque adicional)"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/DravenRCast.png"
+          "img": "skills/DravenRCast.png"
         }
       ]
     },
     {
       "campeao": "Jinx",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Jinx.png",
+      "img": "champs/Jinx.png",
       "mod": "Velocidade de Movimento adicional da Passiva agora também é ativada com monstros épicos.",
       "nota": "Jinx sempre foi fã de conquistar objetivos. Por isso, aumentar a lista de coisas que podem ativar sua Passiva é uma maneira de ter mais \"momentos Jinx\" em cada partida sem aumentar demais o próprio nível de poder da Campeã.",
       "habilidades": [
@@ -85,13 +85,13 @@
               "depois": "Campeões inimigos, torres, inibidores ou monstros épicos dentro de 3s antes do abate (por ela ou por sua equipe)"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/passive/Jinx_Passive.png"
+          "img": "skills/Jinx_Passive.png"
         }
       ]
     },
     {
       "campeao": "Karma",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.24.1/img/champion/Karma.png",
+      "img": "champs/Karma.png",
       "mod": "Dano base do Q e do W aumentado.",
       "nota": "Vamos melhorar a habilidade de luta da Karma no início de jogo.",
       "habilidades": [
@@ -104,7 +104,7 @@
               "depois": "90/135/180/225/270"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/KarmaQ.png"
+          "img": "skills/KarmaQ.png"
         },
         {
           "nome": "W - Decisão Absorta",
@@ -115,13 +115,13 @@
               "depois": "40/65/90/115/140"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/KarmaSpiritBind.png"
+          "img": "skills/KarmaSpiritBind.png"
         }
       ]
     },
     {
       "campeao": "Lulu",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Lulu.png",
+      "img": "champs/Lulu.png",
       "mod": "Armadura base e Dano de Ataque arredondados para cima. Tempo de Recarga do E reduzido.",
       "nota": "Aumentaremos a disponibilidade e utilidade de Pix, fazendo com que Lulu aproveite melhor a habilidade do seu melhor amigo silfo.",
       "habilidades": [
@@ -149,13 +149,13 @@
               "depois": "8s"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/LuluE.png"
+          "img": "skills/LuluE.png"
         }
       ]
     },
     {
       "campeao": "Nautilus",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Nautilus.png",
+      "img": "champs/Nautilus.png",
       "mod": "Dano base do Q reduzido.",
       "nota": "Nautilus é como aquele valentão da escola que roubava seu lanche e te empurrava no chão sem motivo algum. Vamos fazer algo a respeito disso – assim, seus inimigos não vão mais se sentir tão sobrecarregados, principalmente no início de jogo.",
       "habilidades": [
@@ -168,13 +168,13 @@
               "depois": "70/115/160/205/250"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/NautilusAnchorDrag.png"
+          "img": "skills/NautilusAnchorDrag.png"
         }
       ]
     },
     {
       "campeao": "Qiyana",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Qiyana.png",
+      "img": "champs/Qiyana.png",
       "mod": "Velocidade de Ataque do passivo do W agora escala.",
       "nota": "A força da Qiyana como caçadora estava dificultando seu balanceamento, já que ela era uma escolha confiável e flexível no cenário profissional. Queremos estimular sua identidade como uma Campeã da rota do meio e impedir que ela corra loucamente pela selva.",
       "habilidades": [
@@ -187,13 +187,13 @@
               "depois": "5/10/15/20/25%"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/QiyanaW.png"
+          "img": "skills/QiyanaW.png"
         }
       ]
     },
     {
       "campeao": "Sona",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Sona.png",
+      "img": "champs/Sona.png",
       "mod": "Velocidade de Movimento do E em si mesma aumentada e padronizada.",
       "nota": "Se pararmos pra analisar outros encantadores, Sona está realmente precisando de alguns fortalecimentos. Seus enfraquecimentos no passado foram realizados para evitar as estratégias com dois itens de suporte, mas, já que mitigamos esses problemas, temos a oportunidade de dar uma boa calibrada nela. Tal mudança deve fazer com que ela se esquive de mais disparos de precisão, movimente-se mais pelo mapa e possa alcançar seus aliados.",
       "habilidades": [
@@ -206,13 +206,13 @@
               "depois": "25% (+0,04 a cada 100 de Poder de Habilidade)"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/SonaE.png"
+          "img": "skills/SonaE.png"
         }
       ]
     },
     {
       "campeao": "Thresh",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Thresh.png",
+      "img": "champs/Thresh.png",
       "mod": "Mudanças adicionais além da atualização de efeitos visuais na 10.1.",
       "nota": "",
       "habilidades": [
@@ -228,7 +228,7 @@
               "depois": "Pulsefire Thresh agora usa corretamente seu novo efeito de conjuração do Q."
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ThreshQ.png"
+          "img": "skills/ThreshQ.png"
         },
         {
           "nome": "E - Esfolar",
@@ -242,13 +242,13 @@
               "depois": "Adicionados círculos ao redor do E do Pulsefire Thresh e Pulsefire Thresh Edição de Prestígio para deixá-las como as outras skins."
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ThreshE.png"
+          "img": "skills/ThreshE.png"
         }
       ]
     },
     {
       "campeao": "Trundle",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Trundle.png",
+      "img": "champs/Trundle.png",
       "mod": "Velocidade de Movimento do W aumentada. Redução de velocidade do E aumentada.",
       "nota": "Trundle anda sofrendo em vários sentidos, principalmente quando seus aliados precisam de suas emboscadas.",
       "habilidades": [
@@ -261,7 +261,7 @@
               "depois": "30/35/40/45/50%"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/trundledesecrate.png"
+          "img": "skills/trundledesecrate.png"
         },
         {
           "nome": "E - Pilar do Gelo",
@@ -272,13 +272,13 @@
               "depois": "20/30/40/50/60%"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/TrundleCircle.png"
+          "img": "skills/TrundleCircle.png"
         }
       ]
     },
     {
       "campeao": "Viktor",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Viktor.png",
+      "img": "champs/Viktor.png",
       "mod": "Correção de bug na Mana da Passiva.",
       "nota": "",
       "habilidades": [
@@ -290,13 +290,13 @@
               "depois": "Viktor deixa de perder uma quantidade significativa de Mana ao aprimorar o Núcleo Hex Protótipo no início de jogo."
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/passive/Viktor_Passive.png"
+          "img": "skills/Viktor_Passive.png"
         }
       ]
     },
     {
       "campeao": "Ziggs",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/champion/Ziggs.png",
+      "img": "champs/Ziggs.png",
       "mod": "Dano base do Q aumentado. Empurrão de inimigos do W aumentado. Redução de velocidade do E aumentada.",
       "nota": "Vamos dar ao Ziggs uma maneira mais forte de imobilizar seus oponentes, além de incentivar uma presença maior no início de jogo.",
       "habilidades": [
@@ -309,7 +309,7 @@
               "depois": "85/130/175/220/265"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsQ.png"
+          "img": "skills/ZiggsQ.png"
         },
         {
           "nome": "W - Carga Concentrada",
@@ -320,7 +320,7 @@
               "depois": "500"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsW.png"
+          "img": "skills/ZiggsW.png"
         },
         {
           "nome": "E - Campo Minado de Hexplosivos",
@@ -331,19 +331,19 @@
               "depois": "30/35/40/45/50%"
             }
           ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/spell/ZiggsE.png"
+          "img": "skills/ZiggsE.png"
         }
       ]
     },
     {
       "campeao": "Chuva de Canivete",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.1.1/img/item/3095.png",
+      "img": "champs/3095.png",
       "mod": "",
       "nota": "Já que seu desempenho tem passado um pouco dos limites, enfraqueceremos a Chuva de Canivete considerando seu DdA e mantendo sua utilidade única e impactante de redução de velocidade."
     },
     {
       "campeao": "Arauto do Vale",
-      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn102/Rift_Herald_Icon.png",
+      "img": "champs/Rift_Herald_Icon.png",
       "mod": "",
       "nota": "As equipes estão demorando demais para derrotar o Arauto do Vale, o que faz com que ele tenha baixa prioridade em relação aos outros objetivos. Queremos que ele também seja amado, então tentamos diminuir as diferenças entre as vantagens e desvantagens de optar por abatê-lo.",
       "habilidades": [

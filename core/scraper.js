@@ -64,14 +64,12 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 			// --Featured--
 			let patchFeatured = $('h2[id*="highlights"]').filter((i, title) => { let txt = $(title).text().toLowerCase(); return txt.includes('destaques') || txt.includes('highlights') }).parent().next().not(':not(div)').first()
 			try {
-				let media = patchFeatured.find('iframe')
-				SCRAP.ft.media = media.length ? media.attr('src') : patchFeatured.find('img').attr('src')
-			} catch (error) {
-				createLog(error, 'Featured media')
-			} finally {
+				SCRAP.ft.img = patchFeatured.find('img').first().attr('src')
 				SCRAP.ft.mod = patchFeatured.text().trim()
+			} catch (error) {
+				createLog(error, 'Featured')
 			}
-			msg += 'featured media: ' + /youtube|(?<=\.)[a-z]*$/.exec(SCRAP.ft.media)[0] + '\n'
+			msg += 'featured img: ' + /(?<=\.)[a-z]*$/.exec(SCRAP.ft.img)[0] + '\n'
 
 			// --Champions--
 			patchFeatured = $('h3[id^="patch-"]')
