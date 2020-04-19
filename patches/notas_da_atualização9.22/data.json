@@ -1,13 +1,13 @@
 {
   "note": "Finalmente, só falta uma Atualização para a pré-temporada E EU NÃO CONSIGO PARAR DE DIZER QUE \"SÓ FALTA UMA ATUALIZAÇÃO PARA A PRÉ-TEMPORADA\". Se vocês estão lutando para chegar ao Ouro, assim como eu, fica aqui o aviso: vocês só têm essa última Atualização para chegar lá. Boa sorte! Enquanto isso, o URF acaba em 5 dias! Isso aí, só faltam 5 (já contando com hoje)! Caso não tenham visto o anúncio nas Atualizações Intermediárias da 9.21, vamos prorrogar a duração do modo de jogo por mais 1 dia. Então, todo mundo indo pra Catapulta até o dia 10 de novembro de 2019 às 00h00. As correções de bug que desenvolvemos com vocês durante o aniversário de 10 anos também serão implementadas no ambiente de jogo nessa Atualização! Vocês podem ler mais sobre elas no final da respectiva seção.",
   "ft": {
-    "img": "Instagram_Patch_9_22_Infographic_EN_FINAL_Crop_por-BR.jpg",
+    "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/riot-bra/LoL/NotasDeAtualizacao922/Instagram_Patch_9_22_Infographic_EN_FINAL_Crop_por-BR.jpg",
     "mod": "Ekko, Yasuo, Akali, Senna e Qiyana True Damage estarão disponíveis em 10 de novembro de 2019."
   },
   "champs": [
     {
       "campeao": "Senna",
-      "img": "champs/Senna.png",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/pn22/Senna.png&resize=64:",
       "mod": "A Redentora",
       "nota": "Senna escapa da lanterna no dia 10 de novembro!",
       "links": [
@@ -27,7 +27,7 @@
     },
     {
       "campeao": "Ashe",
-      "img": "champs/Ashe.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Ashe.png&resize=64:",
       "mod": "Custo do W aumentado.",
       "nota": "Vamos enfraquecer a agressão de início de jogo da Ashe. Assim, ela será obrigada a fazer melhor uso da redução de velocidade em vez de desperdiçá-la apenas pelo dano do W.",
       "habilidades": [
@@ -40,13 +40,13 @@
               "depois": "70 de Mana"
             }
           ],
-          "img": "skills/Volley.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/Volley.png"
         }
       ]
     },
     {
       "campeao": "Blitzcrank",
-      "img": "champs/Blitzcrank.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Blitzcrank.png&resize=64:",
       "mod": "Dano base do Q reduzido.",
       "nota": "Blitzcrank ainda está bem forte depois das mudanças recentes, então faremos um pequeno ajuste para que ele chegue ao estado que planejamos.",
       "habilidades": [
@@ -59,13 +59,13 @@
               "depois": "70/120/170/220/270"
             }
           ],
-          "img": "skills/RocketGrab.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/RocketGrab.png"
         }
       ]
     },
     {
       "campeao": "Ivern",
-      "img": "champs/Ivern.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Ivern.png&resize=64:",
       "mod": "Correção de bugs no Q.",
       "nota": "Essas correções já foram implementadas na 9.21, mas achamos válido mencioná-las aqui caso alguém não tenha visto!",
       "habilidades": [
@@ -85,13 +85,13 @@
               "depois": "Corrigido um bug em que aliados eram teleportados para locais inesperados quando Ivern avançava até um alvo enraizado"
             }
           ],
-          "img": "skills/IvernQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/IvernQ.png"
         }
       ]
     },
     {
       "campeao": "Kai'Sa",
-      "img": "champs/Kaisa.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Kaisa.png&resize=64:",
       "mod": "Dano do projétil do Q reduzido depois do primeiro acerto.",
       "nota": "Pretendemos eliminar dois problemas na Kai'Sa com esta mudança, enfraquecendo seu dano explosivo isolado no fim de jogo e impulsionando a habilidade dos inimigos de afastá-la das ondas de tropas.",
       "habilidades": [
@@ -104,13 +104,13 @@
               "depois": "25%"
             }
           ],
-          "img": "skills/KaisaQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/KaisaQ.png"
         }
       ]
     },
     {
       "campeao": "Kalista",
-      "img": "champs/Kalista.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Kalista.png&resize=64:",
       "mod": "Duração da marca do W e dano adicional em alvos marcados aumentados.",
       "nota": "Apesar de historicamente hesitarmos em fortalecer o dano de ativação da Kalista devido a altos limites de coordenação de equipes em jogadas solo, tomaremos uma direção diferente e tornaremos sua ativação mais acessível enquanto aumentamos o dano. Esperamos que isso a ajude em todos os níveis de jogo e faça valer a pena os pontos investidos.",
       "habilidades": [
@@ -128,13 +128,13 @@
               "depois": "4 segundos"
             }
           ],
-          "img": "skills/KalistaW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/KalistaW.png"
         }
       ]
     },
     {
       "campeao": "Kayle",
-      "img": "champs/Kayle.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Kayle.png&resize=64:",
       "mod": "Dano base do Q reduzido. Custo do W aumentado.",
       "nota": "Vamos reduzir o poder da Kayle durante a fase de rotas para que ela possa ser mais vulnerável no início de jogo, fazendo com que demore um pouco mais até começar a agredir os outros por aí.",
       "habilidades": [
@@ -147,7 +147,7 @@
               "depois": "60/100/140/180/220"
             }
           ],
-          "img": "skills/KayleQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/KayleQ.png"
         },
         {
           "nome": "W - Bênção Celestial",
@@ -158,13 +158,13 @@
               "depois": "70/80/90/100/110 de Mana"
             }
           ],
-          "img": "skills/KayleW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/KayleW.png"
         }
       ]
     },
     {
       "campeao": "Malphite",
-      "img": "champs/Malphite.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Malphite.png&resize=64:",
       "mod": "Multiplicador de PdH do R reduzido.",
       "nota": "Achamos que as itemizações de tanque do Malphite estão em um bom estado, mas pode ser absurdamente frustrante jogar contra itemizações de PdH, dadas as poucas opções de contrajogadas. Por essa razão, enfraqueceremos esse aspecto em seu kit.",
       "habilidades": [
@@ -177,13 +177,13 @@
               "depois": "0,8 de Poder de Habilidade"
             }
           ],
-          "img": "skills/UFSlash.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/UFSlash.png"
         }
       ]
     },
     {
       "campeao": "Nautilus",
-      "img": "champs/Nautilus.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Nautilus.png&resize=64:",
       "mod": "Dano base ao alvo primário do R reduzido.",
       "nota": "Nautilus está forte demais em todas as partidas, independentemente do nível, mas, nessa Atualização, enfraqueceremos seu dano, já que é algo mais dependente de coordenação.",
       "habilidades": [
@@ -196,13 +196,13 @@
               "depois": "150/275/400"
             }
           ],
-          "img": "skills/NautilusGrandLine.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/NautilusGrandLine.png"
         }
       ]
     },
     {
       "campeao": "Pantheon",
-      "img": "champs/Pantheon.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Pantheon.png&resize=64:",
       "mod": "Redução de dano do Q em tropas aumentada e limiar de execução reduzido. Aumento da Velocidade do avanço do W proveniente de botas removido.",
       "nota": "Pantheon continua sendo um Campeão extremamente forte (e extremamente banido), principalmente em partidas ranqueadas de alto nível de habilidade. Realizaremos algumas mudanças nas partes do kit que mais afetam os jogadores nessas partidas, focando principalmente em seu dano consistente e na limpeza de tropas.",
       "habilidades": [
@@ -220,7 +220,7 @@
               "depois": "20% da Vida máxima do alvo"
             }
           ],
-          "img": "skills/PantheonQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/PantheonQ.png"
         },
         {
           "nome": "W - Escudo-Cometa",
@@ -231,13 +231,13 @@
               "depois": "A Velocidade do avanço de Pantheon deixa de ser aumentada com botas."
             }
           ],
-          "img": "skills/PantheonW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/PantheonW.png"
         }
       ]
     },
     {
       "campeao": "Sejuani",
-      "img": "champs/Sejuani.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Sejuani.png&resize=64:",
       "mod": "DdA base, crescimento de Regeneração de Vida e crescimento de VdA aumentados. Dano do Q aumentado nos últimos níveis. Correção de bug no E.",
       "nota": "Ajudaremos Sejuani a emporcalhar os inimigos e a recompensaremos quando conseguir entrar no meio da luta.",
       "habilidades": [
@@ -270,7 +270,7 @@
               "depois": "80/130/180/230/280 (+0,6 de Poder de Habilidade)"
             }
           ],
-          "img": "skills/SejuaniQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/SejuaniQ.png"
         },
         {
           "nome": "E - Congelação Permanente",
@@ -280,13 +280,13 @@
               "depois": "Agora a Passiva reinicia devidamente a duração do efeito negativo quando reaplicada com o máximo de acúmulos."
             }
           ],
-          "img": "skills/SejuaniE.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/SejuaniE.png"
         }
       ]
     },
     {
       "campeao": "Sylas",
-      "img": "champs/Sylas.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Sylas.png&resize=64:",
       "mod": "Regeneração de Vida base e Resistência Mágica aumentadas; crescimento de Regeneração de Vida reduzido. Custo do W reduzido.",
       "nota": "Recentemente, fizemos algumas alterações com o objetivo de abordar a diferença de poder do Sylas no nível profissional e na Fila Solo. Como resultado, seu nível de poder caiu. Por isso, daremos a ele um pouco de força geral. Entretanto, não achamos que isso resolverá o problema por completo, e é por isso que continuaremos fazendo algumas alterações no futuro próximo.",
       "habilidades": [
@@ -319,13 +319,13 @@
               "depois": "40/45/50/55/60 de Mana"
             }
           ],
-          "img": "skills/SylasW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/SylasW.png"
         }
       ]
     },
     {
       "campeao": "Thresh",
-      "img": "champs/Thresh.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Thresh.png&resize=64:",
       "mod": "Largura do E alterada em todas as skins.",
       "nota": "Ajustaremos a largura do E em todos os modelos do Thresh, já que a habilidade não era precisa e não mostrava a melhor representação da sua caixa de colisão.",
       "habilidades": [
@@ -337,13 +337,13 @@
               "depois": "Para melhorar a clareza da mecânica de jogo, aumentamos a largura da habilidade para condizer com a verdadeira caixa de colisão."
             }
           ],
-          "img": "skills/ThreshE.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/ThreshE.png"
         }
       ]
     },
     {
       "campeao": "Xayah",
-      "img": "champs/Xayah.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/champion/Xayah.png&resize=64:",
       "mod": "Velocidade de Ataque adicional do W reduzida.",
       "nota": "Enfraqueceremos o potencial de supercarregador DPS da Xayah.",
       "habilidades": [
@@ -356,7 +356,7 @@
               "depois": "35/40/45/50/55%"
             }
           ],
-          "img": "skills/XayahW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.21.1/img/spell/XayahW.png"
         }
       ]
     }

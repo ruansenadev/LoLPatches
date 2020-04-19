@@ -31,49 +31,57 @@ function urlResize(url) {
     return url.indexOf('&') > -1 ? url.slice(0, url.indexOf('&')) : url
 }
 // calls fetcher module and craw images
-async function fetchPatches() {
+async function fetchPatches(callback = (data = { items: [] }) => { return data }) {
     let data = await fetcher.fetch()
 
-    if (data[0].length) {
+    if (data[0].items.length) {
         try {
             fs.mkdir(path.join(patchesDir, imagesDir), { recursive: true }, (err) => {
                 if (err) throw err
             })
-            console.log(`Gonna download ${data[0].length} banners in parallel`)
-            async.map(data[0], (patch, cb) => {
-                let img
+            console.log(`Trynna download banners`)
+            async.map(data[0].items, async.reflect((patch, cb) => {
                 axios({ method: 'get', url: patch.img, responseType: 'stream' })
                     .then(res => {
-                        img = res.headers['content-disposition'].split('filename=')[1]
+                        let img = res.headers['content-disposition'].split('filename=')[1]
                         fs.access(path.join(patchesDir, imagesDir, img), fs.constants.F_OK, (err) => {
                             // image doesnt exist
                             if (err) { res.data.pipe(fs.createWriteStream(path.join(patchesDir, imagesDir, img)).on('open', () => console.log('downloading ' + img)).on('close', () => cb(null, img))) }
-                            else { console.log(`skipping ${img}`) }
+                            else {
+                                let err = new Error('There is a local ' + img);
+                                err.code = 'EYEIMG'
+                                cb(err)
+                            }
                         })
                     })
                     .catch(cb)
-            }, (erro, imgs) => {
+            }), (erro, imgs) => {
                 if (erro) { throw erro }
                 imgs.forEach((img, i) => {
-                    data[0][i].img = img
+                    if (img.error) {
+                        if (img.error.code === 'EYEIMG') {
+                            return console.log(img.error.message)
+                        } else {
+                            throw img.error
+                        }
+                    } else {
+                        data[0].items[i].img = img.value
+                    }
                 })
-                // images mapped so write
-                fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0].concat(data[1]), null, 2), 'utf-8', (err) => {
-                    if (err) { throw err }
-                    console.log('\nPatches updated with success ^-^')
-                    console.log("all images saved at " + path.join(patchesDir, imagesDir))
-                })
+                // concat local with new items
+                data[1].items = data[0].items.concat(data[1].items)
+                return callback(data[1])
             })
         } catch (error) {
             createLog(error, 'Patches images')
         }
     } else {
         console.log('Your file is up-to-date, nice!')
+        return callback(data[1])
     }
-    return data[0]
 }
 async function crawPatches(patches) {
-    patches = patches || JSON.parse(fs.readFileSync(path.join(patchesDir, "data.json"), 'utf-8'))
+    patches = patches || JSON.parse(fs.readFileSync(path.join(patchesDir, "data.json"), 'utf-8')).items
     console.log(`Gonna crawl ${patches.length} patches page and scrap in series`)
     // map craw calls
     patches = patches.map(p => {
@@ -92,22 +100,22 @@ async function crawPatches(patches) {
         let resultsBanner = results.reduce((patchesBanner, patch, i) => {
             // index patches with fetch calls to banners
             if (/(?<=\.)[a-z]*$/.test(patch[0].ft.img)) {
-                patchesBanner[i] = function (cb) {
-                    let banner = imgFile(patch[0].ft.img)
-                    axios({ method: 'get', url: patch[0].ft.img, responseType: 'stream' })
-                        .then(res => {
-                            fs.access(path.join(patchesDir, patch[1], banner), fs.constants.F_OK, (err) => {
-                                // image doesnt exist
-                                if (err) {
-                                    res.data.pipe(fs.createWriteStream(path.join(patchesDir, patch[1], banner)).on('open', () => console.log(`downloading ${banner} to ${path.join(patchesDir, patches[1])}`)))
-                                }
-                            })
-                        })
-                        .catch(cb)
-                        .finally(() => {
-                            cb(null, banner)
-                        })
-                }
+                let banner = imgFile(patch[0].ft.img)
+                fs.access(path.join(patchesDir, patch[1], banner), fs.constants.F_OK, (err) => {
+                    if (err) {
+                        // image doesnt exist so add to banners
+                        patchesBanner[i] = function (cb) {
+                            axios({ method: 'get', url: patch[0].ft.img, responseType: 'stream' })
+                                .then(res => {
+                                    res.data.pipe(fs.createWriteStream(path.join(patchesDir, patch[1], banner)).on('open', () => console.log(`downloading ${banner}`)))
+                                })
+                                .catch(cb)
+                                .finally(() => {
+                                    cb(null, banner)
+                                })
+                        }
+                    }
+                })
             }
             return patchesBanner
         }, {})
@@ -118,7 +126,7 @@ async function crawPatches(patches) {
                 i = Number(i)
                 results[i][0].ft.img = banners[i]
             }
-            console.log(`${Object.keys(banners).length} featured banners of ${results.length} patches`)
+            console.log(`${Object.keys(banners).length} new banners downloaded, banners of patch in the respective folder`)
         })
 
         // all images fetch calls
@@ -132,47 +140,48 @@ async function crawPatches(patches) {
                     champ.habilidades.forEach((sk, h) => {
                         if (sk.img) {
                             sk.img = urlResize(sk.img)
-                            patchesCalls.push(function (cb) {
-                                let img = imgFile(sk.img)
-                                axios({ method: 'get', url: sk.img, responseType: 'stream' })
-                                    .then(res => {
-                                        fs.mkdir(path.join(imagesDir, spellsDir), { recursive: true }, (err) => {
-                                            if (err) { throw err }
-                                            fs.access(path.join(imagesDir, spellsDir, img), fs.constants.F_OK, (err) => {
-                                                if (err) {
+                            let img = imgFile(sk.img)
+                            fs.access(path.join(imagesDir, spellsDir, img), fs.constants.F_OK, (err) => {
+                                if (err) {
+                                    // image doesnt exist so add to calls
+                                    patchesCalls.push(function (cb) {
+                                        axios({ method: 'get', url: sk.img, responseType: 'stream' })
+                                            .then(res => {
+                                                fs.mkdir(path.join(imagesDir, spellsDir), { recursive: true }, (err) => {
+                                                    if (err) { throw err }
                                                     res.data.pipe(fs.createWriteStream(path.join(imagesDir, spellsDir, img)))
-                                                }
+                                                })
                                             })
-                                        })
+                                            .catch(cb)
+                                            .finally(() => {
+                                                cb(null, img)
+                                            })
                                     })
-                                    .catch(cb)
-                                    .finally(() => {
-                                        cb(null, img)
-                                    })
+                                }
                                 // re-assign img name
                                 results[r][0].champs[c].habilidades[h].img = `${spellsDir}/${img}`
                             })
                         }
                     })
                 }
-                patchesCalls.push(function (cb) {
-                    let img = imgFile(urlResize(champ.img))
-                    // fetch champ image
-                    axios({ method: 'get', url: urlResize(champ.img), responseType: 'stream' })
-                        .then(res => {
-                            fs.mkdir(path.join(imagesDir, champsDir), { recursive: true }, (err) => {
-                                if (err) { throw err }
-                                fs.access(path.join(imagesDir, champsDir, img), fs.constants.F_OK, (err) => {
-                                    if (err) {
+                let img = imgFile(urlResize(champ.img))
+                fs.access(path.join(imagesDir, champsDir, img), fs.constants.F_OK, (err) => {
+                    if (err) {
+                        patchesCalls.push(function (cb) {
+                            // fetch champ image call
+                            axios({ method: 'get', url: urlResize(champ.img), responseType: 'stream' })
+                                .then(res => {
+                                    fs.mkdir(path.join(imagesDir, champsDir), { recursive: true }, (err) => {
+                                        if (err) { throw err }
                                         res.data.pipe(fs.createWriteStream(path.join(imagesDir, champsDir, img)))
-                                    }
+                                    })
                                 })
-                            })
+                                .catch(cb)
+                                .finally(() => {
+                                    cb(null, img)
+                                })
                         })
-                        .catch(cb)
-                        .finally(() => {
-                            cb(null, img)
-                        })
+                    }
                     // re-assign champ img
                     results[r][0].champs[c].img = `${champsDir}/${img}`
                 })
@@ -180,7 +189,7 @@ async function crawPatches(patches) {
         })
         async.parallel(patchesCalls, (erro, patchesImages) => {
             if (erro) { return createLog(erro, 'Patch images') }
-            console.log(`${patchesImages.length} images of ${results.length} patches, ${path.join(imagesDir)}`)
+            console.log(`${patchesImages.length} new images downloaded, images saved in \\${imagesDir}`)
             // rewrite data files
             results.forEach(scrap => {
                 fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
@@ -189,41 +198,24 @@ async function crawPatches(patches) {
                 })
             })
         })
-        
+
     })
 }
-
-crawPatches([
-    {
-        url: "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-22/",
-        img: "pn-922-replacement.jpg",
-        titulo: "Notas da Atualização 9.22",
-        autor: "shio shoujo",
-        data: "2019-11-02T00:14:18.000Z"
-    },
-    {
-        url: "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-4/",
-        img: "LOL_PROMOART_6.jpg",
-        titulo: "Notas da Atualização 10.4",
-        autor: "Anacronista e Natchy",
-        data: "2020-02-18T19:00:00.000Z"
-    },
-    {
-        url: "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-3/",
-        img: "LOL_PROMOART_5.jpg",
-        titulo: "Notas da Atualização 10.3",
-        autor: "Anacronista e Natchy",
-        data: "2020-02-04T19:00:00.000Z"
-    },
-    {
-        url: "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-2/",
-        img: "header.jpg",
-        titulo: "Notas da Atualização 10.2",
-        autor: "Anacronista e Natchy",
-        data: "2020-01-21T19:00:00.000Z"
-    }
-])
-// fetchPatches()
+fetchPatches(data => {
+    fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data, null, 2), 'utf-8', (err) => {
+        if (err) { throw err }
+        console.log('\nPatches updated with success ^-^')
+        console.log("all images saved at " + path.join(patchesDir, imagesDir))
+    })
+})
+// crawPatches([{
+//     url: "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-8/",
+//     img: "Patch_10.8_Notes_Banner.jpg",
+//     titulo: "Notas da Atualização 10.8",
+//     autor: "Anacronista e Natchy",
+//     data: "2020-04-14T18:00:00.000Z"
+// }])
+// fetchPatches().then(crawPatches)
 
 // scraper.scrap('https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-4')
 

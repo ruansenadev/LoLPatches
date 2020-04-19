@@ -1,13 +1,13 @@
 {
   "note": "Oi pra vocês (menos pros haters)! Antes de nos aprofundarmos nas mudanças, aqui vai um rápido aviso: a Atualização 10.4 não será implementada até dia 20 de fevereiro devido ao feriado! Nesta Atualização, lidaremos com Sona e Soraka na rota superior, já que elas estão ridiculamente poderosas nessa rota. Além disso, faremos mudanças maiores no elenco de caçadores, dando ferramentas a alguns Campeões não tradicionais para que possam se aventurar pela selva. Com isso, ofereceremos maior diversidade de escolha de Campeões tanto para os veteranos, quanto para os novatos. E, por fim, facilitaremos a compreensão do Aphelios, não só para quem estiver jogando com ele, mas também para quem for seu oponente. Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
   "ft": {
-    "img": "Patch_10_4_Infographic_1080x1080_por-BR.jpg",
+    "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/riot-bra/LoL/NotasdeAtualizacao104/Patch_10_4_Infographic_1080x1080_por-BR.jpg",
     "mod": "Tryndamere, Katarina e Master Yi Lua Sangrenta estarão disponíveis em 20 de fevereiro de 2020."
   },
   "champs": [
     {
       "campeao": "Amumu",
-      "img": "champs/Amumu.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Amumu.png",
       "mod": "Velocidade de avanço do Q aumentada. Tempo de Recarga do R reduzido e passa a impedir avanços.",
       "nota": "Juntamente com as mudanças no efeito Imolar (olha o spoiler!) da 10.4, esses fortalecimentos devem ajudar o Amumu a competir com os caçadores mais fortes.",
       "habilidades": [
@@ -20,7 +20,7 @@
               "depois": "1800 depois de atingir um inimigo"
             }
           ],
-          "img": "skills/BandageToss.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/BandageToss.png"
         },
         {
           "nome": "R - A Maldição da Múmia Triste",
@@ -36,13 +36,13 @@
               "depois": "Passa a impedir inimigos no meio de seus avanços."
             }
           ],
-          "img": "skills/CurseoftheSadMummy.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/CurseoftheSadMummy.png"
         }
       ]
     },
     {
       "campeao": "Aphelios",
-      "img": "champs/Aphelios.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Aphelios.png",
       "mod": "Jogadores agora podem ver as duas armas de Aphelios. Calibrum deixa de redefinir o temporizador de ataque básico depois de consumir uma marca. Atalaias de Crescendum passam a ser abatidas mais rápido. Alcance do R reduzido.",
       "nota": "Aphelios é o atirador que exige 200 de QI dos jogadores, já que seu kit conta com vários componentes. Porém, nosso rapazinho lunar anda estressando os oponentes que não sabem o que ele está fazendo, e parece não haver uma contrajogada adequada nas partidas ranqueadas de alto nível de habilidade. Uma melhor compreensão de todos esses elementos fará com que o desempenho de Aphelios caia, já que os oponentes tomarão melhores decisões com maior frequência, mas também temos alguns enfraquecimentos mais diretos e focados em dar aos oponentes maneiras eficazes de alcançá-lo e derrotá-lo.",
       "habilidades": [
@@ -55,7 +55,7 @@
               "depois": "Jogadores agora podem ver quais são as duas armas equipadas por Aphelios ao lado da barra de Vida dele."
             }
           ],
-          "img": "skills/Weapons_of_the_Faithful.png"
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Weapons_of_the_Faithful.png"
         },
         {
           "nome": "Calibrum, o Rifle de Precisão",
@@ -66,7 +66,7 @@
               "depois": "Aphelios deixa de redefinir seu temporizador de ataque básico logo depois de consumir uma marca (o ataque da marca ainda redefine o ataque básico)."
             }
           ],
-          "img": "skills/Calibrum.jpg"
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Calibrum.jpg"
         },
         {
           "nome": "Crescendum, o Chakram",
@@ -95,7 +95,7 @@
               "depois": "As atalaias do Aphelios deixam de morrer ocasionalmente ao serem ativadas."
             }
           ],
-          "img": "skills/Crescendum.jpg"
+          "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/ApheliosAbility/Crescendum.jpg"
         },
         {
           "nome": "R - Vigília do Plenilúnio",
@@ -106,13 +106,13 @@
               "depois": "1300"
             }
           ],
-          "img": "skills/ApheliosR.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/ApheliosR.png"
         }
       ]
     },
     {
       "campeao": "Aurelion Sol",
-      "img": "champs/AurelionSol.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/AurelionSol.png",
       "mod": "Dano das estrelas ao ativar o W reduzido.",
       "nota": "Nosso Forjador de Estrelas sofrerá um leve enfraquecimento nessa Atualização.",
       "habilidades": [
@@ -125,13 +125,13 @@
               "depois": "40%"
             }
           ],
-          "img": "skills/AurelionSolW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/AurelionSolW.png"
         }
       ]
     },
     {
       "campeao": "Caitlyn",
-      "img": "champs/Caitlyn.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Caitlyn.png",
       "mod": "VdA adicional no nível 1 aumentada.",
       "nota": "Afiando (é possível afiar um rifle?) o potencial de agressão da Caitlyn no início de jogo, já que ela está meio fraquinha no momento.",
       "habilidades": [
@@ -149,7 +149,7 @@
     },
     {
       "campeao": "Garen",
-      "img": "champs/Garen.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Garen.png",
       "mod": "Aumentado o multiplicador de Dano de Ataque do ataque básico fortalecido pelo Q. Resistências do W aumentadas depois de serem maximizadas por abates de inimigos. Escudo do W aumentado.",
       "nota": "Nosso objetivo é trazer de volta a diversidade de itemizações para o Garen, fortalecendo especificamente suas opções mais \"tanque\" e, ao mesmo tempo, mantendo as opções de dano viáveis. Ainda temos mais uma mudança, da qual falaremos na seção \"Campeões na selva\" logo abaixo!",
       "habilidades": [
@@ -162,7 +162,7 @@
               "depois": "0,5 de Dano de Ataque"
             }
           ],
-          "img": "skills/GarenQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/GarenQ.png"
         },
         {
           "nome": "W - Coragem",
@@ -178,13 +178,13 @@
               "depois": "70/95/120/145/170 (+0,2 da Vida adicional)"
             }
           ],
-          "img": "skills/GarenW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/GarenW.png"
         }
       ]
     },
     {
       "campeao": "Gnar",
-      "img": "champs/Gnar.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Gnar.png",
       "mod": "VdM base aumentada. VdM passiva do Mini-Gnar reduzida. Multiplicadores de dano do R aumentados.",
       "nota": "Assim como Garen, temos uma mudança específica para o Gnar caçador que vocês podem encontrar na seção \"Campeões na selva\". Tentaremos fortalecer o yordle pré-histórico quando se transformar em Mega-Gnar, tendo em vista que seu desempenho está insatisfatório, mesmo ele sendo um monstrengo enorme.",
       "habilidades": [
@@ -207,7 +207,7 @@
               "depois": "0 - 20 (nos níveis 1 a 18) na forma Mini-Gnar"
             }
           ],
-          "img": "skills/Gnar_Passive.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/passive/Gnar_Passive.png"
         },
         {
           "nome": "R - GNAR!",
@@ -218,13 +218,13 @@
               "depois": "0,5 do Dano de Ataque total e 1,0 de Poder de Habilidade"
             }
           ],
-          "img": "skills/GnarR.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/GnarR.png"
         }
       ]
     },
     {
       "campeao": "Jayce",
-      "img": "champs/Jayce.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Jayce.png",
       "mod": "Mana base e crescimento de Mana aumentados. Dano base do Q aumentado.",
       "nota": "Jayce agora deve conseguir conjurar mais habilidades para se defender dos oponentes.",
       "habilidades": [
@@ -252,13 +252,13 @@
               "depois": "55/95/135/175/215/255"
             }
           ],
-          "img": "skills/JayceToTheSkies.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/JayceToTheSkies.png"
         }
       ]
     },
     {
       "campeao": "Lux",
-      "img": "champs/Lux.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Lux.png",
       "mod": "Dano do Q aumentado e Tempo de Recarga reduzido nos primeiros níveis. Lux agora pode utilizar Flash enquanto conjura o R.",
       "nota": "Fortaleceremos a Lux como suporte para que os jogadores a vejam como uma escolha mais viável na rota inferior.",
       "habilidades": [
@@ -281,7 +281,7 @@
               "depois": "11/10,5/10/9,5/9s"
             }
           ],
-          "img": "skills/LuxLightBinding.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/LuxLightBinding.png"
         },
         {
           "nome": "R - Centelha Final",
@@ -292,13 +292,13 @@
               "depois": "Lux agora pode utilizar Flash enquanto conjura Centelha Final (a ultimate de Lux não a segue quando ela usa Flash)."
             }
           ],
-          "img": "skills/LuxMaliceCannon.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/LuxMaliceCannon.png"
         }
       ]
     },
     {
       "campeao": "Rammus",
-      "img": "champs/Rammus.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Rammus.png",
       "mod": "VdA base e multiplicador de VdA aumentados.",
       "nota": "Ok.",
       "habilidades": [
@@ -321,7 +321,7 @@
     },
     {
       "campeao": "Singed",
-      "img": "champs/Singed.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Singed.png",
       "mod": "Vida base e Armadura reduzidas.",
       "nota": "Singed já tomava shakes de proteína muito antes de qualquer modinha! Apesar de ele conquistar seu espaço na rota superior com suas bebidas saudáveis, tornaremos seu sucesso mais arriscado reduzindo sua durabilidade no início de jogo.",
       "habilidades": [
@@ -344,7 +344,7 @@
     },
     {
       "campeao": "Sona",
-      "img": "champs/Sona.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Sona.png",
       "mod": "Auras agora concedem Mana para Sona quando o primeiro aliado receber seu efeito. Custos do Q, W e E aumentados.",
       "nota": "Eu não jogo com ela na rota superior mesmo.",
       "habilidades": [
@@ -362,7 +362,7 @@
               "depois": "75/80/85/90/95 de Mana"
             }
           ],
-          "img": "skills/SonaQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/SonaQ.png"
         },
         {
           "nome": "W - Ária da Perseverança",
@@ -378,7 +378,7 @@
               "depois": "105/110/115/120/125 de Mana"
             }
           ],
-          "img": "skills/SonaW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/SonaW.png"
         },
         {
           "nome": "E - Canção da Celeridade",
@@ -389,13 +389,13 @@
               "depois": "Sona agora ganha 30 de Mana na primeira vez que um aliado receber o efeito da aura."
             }
           ],
-          "img": "skills/SonaE.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/SonaE.png"
         }
       ]
     },
     {
       "campeao": "Soraka",
-      "img": "champs/Soraka.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Soraka.png",
       "mod": "Atributos base ajustados. Custo do Q aumentado; autocura, duração da cura de Rejuvenescimento e Velocidade de Movimento adicional reduzidas. Custo de Vida do W reduzido quando estiver com Rejuvenescimento; cura aumentada nos últimos níveis.",
       "nota": "Reduziremos a força da Soraka no topo, afinal, ela se tornou um dos Campeões de maior sucesso nessa rota, mas, ao mesmo tempo, queremos causar o mínimo de impacto em sua função como suporte, já que ela não está passando dos limites lá na rota inferior.",
       "habilidades": [
@@ -453,7 +453,7 @@
               "depois": "10/12,5/15/17,5/20%"
             }
           ],
-          "img": "skills/SorakaQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/SorakaQ.png"
         },
         {
           "nome": "W - Infusão Astral",
@@ -469,13 +469,13 @@
               "depois": "80/115/150/185/220"
             }
           ],
-          "img": "skills/SorakaW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/SorakaW.png"
         }
       ]
     },
     {
       "campeao": "Sylas",
-      "img": "champs/Sylas.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Sylas.png",
       "mod": "Dano do Q aumentado nos últimos níveis.",
       "nota": "Sylas está se saindo muito bem depois das mudanças da 10.1 e, por isso, vamos fortalecê-lo sem nos preocupar tanto com sua dominância no cenário profissional.",
       "habilidades": [
@@ -488,13 +488,13 @@
               "depois": "40/60/80/100/120"
             }
           ],
-          "img": "skills/SylasQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/SylasQ.png"
         }
       ]
     },
     {
       "campeao": "Udyr",
-      "img": "champs/Udyr.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/champion/Udyr.png",
       "mod": "Tempo entre trocas de postura reduzido a cada efeito do Dragão das Nuvens.",
       "nota": "Atualmente, Udyr não recebe nenhum benefício do Dragão das Nuvens. Corrigiremos isso na 10.4!",
       "habilidades": [
@@ -507,7 +507,7 @@
               "depois": "Udyr agora recebe 5% de seu Tempo de Recarga global (tempo entre cada troca de postura) a cada efeito do Dragão das Nuvens."
             }
           ],
-          "img": "skills/Udyr_MonkeysAgility.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/passive/Udyr_MonkeysAgility.png"
         }
       ]
     }

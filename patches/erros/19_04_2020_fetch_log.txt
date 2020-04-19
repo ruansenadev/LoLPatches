@@ -1,0 +1,53 @@
+(18:59:47): 
+ - Preview patch scraping
+Error: Evaluation failed: ReferenceError: prev is not defined
+    at __puppeteer_evaluation_script__:14:6
+    at Array.map (<anonymous>)
+    at __puppeteer_evaluation_script__:2:10
+🔚🔚🔚🔚
+(18:59:47): 
+ - Fetching/Scraping
+TypeError: Cannot read property 'concat' of undefined
+🔚🔚🔚🔚
+(19:06:22): 
+ - Preview patch scraping
+Error: Evaluation failed: ReferenceError: prev is not defined
+    at __puppeteer_evaluation_script__:14:6
+    at Array.map (<anonymous>)
+    at __puppeteer_evaluation_script__:2:10
+🔚🔚🔚🔚
+(19:06:23): 
+ - Fetching/Scraping
+TypeError: Cannot read property 'concat' of undefined
+🔚🔚🔚🔚
+(19:10:09): 
+ - Page request
+TimeoutError: Navigation timeout of 90000 ms exceeded
+🔚🔚🔚🔚
+(19:30:05): 
+ - Page request
+TimeoutError: Navigation timeout of 90000 ms exceeded
+🔚🔚🔚🔚
+(19:50:11): 
+ - Preview patch scraping
+Error: Evaluation failed: TypeError: Cannot read property '0' of null
+    at __puppeteer_evaluation_script__:8:79
+    at Array.reduce (<anonymous>)
+    at __puppeteer_evaluation_script__:2:10
+🔚🔚🔚🔚
+(19:50:16): 
+ - Fetching/Scraping
+TypeError: Cannot read property 'concat' of undefined
+🔚🔚🔚🔚
+(19:57:08): 
+ - Page request
+TimeoutError: Navigation timeout of 90000 ms exceeded
+🔚🔚🔚🔚
+(20:09:43): 
+ - Page request
+TimeoutError: Navigation timeout of 90000 ms exceeded
+🔚🔚🔚🔚
+(20:13:53): 
+ - Page request
+TimeoutError: Navigation timeout of 90000 ms exceeded
+🔚🔚🔚🔚

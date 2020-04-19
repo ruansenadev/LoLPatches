@@ -8,7 +8,7 @@ const d = new Date()
 const errorsDir = 'erros'
 const patchesDir = 'patches'
 
-var localATTS = []
+var localATTS = {items:[]}
 var lastATT
 var ATTS
 
@@ -34,7 +34,7 @@ exports.fetch = async function(callback = (data, message) => {
                 console.log('No local file, gonna fetch all..')
             } else {
                 localATTS = JSON.parse(data)
-                lastATT = localATTS[0]
+                lastATT = localATTS.items[0]
             }
         })
 	})
@@ -57,18 +57,20 @@ exports.fetch = async function(callback = (data, message) => {
 			await pagina.waitFor(5000)
 
 			let agg = await pagina.$$eval('a', (atts) =>
-				atts.map((att) => {
-					let autor = att.querySelector("[class*='Author']")
-					let prev = {
-						url: att.href,
-						img: att.querySelector('img').src,
-						titulo: att.querySelector('h2').innerText,
-						autor: autor ? autor.innerText : '',
-						data: att.querySelector('time').dateTime,
+				atts.reduce((prevs, att) => {
+					if(!(/teamfight|tft/i.test(att.querySelector('h2').innerText))) {
+						let autor = att.querySelector("[class*='Author']")
+						prevs.push({
+							url: att.href,
+							img: att.querySelector('img').src,
+							titulo: att.querySelector('h2').innerText.match(/\d+.\d+[a-z]|\d+.\d+/)[0],
+							autor: autor ? autor.innerText : '',
+							data: att.querySelector('time').dateTime,
+						})
 					}
 					att.remove()
-					return prev
-				})
+					return prevs
+				}, [])
 			).catch(e => createLog(e, 'Preview patch scraping'))
 			if (lastATT) {
 				for (let i = 0; i < agg.length; i++) {
@@ -90,7 +92,7 @@ exports.fetch = async function(callback = (data, message) => {
 				return agg.concat(await fetcher())
 			}
 		}
-		ATTS = await fetcher()
+		ATTS = {items: await fetcher()}
 	} catch (error) {
 		if(error) {
 			createLog(error, 'Fetching/Scraping')
@@ -98,7 +100,7 @@ exports.fetch = async function(callback = (data, message) => {
 	} finally {
 		brow.close()
         let message = "	📃 Fetching done 📃	📃\n"
-		if (ATTS.length) message += ATTS.length + ' new patches\n'	
+		if (ATTS.items.length) message += ATTS.items.length + ' new patches\n'	
         return callback([ATTS, localATTS], message)
 	}
 }
