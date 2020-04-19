@@ -40,33 +40,21 @@ async function fetchPatches(callback = (data = { items: [] }) => { return data }
                 if (err) throw err
             })
             console.log(`Trynna download banners`)
-            async.map(data[0].items, async.reflect((patch, cb) => {
+            async.map(data[0].items, (patch, cb) => {
                 axios({ method: 'get', url: patch.img, responseType: 'stream' })
                     .then(res => {
                         let img = res.headers['content-disposition'].split('filename=')[1]
                         fs.access(path.join(patchesDir, imagesDir, img), fs.constants.F_OK, (err) => {
                             // image doesnt exist
                             if (err) { res.data.pipe(fs.createWriteStream(path.join(patchesDir, imagesDir, img)).on('open', () => console.log('downloading ' + img)).on('close', () => cb(null, img))) }
-                            else {
-                                let err = new Error('There is a local ' + img);
-                                err.code = 'EYEIMG'
-                                cb(err)
-                            }
+                            else {cb(null, img)}
                         })
                     })
                     .catch(cb)
-            }), (erro, imgs) => {
+            }, (erro, imgs) => {
                 if (erro) { throw erro }
                 imgs.forEach((img, i) => {
-                    if (img.error) {
-                        if (img.error.code === 'EYEIMG') {
-                            return console.log(img.error.message)
-                        } else {
-                            throw img.error
-                        }
-                    } else {
-                        data[0].items[i].img = img.value
-                    }
+                    data[0].items[i].img = img
                 })
                 // concat local with new items
                 data[1].items = data[0].items.concat(data[1].items)

@@ -51,3 +51,22 @@ TimeoutError: Navigation timeout of 90000 ms exceeded
  - Page request
 TimeoutError: Navigation timeout of 90000 ms exceeded
 🔚🔚🔚🔚
+(20:21:58): 
+ - Page request
+TimeoutError: Navigation timeout of 90000 ms exceeded
+🔚🔚🔚🔚
+(20:22:03): 
+ - Preview patch scraping
+Error: Evaluation failed: TypeError: Cannot read property '0' of null
+    at __puppeteer_evaluation_script__:8:79
+    at Array.reduce (<anonymous>)
+    at __puppeteer_evaluation_script__:2:10
+🔚🔚🔚🔚
+(20:22:03): 
+ - Fetching/Scraping
+TypeError: Cannot read property 'length' of undefined
+🔚🔚🔚🔚
+(20:24:03): 
+ - Page request
+TimeoutError: Navigation timeout of 90000 ms exceeded
+🔚🔚🔚🔚
