@@ -24,12 +24,9 @@ function createLog(e, frag = '') {
     })
 }
 function imgFile(url) {
-    url = url.slice(url.lastIndexOf('/') + 1)
-    return url.indexOf('&') > -1 ? url.slice(0, url.indexOf('&')) : url
+    return url.slice(url.lastIndexOf('/') + 1)
 }
-function urlResize(url) {
-    return url.indexOf('&') > -1 ? url.slice(0, url.indexOf('&')) : url
-}
+
 // calls fetcher module and craw images
 async function fetchPatches(callback = (data = { items: [] }) => { return data }) {
     let data = await fetcher.fetch()
@@ -39,7 +36,7 @@ async function fetchPatches(callback = (data = { items: [] }) => { return data }
             fs.mkdir(path.join(patchesDir, imagesDir), { recursive: true }, (err) => {
                 if (err) throw err
             })
-            console.log(`Trynna download banners`)
+            console.log("Trynna download banners")
             async.map(data[0].items, (patch, cb) => {
                 axios({ method: 'get', url: patch.img, responseType: 'stream' })
                     .then(res => {
@@ -47,7 +44,7 @@ async function fetchPatches(callback = (data = { items: [] }) => { return data }
                         fs.access(path.join(patchesDir, imagesDir, img), fs.constants.F_OK, (err) => {
                             // image doesnt exist
                             if (err) { res.data.pipe(fs.createWriteStream(path.join(patchesDir, imagesDir, img)).on('open', () => console.log('downloading ' + img)).on('close', () => cb(null, img))) }
-                            else {cb(null, img)}
+                            else { cb(null, img) }
                         })
                     })
                     .catch(cb)
@@ -84,37 +81,30 @@ async function crawPatches(patches) {
     async.series(patches, (err, results) => {
         // results = [[patch, dir]...]
         if (err) { return createLog(err, 'Patches crawling') }
-        // map banners calls
-        let resultsBanner = results.reduce((patchesBanner, patch, i) => {
-            // index patches with fetch calls to banners
+        // map calls to banners images
+        let resultsBanners = results.reduce((patchesBanners, patch, i) => {
             if (/(?<=\.)[a-z]*$/.test(patch[0].ft.img)) {
                 let banner = imgFile(patch[0].ft.img)
                 fs.access(path.join(patchesDir, patch[1], banner), fs.constants.F_OK, (err) => {
                     if (err) {
-                        // image doesnt exist so add to banners
-                        patchesBanner[i] = function (cb) {
+                        // add image call
+                        patchesBanners.push(function (cb) {
                             axios({ method: 'get', url: patch[0].ft.img, responseType: 'stream' })
                                 .then(res => {
-                                    res.data.pipe(fs.createWriteStream(path.join(patchesDir, patch[1], banner)).on('open', () => console.log(`downloading ${banner}`)))
+                                    res.data.pipe(fs.createWriteStream(path.join(patchesDir, patch[1], banner)).on('close', () => cb(null, banner)))
                                 })
                                 .catch(cb)
-                                .finally(() => {
-                                    cb(null, banner)
-                                })
-                        }
+                        })
                     }
+                    // rename path
+                    results[i][0].ft.img = banner
                 })
             }
-            return patchesBanner
-        }, {})
-        async.parallel(resultsBanner, (err, banners) => {
+            return patchesBanners
+        }, [])
+        async.parallel(resultsBanners, (err, banners) => {
             if (err) { return createLog(err, 'Banners fetching') }
-            // map img files
-            for (let i in banners) {
-                i = Number(i)
-                results[i][0].ft.img = banners[i]
-            }
-            console.log(`${Object.keys(banners).length} new banners downloaded, banners of patch in the respective folder`)
+            console.log(`${Object.keys(banners).length} new ft banners, featured banners in the respective folder of patch`)
         })
 
         // all images fetch calls
@@ -127,7 +117,6 @@ async function crawPatches(patches) {
                     // skills calls
                     champ.habilidades.forEach((sk, h) => {
                         if (sk.img) {
-                            sk.img = urlResize(sk.img)
                             let img = imgFile(sk.img)
                             fs.access(path.join(imagesDir, spellsDir, img), fs.constants.F_OK, (err) => {
                                 if (err) {
@@ -137,13 +126,10 @@ async function crawPatches(patches) {
                                             .then(res => {
                                                 fs.mkdir(path.join(imagesDir, spellsDir), { recursive: true }, (err) => {
                                                     if (err) { throw err }
-                                                    res.data.pipe(fs.createWriteStream(path.join(imagesDir, spellsDir, img)))
+                                                    res.data.pipe(fs.createWriteStream(path.join(imagesDir, spellsDir, img)).on('close', () => { cb(null, img) }))
                                                 })
                                             })
                                             .catch(cb)
-                                            .finally(() => {
-                                                cb(null, img)
-                                            })
                                     })
                                 }
                                 // re-assign img name
@@ -152,12 +138,12 @@ async function crawPatches(patches) {
                         }
                     })
                 }
-                let img = imgFile(urlResize(champ.img))
+                let img = imgFile(champ.img)
                 fs.access(path.join(imagesDir, champsDir, img), fs.constants.F_OK, (err) => {
                     if (err) {
                         patchesCalls.push(function (cb) {
                             // fetch champ image call
-                            axios({ method: 'get', url: urlResize(champ.img), responseType: 'stream' })
+                            axios({ method: 'get', url: champ.img, responseType: 'stream' })
                                 .then(res => {
                                     fs.mkdir(path.join(imagesDir, champsDir), { recursive: true }, (err) => {
                                         if (err) { throw err }
@@ -177,25 +163,37 @@ async function crawPatches(patches) {
         })
         async.parallel(patchesCalls, (erro, patchesImages) => {
             if (erro) { return createLog(erro, 'Patch images') }
-            console.log(`${patchesImages.length} new images downloaded, images saved in \\${imagesDir}`)
+            console.log(`${patchesImages.length} new images, in game images are saved at /${imagesDir}`)
             // rewrite data files
             results.forEach(scrap => {
-                fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
+                fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
                     if (err) { throw err }
-                    console.log(`Re-writed data with images: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+                    fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
+                        if (err) { throw err }
+                        console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+                    })
                 })
             })
         })
 
     })
 }
-fetchPatches(data => {
-    fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data, null, 2), 'utf-8', (err) => {
-        if (err) { throw err }
-        console.log('\nPatches updated with success ^-^')
-        console.log("all images saved at " + path.join(patchesDir, imagesDir))
-    })
-})
+// --fetch news patches and rewrite data--
+// fetchPatches(data => {
+//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data, null, 2), 'utf-8', (err) => {
+//         if (err) { throw err }
+//         console.log('\nPatches updated with success ^-^')
+//         console.log("all images saved at " + path.join(patchesDir, imagesDir))
+//     })
+// })
+// --fetch news patches and scrap all patches--
+// fetchPatches(async data => {
+//     data = data.items
+//     await crawPatches(data)
+// })
+
+// --scrap all patches--
+crawPatches()
 // crawPatches([{
 //     url: "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-8/",
 //     img: "Patch_10.8_Notes_Banner.jpg",
