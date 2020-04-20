@@ -1,0 +1,703 @@
+{
+  "note": "Fala, galera! As Notas das Atualizações de hoje estão bem grandes. Falaremos de todas as correções de bugs, da Edição de Prestígio da skin True Damage da Senna, das alterações na Akali (o que fizeram com você, minha garotinha ninja?) e dos fortalecimentos na selva! Mas, talvez, o mais importante sejam as incríveis atualizações de efeitos visuais em alguns dos Campeões mais velhos e queridos do lolzinho. Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
+  "ft": {
+    "img": "Patch_10_3_Infographic_1080x1080_crop_por-BR.jpg",
+    "mod": "Jinx e Yuumi Cupidos Mortais e Senna True Damage Edição de Prestígio estarão disponíveis em 6 de fevereiro de 2020."
+  },
+  "champs": [
+    {
+      "campeao": "Akali",
+      "img": "champs/Akali.png",
+      "mod": "Custo do Q aumentado. Velocidade de Movimento do W aumentada e agora decai. R agora tem como alvo Campeões, não uma direção.",
+      "nota": "Como prometido, nessa Atualização fizemos grandes alterações na Akali. Essas mudanças são o resultado da presença dela no cenário profissional e têm como objetivo moderar seu poder nessa área (mais do que nas partidas normais). Tendo isso em mente, um dos maiores problemas que queríamos resolver era a grande quantidade de opções que ela tinha tanto para entrar nas lutas quanto para sobreviver em situações complicadas. Nossa ninja estava flexível demais, contribuindo com investidas divididas, confrontos de equipe e, ao mesmo tempo, não se limitando a um estilo de jogo específico (ótimo início de jogo, escalamento, etc.).",
+      "habilidades": [
+        {
+          "nome": "Q - Golpe dos Cinco Pontos",
+          "atributos": [
+            {
+              "atributo": "CUSTO",
+              "antes": "100/95/90/85/80 de Energia",
+              "depois": "120/115/110/105/100 de Energia"
+            }
+          ],
+          "img": "skills/AkaliQ.png"
+        },
+        {
+          "nome": "W - Proteção do Crepúsculo",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO NA PROTEÇÃO",
+              "antes": "20/25/30/35/40% de Velocidade de Movimento",
+              "depois": "30/35/40/45/50% de Velocidade de Movimento que decai ao longo de 2s ao conjurar"
+            }
+          ],
+          "img": "skills/AkaliW.png"
+        },
+        {
+          "nome": "R - Execução Perfeita",
+          "atributos": [
+            {
+              "atributo": "ALVO DO R1",
+              "antes": "Direção-alvo",
+              "depois": "Campeão inimigo-alvo"
+            },
+            {
+              "atributo": "ALCANCE DO R1",
+              "rotulo": "novo",
+              "depois": "675"
+            },
+            {
+              "atributo": "DISTÂNCIA DE AVANÇO DO R1",
+              "depois": "675 - 825 com base na distância do inimigo"
+            }
+          ],
+          "img": "skills/AkaliR.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Aphelios",
+      "img": "champs/Aphelios.png",
+      "mod": "Alcance de Ataque deixa de ser infinito em inimigos marcados pelo Q. ",
+      "nota": "Vamos limitar os poderes do Aphelios para não parecer que ele está atirando lá da lua.",
+      "habilidades": [
+        {
+          "nome": "Q - Calibrum, o Rifle de Precisão",
+          "atributos": [
+            {
+              "atributo": "ALCANCE DE ATAQUE EM INIMIGOS MARCADOS",
+              "antes": "Infinito",
+              "depois": "1800"
+            }
+          ],
+          "img": "skills/Calibrum.jpg"
+        }
+      ]
+    },
+    {
+      "campeao": "Azir",
+      "img": "champs/Azir.png",
+      "mod": "Mana base aumentada. Número de soldados do R aumentado.",
+      "nota": "O imperador já teve dias melhores e, por isso, vamos fortalecê-lo com cuidado, já que existe o risco de que ele enlouqueça com o poder.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "MANA",
+              "antes": "438",
+              "depois": "480"
+            }
+          ]
+        },
+        {
+          "nome": "R - Decreto do Imperador",
+          "atributos": [
+            {
+              "atributo": "TAMANHO DA PAREDE",
+              "antes": "5/6/7 soldados",
+              "depois": "6/7/8 soldados"
+            }
+          ],
+          "img": "skills/AzirR.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Corki",
+      "img": "champs/Corki.png",
+      "mod": "Multiplicador de dano por segundo do W aumentado; duração da queima aumentada e agora aplica redução de velocidade.",
+      "nota": "Vamos incentivar um uso mais agressivo da Entrega Especial do Corki contra seus inimigos.",
+      "habilidades": [
+        {
+          "nome": "W - Entrega Especial",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO POR SEGUNDO",
+              "antes": "0,375 de Dano de Ataque adicional e 0,05 de Poder de Habilidade adicional",
+              "depois": "0,5 de Dano de Ataque adicional e 0,06 de Poder de Habilidade adicional"
+            },
+            {
+              "atributo": "DURAÇÃO DA QUEIMA",
+              "antes": "1s",
+              "depois": "1,5s"
+            },
+            {
+              "atributo": "POMBO-CORREIO",
+              "rotulo": "novo",
+              "depois": "Agora reduz a velocidade dos Campeões atingidos diretamente e empurrados durante 1,5s"
+            }
+          ],
+          "img": "skills/Special_Delivery.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Diana",
+      "img": "champs/Diana.png",
+      "mod": "Mana base reduzida. Dano por orbe do W reduzido. ",
+      "nota": "Mercúrio está retrógrado e isso significa que a Diana será enfraquecida.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "MANA",
+              "antes": "420",
+              "depois": "375"
+            }
+          ]
+        },
+        {
+          "nome": "W - Cascata Lívida",
+          "atributos": [
+            {
+              "atributo": "DANO POR ORBE",
+              "antes": "22/34/46/58/70",
+              "depois": "18/30/42/54/66"
+            }
+          ],
+          "img": "skills/DianaOrbs.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Ekko",
+      "img": "champs/Ekko.png",
+      "mod": "Dano do acúmulo da Passiva reduzido em monstros.",
+      "nota": "Queremos atingir especificamente o Ekko caçador. ALERTA DE SPOILER: também traremos mudanças na selva que devolverão um pouco de EXP para os caçadores mais cedo na partida.",
+      "habilidades": [
+        {
+          "nome": "Passiva - Ressonância Revo-Z",
+          "atributos": [
+            {
+              "atributo": "DANO DE ACÚMULO DA RESSONÂNCIA",
+              "antes": "200% contra monstros",
+              "depois": "150% contra monstros"
+            }
+          ],
+          "img": "skills/Ekko_P.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Ezreal",
+      "img": "champs/Ezreal.png",
+      "mod": "Crescimento de Mana base e VdA aumentado. ",
+      "nota": "MF ultrapassada, ok. Aphelios solado, ok. Itemização fechada, ok. Brotando na rota inferior pro desespero de vocês.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "CRESCIMENTO DE MANA",
+              "antes": "42",
+              "depois": "50"
+            },
+            {
+              "atributo": "CRESCIMENTO DE VELOCIDADE DE ATAQUE",
+              "antes": "1,5%",
+              "depois": "2,5%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Galio",
+      "img": "champs/Galio.png",
+      "mod": "Duração e ciclos de dano do tornado do Q aumentados.",
+      "nota": "Em partidas normais de alto nível, tentamos ajudar os jogadores de Galio que sabem aproveitar bem o seu tornado.",
+      "habilidades": [
+        {
+          "nome": "Q - Ventos de Guerra",
+          "atributos": [
+            {
+              "atributo": "DURAÇÃO DO TORNADO",
+              "antes": "1,5s",
+              "depois": "2s"
+            },
+            {
+              "atributo": "CICLOS DE DANO DO TORNADO",
+              "antes": "3",
+              "depois": "4"
+            }
+          ],
+          "img": "skills/GalioQ.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Leona ",
+      "img": "champs/Leona.png",
+      "mod": "Dano do W e do E reduzido.",
+      "nota": "O dano da Leona está ofuscando as barras de Vida dos oponentes.",
+      "habilidades": [
+        {
+          "nome": "W - Eclipse",
+          "atributos": [
+            {
+              "atributo": "DANO",
+              "antes": "60/100/140/180/220",
+              "depois": "60/95/130/165/200"
+            }
+          ],
+          "img": "skills/LeonaSolarBarrier.png"
+        },
+        {
+          "nome": "E - Lâmina Zênite",
+          "atributos": [
+            {
+              "atributo": "DANO",
+              "antes": "60/100/140/180/220",
+              "depois": "50/90/130/170/210"
+            }
+          ],
+          "img": "skills/LeonaZenithBlade.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Rumble",
+      "img": "champs/Rumble.png",
+      "mod": "Atributos base arredondados. Velocidade de Movimento adicional e escudo do W reduzidos. ",
+      "nota": "Arredondaremos alguns atributos e enfraqueceremos as defesas do W para que ele não toque o terror na rota do meio.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "ARMADURA",
+              "antes": "30,88",
+              "depois": "31"
+            },
+            {
+              "atributo": "DANO DE ATAQUE",
+              "antes": "61,036",
+              "depois": "61"
+            }
+          ]
+        },
+        {
+          "nome": "W - Escudo de Sucata",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
+              "antes": "20/25/30/35/40% (30/37,5/45/52,5/60% quando aprimorada)",
+              "depois": "15/20/25/30/35% (22,5/30/37,5/45/52,5% quando aprimorada)"
+            },
+            {
+              "atributo": "ESCUDO",
+              "antes": "80/110/140/170/200",
+              "depois": "60/95/130/165/200"
+            }
+          ],
+          "img": "skills/RumbleShield.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Sejuani",
+      "img": "champs/Sejuani.png",
+      "mod": "Agora conta com VdA adicional no nível 1. Armadura Congelada agora é removida quando sofre dano de qualquer monstro ou Campeão. ",
+      "nota": "Fortalecemos a Sejuani com muito cuidado. Também removemos alguns dos elementos da Passiva que não eram intuitivos ou aproveitados pela maioria dos jogadores. Se removermos esses elementos agora, teremos mais espaço para fortalecimentos no futuro, já que os jogadores profissionais não explorarão a segurança que eles trazem.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
+              "antes": "0% no nível 1",
+              "depois": "10% no nível 1"
+            }
+          ]
+        },
+        {
+          "nome": "Passiva - Fúria do Norte",
+          "atributos": [
+            {
+              "atributo": "REMOÇÃO DA ARMADURA CONGELADA",
+              "antes": "Ao sofrer dano de monstros épicos ou Campeões inimigos",
+              "depois": "Ao sofrer dano de qualquer monstro ou Campeão inimigo"
+            }
+          ],
+          "img": "skills/Sejuani_passive.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Senna",
+      "img": "champs/Senna.png",
+      "mod": "Chance de surgimento de Espectros da Névoa ajustada. Despojos de Guerra agora contam como abate, reduzindo a chance de aparecimento de Espectros da Névoa. Correção de bug no E. ",
+      "nota": "Apesar de amarmos a flexibilidade da Senna em suas funções, ela está forte demais como atiradora. Ajustaremos a chance de aparecimento de Espectros da Névoa para ajudar sua função como suporte.",
+      "habilidades": [
+        {
+          "nome": "Passiva - Absolvição",
+          "atributos": [
+            {
+              "atributo": "CHANCE DE SURGIMENTO DE ESPECTROS DA NÉVOA",
+              "antes": "20% em tropas que Senna não abater, 100% em tropas de cerco que Senna abater",
+              "depois": "25% em tropas que Senna não abater, 1,67% em tropas de cerco que Senna abater"
+            },
+            {
+              "atributo": "CHANCE DE SURGIMENTO DE ESPECTROS DA NÉVOA (DESPOJOS DE GUERRA)",
+              "rotulo": "novo",
+              "depois": "Abates de tropas concedidos à Senna através de Despojos de Guerra (Escudo Relicário e Guarda-ombros de Aço) agora contam como abates realizados por ela, reduzindo a chance de surgimento para 1,67%"
+            }
+          ],
+          "img": "skills/Senna_Passive.Senna.png"
+        },
+        {
+          "nome": "E - Maldição da Névoa Negra",
+          "atributos": [
+            {
+              "atributo": "CORREÇÃO DE BUG",
+              "depois": "Aliados camuflados pela Maldição da Névoa Negra deixam de ficar invisíveis se Senna morrer durante o efeito da habilidade"
+            }
+          ],
+          "img": "skills/SennaE.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Sett",
+      "img": "champs/Sett.png",
+      "mod": "Regeneração de Vida base reduzida. Tempo de Recarga do W aumentado; dano base reduzido nos últimos níveis. ",
+      "nota": "Sett está arrebentando a cara de todo mundo com muita facilidade. Apesar de ter estilo, ele não está sendo desafiado direito. Vamos dar a ele um ou dois enfraquecimentos com o objetivo de tornar seu Casca-Grossa mais difícil de ser utilizado várias vezes em uma luta.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "REGENERAÇÃO DE VIDA",
+              "antes": "9,25",
+              "depois": "8"
+            }
+          ]
+        },
+        {
+          "nome": "W - Casca-Grossa",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "16/14/12/10/8s",
+              "depois": "18/16,5/15/13,5/12s"
+            },
+            {
+              "atributo": "DANO BASE",
+              "antes": "90/125/160/195/230",
+              "depois": "90/120/150/180/210"
+            }
+          ],
+          "img": "skills/SettW.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Sona",
+      "img": "champs/Sona.png",
+      "mod": "Velocidade de Movimento do E em si mesma reduzida. ",
+      "nota": "O Carnaval nem chegou e a Sona já estava frenética! Falando sério, os novos tênis de corrida da nossa Mestra das Cordas estavam fora de controle. Vamos reverter um pouco esse fortalecimento, já que ela estava rápida demais.",
+      "habilidades": [
+        {
+          "nome": "E - Canção da Celeridade",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO EM SI MESMA",
+              "antes": "25% (+0,04 a cada 100 de Poder de Habilidade)",
+              "depois": "20% (+0,03 a cada 100 de Poder de Habilidade)"
+            }
+          ],
+          "img": "skills/SonaE.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Yuumi",
+      "img": "champs/Yuumi.png",
+      "mod": "Dano fortalecido do Q reduzido e agora leva em consideração a Vida do alvo; custo padronizado. W deixa de entrar em Tempo de Recarga ao ser silenciado. Cura base do E reduzida e multiplicador aumentado. ",
+      "nota": "Ela não é mais apenas uma fonte de cura ambulante (gatos costumam fazer só o que dá na telha, né?). Seu Q deve ser mais satisfatório mesmo no meio/fim de partida.",
+      "habilidades": [
+        {
+          "nome": "Q - Projétil Errante",
+          "atributos": [
+            {
+              "atributo": "DANO FORTALECIDO",
+              "antes": "50/95/140/185/230/275 (+0,4 de Poder de Habilidade)",
+              "depois": "45/80/115/150/185/220 (+0,4 de Poder de Habilidade) (+0,02 - 0,08 da Vida atual do alvo)"
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "85/90/95/100/105/110 de Mana",
+              "depois": "90 de Mana em todos os níveis"
+            }
+          ],
+          "img": "skills/YuumiQ.png"
+        },
+        {
+          "nome": "W - Você e Eu!",
+          "atributos": [
+            {
+              "atributo": "Silenciamento",
+              "rotulo": "novo",
+              "depois": "deixa de agir como efeito imobilizante que coloca Você e Eu! em Tempo de Recarga por 5s"
+            }
+          ],
+          "img": "skills/YuumiW.png"
+        },
+        {
+          "nome": "E - Frenética!",
+          "atributos": [
+            {
+              "atributo": "CURA",
+              "antes": "70/110/150/190/230 (+0,3 de Poder de Habilidade)",
+              "depois": "70/100/130/160/190 (+0,4 de Poder de Habilidade)"
+            }
+          ],
+          "img": "skills/YuumiE.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Annie",
+      "img": "champs/Annie.png",
+      "mod": "",
+      "nota": "",
+      "efeitos": [
+        {
+          "atributo": "ATAQUE BÁSICO",
+          "agora": "Novos projéteis e efeitos de acerto"
+        },
+        {
+          "atributo": "PASSIVA - PIROMANIA",
+          "agora": "Indicador mais limpo e adição de uma camada de efeitos de acerto em quem for atordoado por Annie"
+        },
+        {
+          "atributo": "Q - DESINTEGRAR",
+          "agora": "Novos projéteis e efeitos de acerto; agora tem um pequeno efeito de conjuração"
+        },
+        {
+          "atributo": "W - INCINERAR",
+          "agora": "Área de ação em cone atualizada de forma a representar a caixa de colisão verdadeira; efeitos de acerto adicionados; novo indicador de UI de conjuração rápida"
+        },
+        {
+          "atributo": "E - ESCUDO FUNDIDO",
+          "agora": "Adicionado o efeito ondular modernizado, normalmente utilizado em escudos de redução de dano"
+        },
+        {
+          "atributo": "R - INVOCAR: TIBBERS",
+          "agora": "Novo efeito de conjuração exibindo melhor a caixa de colisão; novos efeitos de ócio no Tibbers; adicionado efeito de fogo ao redor de Tibbers para indicar melhor o alcance do dano em área de ação"
+        },
+        {
+          "atributo": "EFEITOS DE ÓCIO",
+          "agora": "Efeitos de ócio com fogo modernizados"
+        },
+        {
+          "atributo": "TODAS AS SKINS",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "ANNIE GÓTICA",
+          "agora": "Novas cores"
+        },
+        {
+          "atributo": "ANNIE NO PAÍS DAS MARAVILHAS",
+          "agora": "Novos efeitos visuais no kit, dança e Retorno"
+        },
+        {
+          "atributo": "ANNIE DO RAIO DE GELO",
+          "agora": "Novas cores"
+        },
+        {
+          "atributo": "ANNIE FRANKENTIBBERS",
+          "agora": "Efeitos visuais com novas cores para combinar com a skin"
+        },
+        {
+          "atributo": "ANNIE PANDA",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "ANNIE HEXTEC",
+          "agora": "Caixa de colisão do W ajustada; efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "ANNIE SUPERGALÁCTICA",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "ANNIEVERSÁRIO",
+          "agora": "Efeitos adaptados para as mudanças base"
+        }
+      ]
+    },
+    {
+      "campeao": "Malphite",
+      "img": "champs/Malphite.png",
+      "mod": "",
+      "nota": "",
+      "efeitos": [
+        {
+          "atributo": "ATAQUES BÁSICOS",
+          "agora": "Adicionados efeitos de peso e tamanho para movimentos de ataque e acertos"
+        },
+        {
+          "atributo": "PASSIVA - ESCUDO DE GRANITO",
+          "agora": "Adicionados efeitos sonoros de ativação e desativação"
+        },
+        {
+          "atributo": "Q - FRAGMENTO SÍSMICO",
+          "agora": "Efeitos mais limpos e novo som quando a aceleração é ativada"
+        },
+        {
+          "atributo": "W - TROVOADA",
+          "agora": "Efeitos atualizados para conjuração, ciclo e novo efeito ao acertar o W fortalecido e ataque básico"
+        },
+        {
+          "atributo": "E - ESTRONDAR TERRENO",
+          "agora": "Efeitos mais limpos"
+        },
+        {
+          "atributo": "R - FORÇA INCONTROLÁVEL",
+          "agora": "Efeitos atualizados ao conjurar e ao errar/acertar a habilidade"
+        },
+        {
+          "atributo": "TODAS AS SKINS",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        },
+        {
+          "atributo": "MALPHITE GLACIAL",
+          "agora": "Nova conjuração e ciclo do W e efeito ao errar a ult"
+        },
+        {
+          "atributo": "MECH MALPHITE",
+          "agora": "Novo efeito personalizado quando a Passiva é ativada; novo ciclo do W e efeito ao errar a ult"
+        },
+        {
+          "atributo": "MALPHITE BARCA DE FERRO",
+          "agora": "Novo efeito da Passiva quando ativada; novo ciclo do W"
+        },
+        {
+          "atributo": "MALPHITE ODISSEIA",
+          "agora": "Novo efeito quando a Passiva é ativada; efeito ao acertar o W atualizado"
+        }
+      ]
+    },
+    {
+      "campeao": "Nautilus",
+      "img": "champs/Nautilus.png",
+      "mod": "",
+      "nota": "",
+      "efeitos": [
+        {
+          "atributo": "ATAQUES BÁSICOS",
+          "agora": "Novos efeitos de impacto e rastros"
+        },
+        {
+          "atributo": "PASSIVO - ÂNCORA IMPACTANTE",
+          "agora": "Novo efeito por acerto e enraizamento"
+        },
+        {
+          "atributo": "Q - LANÇAR ÂNCORA",
+          "agora": "Novo projétil que representa a verdadeira caixa de colisão; flecha da UI de conjuração rápida ajustada para representar melhor a largura e o comprimento do novo projétil"
+        },
+        {
+          "atributo": "W - IRA DO TITÃ",
+          "agora": "Efeitos mais limpos com novo efeito de escudo; substituição da âncora flutuante do dano ao longo do tempo por um raio de luz escura mais sutil; efeitos dos olhos mais limpos durante a ativação; novo efeito de acerto em área de ação que representa seu verdadeiro tamanho"
+        },
+        {
+          "atributo": "E - CORRENTEZA",
+          "agora": "Efeitos levemente mais limpos"
+        },
+        {
+          "atributo": "R - CARGA DE PROFUNDIDADE",
+          "agora": "Tamanhos das explosões ajustados para representar melhor as caixas de colisão; novo indicador no alvo (também representando a verdadeira caixa de colisão)"
+        },
+        {
+          "atributo": "TODAS AS SKINS",
+          "agora": "Efeitos mais limpos e adaptados para as mudanças base"
+        }
+      ]
+    }
+  ],
+  "runes": [],
+  "fixes": [
+    {
+      "note": "O esticamento do pescoço do Lee Sin Emissário da Escuridão Edição de Prestígio foi reduzido em várias animações (Ócio1, Ócio2 e corrida)."
+    },
+    {
+      "note": "O efeito passivo do Poderio do Rei Destruído aprimorado do Ornn deixa de acumular com o efeito passivo da Lâmina do Rei Destruído."
+    },
+    {
+      "note": "O Tempo de Recarga do R - Canhão de Mercúrio/Martelo de Mercúrio do Jayce agora é devidamente reduzido em 10% com o efeito do Dragão das Nuvens."
+    },
+    {
+      "note": "Efeitos visuais e sonoros da Alma Infernal deixam de ser vistos pelos inimigos através da Névoa de Guerra."
+    },
+    {
+      "note": "A duração do atordoamento da Passiva - Golpes Concussivos do Braum agora é reduzida corretamente por Tenacidade."
+    },
+    {
+      "note": "Se Sett não tiver pontos no W - Casca-Grossa, o E - Teste de Espírito da Illaoi expulsará seu espírito corretamente.",
+      "champs": [
+        "Sett"
+      ]
+    },
+    {
+      "note": "Os efeitos sonoros da PROJETO: Jinx deixam de ser mais altos do que os efeitos sonoros de suas outras skins."
+    },
+    {
+      "note": "O R - Hora do Show do Sett não pode mais suprimir Mordekaiser quando estiver conjurando R - Reino da Morte.",
+      "champs": [
+        "Sett"
+      ]
+    },
+    {
+      "note": "Os indicadores de alcance do R - Furor da Caçada e da Passiva - Predador Oculto do Rengar Guardião das Areias deixam de pulsar e aumentar seus tamanhos intermitentemente."
+    },
+    {
+      "note": "Yuumi deixa de ficar presa no R - Reino da Morte do Mordekaiser aliado ao conjurar W - Você e Eu! em sua direção quando ele for revivido pelo R - Alteração Temporal do Zilean.",
+      "champs": [
+        "Yuumi"
+      ]
+    },
+    {
+      "note": "O E - Singularidade Lucente da Lux agora revela o arbusto dentro de sua zona de dano e redução de velocidade"
+    },
+    {
+      "note": "Campeões não podem mais ativar Aperto dos Mortos-Vivos várias vezes através de Protótipo: Onirruna em uma única rotação."
+    },
+    {
+      "note": "As adagas da Passiva - Ciclone das Adagas da Katarina deixam de receber 2 acúmulos de Conquistador por alvo atingido e passam a receber corretamente 2 acúmulos por conjuração."
+    },
+    {
+      "note": "Katarina deixa de tentar causar ataques básicos ao seu último alvo depois do E - Shunpo, a menos que ele esteja dentro do Alcance de Ataque."
+    },
+    {
+      "note": "O Q - Acerto Decisivo de Garen não é mais cancelado no meio do ataque quando seu alvo se teleportar para longe."
+    },
+    {
+      "note": "Solucionamos um ponto cego próximo da parede ao norte (perto da entrada inferior da selva no lado vermelho) para que armadilhas, mascotes, Campeões etc. sejam visíveis para os jogadores que estiverem no rio."
+    },
+    {
+      "note": "Habilidades ao contato de Campeões agora recebem corretamente acúmulos de Energia vindos de itens e runas com a habilidade Passivo ÚNICO - Energizado."
+    },
+    {
+      "note": "Campeões com ataques duplos agora recebem a quantidade correta de acúmulos de Passivo ÚNICO - Energizado ao realizar dois ataques."
+    },
+    {
+      "note": "Campeões abatidos deixam de atrair o foco de ataque das torres."
+    },
+    {
+      "note": "Campeões cegos pelo Q - Dardo Ofuscante do Teemo agora deixam de causar dano crítico ou fortalecido contra seus oponentes."
+    },
+    {
+      "note": "A Passiva - Ascensão das Trevas de Mordekaiser agora causa dano contra seus inimigos apenas quando a habilidade estiver ativa."
+    },
+    {
+      "note": "O Barão Na'Shor deixa de causar dano ou conceder visão ao seu redor para jogadores atrás do covil que não o tiverem em seu campo de visão original."
+    },
+    {
+      "note": "Destruir uma torre ou uma barricada com o Arauto do Vale agora concede aos jogadores a quantidade correta de ouro, mesmo quando estiverem mais distantes da torre."
+    }
+  ]
+}

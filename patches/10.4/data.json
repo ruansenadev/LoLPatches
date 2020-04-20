@@ -1,0 +1,690 @@
+{
+  "note": "Oi pra vocês (menos pros haters)! Antes de nos aprofundarmos nas mudanças, aqui vai um rápido aviso: a Atualização 10.4 não será implementada até dia 20 de fevereiro devido ao feriado! Nesta Atualização, lidaremos com Sona e Soraka na rota superior, já que elas estão ridiculamente poderosas nessa rota. Além disso, faremos mudanças maiores no elenco de caçadores, dando ferramentas a alguns Campeões não tradicionais para que possam se aventurar pela selva. Com isso, ofereceremos maior diversidade de escolha de Campeões tanto para os veteranos, quanto para os novatos. E, por fim, facilitaremos a compreensão do Aphelios, não só para quem estiver jogando com ele, mas também para quem for seu oponente. Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
+  "ft": {
+    "img": "Patch_10_4_Infographic_1080x1080_por-BR.jpg",
+    "mod": "Tryndamere, Katarina e Master Yi Lua Sangrenta estarão disponíveis em 20 de fevereiro de 2020."
+  },
+  "champs": [
+    {
+      "campeao": "Amumu",
+      "img": "champs/Amumu.png",
+      "mod": "Velocidade de avanço do Q aumentada. Tempo de Recarga do R reduzido e passa a impedir avanços.",
+      "nota": "Juntamente com as mudanças no efeito Imolar (olha o spoiler!) da 10.4, esses fortalecimentos devem ajudar o Amumu a competir com os caçadores mais fortes.",
+      "habilidades": [
+        {
+          "nome": "Q - Lançar Bandagens",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE AVANÇO",
+              "antes": "1350 depois de atingir um inimigo",
+              "depois": "1800 depois de atingir um inimigo"
+            }
+          ],
+          "img": "skills/BandageToss.png"
+        },
+        {
+          "nome": "R - A Maldição da Múmia Triste",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "150/130/110s",
+              "depois": "130/115/100s"
+            },
+            {
+              "atributo": "PARE! ATÉ QUANDO VOCÊ QUER MANDAR E MUDAR MINHA VIDA?",
+              "rotulo": "novo",
+              "depois": "Passa a impedir inimigos no meio de seus avanços."
+            }
+          ],
+          "img": "skills/CurseoftheSadMummy.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Aphelios",
+      "img": "champs/Aphelios.png",
+      "mod": "Jogadores agora podem ver as duas armas de Aphelios. Calibrum deixa de redefinir o temporizador de ataque básico depois de consumir uma marca. Atalaias de Crescendum passam a ser abatidas mais rápido. Alcance do R reduzido.",
+      "nota": "Aphelios é o atirador que exige 200 de QI dos jogadores, já que seu kit conta com vários componentes. Porém, nosso rapazinho lunar anda estressando os oponentes que não sabem o que ele está fazendo, e parece não haver uma contrajogada adequada nas partidas ranqueadas de alto nível de habilidade. Uma melhor compreensão de todos esses elementos fará com que o desempenho de Aphelios caia, já que os oponentes tomarão melhores decisões com maior frequência, mas também temos alguns enfraquecimentos mais diretos e focados em dar aos oponentes maneiras eficazes de alcançá-lo e derrotá-lo.",
+      "habilidades": [
+        {
+          "nome": "O Assassino e a Profetisa",
+          "atributos": [
+            {
+              "atributo": "VISUALIZAÇÃO DA ARMA",
+              "rotulo": "novo",
+              "depois": "Jogadores agora podem ver quais são as duas armas equipadas por Aphelios ao lado da barra de Vida dele."
+            }
+          ],
+          "img": "skills/Weapons_of_the_Faithful.png"
+        },
+        {
+          "nome": "Calibrum, o Rifle de Precisão",
+          "atributos": [
+            {
+              "atributo": "REDEFINIÇÃO DE ATAQUE BÁSICO",
+              "rotulo": "removido",
+              "depois": "Aphelios deixa de redefinir seu temporizador de ataque básico logo depois de consumir uma marca (o ataque da marca ainda redefine o ataque básico)."
+            }
+          ],
+          "img": "skills/Calibrum.jpg"
+        },
+        {
+          "nome": "Crescendum, o Chakram",
+          "atributos": [
+            {
+              "atributo": "VERMELHO VS. AZUL",
+              "depois": "Os indicadores de Alcance da atalaia de Aphelios agora ficam vermelhos para os inimigos quando não estiver ativa."
+            },
+            {
+              "atributo": "NÚMERO BASE DE ATAQUES DA ATALAIA",
+              "antes": "4",
+              "depois": "3 (número de ataques ainda escala com Velocidade de Ataque)"
+            },
+            {
+              "atributo": "VIDA DA ATALAIA CONTRA ATAQUES À DISTÂNCIA",
+              "antes": "Ataques básicos à distância causam ",
+              "depois": "3 de dano (atalaias têm 6 de Vida)"
+            },
+            {
+              "atributo": "VIDA DA ATALAIA CONTRA ATAQUES DE ÁREA DE AÇÃO",
+              "antes": "Ataques de área de ação causam",
+              "depois": "4 de dano (atalaias têm 6 de Vida)"
+            },
+            {
+              "atributo": "CORREÇÃO DE BUG",
+              "depois": "As atalaias do Aphelios deixam de morrer ocasionalmente ao serem ativadas."
+            }
+          ],
+          "img": "skills/Crescendum.jpg"
+        },
+        {
+          "nome": "R - Vigília do Plenilúnio",
+          "atributos": [
+            {
+              "atributo": "ALCANCE",
+              "antes": "1600",
+              "depois": "1300"
+            }
+          ],
+          "img": "skills/ApheliosR.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Aurelion Sol",
+      "img": "champs/AurelionSol.png",
+      "mod": "Dano das estrelas ao ativar o W reduzido.",
+      "nota": "Nosso Forjador de Estrelas sofrerá um leve enfraquecimento nessa Atualização.",
+      "habilidades": [
+        {
+          "nome": "W - Expansão Celestial",
+          "atributos": [
+            {
+              "atributo": "DANO DAS ESTRELAS AO ATIVAR",
+              "antes": "Aumenta o dano total em",
+              "depois": "40%"
+            }
+          ],
+          "img": "skills/AurelionSolW.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Caitlyn",
+      "img": "champs/Caitlyn.png",
+      "mod": "VdA adicional no nível 1 aumentada.",
+      "nota": "Afiando (é possível afiar um rifle?) o potencial de agressão da Caitlyn no início de jogo, já que ela está meio fraquinha no momento.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
+              "antes": "10% no nível 1",
+              "depois": "20% no nível 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Garen",
+      "img": "champs/Garen.png",
+      "mod": "Aumentado o multiplicador de Dano de Ataque do ataque básico fortalecido pelo Q. Resistências do W aumentadas depois de serem maximizadas por abates de inimigos. Escudo do W aumentado.",
+      "nota": "Nosso objetivo é trazer de volta a diversidade de itemizações para o Garen, fortalecendo especificamente suas opções mais \"tanque\" e, ao mesmo tempo, mantendo as opções de dano viáveis. Ainda temos mais uma mudança, da qual falaremos na seção \"Campeões na selva\" logo abaixo!",
+      "habilidades": [
+        {
+          "nome": "Q - Acerto Decisivo",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO DE ATAQUE DO ATAQUE BÁSICO FORTALECIDO",
+              "antes": "0,4 de Dano de Ataque",
+              "depois": "0,5 de Dano de Ataque"
+            }
+          ],
+          "img": "skills/GarenQ.png"
+        },
+        {
+          "nome": "W - Coragem",
+          "atributos": [
+            {
+              "atributo": "SANGUE DOS INIMIGOS",
+              "rotulo": "novo",
+              "depois": "Com as resistências no máximo por abates de inimigos, Garen aumenta sua Armadura e Resistência Mágica adicionais em 10%."
+            },
+            {
+              "atributo": "ESCUDO",
+              "antes": "0,1 da Vida máxima",
+              "depois": "70/95/120/145/170 (+0,2 da Vida adicional)"
+            }
+          ],
+          "img": "skills/GarenW.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Gnar",
+      "img": "champs/Gnar.png",
+      "mod": "VdM base aumentada. VdM passiva do Mini-Gnar reduzida. Multiplicadores de dano do R aumentados.",
+      "nota": "Assim como Garen, temos uma mudança específica para o Gnar caçador que vocês podem encontrar na seção \"Campeões na selva\". Tentaremos fortalecer o yordle pré-histórico quando se transformar em Mega-Gnar, tendo em vista que seu desempenho está insatisfatório, mesmo ele sendo um monstrengo enorme.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO",
+              "antes": "325",
+              "depois": "335"
+            }
+          ]
+        },
+        {
+          "nome": "Passiva - Fúria Genética",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
+              "antes": "10 - 30 (nos níveis 1 a 18) na forma Mini-Gnar",
+              "depois": "0 - 20 (nos níveis 1 a 18) na forma Mini-Gnar"
+            }
+          ],
+          "img": "skills/Gnar_Passive.png"
+        },
+        {
+          "nome": "R - GNAR!",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO",
+              "antes": "0,2 do Dano de Ataque total e 0,5 de Poder de Habilidade",
+              "depois": "0,5 do Dano de Ataque total e 1,0 de Poder de Habilidade"
+            }
+          ],
+          "img": "skills/GnarR.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Jayce",
+      "img": "champs/Jayce.png",
+      "mod": "Mana base e crescimento de Mana aumentados. Dano base do Q aumentado.",
+      "nota": "Jayce agora deve conseguir conjurar mais habilidades para se defender dos oponentes.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "MANA",
+              "antes": "357,2",
+              "depois": "375"
+            },
+            {
+              "atributo": "CRESCIMENTO DE MANA",
+              "antes": "37",
+              "depois": "45"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Aos Céus!",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "45/80/115/150/185/220",
+              "depois": "55/95/135/175/215/255"
+            }
+          ],
+          "img": "skills/JayceToTheSkies.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Lux",
+      "img": "champs/Lux.png",
+      "mod": "Dano do Q aumentado e Tempo de Recarga reduzido nos primeiros níveis. Lux agora pode utilizar Flash enquanto conjura o R.",
+      "nota": "Fortaleceremos a Lux como suporte para que os jogadores a vejam como uma escolha mais viável na rota inferior.",
+      "habilidades": [
+        {
+          "nome": "Q - Ligação da Luz",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "70/115/170/205/250",
+              "depois": "80/125/170/215/260"
+            },
+            {
+              "atributo": "Capa de Fogo Solar (e Capa da Fornalha)",
+              "antes": "MULTIPLICADOR DE DANO",
+              "depois": "0,6 de Poder de Habilidade"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "13/12/10/11/9s",
+              "depois": "11/10,5/10/9,5/9s"
+            }
+          ],
+          "img": "skills/LuxLightBinding.png"
+        },
+        {
+          "nome": "R - Centelha Final",
+          "atributos": [
+            {
+              "atributo": "CADA MERGULHO É UM FLASH",
+              "rotulo": "novo",
+              "depois": "Lux agora pode utilizar Flash enquanto conjura Centelha Final (a ultimate de Lux não a segue quando ela usa Flash)."
+            }
+          ],
+          "img": "skills/LuxMaliceCannon.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Rammus",
+      "img": "champs/Rammus.png",
+      "mod": "VdA base e multiplicador de VdA aumentados.",
+      "nota": "Ok.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE ATAQUE",
+              "antes": "0,625",
+              "depois": "0,656"
+            },
+            {
+              "atributo": "MULTIPLICADOR DE VELOCIDADE DE ATAQUE",
+              "antes": "0,625",
+              "depois": "0,656"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Singed",
+      "img": "champs/Singed.png",
+      "mod": "Vida base e Armadura reduzidas.",
+      "nota": "Singed já tomava shakes de proteína muito antes de qualquer modinha! Apesar de ele conquistar seu espaço na rota superior com suas bebidas saudáveis, tornaremos seu sucesso mais arriscado reduzindo sua durabilidade no início de jogo.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "VIDA",
+              "antes": "610",
+              "depois": "580"
+            },
+            {
+              "atributo": "ARMADURA",
+              "antes": "37",
+              "depois": "34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "campeao": "Sona",
+      "img": "champs/Sona.png",
+      "mod": "Auras agora concedem Mana para Sona quando o primeiro aliado receber seu efeito. Custos do Q, W e E aumentados.",
+      "nota": "Eu não jogo com ela na rota superior mesmo.",
+      "habilidades": [
+        {
+          "nome": "Q - Hino do Valor",
+          "atributos": [
+            {
+              "atributo": "RESTAURAÇÃO DE MANA",
+              "rotulo": "novo",
+              "depois": "Sona agora ganha 30 de Mana na primeira vez que um aliado receber o efeito da aura."
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "50/55/60/65/70 de Mana",
+              "depois": "75/80/85/90/95 de Mana"
+            }
+          ],
+          "img": "skills/SonaQ.png"
+        },
+        {
+          "nome": "W - Ária da Perseverança",
+          "atributos": [
+            {
+              "atributo": "RESTAURAÇÃO DE MANA",
+              "rotulo": "novo",
+              "depois": "Sona agora ganha 30 de Mana na primeira vez que um aliado receber o efeito da aura."
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "80/85/90/95/100 de Mana",
+              "depois": "105/110/115/120/125 de Mana"
+            }
+          ],
+          "img": "skills/SonaW.png"
+        },
+        {
+          "nome": "E - Canção da Celeridade",
+          "atributos": [
+            {
+              "atributo": "RESTAURAÇÃO DE MANA",
+              "rotulo": "novo",
+              "depois": "Sona agora ganha 30 de Mana na primeira vez que um aliado receber o efeito da aura."
+            }
+          ],
+          "img": "skills/SonaE.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Soraka",
+      "img": "champs/Soraka.png",
+      "mod": "Atributos base ajustados. Custo do Q aumentado; autocura, duração da cura de Rejuvenescimento e Velocidade de Movimento adicional reduzidas. Custo de Vida do W reduzido quando estiver com Rejuvenescimento; cura aumentada nos últimos níveis.",
+      "nota": "Reduziremos a força da Soraka no topo, afinal, ela se tornou um dos Campeões de maior sucesso nessa rota, mas, ao mesmo tempo, queremos causar o mínimo de impacto em sua função como suporte, já que ela não está passando dos limites lá na rota inferior.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "VIDA",
+              "antes": "529,04",
+              "depois": "535"
+            },
+            {
+              "atributo": "CRESCIMENTO DE VIDA",
+              "antes": "78",
+              "depois": "74"
+            },
+            {
+              "atributo": "MANA",
+              "antes": "350,8",
+              "depois": "375"
+            },
+            {
+              "atributo": "CRESCIMENTO DE MANA",
+              "antes": "60",
+              "depois": "40"
+            },
+            {
+              "atributo": "DANO DE ATAQUE",
+              "antes": "50,04",
+              "depois": "50"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Chamado Estelar",
+          "atributos": [
+            {
+              "atributo": "AUTOCURA",
+              "antes": "60/80/100/120/140 (+0,5 de Poder de Habilidade)",
+              "depois": "40/50/60/70/80 (+0,3 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "DURAÇÃO DA CURA DE REJUVENESCIMENTO",
+              "antes": "5s",
+              "depois": "2,5s"
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "40/45/50/55/60 de Mana",
+              "depois": "60/65/70/75/80 de Mana"
+            },
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
+              "antes": "15/20/25/30/35%",
+              "depois": "10/12,5/15/17,5/20%"
+            }
+          ],
+          "img": "skills/SorakaQ.png"
+        },
+        {
+          "nome": "W - Infusão Astral",
+          "atributos": [
+            {
+              "atributo": "EUZINHA DEPOIS DE UMA MASSAGEM E UM SORVETE",
+              "rotulo": "novo",
+              "depois": "Quando Soraka estiver com Rejuvenescimento, o custo de 10% de Vida máxima ao conjurar Infusão Astral é reduzido em 40/55/70/85/100%."
+            },
+            {
+              "atributo": "CURA",
+              "antes": "80/110/140/170/200",
+              "depois": "80/115/150/185/220"
+            }
+          ],
+          "img": "skills/SorakaW.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Sylas",
+      "img": "champs/Sylas.png",
+      "mod": "Dano do Q aumentado nos últimos níveis.",
+      "nota": "Sylas está se saindo muito bem depois das mudanças da 10.1 e, por isso, vamos fortalecê-lo sem nos preocupar tanto com sua dominância no cenário profissional.",
+      "habilidades": [
+        {
+          "nome": "Q - Correntes-Chicote",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "40/55/70/85/100",
+              "depois": "40/60/80/100/120"
+            }
+          ],
+          "img": "skills/SylasQ.png"
+        }
+      ]
+    },
+    {
+      "campeao": "Udyr",
+      "img": "champs/Udyr.png",
+      "mod": "Tempo entre trocas de postura reduzido a cada efeito do Dragão das Nuvens.",
+      "nota": "Atualmente, Udyr não recebe nenhum benefício do Dragão das Nuvens. Corrigiremos isso na 10.4!",
+      "habilidades": [
+        {
+          "nome": "Passiva - Agilidade do Macaco",
+          "atributos": [
+            {
+              "atributo": "LIGANDO O MOTORZÃO",
+              "rotulo": "novo",
+              "depois": "Udyr agora recebe 5% de seu Tempo de Recarga global (tempo entre cada troca de postura) a cada efeito do Dragão das Nuvens."
+            }
+          ],
+          "img": "skills/Udyr_MonkeysAgility.png"
+        }
+      ]
+    }
+  ],
+  "runes": [
+    {
+      "runa": "Exaustão",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/SummonerExhaust.png",
+      "mod": "",
+      "nota": "Pequeno fortalecimento, assim como melhorias na visibilidade.",
+      "alteracoes": [
+        {
+          "atributo": "DURAÇÃO",
+          "antes": "2,5s",
+          "depois": "3s"
+        },
+        {
+          "atributo": "VISIBILIDADE",
+          "rotulo": "novo",
+          "depois": "Agora mostra a quantidade de dano sendo reduzida"
+        }
+      ]
+    },
+    {
+      "runa": "Chuva de Lâminas",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Hail_of_Blades_rune.png",
+      "mod": "",
+      "nota": "Tentaremos expandir o uso da Chuva de Lâminas já que, atualmente, a runa é utilizada especificamente por caçadores que conseguem combinar suas habilidades de CG com ataques básicos.",
+      "alteracoes": [
+        {
+          "atributo": "TEMPO MÁXIMO ENTRE ATAQUES",
+          "antes": "2s",
+          "depois": "3s"
+        },
+        {
+          "atributo": "TEMPO DE RECARGA",
+          "antes": "4s fora de combate",
+          "depois": "8s"
+        }
+      ]
+    },
+    {
+      "runa": "Runas Lenda",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Legend-_Alacrity_rune.png",
+      "mod": "",
+      "nota": "Observamos que a runa Linhagem foi a escolha dominante dos atiradores, especialmente no cenário profissional, durante todo o ano passado. Reduziremos os acúmulos de todas as runas Lenda envolvendo coleta de tropas vs. abate de Campeões, já que a Linhagem depende especificamente desses acúmulos. Além disso, já que os profissionais conseguem maior parte de seus acúmulos por meio da coleta de tropas e não dos abates, essa mudança deve ser mais impactante nesse nível de habilidade.",
+      "alteracoes": [
+        {
+          "atributo": "ABATES DE TROPAS POR ACÚMULO PARA TENACIDADE, ESPONTANEIDADE E LINHAGEM",
+          "antes": "20",
+          "depois": "25"
+        }
+      ]
+    },
+    {
+      "runa": "Sincronia Perfeita",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Perfect_Timing_rune.png",
+      "mod": "",
+      "nota": "No momento, muitos jogadores estão optando por Sincronia Perfeita, já que ela pode ser transformada em itens essenciais de vários Campeões diferentes (Ampulheta de Zhonya para os magos, Anjo Guardião para os atiradores e Placa Gargolítica para os tanques). Não nos entendam mal, ficamos felizes em ver isso, mas é muito mais satisfatório para o jogador/espectador quando ela é usada de forma agressiva, e não defensiva.",
+      "alteracoes": [
+        {
+          "atributo": "APROVEITE CADA SEGUNDO ANTES QUE ISSO AQUI VIRE UMA TRAGÉDIA",
+          "antes": "Concede um Cronômetro Inicial que se torna uma Réplica de Cronômetro aos 10min",
+          "depois": "Concede um Cronômetro Inicial que se torna um Réplica de Cronômetro aos 14min. Eliminações reduzem esse tempo em 2min."
+        },
+        {
+          "atributo": "E NÃO ADIANTA NEM ME PROCURAR",
+          "rotulo": "removido",
+          "depois": "Deixa de reduzir adicionalmente o Tempo de Recarga de Anjo Guardião, Placa Gargolítica e Ampulheta de Zhonya em 15%."
+        },
+        {
+          "atributo": "CUSTO DO CRONÔMETRO",
+          "antes": "600 de ouro",
+          "depois": "650 de ouro"
+        }
+      ]
+    },
+    {
+      "runa": "Ímpeto Gradual",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Phase_Rush_rune.png",
+      "mod": "",
+      "nota": "Tentaremos aumentar o uso dessa runa, já que, atualmente, ela só é usada por magos de ataque à distância com Tempos de Recarga extremamente baixos.",
+      "alteracoes": [
+        {
+          "atributo": "TEMPO MÁXIMO ENTRE ATAQUES",
+          "antes": "3s",
+          "depois": "4s"
+        },
+        {
+          "atributo": "VELOCIDADE DE MOVIMENTO",
+          "antes": "25% - 40%",
+          "depois": "25% - 40%, aumentado para 30% - 50% para Campeões corpo a corpo"
+        }
+      ]
+    },
+    {
+      "runa": "Protótipo: Onirruna",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Prototype-_Omnistone_rune.png",
+      "mod": "",
+      "nota": "As Runas Essenciais são muito difíceis de ativar no nível 1.",
+      "alteracoes": [
+        {
+          "atributo": "SORTE INDISCUTÍVEL",
+          "depois": "Deixará de conceder aos jogadores Pressione o Ataque ou Conquistador como a primeira runa."
+        }
+      ]
+    },
+    {
+      "runa": "Inabalável",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Unflinching_rune.png",
+      "mod": "",
+      "nota": "",
+      "alteracoes": [
+        {
+          "atributo": "CORREÇÃO DE BUG",
+          "depois": "Agora concede corretamente 10% de resistência contra redução de velocidade por Feitiço de Invocador em Tempo de Recarga."
+        }
+      ]
+    }
+  ],
+  "fixes": [
+    {
+      "note": "O W - Cristalizar da Anivia de Rapina agora usa devidamente os efeitos da skin."
+    },
+    {
+      "note": "Corrigido um erro em que a penalidade de dano do Dr. Mundo não era devidamente aplicada no ARAM."
+    },
+    {
+      "note": "Os indicadores de execução de Pyke, Cho'Gath e Urgot agora são exibidos devidamente."
+    },
+    {
+      "note": "O W - Mergulho Fantasma do PROJETO: Pyke agora exibe a camada de interface PROJETO."
+    },
+    {
+      "note": "A camada de interface do R - Ás na Manga da Pulsefire Caitlyn agora é exibida corretamente ao conjurar a habilidade.",
+      "champs": [
+        "Caitlyn"
+      ]
+    },
+    {
+      "note": "A interface do R - Hora Final da PROJETO: Vayne deixa de desaparecer antecipadamente."
+    },
+    {
+      "note": "Remover um amigo, ser removido ou ser bloqueado por alguém deixa de interromper o painel Social e a janela de chat."
+    },
+    {
+      "note": "Sett agora não pode ser interrompido ao conjurar R - Hora do Show e suprime Tahm Kench durante a conjuração do W - Devorar."
+    },
+    {
+      "note": "Atacar um cogumelo do R - Armadilha Venenosa do Teemo com uma Glaive Sombria agora causa o triplo de dano corretamente."
+    },
+    {
+      "note": "Quando Qiyana conjurar seu R - Suprema Demonstração de Talento no rio ou em arbustos, ele deixa de interromper animações e habilidades que não podem ser interrompidas."
+    },
+    {
+      "note": "O E - Quebra-crânio do Sett agora atordoa apenas se ele conseguir pegar um inimigo de cada lado."
+    },
+    {
+      "note": "Quando Qiyana conjurar seu R - Suprema Demonstração de Talento em direção a uma parede quase dentro do alcance do W - Parede de Vento do Yasuo, ela deixa de conseguir explodir a parede."
+    },
+    {
+      "note": "Campeões deixam de ficar em ''pose de T'' pelo resto da partida se forem comidos pelo W - Devorar do Tahm Kench."
+    },
+    {
+      "note": "O indicador de Tempo de Recarga da Passiva - Privilégio da Realeza da Qiyana Chefona deixa de ficar quase invisível dentro de arbustos."
+    },
+    {
+      "note": "Habilidades que não podem ter aliados como alvo deixam de ativar a runa Guardião."
+    },
+    {
+      "note": "As habilidades do Lee Sin agora são devidamente contadas a cada uso para ativar a runa Eletrocutar."
+    },
+    {
+      "note": "Wukong agora pode conjurar seu R - Ciclone corretamente mesmo que o uso ocorra imediatamente antes de ser abatido por um arremesso ao ar."
+    },
+    {
+      "note": "O Q - Quebra-Cofres da Vi deixa de fazer com que seu próximo ataque básico falhe na ativação de runas."
+    }
+  ]
+}

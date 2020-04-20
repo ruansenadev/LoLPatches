@@ -63,7 +63,7 @@ exports.fetch = async function(callback = (data, message) => {
 						prevs.push({
 							url: att.href,
 							img: att.querySelector('img').src,
-							titulo: att.querySelector('h2').innerText.match(/\d+.\d+[a-z]|\d+.\d+/)[0],
+							titulo: att.querySelector('h2').innerText.match(/\d+.\d*[a-z]*/)[0],
 							autor: autor ? autor.innerText : '',
 							data: att.querySelector('time').dateTime,
 						})
