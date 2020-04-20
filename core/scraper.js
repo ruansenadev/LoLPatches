@@ -11,7 +11,7 @@ const d = new Date()
 
 const errorsDir = 'erros'
 const patchesDir = 'patches'
-var folder
+let folder
 
 function createLog(e, frag = '') {
 	fs.mkdir(path.join(patchesDir, errorsDir), { recursive: true }, (err) => {
@@ -22,6 +22,13 @@ function createLog(e, frag = '') {
 			console.log('\nErro :T	log do erro: ' + path.join(patchesDir, errorsDir, logFile))
 		})
 	})
+}
+function sanitizeUrl(url='') {
+    let bar = url.lastIndexOf('/')
+    // clear any query
+    url = url.indexOf('?') > bar ? url.slice(0, url.indexOf('?')) : url
+    // clear any param
+    return url.indexOf('&') > bar ? url.slice(0, url.indexOf('&')) : url
 }
 exports.scrap = async function (url = '', callback = (data, message) => {
 	console.log(message)
@@ -44,10 +51,11 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 				let page = cheerio.load(data)
 				// create path for scrap data
 				let title = page('h1').text()
-				folder = title.replace(/\s(?=\d)/, "").replace(/\s/g, "_").toLowerCase()
-				if (/\d{3}/.test(folder)) {
-					let err = new Error(title);
-					throw createLog(err, "Page formatting")
+				try {
+					folder = title.match(/\d+.\d*[a-z]*/)[0]
+
+				} catch (error) {
+					throw createLog(error, "Title evaluating")
 				}
 				msg += title + ':\n'
 				// slice page content
@@ -60,11 +68,10 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 			// --Note--
 			SCRAP.note = $('#patch-top').next().text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
 			msg += 'note length: ' + SCRAP.note.length + '\n'
-
 			// --Featured--
 			let patchFeatured = $('h2[id*="highlights"]').filter((i, title) => { let txt = $(title).text().toLowerCase(); return txt.includes('destaques') || txt.includes('highlights') }).parent().next().not(':not(div)').first()
 			try {
-				SCRAP.ft.img = patchFeatured.find('img').first().attr('src')
+				SCRAP.ft.img = sanitizeUrl(patchFeatured.find('img').first().attr('src'))
 				SCRAP.ft.mod = patchFeatured.text().trim()
 			} catch (error) {
 				createLog(error, 'Featured')
@@ -81,7 +88,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 				try {
 					champs.push({
 						campeao: $(champ).text(),
-						img: $(champ).siblings('a').first().children('img').attr('src'),
+						img: sanitizeUrl($(champ).siblings('a').first().children('img').attr('src')),
 						mod: $(champ).siblings('p').first().text(),
 						nota: $(champ).siblings('blockquote').text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
 					})
@@ -137,7 +144,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 							let img = $(title).children('img').attr('src')
 							let tag = $(title).text().match(/^[a-z]{2,}/)
 							let change = { nome: tag ? tag.input.split(tag[0])[1] : $(title).text(), atributos: attrs }
-							if (img) change.img = img
+							if (img) change.img = sanitizeUrl(img)
 							if (tag) change.rotulo = tag[0]
 							return change
 						}).toArray()
@@ -179,7 +186,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 				try {
 					runs.push({
 						runa: $('h3', run).text(),
-						img: $('a > img', run).attr('src'),
+						img: sanitizeUrl($('a > img', run).attr('src')),
 						mod: $('p', run).first().text(),
 						nota: $('blockquote', run).text().trim()
 					})
@@ -226,7 +233,6 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 			} catch (error) {
 				createLog(error, 'Bug fixes')
 			}
-
 		})
 		.then(() => {
 			msg += '📰	📰 Scraping done 📰\n'
@@ -239,7 +245,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 			})
 		})
 		.catch(e => {
-			if (e) createLog(e)
+			if (e) createLog(e, `Título ${folder}`)
 		})
 		.finally(() => {
 			callback([SCRAP, folder], msg)
