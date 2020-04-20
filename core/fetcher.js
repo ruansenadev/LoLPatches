@@ -18,7 +18,7 @@ function createLog(e, frag='') {
 		let logFile = d.toLocaleDateString().replace(/\//g, '_').concat('_fetch_log.txt')
 		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): \r\n${frag?" - "+frag:""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
 			if(err) throw err;
-			console.log('Erro :T	log do erro: ' + path.join(patchesDir, errorsDir, logFile))
+			console.log('Error, log: ' + path.join(patchesDir, errorsDir, logFile))
 		})
 	})
 }

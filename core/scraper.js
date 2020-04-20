@@ -19,7 +19,7 @@ function createLog(e, frag = '') {
 		let logFile = d.toLocaleDateString().replace(/\//g, '_').concat('_scrap_log.txt')
 		fs.appendFile(path.join(patchesDir, errorsDir, logFile), `(${new Date().toLocaleTimeString()}): ${frag ? " - " + frag : ""}\r\n${e}\r\n🔚🔚🔚🔚\r\n`, 'utf8', (err) => {
 			if (err) { throw err }
-			console.log('\nErro :T	log do erro: ' + path.join(patchesDir, errorsDir, logFile))
+			console.log('Error, log: ' + path.join(patchesDir, errorsDir, logFile) + '\n')
 		})
 	})
 }
@@ -53,7 +53,6 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 				let title = page('h1').text()
 				try {
 					folder = title.match(/\d+.\d*[a-z]*/)[0]
-
 				} catch (error) {
 					throw createLog(error, "Title evaluating")
 				}
@@ -245,7 +244,8 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 			})
 		})
 		.catch(e => {
-			if (e) createLog(e, `Título ${folder}`)
+			msg = `	📝 ${folder} Failed 	📝\nmaybe its an old patch`
+			if (e) createLog(e, `Title ${folder}`)
 		})
 		.finally(() => {
 			callback([SCRAP, folder], msg)
