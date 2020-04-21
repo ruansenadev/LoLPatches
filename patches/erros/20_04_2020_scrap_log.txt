@@ -205,3 +205,147 @@ TypeError: Cannot read property '0' of null
 (16:10:31):  - Título 9.1
 TypeError: Cannot read property '0' of null
 🔚🔚🔚🔚
+(16:54:19):  - Título 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(16:56:04):  - extensao -q
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(16:56:43): 
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(16:57:33): 
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(16:57:33):  - Featured
+TypeError: Cannot read property 'lastIndexOf' of undefined
+🔚🔚🔚🔚
+(16:59:00):  - Título 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(16:59:00):  - Featured
+TypeError: Cannot read property 'lastIndexOf' of undefined
+🔚🔚🔚🔚
+(17:16:51):  - Featured
+TypeError: Cannot read property 'lastIndexOf' of undefined
+🔚🔚🔚🔚
+(17:16:51):  - Title 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:17:10):  - Featured
+TypeError: Cannot read property 'lastIndexOf' of undefined
+🔚🔚🔚🔚
+(17:17:10):  - Title 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:21:11):  - Title 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:22:44):  - Title 9.24b
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:24:18):  - Title 9.24b
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:24:20):  - Title 9.23
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:24:23):  - Title 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:24:25):  - Title 9.19
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:24:27):  - Title 9.3
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:24:28):  - Title 9.2
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:24:30):  - Title 9.1
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:25:45):  - Title 9.24b
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:25:52):  - Title 9.23
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:25:53):  - Title 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:25:54):  - Title 9.19
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:25:55):  - Title 9.3
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:25:56):  - Title 9.2
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:25:56):  - Title 9.1
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:26:28):  - Title 9.24b
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:26:30):  - Title 9.23
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:26:31):  - Title 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:26:32):  - Title 9.19
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:26:33):  - Title 9.3
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:26:34):  - Title 9.2
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:26:34):  - Title 9.1
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:30:22):  - Title 9.24b
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:30:25):  - Title 9.23
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:30:27):  - Title 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:30:29):  - Title 9.19
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:30:31):  - Title 9.3
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:30:32):  - Title 9.2
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:30:34):  - Title 9.1
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:34:46):  - Title 9.24b
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:34:48):  - Title 9.23
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:34:49):  - Title 9.21
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:34:50):  - Title 9.19
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:34:51):  - Title 9.3
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:34:51):  - Title 9.2
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚
+(17:34:52):  - Title 9.1
+TypeError: Cannot read property '0' of null
+🔚🔚🔚🔚

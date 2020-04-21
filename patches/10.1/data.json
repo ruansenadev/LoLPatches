@@ -7,7 +7,7 @@
   "champs": [
     {
       "campeao": "Sett",
-      "img": "champs/Sett.png?v=1",
+      "img": "Sett.png",
       "mod": "O Chefe",
       "nota": "Sett chega para reinar supremo na 10.1.Ilustrações atualizadas do Sett em alta definição estão disponíveis no League Displays!",
       "links": [
@@ -19,7 +19,7 @@
     },
     {
       "campeao": "Aphelios",
-      "img": "champs/Aphelios.png",
+      "img": "Aphelios.png",
       "mod": "Velocidade de Movimento base e Vida reduzidas. Dano em área de ação do R com Infernum reduzido em alvos secundários. ",
       "nota": "Infernum deve ser a melhor opção de ultimate para o Aphelios quando houver de 3 a 5 inimigos agrupados, mas \"melhor opção\" não significa abater a equipe inteira com apenas um disparo. Podemos ajustar esse dano exagerado e, ainda assim, manter a arma como a melhor opção a ser usada contra inimigos muito unidos, então faremos exatamente isso.",
       "habilidades": [
@@ -47,13 +47,13 @@
               "depois": "75% em alvos secundários"
             }
           ],
-          "img": "skills/ApheliosR.png"
+          "img": "ApheliosR.png"
         }
       ]
     },
     {
       "campeao": "Aurelion Sol",
-      "img": "champs/AurelionSol.png",
+      "img": "AurelionSol.png",
       "mod": "Dano base das estrelas da Passiva reduzido. ",
       "nota": "O potencial de dano explosivo e limpeza de rotas do Aurelion Sol no início de jogo está um pouco alto no momento. Apesar de estarmos tirando parte desse dano no início de jogo, ainda queremos que ele possa escalar bem no fim da partida.",
       "habilidades": [
@@ -66,13 +66,13 @@
               "depois": "12 - 120 (nos níveis 1 a 18)"
             }
           ],
-          "img": "skills/AurelionSol_Passive.png"
+          "img": "AurelionSol_Passive.png"
         }
       ]
     },
     {
       "campeao": "Azir",
-      "img": "champs/Azir.png",
+      "img": "Azir.png",
       "mod": "Dano base do R e duração da parede aumentados. ",
       "nota": "Com o Conquistador enfraquecido e a baixa presença do Azir no cenário profissional do ano passado, estamos sendo cuidadosamente otimistas ao fortalecer nosso Imperador das Areias.",
       "habilidades": [
@@ -90,13 +90,13 @@
               "depois": "5s"
             }
           ],
-          "img": "skills/AzirR.png"
+          "img": "AzirR.png"
         }
       ]
     },
     {
       "campeao": "Corki",
-      "img": "champs/Corki.png",
+      "img": "Corki.png",
       "mod": "Dano base do R aumentado nos últimos níveis. ",
       "nota": "Daremos a Corki um fortalecimento que melhore seu nicho de atirador com base em habilidades e que não aumente muito seu poder de limpeza de rotas no início de jogo. Assim como no caso do Azir, seremos cuidadosos e otimistas com esses fortalecimentos por conta de sua baixa presença no cenário profissional.",
       "habilidades": [
@@ -109,13 +109,13 @@
               "depois": "90/125/160"
             }
           ],
-          "img": "skills/MissileBarrage.png"
+          "img": "MissileBarrage.png"
         }
       ]
     },
     {
       "campeao": "Jax",
-      "img": "champs/Jax.png",
+      "img": "Jax.png",
       "mod": "R agora funciona com a Lâmina da Fúria de Guinsoo.",
       "nota": "",
       "habilidades": [
@@ -127,13 +127,13 @@
               "depois": "Agora recebe os efeitos da Lâmina da Fúria de Guinsoo."
             }
           ],
-          "img": "skills/JaxRelentlessAssault.png"
+          "img": "JaxRelentlessAssault.png"
         }
       ]
     },
     {
       "campeao": "Jayce",
-      "img": "champs/Jayce.png",
+      "img": "Jayce.png",
       "mod": "Dano base do Q (canhão) aumentado nos últimos níveis. ",
       "nota": "No geral, Jayce não está em uma boa situação. Com a Cleptomancia removida, ele definitivamente já teve dias melhores e uma ajudinha viria a calhar. Felizmente, os fortalecimentos de Letalidade realizados no fim do último ano ajudaram um pouco, mas também devolveremos a ele parte do seu poder eletrizante e acentuaremos o dano explosivo pelo qual é conhecido.",
       "habilidades": [
@@ -146,13 +146,13 @@
               "depois": "55/110/165/220/275/330"
             }
           ],
-          "img": "skills/Shock_Blast.png"
+          "img": "Shock_Blast.png"
         }
       ]
     },
     {
       "campeao": "Kalista",
-      "img": "champs/Kalista.png",
+      "img": "Kalista.png",
       "mod": "Vida base e crescimento de Armadura aumentados. ",
       "nota": "Kalista ainda está bem fraca mesmo depois dos fortalecimentos na 9.22. Por isso, desta vez fortaleceremos sua sobrevivência no meio de jogo para que ela possa causar dano em duelos e confrontos de equipe. Assim como no caso do Azir, seremos cuidadosos e otimistas com esses fortalecimentos por conta de sua baixa presença no cenário profissional.",
       "habilidades": [
@@ -175,7 +175,7 @@
     },
     {
       "campeao": "Kassadin",
-      "img": "champs/Kassadin.png",
+      "img": "Kassadin.png",
       "mod": "Velocidade de Movimento reduzida. Duração da penalidade de Mana do R agora é exibida em um ícone. ",
       "nota": "Kassadin está se saindo bem demais nos níveis de jogo medianos. Enfraqueceremos sua movimentação no mapa e potencial de fuga, focando nos jogadores que saem da rota sem ser punidos e que têm a habilidade de estar em todos os lugares.",
       "habilidades": [
@@ -197,13 +197,13 @@
               "depois": "A duração do efeito negativo de Mana do Kassadin agora é exibida na moldura do R."
             }
           ],
-          "img": "skills/RiftWalk.png"
+          "img": "RiftWalk.png"
         }
       ]
     },
     {
       "campeao": "Kog'Maw",
-      "img": "champs/KogMaw.png",
+      "img": "KogMaw.png",
       "mod": "Duração da penalidade de Mana do R agora é exibida em um ícone. ",
       "nota": "",
       "habilidades": [
@@ -215,13 +215,13 @@
               "depois": "A duração do efeito negativo de Mana do Kog'Maw agora é exibida na moldura do R."
             }
           ],
-          "img": "skills/KogMawLivingArtillery.png"
+          "img": "KogMawLivingArtillery.png"
         }
       ]
     },
     {
       "campeao": "Mordekaiser",
-      "img": "champs/Mordekaiser.png",
+      "img": "Mordekaiser.png",
       "mod": "Duração da passiva reduzida e Velocidade de Movimento padronizada. ",
       "nota": "Para um colosso, Mordekaiser dificilmente permite que alguém escape e o conduza. Combinar isso com o Cetro de Cristal de Rylai faz com que fugir dele seja muito difícil.",
       "habilidades": [
@@ -239,13 +239,13 @@
               "depois": "3% (nos níveis 1 a 18)"
             }
           ],
-          "img": "skills/MordekaiserPassive.png"
+          "img": "MordekaiserPassive.png"
         }
       ]
     },
     {
       "campeao": "Nami",
-      "img": "champs/Nami.png",
+      "img": "Nami.png",
       "mod": "Agora, o E também fortalece as habilidades do alvo. ",
       "nota": "A maioria dos encantadores costuma ser desenvolvida para ajudar seus atiradores, e a Nami não é exceção. Porém, vemos uma oportunidade de expandir um pouco sua utilidade – assim, ela poderá ajudar Campeões atiradores de ataques básicos e Campeões com base em habilidades.",
       "habilidades": [
@@ -258,13 +258,13 @@
               "depois": "Fortalece os próximos 3 ataques básicos e habilidades do alvo (habilidades em área de ação fortalecidas por Bênção da Conjuradora causam 33% - 66% a menos de dano contra não Campeões)."
             }
           ],
-          "img": "skills/NamiE.png"
+          "img": "NamiE.png"
         }
       ]
     },
     {
       "campeao": "Sejuani",
-      "img": "champs/Sejuani.png",
+      "img": "Sejuani.png",
       "mod": "Crescimento de Vida base aumentado. Multiplicador de resistências de Armadura Congelada aumentado. Dano base do E aumentado nos últimos níveis. ",
       "nota": "Estamos satisfeitos com a identidade da Sejuani como tanque de bom escalamento. Por isso, fortaleceremos esse aspecto e suas capacidades de escalar, mas vamos manter suas vulnerabilidades de início de jogo intactas.",
       "habilidades": [
@@ -287,7 +287,7 @@
               "depois": "10 (+0,5 de Armadura adicional) de Armadura adicional e 10 (+0,5 de Resistência Mágica adicional) de Resistência Mágica adicional"
             }
           ],
-          "img": "skills/Sejuani_passive.png"
+          "img": "Sejuani_passive.png"
         },
         {
           "nome": "E - Congelação Permanente",
@@ -298,13 +298,13 @@
               "depois": "40/90/140/190/240"
             }
           ],
-          "img": "skills/SejuaniE.png"
+          "img": "SejuaniE.png"
         }
       ]
     },
     {
       "campeao": "Shyvana",
-      "img": "champs/Shyvana.png",
+      "img": "Shyvana.png",
       "mod": "Recebe resistências ao abater o Dragão Ancião. Recebimentos de Fúria aumentados no lugar da RTR da ultimate ao abater Dragões das Nuvens. Multiplicador de dano do alvo marcado pelo E e limite de dano contra monstros aumentados. ",
       "nota": "Para uma garota dracônica caçadora de dragões, Shyvana perdeu algumas das novas interações com seus parentes escamosos na Ascensão dos Elementos. Corrigiremos isso e faremos pequenos fortalecimentos em seu dano de sustentação.",
       "habilidades": [
@@ -320,7 +320,7 @@
               "depois": "O Dragão das Nuvens agora aumenta os recebimentos de Fúria da Shyvana em 10/20/30/40% (já que sua ultimate não tem Tempo de Recarga)."
             }
           ],
-          "img": "skills/ShyvanaReinforcedScales.png"
+          "img": "ShyvanaReinforcedScales.png"
         },
         {
           "nome": "E - Hálito Flamejante",
@@ -336,13 +336,13 @@
               "depois": "150"
             }
           ],
-          "img": "skills/ShyvanaFireball.png"
+          "img": "ShyvanaFireball.png"
         }
       ]
     },
     {
       "campeao": "Sylas",
-      "img": "champs/Sylas.png",
+      "img": "Sylas.png",
       "mod": "Atributos base menores no início de jogo e maiores no fim de jogo. Passiva agora concede Velocidade de Ataque. Tempo de Recarga do W reduzido. Multiplicador de PdH do E aumentado. Redefinição de ataque básico removida do W, E1 e R. ",
       "nota": "Tem sido difícil estabilizar Sylas em todos os níveis de jogabilidade e, por isso, há um longo histórico de mudanças desde seu lançamento. Por esse motivo, prometemos envidar maiores esforços para diminuir a diferença entre todos os níveis de jogadores de Sylas. Primeiramente, mudaremos sua fase de rotas inicial para algo mais parecido com Ekko e Fizz: Campeões com menos controle no início da fase de rotas, mas que ficam mais fortes com os níveis. Segundo, nós o balancearemos como um Campeão da rota do meio, priorizando mudanças que estimulam sua utilização nessa rota em vez de outras. E, por último, ao remover seu combo E>Q e reduzir seu padrão de ataque básico, tentaremos diminuir o estilo de jogo \"lutador de ataque básico em área\" e, ao mesmo tempo, ajustaremos a velocidade com que ele explode seus inimigos. Ficaremos de olho nele nos próximos meses para analisar como essas mudanças foram recebidas!",
       "habilidades": [
@@ -410,7 +410,7 @@
               "depois": "Agora executa tropas secundárias com menos de 25 de Vida"
             }
           ],
-          "img": "skills/SylasP.png"
+          "img": "SylasP.png"
         },
         {
           "nome": "Q - Correntes-Chicote",
@@ -446,7 +446,7 @@
               "depois": "Não poderá mais ser conjurada durante E - Abdução"
             }
           ],
-          "img": "skills/SylasQ.png"
+          "img": "SylasQ.png"
         },
         {
           "nome": "W - Regicida",
@@ -482,7 +482,7 @@
               "depois": "70/80/90/100/110 de Mana"
             }
           ],
-          "img": "skills/SylasW.png"
+          "img": "SylasW.png"
         },
         {
           "nome": "E - Evasão/Abdução",
@@ -513,7 +513,7 @@
               "depois": "0,05s ao mover-se depois de Abdução"
             }
           ],
-          "img": "skills/SylasE.png"
+          "img": "SylasE.png"
         },
         {
           "nome": "R - Usurpar",
@@ -524,13 +524,13 @@
               "depois": "Conjurar Usurpar deixa de redefinir o ataque básico do Sylas"
             }
           ],
-          "img": "skills/SylasR.png"
+          "img": "SylasR.png"
         }
       ]
     },
     {
       "campeao": "Varus",
-      "img": "champs/Varus.png",
+      "img": "Varus.png",
       "mod": "Tempo de Recarga do Q e Restituição do Tempo de Recarga de Arruinar reduzidos. ",
       "nota": "A função do Varus como um atirador de cutucada está bem fraca desde suas últimas mudanças em 2018. Para um atirador com base em habilidades, esse estilo de jogo deve ser um dos mais fortes (ou até o mais forte). Por isso, fortaleceremos especificamente ele.",
       "habilidades": [
@@ -548,13 +548,13 @@
               "depois": "3s"
             }
           ],
-          "img": "skills/VarusQ.png"
+          "img": "VarusQ.png"
         }
       ]
     },
     {
       "campeao": "Vi",
-      "img": "champs/Vi.png",
+      "img": "Vi.png",
       "mod": "Ao conjurar o R, Vi não pode ser interrompida durante toda a duração. ",
       "nota": "Daremos a Vi uma mudança de qualidade de vida em sua ultimate, fazendo com que ela funcione de maneira mais consistente contra arremessos e permitindo que ela permaneça em seu alvo ao longo da duração da habilidade.",
       "habilidades": [
@@ -567,13 +567,13 @@
               "depois": "Vi não pode ser interrompida pela duração do saque"
             }
           ],
-          "img": "skills/ViR.png"
+          "img": "ViR.png"
         }
       ]
     },
     {
       "campeao": "Zyra",
-      "img": "champs/Zyra.png",
+      "img": "Zyra.png",
       "mod": "Redução de velocidade do E fortalecido reduzida. ",
       "nota": "Zyra nunca teve motivos para invocar várias Vinhas Ásperas, já que uma tinha o mesmo efeito de duas. Agora, é possível acumular a redução de velocidade das Vinhas Ásperas, fazendo com que ela possa planejar suas ações analisando quais plantas ela quer.",
       "habilidades": [
@@ -586,13 +586,13 @@
               "depois": "25% acumulando até duas vezes, mas apenas uma vez por planta"
             }
           ],
-          "img": "skills/ZyraE.png"
+          "img": "ZyraE.png"
         }
       ]
     },
     {
       "campeao": "Conquistador",
-      "img": "champs/Conqueror.png",
+      "img": "Conqueror.png",
       "mod": "Agora mostra o total de cura na dica flutuante. ",
       "nota": ""
     }
@@ -600,7 +600,7 @@
   "runes": [
     {
       "runa": "Conquistador",
-      "img": "https://am-a.akamaihd.net/image?f=https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png",
+      "img": "https://am-a.akamaihd.net/image?f=https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png&resize=64:",
       "mod": "Agora mostra o total de cura na dica flutuante. ",
       "nota": "",
       "alteracoes": [
@@ -612,7 +612,7 @@
     },
     {
       "runa": "Protótipo: Onirruna",
-      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/pn23/Prototype_Omnistone.png",
+      "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/pn23/Prototype_Omnistone.png&resize=64:",
       "mod": "Tempo de Recarga reduzido. ",
       "nota": "A Onirruna continua tendo um desempenho significativamente ruim, então vamos fortalecê-la para que tenha poder o suficiente para competir com as outras escolhas.",
       "alteracoes": [
