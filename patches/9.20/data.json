@@ -1,13 +1,13 @@
 {
   "note": "Olá! Feliz quase 10 anos!Na Atualização dessa semana, trouxemos várias mudanças para Garen, Shaco e Viktor. Nada no nível \"rework\", já que essas mudanças maiores buscam motivar os jogadores desses Campeões, atualizar seus kits e diminuir os pontos negativos que desenvolveram ao longo dos anos. Queremos ter a certeza de que estamos acertando nas identidades esperadas pelos jogadores e proporcionando estilos de jogo que agradem, se tudo der certo, tanto os jogadores antigos quanto os novos. Fora isso, estamos segurando um pouco a onda nessa Atualização, já que estamos mais focados nas preparações do Mundial e finalizando as mudanças para a pré-temporada 2020.",
   "ft": {
-    "img": "Patch_9_20_Infographic_1080x1080_CropPTBR.jpg",
+    "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/riot-bra//LoL/NotasdeAtualizacao920/Patch_9_20_Infographic_1080x1080_CropPTBR.jpg",
     "mod": "Ashe, Darius e Hecarim Velho Oeste estarão disponíveis em 10 de outubro de 2019."
   },
   "champs": [
     {
       "campeao": "Blitzcrank",
-      "img": "champs/Blitzcrank.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Blitzcrank.png&resize=64:",
       "mod": "Armadura base e crescimento de Armadura reduzidos.",
       "nota": "Gostamos da mudança na 9.19, mas parece que ele está um pouco forte demais agora.",
       "habilidades": [
@@ -30,7 +30,7 @@
     },
     {
       "campeao": "Garen",
-      "img": "champs/Garen.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Garen.png&resize=64:",
       "mod": "Regeneração da passiva ficou mais confiável. W agora concede um escudo em vez de redução de dano adicional nos primeiros 0,75s. Giros do E agora escalam com VdA. R passa a causar Dano Verdadeiro sempre; efeito passivo de Vilão removido.",
       "nota": "Estamos fazendo algumas alterações relevantes em nosso bom samaritano de Demacia, mais precisamente, estamos removendo a mecânica de Vilão de sua ultimate. Nem os jogadores de Garen nem seus oponentes gostavam de sua mecânica de jogo, pois ela não era saudável e tirava o livre-arbítrio de Garen para escolher seus alvos, o que acabava colocando o pobre rapaz em enrascadas com frequência.Também estamos atualizando sua passiva e permitindo que ele consiga acúmulos de Conquistador, uma runa que outros colossos usam. Agora, Garen terá uma jogabilidade mais intuitiva, não tão linear, dada a maior variedade de opções de itens bons para ele.",
       "habilidades": [
@@ -74,7 +74,7 @@
               "depois": "7s ao sofrer dano de monstros épicos, torres ou Campeões"
             }
           ],
-          "img": "skills/Garen_Passive.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/passive/Garen_Passive.png&resize=32:"
         },
         {
           "nome": "Q - Acerto Decisivo",
@@ -89,7 +89,7 @@
               "depois": "Corrigimos um bug em que, quando Garen sofria uma redução de velocidade, o tempo de bloqueio do Q aumentava drasticamente."
             }
           ],
-          "img": "skills/GarenQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/GarenQ.png&resize=32:"
         },
         {
           "nome": "W - Coragem",
@@ -106,7 +106,7 @@
               "depois": "Concede um escudo de 10% de sua Vida máxima e 60% de Tenacidade pelos primeiros 0,75s"
             }
           ],
-          "img": "skills/GarenW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/GarenW.png&resize=32:"
         },
         {
           "nome": "E - Julgamento",
@@ -137,7 +137,7 @@
               "depois": "Agora concede acúmulos de Conquistador para cada giro"
             }
           ],
-          "img": "skills/GarenE.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/GarenE.png&resize=32:"
         },
         {
           "nome": "R - Justiça Demaciana",
@@ -158,13 +158,13 @@
               "depois": "150/300/450 (+0,2/0,25/0,3 da Vida perdida do alvo) como Dano Verdadeiro"
             }
           ],
-          "img": "skills/GarenR.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/GarenR.png&resize=32:"
         }
       ]
     },
     {
       "campeao": "Ivern",
-      "img": "champs/Ivern.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ivern.png&resize=64:",
       "mod": "Agora é um Campeão de longo alcance. W não aumenta mais o Alcance de Ataque.",
       "nota": "Estamos tornando Ivern mais fácil de jogar (e mais forte!), mas sem forçá-lo a se acostumar com vários alcances de ataque básico.",
       "habilidades": [
@@ -187,13 +187,13 @@
               "depois": "Não aumenta mais o alcance de Ivern"
             }
           ],
-          "img": "skills/IvernW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/IvernW.png&resize=32:"
         }
       ]
     },
     {
       "campeao": "Lissandra",
-      "img": "champs/Lissandra.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lissandra.png&resize=64:",
       "mod": "Multiplicadores de dano da Passiva e do W aumentados. ",
       "nota": "Estamos melhorando seu nicho como uma maga de iniciação e dano explosivo, mas tentando não afetar seu poder no cenário profissional. Mais arredondamentos!",
       "habilidades": [
@@ -216,7 +216,7 @@
               "depois": "0,5 de Poder de Habilidade"
             }
           ],
-          "img": "skills/Lissandra_Passive.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/passive/Lissandra_Passive.png&resize=32:"
         },
         {
           "nome": "W - Círculo Ártico",
@@ -227,13 +227,13 @@
               "depois": "0,7 de Poder de Habilidade"
             }
           ],
-          "img": "skills/LissandraW.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/LissandraW.png&resize=32:"
         }
       ]
     },
     {
       "campeao": "Pantheon",
-      "img": "champs/Pantheon.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pantheon.png&resize=64:",
       "mod": "Dano base do Q reduzido nos últimos níveis.",
       "nota": "Pantheon continua sendo uma escolha muito forte em partidas de alto nível. Reduzimos um pouco seu dano no início de jogo por ser algo mais impactante em partidas ranqueadas de nível elevado. E, claro, uma correção de bug para acompanhar!",
       "habilidades": [
@@ -255,13 +255,13 @@
               "depois": "75/110/145/180/215"
             }
           ],
-          "img": "skills/PantheonQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/PantheonQ.png&resize=32:"
         }
       ]
     },
     {
       "campeao": "Qiyana",
-      "img": "champs/Qiyana.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Qiyana.png&resize=64:",
       "mod": "Dano base do Q reduzido nos primeiros níveis. ",
       "nota": "Estamos reduzindo o dano de Qiyana nas trocas, em especial quando ela atinge o nível 3, já que está opressora demais no início de jogo.",
       "habilidades": [
@@ -274,13 +274,13 @@
               "depois": "60/85/110/135/160"
             }
           ],
-          "img": "skills/QiyanaQ.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/QiyanaQ.png&resize=32:"
         }
       ]
     },
     {
       "campeao": "Shaco",
-      "img": "champs/Shaco.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shaco.png&resize=64:",
       "mod": "Caixinhas do W agora causam dano em área. Mais dano no início de jogo e menos dano no fim de jogo. ",
       "nota": "O estilo de jogo e a identidade de Shaco mudaram consideravelmente depois do rework, e seus ganhos em mecânica de jogo ficaram, na melhor das hipóteses, duvidosos. Ele deveria ter confiança para interagir com inimigos, principalmente no início de jogo, mas não tem dado muito certo. Com essas mudanças, nosso objetivo é equilibrar o dano ao longo da partida, em vez de colocar todo o potencial de abate instantâneo no fim de jogo. E, é claro, não podemos esquecer da itemização padrão de Dano de Ataque e da itemização mais situacional de Poder de Habilidade, ambas com estilos de jogo bem distintos. Então, trocamos o tipo de dano do E e mudamos alguns multiplicadores de lugar para que cada itemização atue de maneira distinta em torno de suas habilidades.",
       "habilidades": [
@@ -313,7 +313,7 @@
               "depois": "Veneno de Dois Gumes agora causa um adicional de 15-50 (nos níveis 1-18) (+0,1 de Poder de Habilidade) de dano pelas costas"
             }
           ],
-          "img": "skills/Jester_CarefulStrikes.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/passive/Jester_CarefulStrikes.png&resize=32:"
         },
         {
           "nome": "Q - Enganar",
@@ -339,7 +339,7 @@
               "depois": "25/35/45/55/65 (+0,25 de Dano de Ataque adicional) Ao atacar pelas costas, Enganar causa Acerto Crítico garantido com 130% de dano."
             }
           ],
-          "img": "skills/Deceive.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/Deceive.png&resize=32:"
         },
         {
           "nome": "W - Caixinha Surpresa",
@@ -365,7 +365,7 @@
               "depois": "60 de Velocidade de Movimento para tropas e monstros, 100 de Velocidade de Movimento para Campeões"
             }
           ],
-          "img": "skills/JackInTheBox.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/JackInTheBox.png&resize=32:"
         },
         {
           "nome": "E - Veneno de Dois Gumes",
@@ -386,7 +386,7 @@
               "depois": "50% de dano aumentado em alvos com Vida abaixo de 30%"
             }
           ],
-          "img": "skills/TwoShivPoison.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/TwoShivPoison.png&resize=32:"
         },
         {
           "nome": "R - Alucinação",
@@ -412,19 +412,19 @@
               "depois": "1s"
             }
           ],
-          "img": "skills/HallucinateFull.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/HallucinateFull.png&resize=32:"
         }
       ]
     },
     {
       "campeao": "Sona",
-      "img": "champs/Sona.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sona.png&resize=64:",
       "mod": "Mudança de qualidade de vida para a nossa princesinha, deixando mais fácil saber quando seu ataque básico fortalecido virá. ",
       "nota": ""
     },
     {
       "campeao": "Varus",
-      "img": "champs/Varus.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Varus.png&resize=64:",
       "mod": "DdA base aumentado; atributos arredondados.",
       "nota": "Estamos dando ao Varus um poder mais geral e confiável.",
       "habilidades": [
@@ -457,7 +457,7 @@
     },
     {
       "campeao": "Viktor",
-      "img": "champs/Viktor.png",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Viktor.png&resize=64:",
       "mod": "Q deixa de escalar com a Mana de Viktor. Aprimoramento do W agora concede redução de velocidade às outras habilidades. R agora tem ciclos mais acelerados e se move mais rápido. ",
       "nota": "Estamos ajustando um pouco nosso querido Viktor, oferecendo a ele Aprimoramentos mais legais para seu W e R, duas habilidades que não têm se mostrado muito satisfatórias, e também estamos reduzindo sua dependência de Mana.",
       "habilidades": [
@@ -483,7 +483,7 @@
               "depois": "30-115 (nos níveis 1-18) (+0,15 de Poder de Habilidade)"
             }
           ],
-          "img": "skills/ViktorPowerTransfer.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/ViktorPowerTransfer.png&resize=32:"
         },
         {
           "nome": "W - Campo Gravítico",
@@ -495,7 +495,7 @@
               "depois": "Acertos diretos reduzem a velocidade de inimigos em 20% por 1s (não aciona nos ciclos do R)"
             }
           ],
-          "img": "skills/ViktorGravitonField.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/ViktorGravitonField.png&resize=32:"
         },
         {
           "nome": "R - Tempestade do Caos",
@@ -531,7 +531,7 @@
               "depois": " ⇒ 250; a Velocidade de Movimento máxima agora é de || 300 ⇒ 375)"
             }
           ],
-          "img": "skills/ViktorChaosStorm.png"
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/ViktorChaosStorm.png&resize=32:"
         }
       ]
     }

@@ -23,13 +23,7 @@ function createLog(e, frag = '') {
 		})
 	})
 }
-function sanitizeUrl(url='') {
-    let bar = url.lastIndexOf('/')
-    // clear any query
-    url = url.indexOf('?') > bar ? url.slice(0, url.indexOf('?')) : url
-    // clear any param
-    return url.indexOf('&') > bar ? url.slice(0, url.indexOf('&')) : url
-}
+
 exports.scrap = async function (url = '', callback = (data, message) => {
 	console.log(message)
 	return data
@@ -70,7 +64,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 			// --Featured--
 			let patchFeatured = $('h2[id*="highlights"]').filter((i, title) => { let txt = $(title).text().toLowerCase(); return txt.includes('destaques') || txt.includes('highlights') }).parent().next().not(':not(div)').first()
 			try {
-				SCRAP.ft.img = sanitizeUrl(patchFeatured.find('img').first().attr('src'))
+				SCRAP.ft.img = patchFeatured.find('img').first().attr('src')
 				SCRAP.ft.mod = patchFeatured.text().trim()
 			} catch (error) {
 				createLog(error, 'Featured')
@@ -87,7 +81,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 				try {
 					champs.push({
 						campeao: $(champ).text(),
-						img: sanitizeUrl($(champ).siblings('a').first().children('img').attr('src')),
+						img: $(champ).siblings('a').first().children('img').attr('src'),
 						mod: $(champ).siblings('p').first().text(),
 						nota: $(champ).siblings('blockquote').text().trim().replace(/\r\n|\r|\n|\t/gm, "").replace(/\s{2,}/g, " ")
 					})
@@ -143,7 +137,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 							let img = $(title).children('img').attr('src')
 							let tag = $(title).text().match(/^[a-z]{2,}/)
 							let change = { nome: tag ? tag.input.split(tag[0])[1] : $(title).text(), atributos: attrs }
-							if (img) change.img = sanitizeUrl(img)
+							if (img) change.img = img
 							if (tag) change.rotulo = tag[0]
 							return change
 						}).toArray()
@@ -185,7 +179,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 				try {
 					runs.push({
 						runa: $('h3', run).text(),
-						img: sanitizeUrl($('a > img', run).attr('src')),
+						img: $('a > img', run).attr('src'),
 						mod: $('p', run).first().text(),
 						nota: $('blockquote', run).text().trim()
 					})
