@@ -125,53 +125,55 @@ async function fetchPatchesImages(items) {
     }, [])
     // map calls in-game images
     let patchesCalls = patches.reduce((calls, patch, p) => {
-        let champs = patch[0].champs
-        // push all champs images for each scrap
-        champs.forEach((champ, c) => {
-            if (champ.habilidades) {
-                // skills calls
-                let url
-                champ.habilidades.forEach((sk, s) => {
-                    if (sk.img) {
-                        url = sanitizeUrl(sk.img)
-                        sk.img = imgFile(sk.img)
-                        patches[p][0].champs[c].habilidades[s] = sk.img
-                        try {
-                            fs.accessSync(path.join(imagesDir, spellsDir, sk.img), fs.constants.F_OK)
-                        } catch (error) {
-                            calls.push(function (cb) {
-                                axios({ method: 'get', url, responseType: 'stream' })
-                                    .then(res => {
-                                        fs.mkdir(path.join(imagesDir, spellsDir), { recursive: true }, (err) => {
-                                            if (err) { throw err }
-                                            res.data.pipe(fs.createWriteStream(path.join(imagesDir, spellsDir, sk.img)).on('close', () => { console.log('+ ' + sk.img); cb(null, sk.img) }))
+        if(patch[0].champs.length) {
+            let champs = patch[0].champs
+            // push all champs images for each scrap
+            champs.forEach((champ, c) => {
+                if (champ.habilidades) {
+                    // skills calls
+                    let url
+                    champ.habilidades.forEach((sk, s) => {
+                        if (sk.img) {
+                            url = sanitizeUrl(sk.img)
+                            sk.img = imgFile(sk.img)
+                            patches[p][0].champs[c].habilidades[s] = sk.img
+                            try {
+                                fs.accessSync(path.join(imagesDir, spellsDir, sk.img), fs.constants.F_OK)
+                            } catch (error) {
+                                calls.push(function (cb) {
+                                    axios({ method: 'get', url, responseType: 'stream' })
+                                        .then(res => {
+                                            fs.mkdir(path.join(imagesDir, spellsDir), { recursive: true }, (err) => {
+                                                if (err) { throw err }
+                                                res.data.pipe(fs.createWriteStream(path.join(imagesDir, spellsDir, sk.img)).on('close', () => { console.log('+ ' + sk.img); cb(null, sk.img) }))
+                                            })
                                         })
-                                    })
-                                    .catch(cb)
-                            })
+                                        .catch(cb)
+                                })
+                            }
                         }
-                    }
-                })
-            }
-            let url = sanitizeUrl(champ.img)
-            champ.img = imgFile(champ.img)
-            patches[p][0].champs[c].img = champ.img
-            try {
-                fs.accessSync(path.join(imagesDir, champsDir, champ.img))
-            } catch (error) {
-                calls.push(function (cb) {
-                    // fetch champ image call
-                    axios({ method: 'get', url, responseType: 'stream' })
-                        .then(res => {
-                            fs.mkdir(path.join(imagesDir, champsDir), { recursive: true }, (err) => {
-                                if (err) { throw err }
-                                res.data.pipe(fs.createWriteStream(path.join(imagesDir, champsDir, champ.img)).on('close', () => { console.log('+ ' + champ.img); cb(null, champ.img) }))
+                    })
+                }
+                let url = sanitizeUrl(champ.img)
+                champ.img = imgFile(champ.img)
+                patches[p][0].champs[c].img = champ.img
+                try {
+                    fs.accessSync(path.join(imagesDir, champsDir, champ.img))
+                } catch (error) {
+                    calls.push(function (cb) {
+                        // fetch champ image call
+                        axios({ method: 'get', url, responseType: 'stream' })
+                            .then(res => {
+                                fs.mkdir(path.join(imagesDir, champsDir), { recursive: true }, (err) => {
+                                    if (err) { throw err }
+                                    res.data.pipe(fs.createWriteStream(path.join(imagesDir, champsDir, champ.img)).on('close', () => { console.log('+ ' + champ.img); cb(null, champ.img) }))
+                                })
                             })
-                        })
-                        .catch(cb)
-                })
-            }
-        })
+                            .catch(cb)
+                    })
+                }
+            })
+        }
         return calls
     }, [])
     let nCalls = bannersCalls.concat(patchesCalls).length
