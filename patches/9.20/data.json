@@ -1,13 +1,13 @@
 {
   "note": "Olá! Feliz quase 10 anos!Na Atualização dessa semana, trouxemos várias mudanças para Garen, Shaco e Viktor. Nada no nível \"rework\", já que essas mudanças maiores buscam motivar os jogadores desses Campeões, atualizar seus kits e diminuir os pontos negativos que desenvolveram ao longo dos anos. Queremos ter a certeza de que estamos acertando nas identidades esperadas pelos jogadores e proporcionando estilos de jogo que agradem, se tudo der certo, tanto os jogadores antigos quanto os novos. Fora isso, estamos segurando um pouco a onda nessa Atualização, já que estamos mais focados nas preparações do Mundial e finalizando as mudanças para a pré-temporada 2020.",
   "ft": {
-    "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/riot-bra//LoL/NotasdeAtualizacao920/Patch_9_20_Infographic_1080x1080_CropPTBR.jpg",
+    "img": "Patch_9_20_Infographic_1080x1080_CropPTBR.jpg",
     "mod": "Ashe, Darius e Hecarim Velho Oeste estarão disponíveis em 10 de outubro de 2019."
   },
   "champs": [
     {
       "campeao": "Blitzcrank",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Blitzcrank.png&resize=64:",
+      "img": "Blitzcrank.png",
       "mod": "Armadura base e crescimento de Armadura reduzidos.",
       "nota": "Gostamos da mudança na 9.19, mas parece que ele está um pouco forte demais agora.",
       "habilidades": [
@@ -30,7 +30,7 @@
     },
     {
       "campeao": "Garen",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Garen.png&resize=64:",
+      "img": "Garen.png",
       "mod": "Regeneração da passiva ficou mais confiável. W agora concede um escudo em vez de redução de dano adicional nos primeiros 0,75s. Giros do E agora escalam com VdA. R passa a causar Dano Verdadeiro sempre; efeito passivo de Vilão removido.",
       "nota": "Estamos fazendo algumas alterações relevantes em nosso bom samaritano de Demacia, mais precisamente, estamos removendo a mecânica de Vilão de sua ultimate. Nem os jogadores de Garen nem seus oponentes gostavam de sua mecânica de jogo, pois ela não era saudável e tirava o livre-arbítrio de Garen para escolher seus alvos, o que acabava colocando o pobre rapaz em enrascadas com frequência.Também estamos atualizando sua passiva e permitindo que ele consiga acúmulos de Conquistador, uma runa que outros colossos usam. Agora, Garen terá uma jogabilidade mais intuitiva, não tão linear, dada a maior variedade de opções de itens bons para ele.",
       "habilidades": [
@@ -54,117 +54,16 @@
             }
           ]
         },
-        {
-          "nome": "Passiva - Perseverança",
-          "atributos": [
-            {
-              "atributo": "REGENERAÇÃO",
-              "antes": "2/8% (com base no nível) de sua Vida máxima por 5s",
-              "depois": "1,5-10,1% (nos níveis 1-18) de sua Vida máxima por 5s"
-            },
-            {
-              "atributo": "REGENERAÇÃO FORTALECIDA",
-              "rotulo": "removido",
-              "depois": "Garen não duplica mais a regeneração de Vida passivamente enquanto está abaixo de 25/50% (com base no nível) de sua Vida máxima"
-            },
-            {
-              "atributo": "REGENERAÇÃO INTERROMPIDA",
-              "rotulo": "atualizado",
-              "antes": "9s ao sofrer dano de outras unidades que não sejam tropas antes do nível 11; 4s ao sofrer dano de monstros épicos, torres ou Campeões após o nível 11",
-              "depois": "7s ao sofrer dano de monstros épicos, torres ou Campeões"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/passive/Garen_Passive.png&resize=32:"
-        },
-        {
-          "nome": "Q - Acerto Decisivo",
-          "atributos": [
-            {
-              "atributo": "TEMPO DE CONJURAÇÃO",
-              "rotulo": "novo",
-              "depois": "Agora escala com a Velocidade de Ataque de Garen, comportando-se similarmente a um ataque básico"
-            },
-            {
-              "atributo": "CORREÇÃO DE BUG",
-              "depois": "Corrigimos um bug em que, quando Garen sofria uma redução de velocidade, o tempo de bloqueio do Q aumentava drasticamente."
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/GarenQ.png&resize=32:"
-        },
-        {
-          "nome": "W - Coragem",
-          "atributos": [
-            {
-              "atributo": "RESISTÊNCIA POR ABATE",
-              "antes": "0,33 de Armadura e Resistência Mágica adicionais (máximo de 50 com 150 unidades abatidas)",
-              "depois": "0,25 de Armadura e Resistência Mágica adicionais (máximo de 30 com 150 unidades abatidas)"
-            },
-            {
-              "atributo": "ME DÁ UM ESCUDO AQUI",
-              "rotulo": "atualizado",
-              "antes": "Concede 30% de redução de dano adicional e Tenacidade pelos primeiros 0,75s",
-              "depois": "Concede um escudo de 10% de sua Vida máxima e 60% de Tenacidade pelos primeiros 0,75s"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/GarenW.png&resize=32:"
-        },
-        {
-          "nome": "E - Julgamento",
-          "atributos": [
-            {
-              "atributo": "GIROS",
-              "antes": "5-10 (nos níveis 1-16)",
-              "depois": "7 (+1 a cada 20% de Velocidade de Ataque proveniente de itens e níveis)"
-            },
-            {
-              "atributo": "DANO POR GIRO",
-              "antes": "14/18/22/26/30 (+0,36-0,4 de Dano de Ataque)",
-              "depois": "8/12/16/20/24 (+0-8 com base no nível) (+0,32-0,4 de Dano de Ataque)"
-            },
-            {
-              "atributo": "DANO ADICIONAL",
-              "antes": "33% a um único inimigo",
-              "depois": "25% ao inimigo mais próximo"
-            },
-            {
-              "atributo": "GIROS ANTES DA FRAGMENTAÇÃO",
-              "antes": "4",
-              "depois": "6"
-            },
-            {
-              "atributo": "ALEXANDRE, O GRANDE",
-              "rotulo": "novo",
-              "depois": "Agora concede acúmulos de Conquistador para cada giro"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/GarenE.png&resize=32:"
-        },
-        {
-          "nome": "R - Justiça Demaciana",
-          "atributos": [
-            {
-              "atributo": "PASSIVO",
-              "rotulo": "removido",
-              "depois": "Garen não marca mais inimigos com o maior número de abates nos últimos 5 minutos como Vilão"
-            },
-            {
-              "atributo": "VISÃO ALÉM DO ALCANCE",
-              "rotulo": "novo",
-              "depois": "Concede visão do alvo por 1s, evitando que a habilidade seja cancelada caso perca a visão do alvo"
-            },
-            {
-              "atributo": "DANO",
-              "antes": "175/350/525 (+0,286/0,333/0,4 da Vida perdida do alvo) como Dano Mágico",
-              "depois": "150/300/450 (+0,2/0,25/0,3 da Vida perdida do alvo) como Dano Verdadeiro"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/GarenR.png&resize=32:"
-        }
+        "Garen_Passive.png",
+        "GarenQ.png",
+        "GarenW.png",
+        "GarenE.png",
+        "GarenR.png"
       ]
     },
     {
       "campeao": "Ivern",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ivern.png&resize=64:",
+      "img": "Ivern.png",
       "mod": "Agora é um Campeão de longo alcance. W não aumenta mais o Alcance de Ataque.",
       "nota": "Estamos tornando Ivern mais fácil de jogar (e mais forte!), mas sem forçá-lo a se acostumar com vários alcances de ataque básico.",
       "habilidades": [
@@ -178,22 +77,12 @@
             }
           ]
         },
-        {
-          "nome": "W - Formação de Arbustos",
-          "atributos": [
-            {
-              "atributo": "ESTICA O BRAÇO AÍ",
-              "rotulo": "removido",
-              "depois": "Não aumenta mais o alcance de Ivern"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/IvernW.png&resize=32:"
-        }
+        "IvernW.png"
       ]
     },
     {
       "campeao": "Lissandra",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lissandra.png&resize=64:",
+      "img": "Lissandra.png",
       "mod": "Multiplicadores de dano da Passiva e do W aumentados. ",
       "nota": "Estamos melhorando seu nicho como uma maga de iniciação e dano explosivo, mas tentando não afetar seu poder no cenário profissional. Mais arredondamentos!",
       "habilidades": [
@@ -207,33 +96,13 @@
             }
           ]
         },
-        {
-          "nome": "Passiva - Submissão Glacinata",
-          "atributos": [
-            {
-              "atributo": "MULTIPLICADOR DE DANO",
-              "antes": "0,3 de Poder de Habilidade",
-              "depois": "0,5 de Poder de Habilidade"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/passive/Lissandra_Passive.png&resize=32:"
-        },
-        {
-          "nome": "W - Círculo Ártico",
-          "atributos": [
-            {
-              "atributo": "MULTIPLICADOR DE DANO",
-              "antes": "0,5 de Poder de Habilidade",
-              "depois": "0,7 de Poder de Habilidade"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/LissandraW.png&resize=32:"
-        }
+        "Lissandra_Passive.png",
+        "LissandraW.png"
       ]
     },
     {
       "campeao": "Pantheon",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pantheon.png&resize=64:",
+      "img": "Pantheon.png",
       "mod": "Dano base do Q reduzido nos últimos níveis.",
       "nota": "Pantheon continua sendo uma escolha muito forte em partidas de alto nível. Reduzimos um pouco seu dano no início de jogo por ser algo mais impactante em partidas ranqueadas de nível elevado. E, claro, uma correção de bug para acompanhar!",
       "habilidades": [
@@ -246,41 +115,21 @@
             }
           ]
         },
-        {
-          "nome": "Q - Lança Meteórica",
-          "atributos": [
-            {
-              "atributo": "DANO BASE",
-              "antes": "75/115/155/195/235",
-              "depois": "75/110/145/180/215"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/PantheonQ.png&resize=32:"
-        }
+        "PantheonQ.png"
       ]
     },
     {
       "campeao": "Qiyana",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Qiyana.png&resize=64:",
+      "img": "Qiyana.png",
       "mod": "Dano base do Q reduzido nos primeiros níveis. ",
       "nota": "Estamos reduzindo o dano de Qiyana nas trocas, em especial quando ela atinge o nível 3, já que está opressora demais no início de jogo.",
       "habilidades": [
-        {
-          "nome": "Q - Lâmina de Ixtal",
-          "atributos": [
-            {
-              "atributo": "DANO BASE",
-              "antes": "80/100/120/140/160",
-              "depois": "60/85/110/135/160"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/QiyanaQ.png&resize=32:"
-        }
+        "QiyanaQ.png"
       ]
     },
     {
       "campeao": "Shaco",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shaco.png&resize=64:",
+      "img": "Shaco.png",
       "mod": "Caixinhas do W agora causam dano em área. Mais dano no início de jogo e menos dano no fim de jogo. ",
       "nota": "O estilo de jogo e a identidade de Shaco mudaram consideravelmente depois do rework, e seus ganhos em mecânica de jogo ficaram, na melhor das hipóteses, duvidosos. Ele deveria ter confiança para interagir com inimigos, principalmente no início de jogo, mas não tem dado muito certo. Com essas mudanças, nosso objetivo é equilibrar o dano ao longo da partida, em vez de colocar todo o potencial de abate instantâneo no fim de jogo. E, é claro, não podemos esquecer da itemização padrão de Dano de Ataque e da itemização mais situacional de Poder de Habilidade, ambas com estilos de jogo bem distintos. Então, trocamos o tipo de dano do E e mudamos alguns multiplicadores de lugar para que cada itemização atue de maneira distinta em torno de suas habilidades.",
       "habilidades": [
@@ -299,132 +148,22 @@
             }
           ]
         },
-        {
-          "nome": "Passiva - Apunhalar",
-          "atributos": [
-            {
-              "atributo": "DANO DO ATAQUE BÁSICO",
-              "rotulo": "novo",
-              "depois": "Causar dano com ataque básico a um inimigo agora causa um adicional de 10-25 (nos níveis 1-18) (+0,15 de Dano de Ataque adicional) de dano pelas costas (este dano pode causar Acerto Crítico)"
-            },
-            {
-              "atributo": "DANO DE VENENO DE DOIS GUMES",
-              "rotulo": "novo",
-              "depois": "Veneno de Dois Gumes agora causa um adicional de 15-50 (nos níveis 1-18) (+0,1 de Poder de Habilidade) de dano pelas costas"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/passive/Jester_CarefulStrikes.png&resize=32:"
-        },
-        {
-          "nome": "Q - Enganar",
-          "atributos": [
-            {
-              "atributo": "DURAÇÃO DA FURTIVIDADE",
-              "antes": "1,5/2,25/3/3,75/4,5s",
-              "depois": "2,5/2,75/3/3,25/3,5s"
-            },
-            {
-              "atributo": "TEMPO DE RECARGA",
-              "antes": "16/15,5/15/14,5/14 segundos",
-              "depois": "12/11,5/11/10,5/10 segundos"
-            },
-            {
-              "atributo": "O TEMPO TÁ ACABANDO",
-              "rotulo": "removido",
-              "depois": "O Tempo de Recarga de Enganar não reduz mais ao sair da Invisibilidade e causar dano com seu próximo ataque básico"
-            },
-            {
-              "atributo": "DANO",
-              "antes": "10/20/30/40/50 (+0,4 de Dano de Ataque adicional)(+0,3 de Poder de Habilidade)",
-              "depois": "25/35/45/55/65 (+0,25 de Dano de Ataque adicional) Ao atacar pelas costas, Enganar causa Acerto Crítico garantido com 130% de dano."
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/Deceive.png&resize=32:"
-        },
-        {
-          "nome": "W - Caixinha Surpresa",
-          "atributos": [
-            {
-              "atributo": "TEM CAIXINHA PRA TODO MUNDO",
-              "rotulo": "atualizado",
-              "depois": "Quando acionadas, agora as caixinhas podem atacar vários inimigos na área de ação"
-            },
-            {
-              "atributo": "DANO EM ÁREA",
-              "rotulo": "novo",
-              "depois": "15/20/25/30/35 (+0,1 de Poder de Habilidade) (dano em alvo único inalterado)"
-            },
-            {
-              "atributo": "DURAÇÃO DO TEMOR EM NÃO CAMPEÕES",
-              "rotulo": "novo",
-              "depois": "2s em todos os não Campeões"
-            },
-            {
-              "atributo": "VELOCIDADE DE MOVIMENTO DURANTE TEMOR",
-              "antes": "100 de Velocidade de Movimento para todos os inimigos",
-              "depois": "60 de Velocidade de Movimento para tropas e monstros, 100 de Velocidade de Movimento para Campeões"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/JackInTheBox.png&resize=32:"
-        },
-        {
-          "nome": "E - Veneno de Dois Gumes",
-          "atributos": [
-            {
-              "atributo": "TIPO DE DANO",
-              "antes": "Dano Físico",
-              "depois": "Dano Mágico"
-            },
-            {
-              "atributo": "DANO",
-              "antes": "55/80/105/130/155 (+0,6/0,75/0,9/1,05/1,2 de Dano de Ataque adicional)(+0,75 de Poder de Habilidade)",
-              "depois": "70/95/120/145/170 (+0,8 de Dano de Ataque adicional) (+0,6 de Poder de Habilidade)"
-            },
-            {
-              "atributo": "DANO DE EXECUÇÃO",
-              "antes": "0-50% de dano aumentado com base na Vida perdida",
-              "depois": "50% de dano aumentado em alvos com Vida abaixo de 30%"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/TwoShivPoison.png&resize=32:"
-        },
-        {
-          "nome": "R - Alucinação",
-          "atributos": [
-            {
-              "atributo": "TEMPO DE AÇÃO DAS CAIXINHAS",
-              "antes": "Caixinhas ativam após 2s",
-              "depois": "Caixinhas ativam imediatamente"
-            },
-            {
-              "atributo": "DANO",
-              "antes": "200/300/400 (+1,0 de Poder de Habilidade)",
-              "depois": "150/225/300 (+0,7 de Poder de Habilidade)"
-            },
-            {
-              "atributo": "DANO EM ÁREA DA CAIXINHA",
-              "rotulo": "novo",
-              "depois": "10/20/30 (+0,1 de Poder de Habilidade) (dano em alvo único inalterado)"
-            },
-            {
-              "atributo": "DURAÇÃO DO TEMOR",
-              "antes": "0,75/1/1,25s",
-              "depois": "1s"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/HallucinateFull.png&resize=32:"
-        }
+        "Jester_CarefulStrikes.png",
+        "Deceive.png",
+        "JackInTheBox.png",
+        "TwoShivPoison.png",
+        "HallucinateFull.png"
       ]
     },
     {
       "campeao": "Sona",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sona.png&resize=64:",
+      "img": "Sona.png",
       "mod": "Mudança de qualidade de vida para a nossa princesinha, deixando mais fácil saber quando seu ataque básico fortalecido virá. ",
       "nota": ""
     },
     {
       "campeao": "Varus",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Varus.png&resize=64:",
+      "img": "Varus.png",
       "mod": "DdA base aumentado; atributos arredondados.",
       "nota": "Estamos dando ao Varus um poder mais geral e confiável.",
       "habilidades": [
@@ -457,7 +196,7 @@
     },
     {
       "campeao": "Viktor",
-      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Viktor.png&resize=64:",
+      "img": "Viktor.png",
       "mod": "Q deixa de escalar com a Mana de Viktor. Aprimoramento do W agora concede redução de velocidade às outras habilidades. R agora tem ciclos mais acelerados e se move mais rápido. ",
       "nota": "Estamos ajustando um pouco nosso querido Viktor, oferecendo a ele Aprimoramentos mais legais para seu W e R, duas habilidades que não têm se mostrado muito satisfatórias, e também estamos reduzindo sua dependência de Mana.",
       "habilidades": [
@@ -474,65 +213,9 @@
             }
           ]
         },
-        {
-          "nome": "Q - Poder do Sifão",
-          "atributos": [
-            {
-              "atributo": "ESCUDO",
-              "antes": "8% de sua Mana máxima (+0,15 de Poder de Habilidade)",
-              "depois": "30-115 (nos níveis 1-18) (+0,15 de Poder de Habilidade)"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/ViktorPowerTransfer.png&resize=32:"
-        },
-        {
-          "nome": "W - Campo Gravítico",
-          "atributos": [
-            {
-              "atributo": "APRIMORAMENTO - IMPLOSÃO",
-              "rotulo": "atualizado",
-              "antes": "Inimigos atordoados por Campo Gravítico são arrastados para o centro",
-              "depois": "Acertos diretos reduzem a velocidade de inimigos em 20% por 1s (não aciona nos ciclos do R)"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/ViktorGravitonField.png&resize=32:"
-        },
-        {
-          "nome": "R - Tempestade do Caos",
-          "atributos": [
-            {
-              "atributo": "SE CORRER O BICHO PEGA",
-              "rotulo": "novo",
-              "depois": "Tempestade do Caos continuará seguindo Campeões mesmo após Viktor ser abatido"
-            },
-            {
-              "atributo": "KRACKO",
-              "rotulo": "novo",
-              "depois": "Tempestade do Caos agora pode passar por cima de terrenos."
-            },
-            {
-              "atributo": "CADÊNCIA DOS CICLOS",
-              "antes": "2s",
-              "depois": "1s"
-            },
-            {
-              "atributo": "CICLOS",
-              "antes": "3",
-              "depois": "6"
-            },
-            {
-              "atributo": "DANO POR CICLO",
-              "antes": "130/210/290 (+0,85 de Poder de Habilidade)",
-              "depois": "65/105/145 (+0,45 de Poder de Habilidade)"
-            },
-            {
-              "atributo": "VELOCIDADE DE MOVIMENTO DE 'APRIMORAMENTO - VELOCIDADE'",
-              "antes": "A Tempestade do Caos se movimenta || 20% mais rápido",
-              "depois": " ⇒ 250; a Velocidade de Movimento máxima agora é de || 300 ⇒ 375)"
-            }
-          ],
-          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/9.19.1/img/spell/ViktorChaosStorm.png&resize=32:"
-        }
+        "ViktorPowerTransfer.png",
+        "ViktorGravitonField.png",
+        "ViktorChaosStorm.png"
       ]
     }
   ],
