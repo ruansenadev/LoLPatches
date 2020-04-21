@@ -11,8 +11,33 @@
       "mod": "Velocidade de avanço do Q aumentada. Tempo de Recarga do R reduzido e passa a impedir avanços.",
       "nota": "Juntamente com as mudanças no efeito Imolar (olha o spoiler!) da 10.4, esses fortalecimentos devem ajudar o Amumu a competir com os caçadores mais fortes.",
       "habilidades": [
-        "BandageToss.png",
-        "CurseoftheSadMummy.png"
+        {
+          "nome": "Q - Lançar Bandagens",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE AVANÇO",
+              "antes": "1350 depois de atingir um inimigo",
+              "depois": "1800 depois de atingir um inimigo"
+            }
+          ],
+          "img": "BandageToss.png"
+        },
+        {
+          "nome": "R - A Maldição da Múmia Triste",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "150/130/110s",
+              "depois": "130/115/100s"
+            },
+            {
+              "atributo": "PARE! ATÉ QUANDO VOCÊ QUER MANDAR E MUDAR MINHA VIDA?",
+              "rotulo": "novo",
+              "depois": "Passa a impedir inimigos no meio de seus avanços."
+            }
+          ],
+          "img": "CurseoftheSadMummy.png"
+        }
       ]
     },
     {
@@ -21,10 +46,68 @@
       "mod": "Jogadores agora podem ver as duas armas de Aphelios. Calibrum deixa de redefinir o temporizador de ataque básico depois de consumir uma marca. Atalaias de Crescendum passam a ser abatidas mais rápido. Alcance do R reduzido.",
       "nota": "Aphelios é o atirador que exige 200 de QI dos jogadores, já que seu kit conta com vários componentes. Porém, nosso rapazinho lunar anda estressando os oponentes que não sabem o que ele está fazendo, e parece não haver uma contrajogada adequada nas partidas ranqueadas de alto nível de habilidade. Uma melhor compreensão de todos esses elementos fará com que o desempenho de Aphelios caia, já que os oponentes tomarão melhores decisões com maior frequência, mas também temos alguns enfraquecimentos mais diretos e focados em dar aos oponentes maneiras eficazes de alcançá-lo e derrotá-lo.",
       "habilidades": [
-        "Weapons_of_the_Faithful.png",
-        "Calibrum.jpg",
-        "Crescendum.jpg",
-        "ApheliosR.png"
+        {
+          "nome": "O Assassino e a Profetisa",
+          "atributos": [
+            {
+              "atributo": "VISUALIZAÇÃO DA ARMA",
+              "rotulo": "novo",
+              "depois": "Jogadores agora podem ver quais são as duas armas equipadas por Aphelios ao lado da barra de Vida dele."
+            }
+          ],
+          "img": "Weapons_of_the_Faithful.png"
+        },
+        {
+          "nome": "Calibrum, o Rifle de Precisão",
+          "atributos": [
+            {
+              "atributo": "REDEFINIÇÃO DE ATAQUE BÁSICO",
+              "rotulo": "removido",
+              "depois": "Aphelios deixa de redefinir seu temporizador de ataque básico logo depois de consumir uma marca (o ataque da marca ainda redefine o ataque básico)."
+            }
+          ],
+          "img": "Calibrum.jpg"
+        },
+        {
+          "nome": "Crescendum, o Chakram",
+          "atributos": [
+            {
+              "atributo": "VERMELHO VS. AZUL",
+              "depois": "Os indicadores de Alcance da atalaia de Aphelios agora ficam vermelhos para os inimigos quando não estiver ativa."
+            },
+            {
+              "atributo": "NÚMERO BASE DE ATAQUES DA ATALAIA",
+              "antes": "4",
+              "depois": "3 (número de ataques ainda escala com Velocidade de Ataque)"
+            },
+            {
+              "atributo": "VIDA DA ATALAIA CONTRA ATAQUES À DISTÂNCIA",
+              "antes": "Ataques básicos à distância causam ",
+              "depois": "3 de dano (atalaias têm 6 de Vida)"
+            },
+            {
+              "atributo": "VIDA DA ATALAIA CONTRA ATAQUES DE ÁREA DE AÇÃO",
+              "antes": "Ataques de área de ação causam",
+              "depois": "4 de dano (atalaias têm 6 de Vida)"
+            },
+            {
+              "atributo": "CORREÇÃO DE BUG",
+              "depois": "As atalaias do Aphelios deixam de morrer ocasionalmente ao serem ativadas."
+            }
+          ],
+          "img": "Crescendum.jpg"
+        },
+        {
+          "nome": "R - Vigília do Plenilúnio",
+          "atributos": [
+            {
+              "atributo": "ALCANCE",
+              "antes": "1600",
+              "depois": "1300"
+            }
+          ],
+          "img": "ApheliosR.png"
+        }
       ]
     },
     {
@@ -33,7 +116,17 @@
       "mod": "Dano das estrelas ao ativar o W reduzido.",
       "nota": "Nosso Forjador de Estrelas sofrerá um leve enfraquecimento nessa Atualização.",
       "habilidades": [
-        "AurelionSolW.png"
+        {
+          "nome": "W - Expansão Celestial",
+          "atributos": [
+            {
+              "atributo": "DANO DAS ESTRELAS AO ATIVAR",
+              "antes": "Aumenta o dano total em",
+              "depois": "40%"
+            }
+          ],
+          "img": "AurelionSolW.png"
+        }
       ]
     },
     {
@@ -60,8 +153,33 @@
       "mod": "Aumentado o multiplicador de Dano de Ataque do ataque básico fortalecido pelo Q. Resistências do W aumentadas depois de serem maximizadas por abates de inimigos. Escudo do W aumentado.",
       "nota": "Nosso objetivo é trazer de volta a diversidade de itemizações para o Garen, fortalecendo especificamente suas opções mais \"tanque\" e, ao mesmo tempo, mantendo as opções de dano viáveis. Ainda temos mais uma mudança, da qual falaremos na seção \"Campeões na selva\" logo abaixo!",
       "habilidades": [
-        "GarenQ.png",
-        "GarenW.png"
+        {
+          "nome": "Q - Acerto Decisivo",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO DE ATAQUE DO ATAQUE BÁSICO FORTALECIDO",
+              "antes": "0,4 de Dano de Ataque",
+              "depois": "0,5 de Dano de Ataque"
+            }
+          ],
+          "img": "GarenQ.png"
+        },
+        {
+          "nome": "W - Coragem",
+          "atributos": [
+            {
+              "atributo": "SANGUE DOS INIMIGOS",
+              "rotulo": "novo",
+              "depois": "Com as resistências no máximo por abates de inimigos, Garen aumenta sua Armadura e Resistência Mágica adicionais em 10%."
+            },
+            {
+              "atributo": "ESCUDO",
+              "antes": "0,1 da Vida máxima",
+              "depois": "70/95/120/145/170 (+0,2 da Vida adicional)"
+            }
+          ],
+          "img": "GarenW.png"
+        }
       ]
     },
     {
@@ -80,8 +198,28 @@
             }
           ]
         },
-        "Gnar_Passive.png",
-        "GnarR.png"
+        {
+          "nome": "Passiva - Fúria Genética",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
+              "antes": "10 - 30 (nos níveis 1 a 18) na forma Mini-Gnar",
+              "depois": "0 - 20 (nos níveis 1 a 18) na forma Mini-Gnar"
+            }
+          ],
+          "img": "Gnar_Passive.png"
+        },
+        {
+          "nome": "R - GNAR!",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO",
+              "antes": "0,2 do Dano de Ataque total e 0,5 de Poder de Habilidade",
+              "depois": "0,5 do Dano de Ataque total e 1,0 de Poder de Habilidade"
+            }
+          ],
+          "img": "GnarR.png"
+        }
       ]
     },
     {
@@ -105,7 +243,17 @@
             }
           ]
         },
-        "JayceToTheSkies.png"
+        {
+          "nome": "Q - Aos Céus!",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "45/80/115/150/185/220",
+              "depois": "55/95/135/175/215/255"
+            }
+          ],
+          "img": "JayceToTheSkies.png"
+        }
       ]
     },
     {
@@ -114,8 +262,38 @@
       "mod": "Dano do Q aumentado e Tempo de Recarga reduzido nos primeiros níveis. Lux agora pode utilizar Flash enquanto conjura o R.",
       "nota": "Fortaleceremos a Lux como suporte para que os jogadores a vejam como uma escolha mais viável na rota inferior.",
       "habilidades": [
-        "LuxLightBinding.png",
-        "LuxMaliceCannon.png"
+        {
+          "nome": "Q - Ligação da Luz",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "70/115/170/205/250",
+              "depois": "80/125/170/215/260"
+            },
+            {
+              "atributo": "Capa de Fogo Solar (e Capa da Fornalha)",
+              "antes": "MULTIPLICADOR DE DANO",
+              "depois": "0,6 de Poder de Habilidade"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "13/12/10/11/9s",
+              "depois": "11/10,5/10/9,5/9s"
+            }
+          ],
+          "img": "LuxLightBinding.png"
+        },
+        {
+          "nome": "R - Centelha Final",
+          "atributos": [
+            {
+              "atributo": "CADA MERGULHO É UM FLASH",
+              "rotulo": "novo",
+              "depois": "Lux agora pode utilizar Flash enquanto conjura Centelha Final (a ultimate de Lux não a segue quando ela usa Flash)."
+            }
+          ],
+          "img": "LuxMaliceCannon.png"
+        }
       ]
     },
     {
@@ -170,9 +348,49 @@
       "mod": "Auras agora concedem Mana para Sona quando o primeiro aliado receber seu efeito. Custos do Q, W e E aumentados.",
       "nota": "Eu não jogo com ela na rota superior mesmo.",
       "habilidades": [
-        "SonaQ.png",
-        "SonaW.png",
-        "SonaE.png"
+        {
+          "nome": "Q - Hino do Valor",
+          "atributos": [
+            {
+              "atributo": "RESTAURAÇÃO DE MANA",
+              "rotulo": "novo",
+              "depois": "Sona agora ganha 30 de Mana na primeira vez que um aliado receber o efeito da aura."
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "50/55/60/65/70 de Mana",
+              "depois": "75/80/85/90/95 de Mana"
+            }
+          ],
+          "img": "SonaQ.png"
+        },
+        {
+          "nome": "W - Ária da Perseverança",
+          "atributos": [
+            {
+              "atributo": "RESTAURAÇÃO DE MANA",
+              "rotulo": "novo",
+              "depois": "Sona agora ganha 30 de Mana na primeira vez que um aliado receber o efeito da aura."
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "80/85/90/95/100 de Mana",
+              "depois": "105/110/115/120/125 de Mana"
+            }
+          ],
+          "img": "SonaW.png"
+        },
+        {
+          "nome": "E - Canção da Celeridade",
+          "atributos": [
+            {
+              "atributo": "RESTAURAÇÃO DE MANA",
+              "rotulo": "novo",
+              "depois": "Sona agora ganha 30 de Mana na primeira vez que um aliado receber o efeito da aura."
+            }
+          ],
+          "img": "SonaE.png"
+        }
       ]
     },
     {
@@ -211,8 +429,48 @@
             }
           ]
         },
-        "SorakaQ.png",
-        "SorakaW.png"
+        {
+          "nome": "Q - Chamado Estelar",
+          "atributos": [
+            {
+              "atributo": "AUTOCURA",
+              "antes": "60/80/100/120/140 (+0,5 de Poder de Habilidade)",
+              "depois": "40/50/60/70/80 (+0,3 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "DURAÇÃO DA CURA DE REJUVENESCIMENTO",
+              "antes": "5s",
+              "depois": "2,5s"
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "40/45/50/55/60 de Mana",
+              "depois": "60/65/70/75/80 de Mana"
+            },
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
+              "antes": "15/20/25/30/35%",
+              "depois": "10/12,5/15/17,5/20%"
+            }
+          ],
+          "img": "SorakaQ.png"
+        },
+        {
+          "nome": "W - Infusão Astral",
+          "atributos": [
+            {
+              "atributo": "EUZINHA DEPOIS DE UMA MASSAGEM E UM SORVETE",
+              "rotulo": "novo",
+              "depois": "Quando Soraka estiver com Rejuvenescimento, o custo de 10% de Vida máxima ao conjurar Infusão Astral é reduzido em 40/55/70/85/100%."
+            },
+            {
+              "atributo": "CURA",
+              "antes": "80/110/140/170/200",
+              "depois": "80/115/150/185/220"
+            }
+          ],
+          "img": "SorakaW.png"
+        }
       ]
     },
     {
@@ -221,7 +479,17 @@
       "mod": "Dano do Q aumentado nos últimos níveis.",
       "nota": "Sylas está se saindo muito bem depois das mudanças da 10.1 e, por isso, vamos fortalecê-lo sem nos preocupar tanto com sua dominância no cenário profissional.",
       "habilidades": [
-        "SylasQ.png"
+        {
+          "nome": "Q - Correntes-Chicote",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "40/55/70/85/100",
+              "depois": "40/60/80/100/120"
+            }
+          ],
+          "img": "SylasQ.png"
+        }
       ]
     },
     {
@@ -230,7 +498,17 @@
       "mod": "Tempo entre trocas de postura reduzido a cada efeito do Dragão das Nuvens.",
       "nota": "Atualmente, Udyr não recebe nenhum benefício do Dragão das Nuvens. Corrigiremos isso na 10.4!",
       "habilidades": [
-        "Udyr_MonkeysAgility.png"
+        {
+          "nome": "Passiva - Agilidade do Macaco",
+          "atributos": [
+            {
+              "atributo": "LIGANDO O MOTORZÃO",
+              "rotulo": "novo",
+              "depois": "Udyr agora recebe 5% de seu Tempo de Recarga global (tempo entre cada troca de postura) a cada efeito do Dragão das Nuvens."
+            }
+          ],
+          "img": "Udyr_MonkeysAgility.png"
+        }
       ]
     }
   ],

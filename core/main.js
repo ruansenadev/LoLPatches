@@ -136,7 +136,7 @@ async function fetchPatchesImages(items) {
                         if (sk.img) {
                             url = sanitizeUrl(sk.img)
                             sk.img = imgFile(sk.img)
-                            patches[p][0].champs[c].habilidades[s] = sk.img
+                            patches[p][0].champs[c].habilidades[s].img = sk.img
                             try {
                                 fs.accessSync(path.join(imagesDir, spellsDir, sk.img), fs.constants.F_OK)
                             } catch (error) {
@@ -215,36 +215,36 @@ async function fetchPatchesImages(items) {
 // })
 
 // --FETCH NEWS PATCHES SCRAP THEM AND WRITE--
-fetchPatches((data) => {
-    fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0], null, 2), 'utf-8', (err) => {
-        if (err) { throw err }
-        console.log('\nPatches updated with success ^-^')
-        console.log("News images saved at " + path.join(patchesDir, imagesDir))
-    })
-    fetchPatchesImages(data[1])
-        .then(results => {
-            results.forEach(scrap => {
-                fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
-                    if (err) { throw err }
-                    fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
-                        if (err) { throw err }
-                        console.log(`Writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
-                    })
-                })
-            })
-        })
-}, true)
-
-// --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
-// fetchPatchesImages()
-// .then(results => {
-//     results.forEach(scrap => {
-//         fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
-//             if (err) { throw err }
-//             fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
-//                 if (err) { throw err }
-//                 console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+// fetchPatches((data) => {
+//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0], null, 2), 'utf-8', (err) => {
+//         if (err) { throw err }
+//         console.log('\nPatches updated with success ^-^')
+//         console.log("News images saved at " + path.join(patchesDir, imagesDir))
+//     })
+//     fetchPatchesImages(data[1])
+//         .then(results => {
+//             results.forEach(scrap => {
+//                 fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
+//                     if (err) { throw err }
+//                     fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
+//                         if (err) { throw err }
+//                         console.log(`Writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+//                     })
+//                 })
 //             })
 //         })
-//     })
-// })
+// }, true)
+
+// --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
+fetchPatchesImages()
+.then(results => {
+    results.forEach(scrap => {
+        fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
+            if (err) { throw err }
+            fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
+                if (err) { throw err }
+                console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+            })
+        })
+    })
+})

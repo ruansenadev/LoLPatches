@@ -38,7 +38,17 @@
             }
           ]
         },
-        "ApheliosR.png"
+        {
+          "nome": "R - Vigília do Plenilúnio",
+          "atributos": [
+            {
+              "atributo": "DANO EM ÁREA DE AÇÃO FORTALECIDO DE INFERNUM",
+              "antes": "100% em alvos secundários",
+              "depois": "75% em alvos secundários"
+            }
+          ],
+          "img": "ApheliosR.png"
+        }
       ]
     },
     {
@@ -47,7 +57,17 @@
       "mod": "Dano base das estrelas da Passiva reduzido. ",
       "nota": "O potencial de dano explosivo e limpeza de rotas do Aurelion Sol no início de jogo está um pouco alto no momento. Apesar de estarmos tirando parte desse dano no início de jogo, ainda queremos que ele possa escalar bem no fim da partida.",
       "habilidades": [
-        "AurelionSol_Passive.png"
+        {
+          "nome": "Passiva - Centro do Universo",
+          "atributos": [
+            {
+              "atributo": "DANO BASE DAS ESTRELAS",
+              "antes": "16 - 120 (nos níveis 1 a 18)",
+              "depois": "12 - 120 (nos níveis 1 a 18)"
+            }
+          ],
+          "img": "AurelionSol_Passive.png"
+        }
       ]
     },
     {
@@ -56,7 +76,22 @@
       "mod": "Dano base do R e duração da parede aumentados. ",
       "nota": "Com o Conquistador enfraquecido e a baixa presença do Azir no cenário profissional do ano passado, estamos sendo cuidadosamente otimistas ao fortalecer nosso Imperador das Areias.",
       "habilidades": [
-        "AzirR.png"
+        {
+          "nome": "R - Decreto do Imperador",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "150/250/450",
+              "depois": "175/325/475"
+            },
+            {
+              "atributo": "DURAÇÃO DA PAREDE",
+              "antes": "3s",
+              "depois": "5s"
+            }
+          ],
+          "img": "AzirR.png"
+        }
       ]
     },
     {
@@ -65,7 +100,17 @@
       "mod": "Dano base do R aumentado nos últimos níveis. ",
       "nota": "Daremos a Corki um fortalecimento que melhore seu nicho de atirador com base em habilidades e que não aumente muito seu poder de limpeza de rotas no início de jogo. Assim como no caso do Azir, seremos cuidadosos e otimistas com esses fortalecimentos por conta de sua baixa presença no cenário profissional.",
       "habilidades": [
-        "MissileBarrage.png"
+        {
+          "nome": "R - Barragem de Mísseis",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "90/115/140",
+              "depois": "90/125/160"
+            }
+          ],
+          "img": "MissileBarrage.png"
+        }
       ]
     },
     {
@@ -74,7 +119,16 @@
       "mod": "R agora funciona com a Lâmina da Fúria de Guinsoo.",
       "nota": "",
       "habilidades": [
-        "JaxRelentlessAssault.png"
+        {
+          "nome": "R - Poder do Grão-Mestre",
+          "atributos": [
+            {
+              "atributo": "LÂMINA DA FÚRIA DE GUINSOO",
+              "depois": "Agora recebe os efeitos da Lâmina da Fúria de Guinsoo."
+            }
+          ],
+          "img": "JaxRelentlessAssault.png"
+        }
       ]
     },
     {
@@ -83,7 +137,17 @@
       "mod": "Dano base do Q (canhão) aumentado nos últimos níveis. ",
       "nota": "No geral, Jayce não está em uma boa situação. Com a Cleptomancia removida, ele definitivamente já teve dias melhores e uma ajudinha viria a calhar. Felizmente, os fortalecimentos de Letalidade realizados no fim do último ano ajudaram um pouco, mas também devolveremos a ele parte do seu poder eletrizante e acentuaremos o dano explosivo pelo qual é conhecido.",
       "habilidades": [
-        "Shock_Blast.png"
+        {
+          "nome": "Q - Disparo Chocante",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "55/105/155/205/255/305",
+              "depois": "55/110/165/220/275/330"
+            }
+          ],
+          "img": "Shock_Blast.png"
+        }
       ]
     },
     {
@@ -125,7 +189,16 @@
             }
           ]
         },
-        "RiftWalk.png"
+        {
+          "nome": "R - Caminhar na Fenda",
+          "atributos": [
+            {
+              "atributo": "EXIBIÇÃO DE EFEITO NEGATIVO",
+              "depois": "A duração do efeito negativo de Mana do Kassadin agora é exibida na moldura do R."
+            }
+          ],
+          "img": "RiftWalk.png"
+        }
       ]
     },
     {
@@ -134,7 +207,16 @@
       "mod": "Duração da penalidade de Mana do R agora é exibida em um ícone. ",
       "nota": "",
       "habilidades": [
-        "KogMawLivingArtillery.png"
+        {
+          "nome": "R - Artilharia Viva",
+          "atributos": [
+            {
+              "atributo": "EXIBIÇÃO DE EFEITO NEGATIVO",
+              "depois": "A duração do efeito negativo de Mana do Kog'Maw agora é exibida na moldura do R."
+            }
+          ],
+          "img": "KogMawLivingArtillery.png"
+        }
       ]
     },
     {
@@ -143,7 +225,22 @@
       "mod": "Duração da passiva reduzida e Velocidade de Movimento padronizada. ",
       "nota": "Para um colosso, Mordekaiser dificilmente permite que alguém escape e o conduza. Combinar isso com o Cetro de Cristal de Rylai faz com que fugir dele seja muito difícil.",
       "habilidades": [
-        "MordekaiserPassive.png"
+        {
+          "nome": "Passiva - Ascensão das Trevas",
+          "atributos": [
+            {
+              "atributo": "DURAÇÃO",
+              "antes": "5s",
+              "depois": "4s"
+            },
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO",
+              "antes": "3/6/9% (nos níveis 1/6/11)",
+              "depois": "3% (nos níveis 1 a 18)"
+            }
+          ],
+          "img": "MordekaiserPassive.png"
+        }
       ]
     },
     {
@@ -152,7 +249,17 @@
       "mod": "Agora, o E também fortalece as habilidades do alvo. ",
       "nota": "A maioria dos encantadores costuma ser desenvolvida para ajudar seus atiradores, e a Nami não é exceção. Porém, vemos uma oportunidade de expandir um pouco sua utilidade – assim, ela poderá ajudar Campeões atiradores de ataques básicos e Campeões com base em habilidades.",
       "habilidades": [
-        "NamiE.png"
+        {
+          "nome": "E - Bênção da Conjuradora",
+          "atributos": [
+            {
+              "atributo": "BÊNÇÃO",
+              "antes": "Fortalece os próximos 3 ataques básicos do alvo",
+              "depois": "Fortalece os próximos 3 ataques básicos e habilidades do alvo (habilidades em área de ação fortalecidas por Bênção da Conjuradora causam 33% - 66% a menos de dano contra não Campeões)."
+            }
+          ],
+          "img": "NamiE.png"
+        }
       ]
     },
     {
@@ -171,8 +278,28 @@
             }
           ]
         },
-        "Sejuani_passive.png",
-        "SejuaniE.png"
+        {
+          "nome": "Passiva - Fúria do Norte",
+          "atributos": [
+            {
+              "atributo": "ARMADURA CONGELADA",
+              "antes": "10 (+0,35 de Armadura adicional) de Armadura adicional e 10 (+0,35 de Resistência Mágica adicional) de Resistência Mágica adicional",
+              "depois": "10 (+0,5 de Armadura adicional) de Armadura adicional e 10 (+0,5 de Resistência Mágica adicional) de Resistência Mágica adicional"
+            }
+          ],
+          "img": "Sejuani_passive.png"
+        },
+        {
+          "nome": "E - Congelação Permanente",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "40/80/120/160/200",
+              "depois": "40/90/140/190/240"
+            }
+          ],
+          "img": "SejuaniE.png"
+        }
       ]
     },
     {
@@ -181,8 +308,36 @@
       "mod": "Recebe resistências ao abater o Dragão Ancião. Recebimentos de Fúria aumentados no lugar da RTR da ultimate ao abater Dragões das Nuvens. Multiplicador de dano do alvo marcado pelo E e limite de dano contra monstros aumentados. ",
       "nota": "Para uma garota dracônica caçadora de dragões, Shyvana perdeu algumas das novas interações com seus parentes escamosos na Ascensão dos Elementos. Corrigiremos isso e faremos pequenos fortalecimentos em seu dano de sustentação.",
       "habilidades": [
-        "ShyvanaReinforcedScales.png",
-        "ShyvanaFireball.png"
+        {
+          "nome": "Passiva - Fúria da Meio-dragão",
+          "atributos": [
+            {
+              "atributo": "CAÇADORA DE DRAGÕES",
+              "depois": "Shyvana agora recebe 5 de Armadura e Resistência Mágica adicionais permanentes para cada Dragão Elemental e Dragão Ancião que sua equipe abater."
+            },
+            {
+              "atributo": "VENTOS FURIOSOS",
+              "depois": "O Dragão das Nuvens agora aumenta os recebimentos de Fúria da Shyvana em 10/20/30/40% (já que sua ultimate não tem Tempo de Recarga)."
+            }
+          ],
+          "img": "ShyvanaReinforcedScales.png"
+        },
+        {
+          "nome": "E - Hálito Flamejante",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO NO ALVO MARCADO",
+              "antes": "3,25% da Vida máxima do alvo",
+              "depois": "3,75% da Vida máxima do alvo"
+            },
+            {
+              "atributo": "LIMITE DE DANO CONTRA MONSTROS MARCADOS",
+              "antes": "100",
+              "depois": "150"
+            }
+          ],
+          "img": "ShyvanaFireball.png"
+        }
       ]
     },
     {
@@ -226,11 +381,151 @@
             }
           ]
         },
-        "SylasP.png",
-        "SylasQ.png",
-        "SylasW.png",
-        "SylasE.png",
-        "SylasR.png"
+        {
+          "nome": "Passiva - Explosão de Petricita",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO CONTRA ALVO PRIMÁRIO",
+              "antes": "1,1 do Dano de Ataque total (+0,2 de Poder de Habilidade)",
+              "depois": "1,1 do Dano de Ataque total (+0,25 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "RAIO",
+              "antes": "400 de alcance",
+              "depois": "300 de alcance"
+            },
+            {
+              "atributo": "VELOZES E ACORRENTADOS",
+              "rotulo": "novo",
+              "depois": "Agora concede a Sylas 60% de Velocidade de Ataque quando disponível"
+            },
+            {
+              "atributo": "EXPLOSÃO DE PETRICITA",
+              "antes": "2 acúmulos",
+              "depois": "3 acúmulos"
+            },
+            {
+              "atributo": "EXECUÇÃO DE TROPAS",
+              "rotulo": "novo",
+              "depois": "Agora executa tropas secundárias com menos de 25 de Vida"
+            }
+          ],
+          "img": "SylasP.png"
+        },
+        {
+          "nome": "Q - Correntes-Chicote",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "9/8/7/6/5s",
+              "depois": "10/9/8/7/6s"
+            },
+            {
+              "atributo": "DANO DA CORRENTE",
+              "antes": "45/70/95/120/145 (+0,6 de Poder de Habilidade)",
+              "depois": "40/55/70/85/100 (+0,4 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "DANO DA DETONAÇÃO",
+              "antes": "45/70/95/120/145 (+0,6 de Poder de Habilidade)",
+              "depois": "60/105/150/195/240 (+0,8 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "REDUÇÃO DE DANO DA DETONAÇÃO EM TROPAS",
+              "antes": "45%",
+              "depois": "60%"
+            },
+            {
+              "atributo": "REDUÇÃO DE VELOCIDADE DA DETONAÇÃO",
+              "rotulo": "removido",
+              "depois": "Deixa de reduzir a velocidade dos inimigos atingidos por 2s"
+            },
+            {
+              "atributo": "ENJAULADO",
+              "rotulo": "novo",
+              "depois": "Não poderá mais ser conjurada durante E - Abdução"
+            }
+          ],
+          "img": "SylasQ.png"
+        },
+        {
+          "nome": "W - Regicida",
+          "atributos": [
+            {
+              "atributo": "REDEFINIÇÃO DE ATAQUE BÁSICO",
+              "rotulo": "removido",
+              "depois": "Conjurar Regicida deixa de redefinir o ataque básico do Sylas"
+            },
+            {
+              "atributo": "DANO",
+              "antes": "65/100/135/170/205 (+0,65 de Poder de Habilidade)",
+              "depois": "65/100/135/170/205 (+0,85 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "14/13,5/13/12,5/12s",
+              "depois": "14/12,5/11/9,5/8s"
+            },
+            {
+              "atributo": "MISERICÓRDIA",
+              "rotulo": "removido",
+              "depois": "Deixa de causar 50% de dano aumentado a alvos com menos de 40% de Vida"
+            },
+            {
+              "atributo": "CURA AUMENTADA",
+              "antes": "Cura em mais 75% se Sylas estiver com menos de 40% de Vida",
+              "depois": "Cura mais com base na Vida de Sylas, até 100% a mais se estiver com 40% de Vida"
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "40 de Mana",
+              "depois": "70/80/90/100/110 de Mana"
+            }
+          ],
+          "img": "SylasW.png"
+        },
+        {
+          "nome": "E - Evasão/Abdução",
+          "atributos": [
+            {
+              "atributo": "REDEFINIÇÃO DE ATAQUE BÁSICO DO E1",
+              "rotulo": "removido",
+              "depois": "Conjurar Evasão deixa de redefinir o ataque básico do Sylas"
+            },
+            {
+              "atributo": "DANO DO E2",
+              "antes": "70/85/100/115/130 (+0,2 de Poder de Habilidade)",
+              "depois": "80/130/180/230/280 (+1,0 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "ESCUDO",
+              "rotulo": "removido",
+              "depois": "Deixa de receber um escudo contra Dano Mágico por 2s"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "14s",
+              "depois": "14/13/12/11/10s"
+            },
+            {
+              "atributo": "BLOQUEIO DE AÇÕES",
+              "antes": "0,2s ao mover-se caso Abdução atinja alguém",
+              "depois": "0,05s ao mover-se depois de Abdução"
+            }
+          ],
+          "img": "SylasE.png"
+        },
+        {
+          "nome": "R - Usurpar",
+          "atributos": [
+            {
+              "atributo": "REDEFINIÇÃO DE ATAQUE BÁSICO",
+              "rotulo": "removido",
+              "depois": "Conjurar Usurpar deixa de redefinir o ataque básico do Sylas"
+            }
+          ],
+          "img": "SylasR.png"
+        }
       ]
     },
     {
@@ -239,7 +534,22 @@
       "mod": "Tempo de Recarga do Q e Restituição do Tempo de Recarga de Arruinar reduzidos. ",
       "nota": "A função do Varus como um atirador de cutucada está bem fraca desde suas últimas mudanças em 2018. Para um atirador com base em habilidades, esse estilo de jogo deve ser um dos mais fortes (ou até o mais forte). Por isso, fortaleceremos especificamente ele.",
       "habilidades": [
-        "VarusQ.png"
+        {
+          "nome": "Q - Flecha Perfurante",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "20/18/16/14/12s",
+              "depois": "18/16/14/12/10s"
+            },
+            {
+              "atributo": "RESTITUIÇÃO DO TEMPO DE RECARGA DE ARRUINAR",
+              "antes": "4s",
+              "depois": "3s"
+            }
+          ],
+          "img": "VarusQ.png"
+        }
       ]
     },
     {
@@ -248,7 +558,17 @@
       "mod": "Ao conjurar o R, Vi não pode ser interrompida durante toda a duração. ",
       "nota": "Daremos a Vi uma mudança de qualidade de vida em sua ultimate, fazendo com que ela funcione de maneira mais consistente contra arremessos e permitindo que ela permaneça em seu alvo ao longo da duração da habilidade.",
       "habilidades": [
-        "ViR.png"
+        {
+          "nome": "R - Saque e Enterrada",
+          "atributos": [
+            {
+              "atributo": "NÃO PARA, NÃO PARA, NÃO",
+              "rotulo": "novo",
+              "depois": "Vi não pode ser interrompida pela duração do saque"
+            }
+          ],
+          "img": "ViR.png"
+        }
       ]
     },
     {
@@ -257,7 +577,17 @@
       "mod": "Redução de velocidade do E fortalecido reduzida. ",
       "nota": "Zyra nunca teve motivos para invocar várias Vinhas Ásperas, já que uma tinha o mesmo efeito de duas. Agora, é possível acumular a redução de velocidade das Vinhas Ásperas, fazendo com que ela possa planejar suas ações analisando quais plantas ela quer.",
       "habilidades": [
-        "ZyraE.png"
+        {
+          "nome": "E - Pântano das Raízes",
+          "atributos": [
+            {
+              "atributo": "REDUÇÃO DE VELOCIDADE DAS VINHAS ÁSPERAS",
+              "antes": "30% sem acumular",
+              "depois": "25% acumulando até duas vezes, mas apenas uma vez por planta"
+            }
+          ],
+          "img": "ZyraE.png"
+        }
       ]
     },
     {

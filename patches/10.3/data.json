@@ -11,9 +11,48 @@
       "mod": "Custo do Q aumentado. Velocidade de Movimento do W aumentada e agora decai. R agora tem como alvo Campeões, não uma direção.",
       "nota": "Como prometido, nessa Atualização fizemos grandes alterações na Akali. Essas mudanças são o resultado da presença dela no cenário profissional e têm como objetivo moderar seu poder nessa área (mais do que nas partidas normais). Tendo isso em mente, um dos maiores problemas que queríamos resolver era a grande quantidade de opções que ela tinha tanto para entrar nas lutas quanto para sobreviver em situações complicadas. Nossa ninja estava flexível demais, contribuindo com investidas divididas, confrontos de equipe e, ao mesmo tempo, não se limitando a um estilo de jogo específico (ótimo início de jogo, escalamento, etc.).",
       "habilidades": [
-        "AkaliQ.png",
-        "AkaliW.png",
-        "AkaliR.png"
+        {
+          "nome": "Q - Golpe dos Cinco Pontos",
+          "atributos": [
+            {
+              "atributo": "CUSTO",
+              "antes": "100/95/90/85/80 de Energia",
+              "depois": "120/115/110/105/100 de Energia"
+            }
+          ],
+          "img": "AkaliQ.png"
+        },
+        {
+          "nome": "W - Proteção do Crepúsculo",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO NA PROTEÇÃO",
+              "antes": "20/25/30/35/40% de Velocidade de Movimento",
+              "depois": "30/35/40/45/50% de Velocidade de Movimento que decai ao longo de 2s ao conjurar"
+            }
+          ],
+          "img": "AkaliW.png"
+        },
+        {
+          "nome": "R - Execução Perfeita",
+          "atributos": [
+            {
+              "atributo": "ALVO DO R1",
+              "antes": "Direção-alvo",
+              "depois": "Campeão inimigo-alvo"
+            },
+            {
+              "atributo": "ALCANCE DO R1",
+              "rotulo": "novo",
+              "depois": "675"
+            },
+            {
+              "atributo": "DISTÂNCIA DE AVANÇO DO R1",
+              "depois": "675 - 825 com base na distância do inimigo"
+            }
+          ],
+          "img": "AkaliR.png"
+        }
       ]
     },
     {
@@ -22,7 +61,17 @@
       "mod": "Alcance de Ataque deixa de ser infinito em inimigos marcados pelo Q. ",
       "nota": "Vamos limitar os poderes do Aphelios para não parecer que ele está atirando lá da lua.",
       "habilidades": [
-        "Calibrum.jpg"
+        {
+          "nome": "Q - Calibrum, o Rifle de Precisão",
+          "atributos": [
+            {
+              "atributo": "ALCANCE DE ATAQUE EM INIMIGOS MARCADOS",
+              "antes": "Infinito",
+              "depois": "1800"
+            }
+          ],
+          "img": "Calibrum.jpg"
+        }
       ]
     },
     {
@@ -41,7 +90,17 @@
             }
           ]
         },
-        "AzirR.png"
+        {
+          "nome": "R - Decreto do Imperador",
+          "atributos": [
+            {
+              "atributo": "TAMANHO DA PAREDE",
+              "antes": "5/6/7 soldados",
+              "depois": "6/7/8 soldados"
+            }
+          ],
+          "img": "AzirR.png"
+        }
       ]
     },
     {
@@ -50,7 +109,27 @@
       "mod": "Multiplicador de dano por segundo do W aumentado; duração da queima aumentada e agora aplica redução de velocidade.",
       "nota": "Vamos incentivar um uso mais agressivo da Entrega Especial do Corki contra seus inimigos.",
       "habilidades": [
-        "Special_Delivery.png"
+        {
+          "nome": "W - Entrega Especial",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO POR SEGUNDO",
+              "antes": "0,375 de Dano de Ataque adicional e 0,05 de Poder de Habilidade adicional",
+              "depois": "0,5 de Dano de Ataque adicional e 0,06 de Poder de Habilidade adicional"
+            },
+            {
+              "atributo": "DURAÇÃO DA QUEIMA",
+              "antes": "1s",
+              "depois": "1,5s"
+            },
+            {
+              "atributo": "POMBO-CORREIO",
+              "rotulo": "novo",
+              "depois": "Agora reduz a velocidade dos Campeões atingidos diretamente e empurrados durante 1,5s"
+            }
+          ],
+          "img": "Special_Delivery.png"
+        }
       ]
     },
     {
@@ -69,7 +148,17 @@
             }
           ]
         },
-        "DianaOrbs.png"
+        {
+          "nome": "W - Cascata Lívida",
+          "atributos": [
+            {
+              "atributo": "DANO POR ORBE",
+              "antes": "22/34/46/58/70",
+              "depois": "18/30/42/54/66"
+            }
+          ],
+          "img": "DianaOrbs.png"
+        }
       ]
     },
     {
@@ -78,7 +167,17 @@
       "mod": "Dano do acúmulo da Passiva reduzido em monstros.",
       "nota": "Queremos atingir especificamente o Ekko caçador. ALERTA DE SPOILER: também traremos mudanças na selva que devolverão um pouco de EXP para os caçadores mais cedo na partida.",
       "habilidades": [
-        "Ekko_P.png"
+        {
+          "nome": "Passiva - Ressonância Revo-Z",
+          "atributos": [
+            {
+              "atributo": "DANO DE ACÚMULO DA RESSONÂNCIA",
+              "antes": "200% contra monstros",
+              "depois": "150% contra monstros"
+            }
+          ],
+          "img": "Ekko_P.png"
+        }
       ]
     },
     {
@@ -110,7 +209,22 @@
       "mod": "Duração e ciclos de dano do tornado do Q aumentados.",
       "nota": "Em partidas normais de alto nível, tentamos ajudar os jogadores de Galio que sabem aproveitar bem o seu tornado.",
       "habilidades": [
-        "GalioQ.png"
+        {
+          "nome": "Q - Ventos de Guerra",
+          "atributos": [
+            {
+              "atributo": "DURAÇÃO DO TORNADO",
+              "antes": "1,5s",
+              "depois": "2s"
+            },
+            {
+              "atributo": "CICLOS DE DANO DO TORNADO",
+              "antes": "3",
+              "depois": "4"
+            }
+          ],
+          "img": "GalioQ.png"
+        }
       ]
     },
     {
@@ -119,8 +233,28 @@
       "mod": "Dano do W e do E reduzido.",
       "nota": "O dano da Leona está ofuscando as barras de Vida dos oponentes.",
       "habilidades": [
-        "LeonaSolarBarrier.png",
-        "LeonaZenithBlade.png"
+        {
+          "nome": "W - Eclipse",
+          "atributos": [
+            {
+              "atributo": "DANO",
+              "antes": "60/100/140/180/220",
+              "depois": "60/95/130/165/200"
+            }
+          ],
+          "img": "LeonaSolarBarrier.png"
+        },
+        {
+          "nome": "E - Lâmina Zênite",
+          "atributos": [
+            {
+              "atributo": "DANO",
+              "antes": "60/100/140/180/220",
+              "depois": "50/90/130/170/210"
+            }
+          ],
+          "img": "LeonaZenithBlade.png"
+        }
       ]
     },
     {
@@ -144,7 +278,22 @@
             }
           ]
         },
-        "RumbleShield.png"
+        {
+          "nome": "W - Escudo de Sucata",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
+              "antes": "20/25/30/35/40% (30/37,5/45/52,5/60% quando aprimorada)",
+              "depois": "15/20/25/30/35% (22,5/30/37,5/45/52,5% quando aprimorada)"
+            },
+            {
+              "atributo": "ESCUDO",
+              "antes": "80/110/140/170/200",
+              "depois": "60/95/130/165/200"
+            }
+          ],
+          "img": "RumbleShield.png"
+        }
       ]
     },
     {
@@ -163,7 +312,17 @@
             }
           ]
         },
-        "Sejuani_passive.png"
+        {
+          "nome": "Passiva - Fúria do Norte",
+          "atributos": [
+            {
+              "atributo": "REMOÇÃO DA ARMADURA CONGELADA",
+              "antes": "Ao sofrer dano de monstros épicos ou Campeões inimigos",
+              "depois": "Ao sofrer dano de qualquer monstro ou Campeão inimigo"
+            }
+          ],
+          "img": "Sejuani_passive.png"
+        }
       ]
     },
     {
@@ -172,8 +331,32 @@
       "mod": "Chance de surgimento de Espectros da Névoa ajustada. Despojos de Guerra agora contam como abate, reduzindo a chance de aparecimento de Espectros da Névoa. Correção de bug no E. ",
       "nota": "Apesar de amarmos a flexibilidade da Senna em suas funções, ela está forte demais como atiradora. Ajustaremos a chance de aparecimento de Espectros da Névoa para ajudar sua função como suporte.",
       "habilidades": [
-        "Senna_Passive.Senna.png",
-        "SennaE.png"
+        {
+          "nome": "Passiva - Absolvição",
+          "atributos": [
+            {
+              "atributo": "CHANCE DE SURGIMENTO DE ESPECTROS DA NÉVOA",
+              "antes": "20% em tropas que Senna não abater, 100% em tropas de cerco que Senna abater",
+              "depois": "25% em tropas que Senna não abater, 1,67% em tropas de cerco que Senna abater"
+            },
+            {
+              "atributo": "CHANCE DE SURGIMENTO DE ESPECTROS DA NÉVOA (DESPOJOS DE GUERRA)",
+              "rotulo": "novo",
+              "depois": "Abates de tropas concedidos à Senna através de Despojos de Guerra (Escudo Relicário e Guarda-ombros de Aço) agora contam como abates realizados por ela, reduzindo a chance de surgimento para 1,67%"
+            }
+          ],
+          "img": "Senna_Passive.Senna.png"
+        },
+        {
+          "nome": "E - Maldição da Névoa Negra",
+          "atributos": [
+            {
+              "atributo": "CORREÇÃO DE BUG",
+              "depois": "Aliados camuflados pela Maldição da Névoa Negra deixam de ficar invisíveis se Senna morrer durante o efeito da habilidade"
+            }
+          ],
+          "img": "SennaE.png"
+        }
       ]
     },
     {
@@ -192,7 +375,22 @@
             }
           ]
         },
-        "SettW.png"
+        {
+          "nome": "W - Casca-Grossa",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "16/14/12/10/8s",
+              "depois": "18/16,5/15/13,5/12s"
+            },
+            {
+              "atributo": "DANO BASE",
+              "antes": "90/125/160/195/230",
+              "depois": "90/120/150/180/210"
+            }
+          ],
+          "img": "SettW.png"
+        }
       ]
     },
     {
@@ -201,7 +399,17 @@
       "mod": "Velocidade de Movimento do E em si mesma reduzida. ",
       "nota": "O Carnaval nem chegou e a Sona já estava frenética! Falando sério, os novos tênis de corrida da nossa Mestra das Cordas estavam fora de controle. Vamos reverter um pouco esse fortalecimento, já que ela estava rápida demais.",
       "habilidades": [
-        "SonaE.png"
+        {
+          "nome": "E - Canção da Celeridade",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO EM SI MESMA",
+              "antes": "25% (+0,04 a cada 100 de Poder de Habilidade)",
+              "depois": "20% (+0,03 a cada 100 de Poder de Habilidade)"
+            }
+          ],
+          "img": "SonaE.png"
+        }
       ]
     },
     {
@@ -210,9 +418,44 @@
       "mod": "Dano fortalecido do Q reduzido e agora leva em consideração a Vida do alvo; custo padronizado. W deixa de entrar em Tempo de Recarga ao ser silenciado. Cura base do E reduzida e multiplicador aumentado. ",
       "nota": "Ela não é mais apenas uma fonte de cura ambulante (gatos costumam fazer só o que dá na telha, né?). Seu Q deve ser mais satisfatório mesmo no meio/fim de partida.",
       "habilidades": [
-        "YuumiQ.png",
-        "YuumiW.png",
-        "YuumiE.png"
+        {
+          "nome": "Q - Projétil Errante",
+          "atributos": [
+            {
+              "atributo": "DANO FORTALECIDO",
+              "antes": "50/95/140/185/230/275 (+0,4 de Poder de Habilidade)",
+              "depois": "45/80/115/150/185/220 (+0,4 de Poder de Habilidade) (+0,02 - 0,08 da Vida atual do alvo)"
+            },
+            {
+              "atributo": "CUSTO",
+              "antes": "85/90/95/100/105/110 de Mana",
+              "depois": "90 de Mana em todos os níveis"
+            }
+          ],
+          "img": "YuumiQ.png"
+        },
+        {
+          "nome": "W - Você e Eu!",
+          "atributos": [
+            {
+              "atributo": "Silenciamento",
+              "rotulo": "novo",
+              "depois": "deixa de agir como efeito imobilizante que coloca Você e Eu! em Tempo de Recarga por 5s"
+            }
+          ],
+          "img": "YuumiW.png"
+        },
+        {
+          "nome": "E - Frenética!",
+          "atributos": [
+            {
+              "atributo": "CURA",
+              "antes": "70/110/150/190/230 (+0,3 de Poder de Habilidade)",
+              "depois": "70/100/130/160/190 (+0,4 de Poder de Habilidade)"
+            }
+          ],
+          "img": "YuumiE.png"
+        }
       ]
     },
     {

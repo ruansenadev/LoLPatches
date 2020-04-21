@@ -21,7 +21,17 @@
             }
           ]
         },
-        "Alistar_E.png"
+        {
+          "nome": "Passiva - Urro Triunfante",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA DOS ACÚMULOS",
+              "antes": "Quando os acúmulos de Triunfo forem consumidos, Alistar pode receber novos acúmulos",
+              "depois": "imediatamente (Urro Triunfante ainda não pode ser acionado mais de uma vez a cada 3s)."
+            }
+          ],
+          "img": "Alistar_E.png"
+        }
       ]
     },
     {
@@ -30,7 +40,17 @@
       "mod": "Tempo de Recarga do R aumentado nos primeiros níveis. ",
       "nota": "Estamos revertendo parte do fortalecimento que ele recebeu na 10.4.",
       "habilidades": [
-        "CurseoftheSadMummy.png"
+        {
+          "nome": "R - A Maldição da Múmia Triste",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "130/115/100s",
+              "depois": "150/125/100s"
+            }
+          ],
+          "img": "CurseoftheSadMummy.png"
+        }
       ]
     },
     {
@@ -39,7 +59,17 @@
       "mod": "Dano com sinos da Passiva reduzido. ",
       "nota": "Apesar do histórico de bom comportamento, o desempenho do Bardo está excepcional nas partidas de alto nível. Vamos reduzir um pouco o impacto dos mipes para mantê-lo sob controle.",
       "habilidades": [
-        "Bard_Passive.png"
+        {
+          "nome": "Passiva - Chamado do Viajante",
+          "atributos": [
+            {
+              "atributo": "DANO ADICIONAL A CADA CINCO SINOS",
+              "antes": "15",
+              "depois": "12"
+            }
+          ],
+          "img": "Bard_Passive.png"
+        }
       ]
     },
     {
@@ -81,7 +111,22 @@
             }
           ]
         },
-        "GravesQLineSpell.png"
+        {
+          "nome": "Q - Fim da Linha",
+          "atributos": [
+            {
+              "atributo": "CUSTO",
+              "antes": "60/65/70/75/80 de Mana",
+              "depois": "60 de Mana"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "13/12/11/10/9s",
+              "depois": "12/11/10/9/8s"
+            }
+          ],
+          "img": "GravesQLineSpell.png"
+        }
       ]
     },
     {
@@ -90,8 +135,38 @@
       "mod": "Multiplicador de PdH do Q reduzido e aumento no número de projéteis da habilidade aprimorada. Dano base, multiplicador de PdH e reembolso de Tempo de Recarga do W aumentados; multiplicador de DdA reduzido.",
       "nota": "O objetivo dessas mudanças é fortalecer a Kai'Sa conforme ela evolui, especialmente depois de se especializar em DdA ou PdH. Porém, também deve existir uma compensação com base nessa evolução.",
       "habilidades": [
-        "KaisaQ.png",
-        "KaisaW.png"
+        {
+          "nome": "Q - Chuva Icathiana",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO",
+              "antes": "0,4 de Poder de Habilidade",
+              "depois": "0,25 de Poder de Habilidade"
+            },
+            {
+              "atributo": "APRIMORAMENTO - ARMA VIVA",
+              "antes": "10 projéteis",
+              "depois": "12 projéteis"
+            }
+          ],
+          "img": "KaisaQ.png"
+        },
+        {
+          "nome": "W - Exploradora do Vazio",
+          "atributos": [
+            {
+              "atributo": "DANO",
+              "antes": "20/45/70/95/120 (+0,6 de Poder de Habilidade)(+1,5 do Dano de Ataque total)",
+              "depois": "30/55/80/105/130 (+0,7 de Poder de Habilidade)(+1,3 do Dano de Ataque total)"
+            },
+            {
+              "atributo": "APRIMORAMENTO - ARMA VIVA",
+              "antes": "Reembolso de 50% do Tempo de Recarga ao atingir Campeões",
+              "depois": "Reembolso de 70% do Tempo de Recarga ao atingir Campeões"
+            }
+          ],
+          "img": "KaisaW.png"
+        }
       ]
     },
     {
@@ -100,8 +175,28 @@
       "mod": "Recebimento de orbes da Passiva aumentado. Redução de velocidade do W aumentada.",
       "nota": "Suavizaremos as regras de transformação do Kayn para que os jogadores não sejam punidos por sistemas confusos ou complexos e fortaleceremos um pouco sua habilidade de alcançar os inimigos, o que facilitará a transformação.",
       "habilidades": [
-        "Kayn_Passive_Primary.png",
-        "KaynW.png"
+        {
+          "nome": "Passiva - A Foice Darkin",
+          "atributos": [
+            {
+              "atributo": "FREQUÊNCIA DE RECEBIMENTO DE ORBES",
+              "antes": "Aumenta aos 8min e 12min",
+              "depois": "Aumenta constantemente (a cada segundo) depois de 5min, sendo padronizada aos 13min."
+            }
+          ],
+          "img": "Kayn_Passive_Primary.png"
+        },
+        {
+          "nome": "W - Alcance da Lâmina",
+          "atributos": [
+            {
+              "atributo": "REDUÇÃO DE VELOCIDADE DECADENTE",
+              "antes": "60%",
+              "depois": "70%"
+            }
+          ],
+          "img": "KaynW.png"
+        }
       ]
     },
     {
@@ -110,7 +205,17 @@
       "mod": "Multiplicador de PdH do Q aumentado. ",
       "nota": "A frente fria recém-chegada de Freljord trouxe com ela um fortalecimento na habilidade preferida da Lissandra.",
       "habilidades": [
-        "LissandraQ.png"
+        {
+          "nome": "Q - Estilhaço de Gelo",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO",
+              "antes": "0,7 de Poder de Habilidade",
+              "depois": "0,8 de Poder de Habilidade"
+            }
+          ],
+          "img": "LissandraQ.png"
+        }
       ]
     },
     {
@@ -134,8 +239,28 @@
             }
           ]
         },
-        "NeekoE.png",
-        "NeekoR.png"
+        {
+          "nome": "E - Farpas Emaranhadas",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO",
+              "antes": "0,4 de Poder de Habilidade",
+              "depois": "0,6 de Poder de Habilidade"
+            }
+          ],
+          "img": "NeekoE.png"
+        },
+        {
+          "nome": "R - Florescer Repentino",
+          "atributos": [
+            {
+              "atributo": "ESCUDO",
+              "antes": "50/80/110 (+0,5 de Poder de Habilidade)",
+              "depois": "75/100/125 (+0,75 de Poder de Habilidade)"
+            }
+          ],
+          "img": "NeekoR.png"
+        }
       ]
     },
     {
@@ -144,7 +269,27 @@
       "mod": "Dano fortalecido pela Passiva reduzido; nível necessário para o aprimoramento de itens aumentado. ",
       "nota": "Reduziremos um pouco o dano e reverteremos o fortalecimento que o colocou de volta nas partidas profissionais. Não queremos esse bode agressivo dando cabeçadas em qualquer um que estiver em seu caminho.",
       "habilidades": [
-        "OrnnP.png"
+        {
+          "nome": "Passiva - Forja Viva",
+          "atributos": [
+            {
+              "atributo": "DANO DE ATIVAÇÃO DO FRÁGIL",
+              "antes": "12% - 20,5% da Vida máxima do alvo (níveis 1 - 18)",
+              "depois": "10% - 18% da Vida máxima do alvo (níveis 1 - 18)"
+            },
+            {
+              "atributo": "APRIMORAMENTO DE ITENS MAGISTRAIS PARA SI MESMO",
+              "antes": "Nível 12",
+              "depois": "Nível 13"
+            },
+            {
+              "atributo": "APRIMORAMENTO DE ITENS MAGISTRAIS PARA ALIADOS",
+              "antes": "Níveis 13, 14, 15 e 16",
+              "depois": "Níveis 14, 15, 16 e 17"
+            }
+          ],
+          "img": "OrnnP.png"
+        }
       ]
     },
     {
@@ -191,7 +336,21 @@
             }
           ]
         },
-        "SettR.png"
+        {
+          "nome": "R - Hora do Show",
+          "atributos": [
+            {
+              "atributo": "DURAÇÃO DA REDUÇÃO DE VELOCIDADE",
+              "antes": "1,5s no alvo e em todos os inimigos na área do impacto",
+              "depois": "1s no alvo e em todos os inimigos na área do impacto."
+            },
+            {
+              "atributo": "CORREÇÃO DE BUG DE ASSISTÊNCIA",
+              "depois": "Sett agora recebe o devido crédito de assistência mesmo se o alvo morrer enquanto estiver suprimido."
+            }
+          ],
+          "img": "SettR.png"
+        }
       ]
     },
     {
@@ -200,8 +359,28 @@
       "mod": "Dano do Q aumentado nos últimos níveis. Velocidade de Movimento mínima do R agora escala. ",
       "nota": "Sivir está fraquinha em todos os níveis de habilidades, o que pede um certo fortalecimento.",
       "habilidades": [
-        "SivirQ.png",
-        "SivirR.png"
+        {
+          "nome": "Q - Lâmina Bumerangue",
+          "atributos": [
+            {
+              "atributo": "DANO POR ACERTO",
+              "antes": "35/55/75/95/115 (+0,7/0,8/0,9/1,0/1,1 do Dano de Ataque total) (+0,5 de Poder de Habilidade)",
+              "depois": "35/50/65/80/95 (+0,7/0,85/1,0/1,15/1,3 do Dano de Ataque total) (+0,5 de Poder de Habilidade)"
+            }
+          ],
+          "img": "SivirQ.png"
+        },
+        {
+          "nome": "R - Na Caçada",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO MÍNIMA",
+              "antes": "20%",
+              "depois": "20/25/30%"
+            }
+          ],
+          "img": "SivirR.png"
+        }
       ]
     },
     {
@@ -225,7 +404,17 @@
             }
           ]
         },
-        "SonaE.png"
+        {
+          "nome": "E - Canção da Celeridade",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO EM SI MESMA",
+              "antes": "10/11/12/13/14%",
+              "depois": "20%"
+            }
+          ],
+          "img": "SonaE.png"
+        }
       ]
     }
   ],

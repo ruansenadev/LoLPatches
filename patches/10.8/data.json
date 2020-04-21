@@ -11,8 +11,58 @@
       "mod": "Penetração de Armadura adicional da Passiva trocada por Letalidade. Escalamento de nível de habilidade do Q leva mais tempo em termos de dano base e Tempo de Recarga, multiplicador de dano aumentado.",
       "nota": "Aphelios e sua artilharia pesada continuam dominantes no cenário profissional. Nosso objetivo é reduzir a curva de poder e a habilidade de lidar com a linha de frente mais robusta, já que ele a enfrenta muito no cenário profissional.",
       "habilidades": [
-        "The_Hitman_and_the_Seer.png",
-        "Weapons_of_the_Faithful.png"
+        {
+          "nome": "Passiva - O Assassino e a Profetisa",
+          "atributos": [
+            {
+              "atributo": "PENETRAÇÃO DE ARMADURA ADICIONAL",
+              "rotulo": "removido",
+              "depois": "Aphelios deixa de receber 3/6/9/12/15/18% de Penetração de Armadura adicional."
+            },
+            {
+              "atributo": "LETALIDADE",
+              "rotulo": "novo",
+              "depois": "Aphelios agora recebe 2/4/6/8/10/12 de Letalidade."
+            }
+          ],
+          "img": "The_Hitman_and_the_Seer.png"
+        },
+        {
+          "nome": "Q - Armas dos Devotos",
+          "atributos": [
+            {
+              "atributo": "ESCALAMENTO POR NÍVEL DE DANO BASE E TEMPO DE RECARGA",
+              "antes": "Dano base e Tempo de Recarga das habilidades ativáveis das armas do Aphelios escalam ao longo dos",
+              "depois": "níveis 1 - 13"
+            },
+            {
+              "atributo": "MULTIPLICADOR DE DANO FÍSICO DE DISPARO LUNAR",
+              "antes": "0,6 de Dano de Ataque adicional",
+              "depois": "0,42 - 0,6 (níveis 1 - 13) de Dano de Ataque adicional"
+            },
+            {
+              "atributo": "MULTIPLICADOR DE DANO FÍSICO DE CHACINA",
+              "antes": "0,3 de Dano de Ataque adicional",
+              "depois": "0,21 - 0,3 (níveis 1 - 13) de Dano de Ataque adicional"
+            },
+            {
+              "atributo": "MULTIPLICADOR DE DANO DE ECLIPSE RESTRITIVO",
+              "antes": "0,35 de Dano de Ataque adicional",
+              "depois": "0,26 - 0,35 (níveis 1 - 13) de Dano de Ataque adicional"
+            },
+            {
+              "atributo": "MULTIPLICADOR DE DANO DE ONDA SOMBRIA",
+              "antes": "0,8 de Dano de Ataque adicional",
+              "depois": "0,56 - 0,8 (níveis 1 - 13) de Dano de Ataque adicional"
+            },
+            {
+              "atributo": "MULTIPLICADOR DE DANO DA ATALAIA",
+              "antes": "0,5 de Dano de Ataque adicional",
+              "depois": "0,35 - 0,5 (níveis 1 - 13) de Dano de Ataque adicional"
+            }
+          ],
+          "img": "Weapons_of_the_Faithful.png"
+        }
       ]
     },
     {
@@ -21,7 +71,17 @@
       "mod": "Velocidade de Ataque adicional do Q aumentada.",
       "nota": "Ataque rapidamente, mais rapidamente ainda! Ashe tem estado mais fraca do que gostaríamos, então vamos ampliar seu dano por segundo para que ela dê um gelo nos inimigos.",
       "habilidades": [
-        "AsheQ.png"
+        {
+          "nome": "Q - Concentração",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
+              "antes": "20/25/30/35/40%",
+              "depois": "20/30/40/50/60%"
+            }
+          ],
+          "img": "AsheQ.png"
+        }
       ]
     },
     {
@@ -30,7 +90,17 @@
       "mod": "Dano do Q aumentado.",
       "nota": "Aumentaremos parte do dano da Evelynn para que ela tenha mais confiança na selva e nos duelos de início de jogo.",
       "habilidades": [
-        "EvelynnQ.png"
+        {
+          "nome": "Q - Espinho de Ódio",
+          "atributos": [
+            {
+              "atributo": "DANO BASE DO ESPINHO",
+              "antes": "25/30/35/40/45 (75/90/105/120/135 de dano máximo)",
+              "depois": "30/35/40/45/50 (90/105/120/135/150 de dano máximo)"
+            }
+          ],
+          "img": "EvelynnQ.png"
+        }
       ]
     },
     {
@@ -49,7 +119,17 @@
             }
           ]
         },
-        "KalistaExpungeWrapper.png"
+        {
+          "nome": "E - Lacerar",
+          "atributos": [
+            {
+              "atributo": "REDUÇÃO DE VELOCIDADE",
+              "antes": "25/30/35/40/45%",
+              "depois": "10/18/26/34/42%"
+            }
+          ],
+          "img": "KalistaExpungeWrapper.png"
+        }
       ]
     },
     {
@@ -58,7 +138,17 @@
       "mod": "Velocidade de Ataque adicional do R reduzida. ",
       "nota": "Temos visto o Master Yi se aproveitar do efeito bola de neve com frequência, principalmente nas partidas com nível de habilidade médio. Por isso, vamos reduzir um pouco o poder da ult dele.",
       "habilidades": [
-        "Highlander.png"
+        {
+          "nome": "R - Highlander",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
+              "antes": "30/55/80%",
+              "depois": "25/45/65%"
+            }
+          ],
+          "img": "Highlander.png"
+        }
       ]
     },
     {
@@ -67,8 +157,28 @@
       "mod": "Modificador de Velocidade de Movimento do W aumentado nos últimos níveis. Multiplicador do escudo do E aumentado.",
       "nota": "Ampliaremos o poder da nossa dama mecânica com mais CG e utilidade.",
       "habilidades": [
-        "OrianaDissonanceCommand.png",
-        "OrianaRedactCommand.png"
+        {
+          "nome": "W - Comando: Dissonância",
+          "atributos": [
+            {
+              "atributo": "ACELERAÇÃO DE ALIADOS/REDUÇÃO DE VELOCIDADE DE INIMIGOS",
+              "antes": "20/25/30/35/40% de Velocidade de Movimento",
+              "depois": "30/35/40/45/50% de Velocidade de Movimento"
+            }
+          ],
+          "img": "OrianaDissonanceCommand.png"
+        },
+        {
+          "nome": "E - Comando: Proteger",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DO ESCUDO",
+              "antes": "0,4 de Poder de Habilidade",
+              "depois": "0,5 de Poder de Habilidade"
+            }
+          ],
+          "img": "OrianaRedactCommand.png"
+        }
       ]
     },
     {
@@ -97,7 +207,17 @@
             }
           ]
         },
-        "RyzeQWrapper.png"
+        {
+          "nome": "Q - Sobrecarregar",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
+              "antes": "20/25/30/35/40% ao consumir 2 runas",
+              "depois": "28/32/36/40/44% ao consumir 2 runas"
+            }
+          ],
+          "img": "RyzeQWrapper.png"
+        }
       ]
     },
     {
@@ -106,7 +226,17 @@
       "mod": "Chance de surgimento de Espectros da Névoa reduzido.",
       "nota": "Seguimos ajustando o poder da Senna, já que os jogadores estão cada vez melhores com ela.",
       "habilidades": [
-        "Senna_Passive.Senna.png"
+        {
+          "nome": "Passiva - Absolvição",
+          "atributos": [
+            {
+              "atributo": "CHANCE DE SURGIMENTO DE ESPECTROS DA NÉVOA",
+              "antes": "25% em tropas que Senna não abater",
+              "depois": "22% em tropas que Senna não abater"
+            }
+          ],
+          "img": "Senna_Passive.Senna.png"
+        }
       ]
     },
     {
@@ -115,7 +245,17 @@
       "mod": "Dano base do W reduzido.",
       "nota": "Temos visto que os jogadores estão dependendo do W do Sett devido ao controle de rota no início de jogo, então vamos dar um pouco de espaço para que os inimigos respirem antes que o Chefe os coloque na linha.",
       "habilidades": [
-        "SettW.png"
+        {
+          "nome": "W - Casca-Grossa",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "90/120/150/180/210",
+              "depois": "80/105/130/155/180"
+            }
+          ],
+          "img": "SettW.png"
+        }
       ]
     },
     {
@@ -134,7 +274,17 @@
             }
           ]
         },
-        "SorakaQ.png"
+        {
+          "nome": "Q - Chamado Estelar",
+          "atributos": [
+            {
+              "atributo": "CUSTO",
+              "antes": "60/65/70/75/80 de Mana",
+              "depois": "45/50/55/60/65 de Mana"
+            }
+          ],
+          "img": "SorakaQ.png"
+        }
       ]
     },
     {
@@ -143,7 +293,17 @@
       "mod": "Multiplicador de dano adicional do E aumentado. ",
       "nota": "Aumentaremos o dano do combo principal da Tristana para que ela continue mandando chumbo nos inimigos ao longo da partida.",
       "habilidades": [
-        "TristanaE.png"
+        {
+          "nome": "E - Carga Explosiva",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO DA EXPLOSÃO ",
+              "antes": "50/70/90/110/130% de Dano de Ataque adicional",
+              "depois": "50/75/100/125/150% de Dano de Ataque adicional"
+            }
+          ],
+          "img": "TristanaE.png"
+        }
       ]
     },
     {
@@ -152,8 +312,31 @@
       "mod": "Correção de bugs no E. Tempo de Recarga do R reduzido.",
       "nota": "Corrigiremos alguns bugs no Desdém e daremos mais oportunidades para que Urgot gere terror, mortes, essas coisas que ele adora.",
       "habilidades": [
-        "UrgotE.png",
-        "UrgotR.png"
+        {
+          "nome": "E - Desdém",
+          "atributos": [
+            {
+              "atributo": "CORREÇÃO DE BUG - VELOCIDADE DE MOVIMENTO",
+              "depois": "Corrigido um erro em que Urgot não recebia Velocidade de Movimento adicional ao avançar."
+            },
+            {
+              "atributo": "CORREÇÃO DE BUG - ATORDOAMENTO",
+              "depois": "Urgot agora tem a duração total de CG correta de 1,5s, incluindo atordoamento e tempo decorrido quando o Campeão inimigo é arremessado, assim como era planejado na 10.6 (dica flutuante agora exibe corretamente a duração total de CG)."
+            }
+          ],
+          "img": "UrgotE.png"
+        },
+        {
+          "nome": "R - Pior que a Morte",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "120/95/70s",
+              "depois": "100/85/70s"
+            }
+          ],
+          "img": "UrgotR.png"
+        }
       ]
     },
     {
@@ -162,7 +345,17 @@
       "mod": "Tempo de Recarga do R aumentado.",
       "nota": "Tentaremos restringir um pouco o poder do Varus, mas garantindo que as itemizações do meta continuem igualmente viáveis. Para isso, decidimos balancear uma parte do kit que é utilizada nas duas versões.",
       "habilidades": [
-        "VarusR.png"
+        {
+          "nome": "R - Corrente da Corrupção",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "110/90/70s",
+              "depois": "130/100/70s"
+            }
+          ],
+          "img": "VarusR.png"
+        }
       ]
     },
     {
@@ -171,7 +364,17 @@
       "mod": "Dano por acerto de pluma do E aumentado.",
       "nota": "Fortaleceremos as preciosas lâminas da Xayah para que ela continue batendo as penas dos inimigos.",
       "habilidades": [
-        "XayahE.png"
+        {
+          "nome": "E - Invocadora das Lâminas",
+          "atributos": [
+            {
+              "atributo": "DANO ADICIONAL POR PLUMA ATINGIDA",
+              "antes": "10% a menos de dano por pluma",
+              "depois": "5% a menos de dano por pluma"
+            }
+          ],
+          "img": "XayahE.png"
+        }
       ]
     }
   ],

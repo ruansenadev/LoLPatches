@@ -54,11 +54,112 @@
             }
           ]
         },
-        "Garen_Passive.png",
-        "GarenQ.png",
-        "GarenW.png",
-        "GarenE.png",
-        "GarenR.png"
+        {
+          "nome": "Passiva - Perseverança",
+          "atributos": [
+            {
+              "atributo": "REGENERAÇÃO",
+              "antes": "2/8% (com base no nível) de sua Vida máxima por 5s",
+              "depois": "1,5-10,1% (nos níveis 1-18) de sua Vida máxima por 5s"
+            },
+            {
+              "atributo": "REGENERAÇÃO FORTALECIDA",
+              "rotulo": "removido",
+              "depois": "Garen não duplica mais a regeneração de Vida passivamente enquanto está abaixo de 25/50% (com base no nível) de sua Vida máxima"
+            },
+            {
+              "atributo": "REGENERAÇÃO INTERROMPIDA",
+              "rotulo": "atualizado",
+              "antes": "9s ao sofrer dano de outras unidades que não sejam tropas antes do nível 11; 4s ao sofrer dano de monstros épicos, torres ou Campeões após o nível 11",
+              "depois": "7s ao sofrer dano de monstros épicos, torres ou Campeões"
+            }
+          ],
+          "img": "Garen_Passive.png"
+        },
+        {
+          "nome": "Q - Acerto Decisivo",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE CONJURAÇÃO",
+              "rotulo": "novo",
+              "depois": "Agora escala com a Velocidade de Ataque de Garen, comportando-se similarmente a um ataque básico"
+            },
+            {
+              "atributo": "CORREÇÃO DE BUG",
+              "depois": "Corrigimos um bug em que, quando Garen sofria uma redução de velocidade, o tempo de bloqueio do Q aumentava drasticamente."
+            }
+          ],
+          "img": "GarenQ.png"
+        },
+        {
+          "nome": "W - Coragem",
+          "atributos": [
+            {
+              "atributo": "RESISTÊNCIA POR ABATE",
+              "antes": "0,33 de Armadura e Resistência Mágica adicionais (máximo de 50 com 150 unidades abatidas)",
+              "depois": "0,25 de Armadura e Resistência Mágica adicionais (máximo de 30 com 150 unidades abatidas)"
+            },
+            {
+              "atributo": "ME DÁ UM ESCUDO AQUI",
+              "rotulo": "atualizado",
+              "antes": "Concede 30% de redução de dano adicional e Tenacidade pelos primeiros 0,75s",
+              "depois": "Concede um escudo de 10% de sua Vida máxima e 60% de Tenacidade pelos primeiros 0,75s"
+            }
+          ],
+          "img": "GarenW.png"
+        },
+        {
+          "nome": "E - Julgamento",
+          "atributos": [
+            {
+              "atributo": "GIROS",
+              "antes": "5-10 (nos níveis 1-16)",
+              "depois": "7 (+1 a cada 20% de Velocidade de Ataque proveniente de itens e níveis)"
+            },
+            {
+              "atributo": "DANO POR GIRO",
+              "antes": "14/18/22/26/30 (+0,36-0,4 de Dano de Ataque)",
+              "depois": "8/12/16/20/24 (+0-8 com base no nível) (+0,32-0,4 de Dano de Ataque)"
+            },
+            {
+              "atributo": "DANO ADICIONAL",
+              "antes": "33% a um único inimigo",
+              "depois": "25% ao inimigo mais próximo"
+            },
+            {
+              "atributo": "GIROS ANTES DA FRAGMENTAÇÃO",
+              "antes": "4",
+              "depois": "6"
+            },
+            {
+              "atributo": "ALEXANDRE, O GRANDE",
+              "rotulo": "novo",
+              "depois": "Agora concede acúmulos de Conquistador para cada giro"
+            }
+          ],
+          "img": "GarenE.png"
+        },
+        {
+          "nome": "R - Justiça Demaciana",
+          "atributos": [
+            {
+              "atributo": "PASSIVO",
+              "rotulo": "removido",
+              "depois": "Garen não marca mais inimigos com o maior número de abates nos últimos 5 minutos como Vilão"
+            },
+            {
+              "atributo": "VISÃO ALÉM DO ALCANCE",
+              "rotulo": "novo",
+              "depois": "Concede visão do alvo por 1s, evitando que a habilidade seja cancelada caso perca a visão do alvo"
+            },
+            {
+              "atributo": "DANO",
+              "antes": "175/350/525 (+0,286/0,333/0,4 da Vida perdida do alvo) como Dano Mágico",
+              "depois": "150/300/450 (+0,2/0,25/0,3 da Vida perdida do alvo) como Dano Verdadeiro"
+            }
+          ],
+          "img": "GarenR.png"
+        }
       ]
     },
     {
@@ -77,7 +178,17 @@
             }
           ]
         },
-        "IvernW.png"
+        {
+          "nome": "W - Formação de Arbustos",
+          "atributos": [
+            {
+              "atributo": "ESTICA O BRAÇO AÍ",
+              "rotulo": "removido",
+              "depois": "Não aumenta mais o alcance de Ivern"
+            }
+          ],
+          "img": "IvernW.png"
+        }
       ]
     },
     {
@@ -96,8 +207,28 @@
             }
           ]
         },
-        "Lissandra_Passive.png",
-        "LissandraW.png"
+        {
+          "nome": "Passiva - Submissão Glacinata",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO",
+              "antes": "0,3 de Poder de Habilidade",
+              "depois": "0,5 de Poder de Habilidade"
+            }
+          ],
+          "img": "Lissandra_Passive.png"
+        },
+        {
+          "nome": "W - Círculo Ártico",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO",
+              "antes": "0,5 de Poder de Habilidade",
+              "depois": "0,7 de Poder de Habilidade"
+            }
+          ],
+          "img": "LissandraW.png"
+        }
       ]
     },
     {
@@ -115,7 +246,17 @@
             }
           ]
         },
-        "PantheonQ.png"
+        {
+          "nome": "Q - Lança Meteórica",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "75/115/155/195/235",
+              "depois": "75/110/145/180/215"
+            }
+          ],
+          "img": "PantheonQ.png"
+        }
       ]
     },
     {
@@ -124,7 +265,17 @@
       "mod": "Dano base do Q reduzido nos primeiros níveis. ",
       "nota": "Estamos reduzindo o dano de Qiyana nas trocas, em especial quando ela atinge o nível 3, já que está opressora demais no início de jogo.",
       "habilidades": [
-        "QiyanaQ.png"
+        {
+          "nome": "Q - Lâmina de Ixtal",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "80/100/120/140/160",
+              "depois": "60/85/110/135/160"
+            }
+          ],
+          "img": "QiyanaQ.png"
+        }
       ]
     },
     {
@@ -148,11 +299,121 @@
             }
           ]
         },
-        "Jester_CarefulStrikes.png",
-        "Deceive.png",
-        "JackInTheBox.png",
-        "TwoShivPoison.png",
-        "HallucinateFull.png"
+        {
+          "nome": "Passiva - Apunhalar",
+          "atributos": [
+            {
+              "atributo": "DANO DO ATAQUE BÁSICO",
+              "rotulo": "novo",
+              "depois": "Causar dano com ataque básico a um inimigo agora causa um adicional de 10-25 (nos níveis 1-18) (+0,15 de Dano de Ataque adicional) de dano pelas costas (este dano pode causar Acerto Crítico)"
+            },
+            {
+              "atributo": "DANO DE VENENO DE DOIS GUMES",
+              "rotulo": "novo",
+              "depois": "Veneno de Dois Gumes agora causa um adicional de 15-50 (nos níveis 1-18) (+0,1 de Poder de Habilidade) de dano pelas costas"
+            }
+          ],
+          "img": "Jester_CarefulStrikes.png"
+        },
+        {
+          "nome": "Q - Enganar",
+          "atributos": [
+            {
+              "atributo": "DURAÇÃO DA FURTIVIDADE",
+              "antes": "1,5/2,25/3/3,75/4,5s",
+              "depois": "2,5/2,75/3/3,25/3,5s"
+            },
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "16/15,5/15/14,5/14 segundos",
+              "depois": "12/11,5/11/10,5/10 segundos"
+            },
+            {
+              "atributo": "O TEMPO TÁ ACABANDO",
+              "rotulo": "removido",
+              "depois": "O Tempo de Recarga de Enganar não reduz mais ao sair da Invisibilidade e causar dano com seu próximo ataque básico"
+            },
+            {
+              "atributo": "DANO",
+              "antes": "10/20/30/40/50 (+0,4 de Dano de Ataque adicional)(+0,3 de Poder de Habilidade)",
+              "depois": "25/35/45/55/65 (+0,25 de Dano de Ataque adicional) Ao atacar pelas costas, Enganar causa Acerto Crítico garantido com 130% de dano."
+            }
+          ],
+          "img": "Deceive.png"
+        },
+        {
+          "nome": "W - Caixinha Surpresa",
+          "atributos": [
+            {
+              "atributo": "TEM CAIXINHA PRA TODO MUNDO",
+              "rotulo": "atualizado",
+              "depois": "Quando acionadas, agora as caixinhas podem atacar vários inimigos na área de ação"
+            },
+            {
+              "atributo": "DANO EM ÁREA",
+              "rotulo": "novo",
+              "depois": "15/20/25/30/35 (+0,1 de Poder de Habilidade) (dano em alvo único inalterado)"
+            },
+            {
+              "atributo": "DURAÇÃO DO TEMOR EM NÃO CAMPEÕES",
+              "rotulo": "novo",
+              "depois": "2s em todos os não Campeões"
+            },
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO DURANTE TEMOR",
+              "antes": "100 de Velocidade de Movimento para todos os inimigos",
+              "depois": "60 de Velocidade de Movimento para tropas e monstros, 100 de Velocidade de Movimento para Campeões"
+            }
+          ],
+          "img": "JackInTheBox.png"
+        },
+        {
+          "nome": "E - Veneno de Dois Gumes",
+          "atributos": [
+            {
+              "atributo": "TIPO DE DANO",
+              "antes": "Dano Físico",
+              "depois": "Dano Mágico"
+            },
+            {
+              "atributo": "DANO",
+              "antes": "55/80/105/130/155 (+0,6/0,75/0,9/1,05/1,2 de Dano de Ataque adicional)(+0,75 de Poder de Habilidade)",
+              "depois": "70/95/120/145/170 (+0,8 de Dano de Ataque adicional) (+0,6 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "DANO DE EXECUÇÃO",
+              "antes": "0-50% de dano aumentado com base na Vida perdida",
+              "depois": "50% de dano aumentado em alvos com Vida abaixo de 30%"
+            }
+          ],
+          "img": "TwoShivPoison.png"
+        },
+        {
+          "nome": "R - Alucinação",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE AÇÃO DAS CAIXINHAS",
+              "antes": "Caixinhas ativam após 2s",
+              "depois": "Caixinhas ativam imediatamente"
+            },
+            {
+              "atributo": "DANO",
+              "antes": "200/300/400 (+1,0 de Poder de Habilidade)",
+              "depois": "150/225/300 (+0,7 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "DANO EM ÁREA DA CAIXINHA",
+              "rotulo": "novo",
+              "depois": "10/20/30 (+0,1 de Poder de Habilidade) (dano em alvo único inalterado)"
+            },
+            {
+              "atributo": "DURAÇÃO DO TEMOR",
+              "antes": "0,75/1/1,25s",
+              "depois": "1s"
+            }
+          ],
+          "img": "HallucinateFull.png"
+        }
       ]
     },
     {
@@ -213,9 +474,65 @@
             }
           ]
         },
-        "ViktorPowerTransfer.png",
-        "ViktorGravitonField.png",
-        "ViktorChaosStorm.png"
+        {
+          "nome": "Q - Poder do Sifão",
+          "atributos": [
+            {
+              "atributo": "ESCUDO",
+              "antes": "8% de sua Mana máxima (+0,15 de Poder de Habilidade)",
+              "depois": "30-115 (nos níveis 1-18) (+0,15 de Poder de Habilidade)"
+            }
+          ],
+          "img": "ViktorPowerTransfer.png"
+        },
+        {
+          "nome": "W - Campo Gravítico",
+          "atributos": [
+            {
+              "atributo": "APRIMORAMENTO - IMPLOSÃO",
+              "rotulo": "atualizado",
+              "antes": "Inimigos atordoados por Campo Gravítico são arrastados para o centro",
+              "depois": "Acertos diretos reduzem a velocidade de inimigos em 20% por 1s (não aciona nos ciclos do R)"
+            }
+          ],
+          "img": "ViktorGravitonField.png"
+        },
+        {
+          "nome": "R - Tempestade do Caos",
+          "atributos": [
+            {
+              "atributo": "SE CORRER O BICHO PEGA",
+              "rotulo": "novo",
+              "depois": "Tempestade do Caos continuará seguindo Campeões mesmo após Viktor ser abatido"
+            },
+            {
+              "atributo": "KRACKO",
+              "rotulo": "novo",
+              "depois": "Tempestade do Caos agora pode passar por cima de terrenos."
+            },
+            {
+              "atributo": "CADÊNCIA DOS CICLOS",
+              "antes": "2s",
+              "depois": "1s"
+            },
+            {
+              "atributo": "CICLOS",
+              "antes": "3",
+              "depois": "6"
+            },
+            {
+              "atributo": "DANO POR CICLO",
+              "antes": "130/210/290 (+0,85 de Poder de Habilidade)",
+              "depois": "65/105/145 (+0,45 de Poder de Habilidade)"
+            },
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO DE 'APRIMORAMENTO - VELOCIDADE'",
+              "antes": "A Tempestade do Caos se movimenta || 20% mais rápido",
+              "depois": " ⇒ 250; a Velocidade de Movimento máxima agora é de || 300 ⇒ 375)"
+            }
+          ],
+          "img": "ViktorChaosStorm.png"
+        }
       ]
     }
   ],

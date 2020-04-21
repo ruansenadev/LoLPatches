@@ -35,7 +35,17 @@
       "mod": "Tempo de Recarga do R reduzido.",
       "nota": "Anteriormente, ajustamos a ultimate da Akali para que sua conjuração não tivesse um acesso tão livre, criando um grande custo para a habilidade que antes era usada tão facilmente. Porém, notamos que a ultimate é uma parte importante da satisfação de mecânica de jogo da Campeã e, por isso, nosso objetivo é suavizar um pouco o Tempo de Recarga e encorajar sua utilização.",
       "habilidades": [
-        "AkaliR.png"
+        {
+          "nome": "R - Execução Perfeita",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "120/90/60s",
+              "depois": "100/80/60s"
+            }
+          ],
+          "img": "AkaliR.png"
+        }
       ]
     },
     {
@@ -44,7 +54,17 @@
       "mod": "Duração da queima de acerto direto do W aumentada.",
       "nota": "Os jogadores de Corki andam se divertindo bastante desde o último fortalecimento, mas achamos que o Campeão ainda tem espaço para outro. Round 2! Entrega Especial!",
       "habilidades": [
-        "special_delivery.png"
+        {
+          "nome": " W - Entrega Especial",
+          "atributos": [
+            {
+              "atributo": "DURAÇÃO DA QUEIMA DE ACERTO DIRETO",
+              "antes": "1,5s",
+              "depois": "2s"
+            }
+          ],
+          "img": "special_delivery.png"
+        }
       ]
     },
     {
@@ -53,7 +73,17 @@
       "mod": "R agora concede um escudo contra Dano Mágico para todos os aliados na área.",
       "nota": "Galio anda em uma situação ruim e temos tentado reacender sua essência como um guardião antimagia. Nossos fortalecimentos anteriores não pareceram surtir efeito, então tentaremos algo mais ousado dessa vez: daremos a ele, e à equipe em que ele estiver, a habilidade de enfrentar oponentes com Dano Mágico de forma mais eficaz.",
       "habilidades": [
-        "heros_entrance.png"
+        {
+          "nome": "R - Entrada Heroica",
+          "atributos": [
+            {
+              "atributo": "BASTIÃO ANTIMAGIA",
+              "rotulo": "novo",
+              "depois": "Habilidade agora concede o escudo contra Dano Mágico do passivo do W - Escudo de Durand para todos os Campeões aliados na área de conjuração por 5s."
+            }
+          ],
+          "img": "heros_entrance.png"
+        }
       ]
     },
     {
@@ -62,8 +92,28 @@
       "mod": "Tempo de Recarga da passiva aumentado. Duração da Velocidade de Movimento do Q reduzida nos primeiros níveis, mas escala mais no último nível.",
       "nota": "Nosso soldado da Vanguarda superou todos os enfraquecimentos da 10.6 e continuou passando dos limites, principalmente na rota do meio. Tentaremos colocá-lo na linha novamente ao reduzir sua utilidade no início de jogo.",
       "habilidades": [
-        "Garen_Passive.png",
-        "GarenQ.png"
+        {
+          "nome": "Passiva - Perseverança",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "7s",
+              "depois": "8s"
+            }
+          ],
+          "img": "Garen_Passive.png"
+        },
+        {
+          "nome": "Q - Acerto Decisivo",
+          "atributos": [
+            {
+              "atributo": "DURAÇÃO DA VELOCIDADE DE MOVIMENTO",
+              "antes": "1,5/2/2,5/3/3,5s",
+              "depois": "1/1,65/2,3/2,95/3,6s"
+            }
+          ],
+          "img": "GarenQ.png"
+        }
       ]
     },
     {
@@ -72,8 +122,28 @@
       "mod": "Dano base do E aumentado. Tempo de Recarga do R reduzido.",
       "nota": "Depois das mudanças recentes no sistema da selva, Ivern parece estar em um mato sem cachorro, mas isso não vai ficar assim! Tentaremos fortalecê-lo um pouco mais.",
       "habilidades": [
-        "IvernE.png",
-        "IvernR.png"
+        {
+          "nome": "E - Semente Engatilhada",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "60/80/100/120/140",
+              "depois": "70/95/120/145/170"
+            }
+          ],
+          "img": "IvernE.png"
+        },
+        {
+          "nome": "R - Margarida!",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "160/140/120s",
+              "depois": "140/130/120s"
+            }
+          ],
+          "img": "IvernR.png"
+        }
       ]
     },
     {
@@ -82,7 +152,17 @@
       "mod": "Tempo de Recarga do E reduzido nos últimos níveis.",
       "nota": "Sobrecarga? Sobrecarregadora! Daremos a Kai'Sa mais oportunidades de jogadas no fim de jogo, mas preservaremos seu potencial de eliminação.",
       "habilidades": [
-        "KaisaE.png"
+        {
+          "nome": "E - Sobrecarga",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "16/15,5/15/14,5/14s",
+              "depois": "16/15/14/13/12s"
+            }
+          ],
+          "img": "KaisaE.png"
+        }
       ]
     },
     {
@@ -91,8 +171,28 @@
       "mod": "Alcance do W aumentado. Multiplicador de redução de Armadura do E aumentado.",
       "nota": "Queremos aumentar a utilidade do Nasus, já que essa é a qualidade mais valorizada pelos jogadores mais experientes.",
       "habilidades": [
-        "NasusW.png",
-        "NasusE.png"
+        {
+          "nome": "W - Murchar",
+          "atributos": [
+            {
+              "atributo": "ALCANCE",
+              "antes": "600",
+              "depois": "700"
+            }
+          ],
+          "img": "NasusW.png"
+        },
+        {
+          "nome": "E - Fogo Espiritual",
+          "atributos": [
+            {
+              "atributo": "REDUÇÃO DE ARMADURA",
+              "antes": "15/20/25/30/35%",
+              "depois": "25/30/35/40/45%"
+            }
+          ],
+          "img": "NasusE.png"
+        }
       ]
     },
     {
@@ -147,7 +247,22 @@
       "mod": "Dano base de ida e dano base de retorno do W reduzidos; multiplicador de dano aumentado.",
       "nota": "Sabemos que Talon gosta muito de suas lâminas, mas, dessa vez, elas foram longe demais. O Campeão está se mostrando uma ameaça em partidas de alto nível de habilidade, com sua limpeza no início de jogo permitindo que ele se movimente pelo mapa com maior frequência e antes dos outros. Reduziremos a confiança depositada nessas lâminas para que ele permaneça na linha (e na rota).",
       "habilidades": [
-        "TalonW.png"
+        {
+          "nome": "W - Ancinho",
+          "atributos": [
+            {
+              "atributo": "DANO DE IDA",
+              "antes": "50/65/80/95/110 (+0,4 de Dano de Ataque adicional)",
+              "depois": "45/60/75/90/105 (+0,4 de Dano de Ataque adicional)"
+            },
+            {
+              "atributo": "DANO DE RETORNO",
+              "antes": "70/85/100/115/130 (+0,6 de Dano de Ataque adicional)",
+              "depois": "45/65/85/105/125 (+0,7 de Dano de Ataque adicional)"
+            }
+          ],
+          "img": "TalonW.png"
+        }
       ]
     },
     {
@@ -156,8 +271,32 @@
       "mod": "Armadura adicional da Passiva reduzida nos últimos níveis. Dano base do E reduzido nos últimos níveis; agora permite que o W e R sejam sequenciados durante o avanço.",
       "nota": "Apesar de termos conseguido equilibrar o poder entre suas múltiplas posições, Wukong tem superado nossas expectativas desde o pequeno rework da 10.6. Por isso, continuaremos a ajustá-lo conforme os jogadores forem dominando as mudanças.",
       "habilidades": [
-        "MonkeyKingStoneSkin.png",
-        "MonkeyKingNimbus.png"
+        {
+          "nome": "Passiva - Pele de Pedra",
+          "atributos": [
+            {
+              "atributo": "ARMADURA ADICIONAL",
+              "antes": "5 - 11 (níveis 1 a 18)",
+              "depois": "5 - 9 (níveis 1 a 18)"
+            }
+          ],
+          "img": "MonkeyKingStoneSkin.png"
+        },
+        {
+          "nome": "E - Resplendor das Nuvens",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "80/120/160/200/240",
+              "depois": "80/110/140/170/200"
+            },
+            {
+              "atributo": "SEQUENCIAMENTO DE HABILIDADES",
+              "depois": "As habilidades W - Guerreiro Trapaceiro e R - Ciclone de Wukong agora podem ser sequenciadas durante o avanço."
+            }
+          ],
+          "img": "MonkeyKingNimbus.png"
+        }
       ]
     },
     {
@@ -166,7 +305,17 @@
       "mod": "Cura base da passiva aumentada nos últimos níveis.",
       "nota": "Queremos tornar nosso guerreiro de Demacia mais atraente aumentando sua durabilidade em lutas difíceis.",
       "habilidades": [
-        "XinZhaoP.png"
+        {
+          "nome": "Passiva - Determinação",
+          "atributos": [
+            {
+              "atributo": "CURA BASE",
+              "antes": "10 - 78 (níveis 1 a 18)",
+              "depois": "10 - 112 (níveis 1 a 18)"
+            }
+          ],
+          "img": "XinZhaoP.png"
+        }
       ]
     }
   ],
