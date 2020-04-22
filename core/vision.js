@@ -1,12 +1,16 @@
 const vision = require('@google-cloud/vision')
 
-const imageFt = 'imagens/testVision.jpg'
-const imageFt = 'imagens/inlineVision.jpg'
+// const imageFt = 'imagens/testVision.jpg'
+// const imageFt = 'imagens/inlineVision.jpg'
+const imageFt = 'imagens/noTitleVision.jpg'
 
 const client = new vision.ImageAnnotatorClient()
 const margin = 16;
 
 function isInline(texts = [], titles = {}) {
+    if(!Object.keys(titles).length) {
+        return null
+    }
     let iTitles = []
     let lastTitle
     for (let i = 0; i < texts.length; i++) {
@@ -48,6 +52,10 @@ function mapFeatured(array, ft) {
         if (/[A-Z]{2,}/.test(txt)) {
             title = txt.toLowerCase()
         } else {
+            if (!title) {
+                title = 'novidades'
+                ft[title] = []
+            }
             ft[title].push(txt)
         }
     })
@@ -71,12 +79,12 @@ async function extractData(img) {
         tts[tt.toLowerCase()] = []
         return tts
     }, {})
+    
     // filter X axis titles
     let inlineTitles = isInline(textArray, featured)
     if (inlineTitles) {
         textArray = formatInline(textArray, inlineTitles, detections)
     }
-
     return mapFeatured(textArray, featured)
 }
 
