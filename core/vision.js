@@ -6,7 +6,7 @@ const imageFt = 'imagens/inlineVision.jpg'
 
 const client = new vision.ImageAnnotatorClient()
 const marginX = 16;
-const marginY = 12;
+const marginY = 24;
 
 function isInline(texts = [], titles = {}) {
     if (!Object.keys(titles).length) {
@@ -109,9 +109,12 @@ function joinY(array, detections) {
     }, [])
 }
 
-async function extractData(img) {
+exports.look = async function(img) {
     const [result] = await client.textDetection(img)
     const detections = result.textAnnotations
+    if(!detections.length) {
+        return []
+    }
     let textArray = detections[0].description.trim().split('\n')
     // sanitize texts
     textArray.forEach((txt, i) => {
@@ -119,7 +122,6 @@ async function extractData(img) {
             textArray.splice(i, 1)
         }
     })
-    console.log(textArray)
     // concats Y near prhases
     textArray = joinY(textArray, detections)
     // list titles
@@ -138,4 +140,4 @@ async function extractData(img) {
     return mapFeatured(textArray, featured)
 }
 
-extractData(imageFt).then(console.log).catch(console.error)
+// look(imageFt).then(console.log).catch(console.error)

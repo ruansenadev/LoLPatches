@@ -4,6 +4,7 @@ const fs = require('fs')
 const path = require('path')
 const fetcher = require('./fetcher')
 const scraper = require('./scraper')
+const vision = require('./vision')
 const d = new Date()
 
 const errorsDir = 'erros'
@@ -125,7 +126,7 @@ async function fetchPatchesImages(items) {
     }, [])
     // map calls in-game images
     let patchesCalls = patches.reduce((calls, patch, p) => {
-        if(patch[0].champs.length) {
+        if (patch[0].champs.length) {
             let champs = patch[0].champs
             // push all champs images for each scrap
             champs.forEach((champ, c) => {
@@ -179,7 +180,7 @@ async function fetchPatchesImages(items) {
     let nCalls = bannersCalls.concat(patchesCalls).length
 
     return new Promise((resolve, reject) => {
-        if(nCalls) {
+        if (nCalls) {
             console.log(`Trynna download ${nCalls} images..`)
             async.series({
                 banners: function (cb) {
@@ -235,16 +236,47 @@ async function fetchPatchesImages(items) {
 //         })
 // }, true)
 
-// --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
-fetchPatchesImages()
-.then(results => {
-    results.forEach(scrap => {
-        fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
-            if (err) { throw err }
-            fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
-                if (err) { throw err }
-                console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+function lookEach(patches) {
+    patches = patches || JSON.parse(fs.readFileSync(path.join(patchesDir, 'data.json')))
+    // filter patches with ft banners
+    let patchesFt = patches.items.reduce((patchesFt, patch, i) => {
+        let img = JSON.parse(fs.readFileSync(path.join(patchesDir, patch.titulo, 'data.json'))).ft.img
+        if (img) {
+            patchesFt.push(function(cb) {
+                vision.look(path.join(patchesDir, patch.titulo, img)).then(data => {
+                    console.log(`${patch.titulo} - ${img}: ${Object.keys(data)}`)
+                    cb(null, { patch: i, destaques: data })
+                }).catch(cb)
             })
+        }
+        return patchesFt
+    }, [])
+    // extract data
+    async.series((patchesFt), (err, patchesFt) => {
+        if (err) { return createLog(err, 'OCR featured img') }
+        console.log(patchesFt.length + ' images readed')
+        patchesFt.forEach(item => {
+            if (Object.keys(item.destaques).length) patches.items[item.patch].destaques = item.destaques
+        })
+        fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(patches, null, 2), err => {
+            if (err) { throw err }
+            console.log('Rewrited patches data.')
         })
     })
-})
+}
+
+// --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
+// fetchPatchesImages()
+// .then(results => {
+//     results.forEach(scrap => {
+//         fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
+//             if (err) { throw err }
+//             fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
+//                 if (err) { throw err }
+//                 console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+//             })
+//         })
+//     })
+// })
+
+lookEach()

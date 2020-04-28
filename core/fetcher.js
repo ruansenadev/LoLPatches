@@ -63,6 +63,7 @@ exports.fetch = async function(callback = (data, message) => {
 						prevs.push({
 							url: att.href,
 							img: att.querySelector('img').src,
+							// titulo same regexp as folders scrap
 							titulo: att.querySelector('h2').innerText.match(/\d+.\d*[a-z]*/)[0],
 							autor: autor ? autor.innerText : '',
 							data: att.querySelector('time').dateTime,

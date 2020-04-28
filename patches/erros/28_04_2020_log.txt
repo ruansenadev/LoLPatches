@@ -1,0 +1,38 @@
+(16:33:35): 
+ - OCR featured img
+(err, v) => {
+                results[index] = v;
+                iterCb(err);
+            }
+🔚🔚🔚🔚
+(16:44:07): 
+ - OCR featured img
+async function(cb) {
+            let img = JSON.parse(fs.readFileSync(path.join(patchesDir, patch.titulo, 'data.json'))).ft.img
+            if(img) {
+                try {
+                    let data = await vision.look(path.join(patchesDir, patch.titulo, img))
+                    console.log(`${patch.titulo} - ${img}: ${Object.keys(data)}`)
+                    cb(null, {patch: i, destaques: data})
+                } catch (error) {
+                    cb(error)
+                }
+            }
+        }
+🔚🔚🔚🔚
+(17:13:20): 
+ - OCR featured img
+async function (cb) {
+                try {
+                    let data = await vision.look(path.join(patchesDir, patch.titulo, img))
+                    console.log(`${patch.titulo} - ${img}: ${Object.keys(data)}`)
+                    cb(null, { patch: i, destaques: data })
+                } catch (error) {
+                    cb(error)
+                }
+            }
+🔚🔚🔚🔚
+(17:16:06): 
+ - OCR featured img
+TypeError: Cannot read property 'description' of undefined
+🔚🔚🔚🔚
