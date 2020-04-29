@@ -1,143 +1,99 @@
 const vision = require('@google-cloud/vision')
-
+const async = require('async')
 // const imageFt = 'imagens/testVision.jpg'
-const imageFt = 'imagens/inlineVision.jpg'
+// const imageFt = 'imagens/inlineVision.jpg'
 // const imageFt = 'imagens/noTitleVision.jpg'
+// const images = ['imagens/testVision.jpg']
+const images = ['imagens/testVision.jpg', 'imagens/inlineVision.jpg']
 
 const client = new vision.ImageAnnotatorClient()
-const marginX = 16;
-const marginY = 24;
+const margin = 20;
 
-function isInline(texts = [], titles = {}) {
-    if (!Object.keys(titles).length) {
-        return null
-    }
-    let iTitles = []
-    let lastTitle
-    for (let i = 0; i < texts.length; i++) {
-        if (texts[i].toLowerCase() in titles) {
-            if (lastTitle === (i - 1)) {
-                iTitles.push(texts[lastTitle], texts[i])
-            } else if (iTitles.includes(texts[lastTitle])) {
-                iTitles.push(texts[i])
-                break
-            }
-            lastTitle = i
-        }
-    }
-    return iTitles.length ? iTitles : null
-}
-function formatInline(textArray, iTitles, detections) {
-    // group interval values
-    let index = textArray.indexOf(iTitles[0])
-    let interval = textArray.splice(index, iTitles[2] ? textArray.indexOf(iTitles[2]) : textArray.length - 1)
-    interval = interval.reduce((txts, txt) => {
-        for (let d of detections) {
-            if (txt.includes(d.description)) {
-                if (iTitles.includes(txt)) {
-                    // left X vertice - m
-                    txts.push([txt, d.boundingPoly.vertices[0].x - marginX])
-                    return txts
-                }
-                // right X vertice + m
-                txts.push([txt, d.boundingPoly.vertices[1].x + marginX])
-                return txts
-            }
-        }
-    }, []).sort((t1, t2) => t1[1] > t2[1] ? 1 : t1[1] == t2[1] ? 0 : -1).map(t => t[0])
-    return textArray.slice(0, index).concat(interval).concat(textArray.slice(index))
-}
-function mapFeatured(array, ft) {
-    let title = ''
-    array.forEach(txt => {
-        if (/[A-Z]{2,}/.test(txt)) {
-            title = txt.toLowerCase()
-        } else {
-            if (!title) {
-                title = 'novidades'
-                ft[title] = []
-            }
-            ft[title].push(txt)
-        }
-    })
-    return ft
-}
-// compare Y axis of items them join if its near
-function joinY(array, detections) {
-    let phraseBox
-    return array.reduce((txts, txt) => {
-        let txtBox
-        // word with a space followed by anything gets box
-        if (!(/(\w.+\s).+/i.test(txt))) {
-            txts.push(txt)
-            return txts
-        } else {
-            let lastInclude = 0
-            detections.forEach((d, i) => {
-                // map txt box
-                if (txt.includes(d.description)) {
-                    let box = d.boundingPoly.vertices
-                    // [{lx, ty}, {rx, ty}, {rx, by}, {lx,by}]
-                    if (txt.startsWith(d.description)) {
-                        txtBox = box;
-                        lastInclude = i
-                        return;
-                    } else if(lastInclude && lastInclude == (i - 1)) {
-                        // expands box X
-                        txtBox = [txtBox[0], box[1], box[2], txtBox[3]]
-                        lastInclude = i
-                    }
-                }
-            })
-
-            let joining = false
-            let midPoint = phraseBox ? phraseBox[3].x + (Math.round((phraseBox[2].x - phraseBox[3].x) / 2)) : null
-            // same Y column
-            if (midPoint && (midPoint > txtBox[0].x && midPoint < txtBox[1].x)) {
-                // margin Y matches concats
-                if ((txtBox[1].y - phraseBox[2].y) <= marginY) {
-                    txts[txts.length - 1] += ' ' + txt
-                    joining = true
-                }
-            }
-            // starts new sentence
-            if (!joining) txts.push(txt)
-            phraseBox = txtBox
-
-            return txts
-        }
-    }, [])
-}
-
-exports.look = async function(img) {
+async function look(img) {
+    let data = {}
     const [result] = await client.textDetection(img)
-    const detections = result.textAnnotations
-    if(!detections.length) {
-        return []
+    let detections = result.textAnnotations
+    if (!detections.length) {
+        return data
     }
-    let textArray = detections[0].description.trim().split('\n')
-    // sanitize texts
-    textArray.forEach((txt, i) => {
-        if (/nota|atualização|\d+.\d*[a-z]*/ig.test(txt)) {
-            textArray.splice(i, 1)
+    // calc texts bounding boxes
+    detections = detections.map(d => {
+        let box = d.boundingPoly.vertices
+        let midX = box[3].x + Math.round((box[2].x - box[3].x) / 2)
+        return {
+            text: d.description,
+            boundingBox: { t: box[0].y, b: box[3].y, l: box[3].x, r: box[2].x, m: midX }
         }
     })
-    // concats Y near prhases
-    textArray = joinY(textArray, detections)
-    // list titles
-    let featured = textArray.filter((txt) => {
-        return /[A-Z]{2,}/.test(txt)
-    }).reduce((tts, tt) => {
-        tts[tt.toLowerCase()] = []
-        return tts
-    }, {})
-
-    // filter X axis titles
-    let inlineTitles = isInline(textArray, featured)
-    if (inlineTitles) {
-        textArray = formatInline(textArray, inlineTitles, detections)
+    // format phrases text
+    let phrases = detections[0].text.trim().split('\n')
+    // sanitize
+    phrases.forEach((txt, i) => {
+        if (/nota|atualização|\d+.\d*[a-z]*/ig.test(txt)) {
+            phrases.splice(i, 1)
+        }
+    })
+    for(let i = 0; i < detections.length; i++) {
+        if(detections[i].text === phrases[0]) {
+            detections.splice(0, i-1)
+            break
+        }
     }
-    return mapFeatured(textArray, featured)
+    // calc phrases bounding boxes
+    phrases = phrases.map((p, i) => {
+        let box
+        let include
+        calc:
+        for(let j = 1; j < detections.length; j++) {
+            if(p.includes(detections[j].text)) {
+                if(!include) {
+                    // starts with
+                    box = detections[j].boundingBox
+                } else if(j === include) {
+                    // expands box
+                    box.r = detections[j].boundingBox.r
+                    box.m = box.l + Math.round((box.r - box.l) / 2)
+                } else {
+                    // includes and isnt begin or followed its of a next text box
+                    break calc
+                }
+                include = j
+                detections.splice(j, 1)
+                j--
+            }
+        }
+        return {text: p, boundingBox: box}
+    })
+    // fiter titles
+    titles = phrases.filter(phrase => /[A-Z]{2,}/.test(phrase.text))
+    if (titles.length) {
+        // cut from detections, name output
+        titles.forEach(t => {
+            data[t.text.toLowerCase()] = []
+        })
+    } else {
+        // set default title output
+        titles = [{text: 'novidades', boundingBox: detections[0].boundingBox}]
+        data[[titles].text] = []
+    }
+    // titles.forEach(t => {
+    //     console.log(t)
+    // })
+    // detections.forEach(d => {
+    //     console.log(d)
+    //     // console.log(d.description, d.boundingPoly)
+    // })
+    console.log(phrases)
+    return data
 }
 
-// look(imageFt).then(console.log).catch(console.error)
+async.series(images.map(m => {
+    return function (cb) {
+        look(m).then(data => { cb(null, data) }).catch(cb)
+    }
+}), (err, results) => {
+    if (err) { return console.error(err) }
+    results.forEach(data => {
+        console.log(data)
+    })
+})
