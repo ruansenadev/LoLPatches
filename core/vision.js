@@ -8,7 +8,8 @@ const async = require('async')
 const images = ['imagens/inlineVision.jpg']
 
 const client = new vision.ImageAnnotatorClient()
-const margin = 22;
+const marginX = 26;
+const marginY = 22;
 
 function titleType(title, array) {
     title = title.text
@@ -16,11 +17,13 @@ function titleType(title, array) {
     let type = 0
     // TITLE CASES
     // 1. TITLE IS FOLLOWED AND HAS ANOTHER BELOW: 3
-    // 2. TITLE IS FOLLOWED: 2
+    // 2. TITLE IS FOLLOWED BY ONE: 2
     // 3. HAVE ANOTHER BELOW: 1
     // 4. HAS JUST ONE TITLE OR HASNT ANY: 0
-    array.forEach((phrase, i) => {
-        // only look titles
+    let phrase
+    count:
+    for (let i = 0; i < array.length; i++) {
+        phrase = array[i]
         if (phrase.type == 't') {
             // if no title found
             if (titleIndex === null) {
@@ -29,16 +32,17 @@ function titleType(title, array) {
                 }
             } else {
                 // title after have found
-                if (titleIndex == (i-1)) {
+                if (titleIndex == (i - 1)) {
                     // is in-line
                     type += 2
                 } else {
                     // is bellow
                     type += 1
+                    break count
                 }
             }
         }
-    })
+    }
     return [type, titleIndex]
 }
 
@@ -111,21 +115,101 @@ async function look(img) {
         data[[titles].text] = []
     }
 
-
     titles.forEach(t => {
         // count type of title
         let titleCase = titleType(t, phrases)
-        console.log(t.text, 'TYPE ' + titleCase[0], 'INDEX '+ titleCase[1])
-        // switch (key) {
-        //     case value:
+        // case title is null because of no title
+        let title1
+        let title2
+        let title2L
+        let phrasesAfter
+        switch (titleCase[0]) {
+            case 3:
+                let interval
+                next:
+                for (let i = titleCase[1] + 2; i < phrases.length; i++) {
+                    if (phrases[i].type == 't') {
+                        interval = phrases.splice(titleCase[1], i - titleCase[1])
+                        break next
+                    }
+                }
+                title1 = interval.splice(0, 1)
+                title2 = interval.splice(0, 1)
+                // right title has left margin of icon
+                title2L = title2[0].boundingBox.l
+                // start looking items second title and append others to the first
+                interval.forEach(phrase => {
+                    if ((phrase.boundingBox.r + marginX) >= title2L) {
+                        title2.push(phrase)
+                    } else {
+                        title1.push(phrase)
+                    }
+                })
+                interval = title1.concat(title2)
 
-        //         break;
+                // insert array in place
+                phrasesAfter = phrases.splice(titleCase[1])
+                phrases = phrases.concat(interval).concat(phrasesAfter)
 
-        //     default:
-        //         break;
-        // }
+                break
+            case 2:
+                interval = phrases.splice(titleCase[1])
+                title1 = interval.splice(0, 1)
+                title2 = interval.splice(0, 1)
+                // right title has left margin of icon
+                title2L = title2[0].boundingBox.l
+                // start looking items second title and append others to the first
+                interval.forEach(phrase => {
+                    if ((phrase.boundingBox.r + marginX) >= title2L) {
+                        title2.push(phrase)
+                    } else {
+                        title1.push(phrase)
+                    }
+                })
+                interval = title1.concat(title2)
+
+                // insert array in place
+                phrasesAfter = phrases.splice(titleCase[1])
+                phrases = phrases.concat(interval).concat(phrasesAfter)
+
+                break
+            case 1:
+            // is in order
+            default:
+                // type 0 or null
+                // is in order but may not have a title
+                break
+        }
     })
-
+    // join Y
+    let pbL
+    let pbR
+    phrases = phrases.reduce((joined, p, i, ps) => {
+        if (p.type == 'p') {
+            // looks if any phrase after phrase is in y margin
+            for (let pa = i + 1; pa < ps.length; pa++) {
+                if (ps[pa].type == 'p') {
+                    pbL = ps[pa].boundingBox.l
+                    pbR = ps[pa].boundingBox.r
+                    // same column test
+                    if (p.boundingBox.m > pbL && p.boundingBox.m < pbR) {
+                        // margin y test
+                        if ((p.boundingBox.b + marginY) >= ps[pa].boundingBox.t) {
+                            // concats text expands box
+                            p.text += ` ${ps[pa].text}`
+                            p.boundingBox.l = pbL
+                            p.boundingBox.r = pbR
+                            p.boundingBox.b = ps[pa].boundingBox.b
+                            // remove and keeps looking same pa indice
+                            ps.splice(pa, 1)
+                        }
+                    }
+                }
+            }
+        }
+        joined.push(p)
+        return joined
+    }, [])
     console.log('PHRASES ', phrases)
     return data
 }
