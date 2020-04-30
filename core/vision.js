@@ -4,8 +4,8 @@ const async = require('async')
 // const imageFt = 'imagens/inlineVision.jpg'
 // const imageFt = 'imagens/noTitleVision.jpg'
 // const images = ['imagens/testVision.jpg']
-// const images = ['imagens/testVision.jpg', 'imagens/inlineVision.jpg']
-const images = ['imagens/inlineVision.jpg']
+const images = ['imagens/testVision.jpg', 'imagens/noTitleVision.jpg']
+// const images = ['imagens/inlineVision.jpg']
 
 const client = new vision.ImageAnnotatorClient()
 const marginX = 26;
@@ -19,7 +19,7 @@ function titleType(title, array) {
     // 1. TITLE IS FOLLOWED AND HAS ANOTHER BELOW: 3
     // 2. TITLE IS FOLLOWED BY ONE: 2
     // 3. HAVE ANOTHER BELOW: 1
-    // 4. HAS JUST ONE TITLE OR HASNT ANY: 0
+    // 4. HAS JUST ONE TITLE: 0
     let phrase
     count:
     for (let i = 0; i < array.length; i++) {
@@ -72,6 +72,7 @@ async function look(img) {
     })
     for (let i = 0; i < detections.length; i++) {
         if (detections[i].text === phrases[0]) {
+            // cuts begin that was sanitized in phrases
             detections.splice(0, i - 1)
             break
         }
@@ -102,23 +103,18 @@ async function look(img) {
         let type = /[A-Z]{2,}/.test(p) ? 't' : 'p'
         return { text: p, type, boundingBox: box }
     })
-    // fiter titles
-    titles = phrases.filter(phrase => phrase.type == 't')
-    if (titles.length) {
-        // cut from detections, name output
-        titles.forEach(t => {
-            data[t.text.toLowerCase()] = []
-        })
-    } else {
-        // set default title output
-        titles = [{ text: 'novidades', type: 't', boundingBox: detections[0].boundingBox }]
-        data[[titles].text] = []
+    let titles = phrases.filter(phrase => phrase.type == 't')
+    if (!titles.length) {
+        // set default title
+        let title = { text: 'novidades', type: 't', boundingBox: detections[0].boundingBox }
+        titles = [title]
+        phrases.unshift(title)
     }
 
     titles.forEach(t => {
         // count type of title
         let titleCase = titleType(t, phrases)
-        // case title is null because of no title
+
         let title1
         let title2
         let title2L
@@ -176,8 +172,7 @@ async function look(img) {
             case 1:
             // is in order
             default:
-                // type 0 or null
-                // is in order but may not have a title
+                // type 0 just phrases after is in order too
                 break
         }
     })
@@ -210,7 +205,17 @@ async function look(img) {
         joined.push(p)
         return joined
     }, [])
-    console.log('PHRASES ', phrases)
+    // format to object data
+    let lastTitle
+    phrases.forEach(phrase => {
+        if (phrase.type == 't') {
+            lastTitle = phrase.text.toLowerCase()
+            data[lastTitle] = []
+        } else {
+            data[lastTitle].push(phrase.text)
+        }
+    })
+    
     return data
 }
 
