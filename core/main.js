@@ -236,35 +236,6 @@ async function fetchPatchesImages(items) {
 //         })
 // }, true)
 
-function lookEach(patches) {
-    patches = patches || JSON.parse(fs.readFileSync(path.join(patchesDir, 'data.json')))
-    // filter patches with ft banners
-    let patchesFt = patches.items.reduce((patchesFt, patch, i) => {
-        let img = JSON.parse(fs.readFileSync(path.join(patchesDir, patch.titulo, 'data.json'))).ft.img
-        if (img) {
-            patchesFt.push(function(cb) {
-                vision.look(path.join(patchesDir, patch.titulo, img)).then(data => {
-                    console.log(`${patch.titulo} - ${img}: ${Object.keys(data)}`)
-                    cb(null, { patch: i, destaques: data })
-                }).catch(cb)
-            })
-        }
-        return patchesFt
-    }, [])
-    // extract data
-    async.series((patchesFt), (err, patchesFt) => {
-        if (err) { return createLog(err, 'OCR featured img') }
-        console.log(patchesFt.length + ' images readed')
-        patchesFt.forEach(item => {
-            if (Object.keys(item.destaques).length) patches.items[item.patch].destaques = item.destaques
-        })
-        fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(patches, null, 2), err => {
-            if (err) { throw err }
-            console.log('Rewrited patches data.')
-        })
-    })
-}
-
 // --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
 // fetchPatchesImages()
 // .then(results => {
@@ -279,4 +250,36 @@ function lookEach(patches) {
 //     })
 // })
 
-lookEach()
+function lookAround(patches) {
+    patches = patches || JSON.parse(fs.readFileSync(path.join(patchesDir, 'data.json')))
+    // filter patches with ft banners
+    let patchesFt = patches.items.reduce((patchesFt, patch, i) => {
+        let img = JSON.parse(fs.readFileSync(path.join(patchesDir, patch.titulo, 'data.json'))).ft.img
+        if (img) {
+            patchesFt.push(function(cb) {
+                vision.look(path.join(patchesDir, patch.titulo, img)).then(data => {
+                    console.log(`${patch.titulo} - ${img}: ${Object.keys(data)}`)
+                    cb(null, { patch: i, destaques: data })
+                }).catch(e => {
+                    createLog(e, `OCR ${patch.titulo}`)
+                    return cb(e)
+                })
+            })
+        }
+        return patchesFt
+    }, [])
+    // extract data
+    async.series((patchesFt), (err, patchesFt) => {
+        if (err) { throw err }
+        console.log(patchesFt.length + ' images readed')
+        patchesFt.forEach(item => {
+            if (Object.keys(item.destaques).length) patches.items[item.patch].destaques = item.destaques
+        })
+        fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(patches, null, 2), err => {
+            if (err) { throw err }
+            console.log('Rewrited patches data.')
+        })
+    })
+}
+
+lookAround()

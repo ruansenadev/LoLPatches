@@ -9,28 +9,29 @@
       "destaques": {
         "buffs": [
           "Ashe",
-          "Soraka",
           "Evelynn",
-          "Tristana",
-          "Urgot",
           "Orianna",
           "Ryze",
+          "Soraka",
+          "Tristana",
+          "Urgot",
           "Xayah"
         ],
         "nerfs": [
-          "Senna",
           "Aphelios",
-          "Sett",
           "Kalista",
           "Master Yi",
+          "Senna",
+          "Sett",
           "Varus"
         ],
         "novidades": [
           "Żyra Congregação das Bruxas",
           "LeBlanc",
-          "Zyra Congregação das Bruxas Edição de Prestígio",
-          "Morgana",
-          "Congregação das Bruxas Congregação das Bruxas"
+          "Zyra Congregação das Bruxas",
+          "Edição de Prestígio",
+          "Morgana Congregação das Bruxas",
+          "Congregação das Bruxas"
         ]
       }
     },
@@ -43,26 +44,25 @@
       "destaques": {
         "buffs": [
           "Akali",
-          "Kai'Sa",
           "Corki",
-          "Nasus",
           "Galio",
+          "Ivern",
+          "Kai'Sa",
+          "Nasus",
           "Riven",
-          "Xin Zhao",
-          "Ivern"
+          "Xin Zhao"
         ],
         "nerfs": [
           "Garen",
-          "Wukong",
           "Nocturne",
-          "Talon"
+          "Talon",
+          "Wukong"
         ],
         "novidades": [
           "Urgot Cosplay de Pijaminha Estelar",
           "Veigar Cosplay de Ranzinzim",
           "Tristana Cosplay de Pingu",
-          "Sion Quebra-mundos",
-          "Malzahar Quebra-mundos",
+          "Sion Quebra-mundos Malzahar Quebra-mundos",
           "Maokai Quebra-mundos"
         ]
       }
@@ -85,26 +85,28 @@
           "Twisted Fate",
           "Urgot",
           "Veigar",
-          "Xerath",
-          "Talon Bosque Sombrio",
-          "Lux Cósmica Lux Cosmos Negro",
-          "Malphite Estrela Negra Malphite Estrela Negra Edição de Prestígio"
+          "Xerath"
         ],
         "nerfs": [
           "Aphelios",
-          "Mordekaiser Estrela Negra",
-          "Darius"
+          "Darius",
+          "Garen",
+          "Senna",
+          "Shaco"
         ],
         "ajustės": [
-          "Wukong",
-          "Twitch Passos Leves"
+          "Wukong"
         ],
         "novidades": [
-          "Garen",
+          "Malphite Estrela Negra",
+          "Malphite Estrela Negra Edição de Prestígio",
+          "Mordekaiser Estrela Negra",
+          "Lux Cósmica",
+          "Lux Cosmos Negro",
+          "Xerath Estrela Negra",
+          "Talon Bosque Sombrio",
           "Taric Escudo Cintilante",
-          "Senna",
-          "Shaco",
-          "Xerath Estrela Negra"
+          "Twitch Passos Leves"
         ]
       }
     },
@@ -218,10 +220,10 @@
           "Sett Reinos Mech",
           "Sylas de Freljord",
           "Jax Reinos Mech",
-          "Garen Reinos Mech Garen Reinos Mech",
-          "Leona Reinos Mech",
-          "Draven Reinos Mech",
-          "Edição de Prestígio"
+          "Garen Reinos Mech",
+          "Garen Reinos Mech",
+          "Leona Reinos Mech Edição de Prestígio",
+          "Draven Reinos Mech"
         ]
       }
     },
@@ -247,7 +249,8 @@
       "data": "2019-11-19T18:30:00.000Z",
       "destaques": {
         "novidades": [
-          "Pulsefire Thresh Pulsefire Thresh Prestige Edition",
+          "Pulsefire Thresh",
+          "Pulsefire Thresh Prestige Edition",
           "Victorious Aatrox"
         ]
       }

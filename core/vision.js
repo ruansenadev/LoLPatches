@@ -1,11 +1,5 @@
 const vision = require('@google-cloud/vision')
 const async = require('async')
-// const imageFt = 'imagens/testVision.jpg'
-// const imageFt = 'imagens/inlineVision.jpg'
-// const imageFt = 'imagens/noTitleVision.jpg'
-// const images = ['imagens/testVision.jpg']
-const images = ['imagens/testVision.jpg', 'imagens/noTitleVision.jpg']
-// const images = ['imagens/inlineVision.jpg']
 
 const client = new vision.ImageAnnotatorClient()
 const marginX = 26;
@@ -46,7 +40,7 @@ function titleType(title, array) {
     return [type, titleIndex]
 }
 
-async function look(img) {
+exports.look = async function(img) {
     let data = {}
     const [result] = await client.textDetection(img)
     let detections = result.textAnnotations
@@ -91,6 +85,10 @@ async function look(img) {
                     // expands box
                     box.r = detections[j].boundingBox.r
                     box.m = box.l + Math.round((box.r - box.l) / 2)
+                    // check if phrase has ended
+                    if(!/\w/g.test(p.split(detections[j].text)[1])) {
+                        break
+                    }
                 } else {
                     // includes and isnt begin or followed its of a next text box
                     break calc
@@ -183,7 +181,7 @@ async function look(img) {
         if (p.type == 'p') {
             // looks if any phrase after phrase is in y margin
             for (let pa = i + 1; pa < ps.length; pa++) {
-                if (ps[pa].type == 'p') {
+                if (ps[pa].type == 'p' && ps[pa].boundingBox) {
                     pbL = ps[pa].boundingBox.l
                     pbR = ps[pa].boundingBox.r
                     // same column test
@@ -218,14 +216,3 @@ async function look(img) {
     
     return data
 }
-
-async.series(images.map(m => {
-    return function (cb) {
-        look(m).then(data => { cb(null, data) }).catch(cb)
-    }
-}), (err, results) => {
-    if (err) { return console.error(err) }
-    results.forEach(data => {
-        console.log(data)
-    })
-})
