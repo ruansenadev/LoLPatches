@@ -4,10 +4,43 @@ const async = require('async')
 // const imageFt = 'imagens/inlineVision.jpg'
 // const imageFt = 'imagens/noTitleVision.jpg'
 // const images = ['imagens/testVision.jpg']
-const images = ['imagens/testVision.jpg', 'imagens/inlineVision.jpg']
+// const images = ['imagens/testVision.jpg', 'imagens/inlineVision.jpg']
+const images = ['imagens/inlineVision.jpg']
 
 const client = new vision.ImageAnnotatorClient()
-const margin = 20;
+const margin = 22;
+
+function titleType(title, array) {
+    title = title.text
+    let titleIndex = null
+    let type = 0
+    // TITLE CASES
+    // 1. TITLE IS FOLLOWED AND HAS ANOTHER BELOW: 3
+    // 2. TITLE IS FOLLOWED: 2
+    // 3. HAVE ANOTHER BELOW: 1
+    // 4. HAS JUST ONE TITLE OR HASNT ANY: 0
+    array.forEach((phrase, i) => {
+        // only look titles
+        if (phrase.type == 't') {
+            // if no title found
+            if (titleIndex === null) {
+                if (title === phrase.text) {
+                    titleIndex = i
+                }
+            } else {
+                // title after have found
+                if (titleIndex == (i-1)) {
+                    // is in-line
+                    type += 2
+                } else {
+                    // is bellow
+                    type += 1
+                }
+            }
+        }
+    })
+    return [type, titleIndex]
+}
 
 async function look(img) {
     let data = {}
@@ -33,9 +66,9 @@ async function look(img) {
             phrases.splice(i, 1)
         }
     })
-    for(let i = 0; i < detections.length; i++) {
-        if(detections[i].text === phrases[0]) {
-            detections.splice(0, i-1)
+    for (let i = 0; i < detections.length; i++) {
+        if (detections[i].text === phrases[0]) {
+            detections.splice(0, i - 1)
             break
         }
     }
@@ -44,12 +77,12 @@ async function look(img) {
         let box
         let include
         calc:
-        for(let j = 1; j < detections.length; j++) {
-            if(p.includes(detections[j].text)) {
-                if(!include) {
+        for (let j = 1; j < detections.length; j++) {
+            if (p.includes(detections[j].text)) {
+                if (!include) {
                     // starts with
                     box = detections[j].boundingBox
-                } else if(j === include) {
+                } else if (j === include) {
                     // expands box
                     box.r = detections[j].boundingBox.r
                     box.m = box.l + Math.round((box.r - box.l) / 2)
@@ -62,10 +95,11 @@ async function look(img) {
                 j--
             }
         }
-        return {text: p, boundingBox: box}
+        let type = /[A-Z]{2,}/.test(p) ? 't' : 'p'
+        return { text: p, type, boundingBox: box }
     })
     // fiter titles
-    titles = phrases.filter(phrase => /[A-Z]{2,}/.test(phrase.text))
+    titles = phrases.filter(phrase => phrase.type == 't')
     if (titles.length) {
         // cut from detections, name output
         titles.forEach(t => {
@@ -73,17 +107,26 @@ async function look(img) {
         })
     } else {
         // set default title output
-        titles = [{text: 'novidades', boundingBox: detections[0].boundingBox}]
+        titles = [{ text: 'novidades', type: 't', boundingBox: detections[0].boundingBox }]
         data[[titles].text] = []
     }
-    // titles.forEach(t => {
-    //     console.log(t)
-    // })
-    // detections.forEach(d => {
-    //     console.log(d)
-    //     // console.log(d.description, d.boundingPoly)
-    // })
-    console.log(phrases)
+
+
+    titles.forEach(t => {
+        // count type of title
+        let titleCase = titleType(t, phrases)
+        console.log(t.text, 'TYPE ' + titleCase[0], 'INDEX '+ titleCase[1])
+        // switch (key) {
+        //     case value:
+
+        //         break;
+
+        //     default:
+        //         break;
+        // }
+    })
+
+    console.log('PHRASES ', phrases)
     return data
 }
 
