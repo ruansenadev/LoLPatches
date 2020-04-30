@@ -3,7 +3,6 @@ const async = require('async')
 
 const client = new vision.ImageAnnotatorClient()
 const marginX = 26;
-const marginY = 22;
 
 function titleType(title, array) {
     title = title.text
@@ -51,9 +50,10 @@ exports.look = async function(img) {
     detections = detections.map(d => {
         let box = d.boundingPoly.vertices
         let midX = box[3].x + Math.round((box[2].x - box[3].x) / 2)
+        let lineH = Math.round(box[3].y - box[0].y)
         return {
             text: d.description,
-            boundingBox: { t: box[0].y, b: box[3].y, l: box[3].x, r: box[2].x, m: midX }
+            boundingBox: { t: box[0].y, b: box[3].y, l: box[3].x, r: box[2].x, m: midX, h: lineH }
         }
     })
     // format phrases text
@@ -87,6 +87,8 @@ exports.look = async function(img) {
                     box.m = box.l + Math.round((box.r - box.l) / 2)
                     // check if phrase has ended
                     if(!/\w/g.test(p.split(detections[j].text)[1])) {
+                        detections.splice(j, 1)
+                        j--
                         break
                     }
                 } else {
@@ -175,23 +177,23 @@ exports.look = async function(img) {
         }
     })
     // join Y
-    let pbL
-    let pbR
+    let pnL
+    let pnR
     phrases = phrases.reduce((joined, p, i, ps) => {
         if (p.type == 'p') {
-            // looks if any phrase after phrase is in y margin
-            for (let pa = i + 1; pa < ps.length; pa++) {
-                if (ps[pa].type == 'p' && ps[pa].boundingBox) {
-                    pbL = ps[pa].boundingBox.l
-                    pbR = ps[pa].boundingBox.r
-                    // same column test
-                    if (p.boundingBox.m > pbL && p.boundingBox.m < pbR) {
+            // looks if next phrase is in lineheight margin
+            for (let pa = 0; pa < ps.length; pa++) {
+                if (ps[pa].type == 'p') {
+                    pnL = ps[pa].boundingBox.l
+                    pnR = ps[pa].boundingBox.r
+                    // after and same column test
+                    if (ps[pa].boundingBox.t > p.boundingBox.b && (p.boundingBox.m > pnL && p.boundingBox.m < pnR)) {
                         // margin y test
-                        if ((p.boundingBox.b + marginY) >= ps[pa].boundingBox.t) {
+                        if ((p.boundingBox.b + p.boundingBox.h) >= ps[pa].boundingBox.t) {
                             // concats text expands box
                             p.text += ` ${ps[pa].text}`
-                            p.boundingBox.l = pbL
-                            p.boundingBox.r = pbR
+                            p.boundingBox.l = pnL
+                            p.boundingBox.r = pnR
                             p.boundingBox.b = ps[pa].boundingBox.b
                             // remove and keeps looking same pa indice
                             ps.splice(pa, 1)
