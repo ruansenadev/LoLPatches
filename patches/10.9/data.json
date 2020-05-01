@@ -1,0 +1,365 @@
+{
+ "note": "Saudações, caros humanos! Boas-vindas à 10.9 e ao finalzinho da Etapa Ranqueada. Para começar, temos analisado Nami e Karthus bem de perto e, considerando todo o sucesso que eles têm tido, decidimos reduzir um pouco as forças deles com a esperança de que isso os coloque de volta na linha. Também tentaremos ajudar nossos amigos na rota superior que não se beneficiaram tanto com os fortalecimentos mais recentes. Fora isso, fortaleceremos alguns Campeões menos vistos, como Lissandra e Quinn, e faremos mais ajustes em Wukong. Mas vocês não precisam acreditar em mim! Basta continuar lendo para saber tudo direitinho. A gente se vê no Rift! Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
+ "ft": {
+  "img": "Patch-10.9-InfographicPTBR.jpg",
+  "mod": "FPX Malphite, FPX Vayne, FPX Lee Sin, FPX Gangplank e FPX Thresh estarão disponíveis no dia 30 de abril de 2020."
+ },
+ "champs": [
+  {
+   "campeao": "Bardo",
+   "img": "Bard.png",
+   "mod": "Velocidade de Movimento do W reduzida e Tempo de Recarga aumentado. Tempo de Recarga do E aumentado.",
+   "nota": "Reduziremos o potencial de movimentação e utilidade geral do Bardo para evitar que ele domine completamente as partidas de alto nível da Fila Solo.",
+   "habilidades": [
+    {
+     "nome": "W - Santuário do Protetor",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "50% decaindo ao longo de 1,5s",
+       "depois": "30% decaindo ao longo de 1,5s"
+      },
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "12s",
+       "depois": "14s"
+      }
+     ],
+     "img": "BardW.png"
+    },
+    {
+     "nome": "E - Jornada Mágica",
+     "atributos": [
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "18/17/16/15/14s",
+       "depois": "22/20,5/19/17,5/16s"
+      }
+     ],
+     "img": "BardE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Cho'Gath",
+   "img": "Chogath.png",
+   "mod": "Dano do E aumentado nos últimos níveis.",
+   "nota": "A fera do Vazio anda sofrendo na rota superior, o que pede por um fortalecimento na habilidade mais utilizada nessa posição. Esperamos que isso o ajude a se tornar aquele tanque poderoso de fim de jogo.",
+   "habilidades": [
+    {
+     "nome": "E - Espinhos Vorpais",
+     "atributos": [
+      {
+       "atributo": "DANO",
+       "antes": "22/34/46/58/70",
+       "depois": "22/37/52/67/82"
+      }
+     ],
+     "img": "VorpalSpikes.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Fiddlesticks",
+   "img": "Fiddlesticks.png",
+   "mod": "Dano do E aumentado nos últimos níveis.",
+   "nota": "Sim, ele é um espantalho assustador com uma foice, mas isso não quer dizer que ele não pode ajudar seus parceiros na rota! Fortaleceremos um pouco o dano da habilidade primária usada como suporte e, assim, Fiddlesticks poderá ajudar mais seu companheiro de rota na lutas.",
+   "habilidades": [
+    {
+     "nome": "E - Ceifar",
+     "atributos": [
+      {
+       "atributo": "DANO",
+       "antes": "70/100/130/160/190",
+       "depois": "70/105/140/175/210"
+      }
+     ],
+     "img": "FiddleSticksE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Gnar",
+   "img": "Gnar.png",
+   "mod": "Restituição do Tempo de Recarga do Q aumentado. Dano do E aumentado.",
+   "nota": "Gnar continua com desempenho baixo em partidas regulares, mesmo com os fortalecimentos que fizemos ao longo do ano passado. Considerando que ele já é forte em outros aspectos, vamos fortalecê-lo com muito cuidado para que o Mega-Gnar tenha mais potencial em lutas mais longas. Shushupana neles!",
+   "habilidades": [
+    {
+     "nome": "Q - Pedregulho",
+     "atributos": [
+      {
+       "atributo": "RESTITUIÇÃO DO TEMPO DE RECARGA AO APANHAR PEDREGULHO",
+       "antes": " 60%",
+       "depois": "70%"
+      }
+     ],
+     "img": "Mega_Boulder_Toss.png"
+    },
+    {
+     "nome": "E - Encontrão",
+     "atributos": [
+      {
+       "atributo": "DANO",
+       "antes": "50/85/120/155/190",
+       "depois": "80/115/150/185/220"
+      }
+     ],
+     "img": "Mega_Crunch.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Karthus",
+   "img": "Karthus.png",
+   "mod": "Velocidade de Movimento base reduzida.",
+   "nota": "Como Karthus anda devastando a selva, tentaremos colocá-lo de volta na linha reduzindo sua habilidade de movimentação pelo mapa, evitando ao máximo qualquer efeito colateral em sua função na rota do meio.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "335",
+       "depois": "325"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "campeao": "Kayn",
+   "img": "Kayn.png",
+   "mod": "Tempo de Recarga do Q reduzido; dano adicional agora também afeta tropas. Redução de velocidade decadente do W aumentada.",
+   "nota": "Os últimos ajustes realizados em Kayn não o fizeram brilhar como esperávamos, portanto, aumentaremos seu impacto geral na partida, tanto em emboscadas quanto em duelos. Esperamos que esse dano adicional contra tropas contribua para uma maior flexibilidade de posição. E, com uma maior utilidade (menor Tempo de Recarga e maior redução de velocidade), esperamos que os jogadores priorizem limpezas rápidas de campos e assistências em duelos no início de jogo.",
+   "habilidades": [
+    {
+     "nome": "Q - Corte Ceifador",
+     "atributos": [
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "7/6,5/6/5,5/5s",
+       "depois": "6/5,5/5/4,5/4s"
+      },
+      {
+       "atributo": "FOICE SEM PRECONCEITO",
+       "rotulo": "novo",
+       "depois": "Dano adicional contra monstros agora também afeta tropas."
+      }
+     ],
+     "img": "KaynQ.png"
+    },
+    {
+     "nome": "W - Alcance da Lâmina",
+     "atributos": [
+      {
+       "atributo": "REDUÇÃO DE VELOCIDADE DECADENTE",
+       "antes": "70%",
+       "depois": "90%"
+      }
+     ],
+     "img": "KaynW.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Lissandra",
+   "img": "Lissandra.png",
+   "mod": "Tempo de Recarga do Q reduzido. ",
+   "nota": "Considerando que a rainha gélida anda bem sumida do cenário profissional e está com desempenho insatisfatório em todos os níveis de habilidade, tentaremos trazê-la de volta reduzindo o enfraquecimento mais rigoroso que ela sofreu quando estava dominando nas mãos dos profissionais.",
+   "habilidades": [
+    {
+     "nome": "Q - Estilhaço de Gelo",
+     "atributos": [
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "10/8,5/7/5,5/4s",
+       "depois": "8/7/6/5/4s"
+      }
+     ],
+     "img": "LissandraQ.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Nami",
+   "img": "Nami.png",
+   "mod": "Vida base e Mana reduzidas. Velocidade de Movimento da Passiva reduzida.",
+   "nota": "Como essa sereia anda na crista da onda já faz um tempo, enfraqueceremos parte da Velocidade de Movimento que ela concede aos seus aliados, mas manteremos intacta sua identidade como suporte que cura e fortalece (e surfa).",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "VIDA",
+       "antes": "489,32",
+       "depois": "475"
+      },
+      {
+       "atributo": "MANA",
+       "antes": "377,24",
+       "depois": "365"
+      }
+     ]
+    },
+    {
+     "nome": "Passiva - Maré Oscilante",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "60",
+       "depois": "45"
+      }
+     ],
+     "img": "NamiPassive.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Quinn",
+   "img": "Quinn.png",
+   "mod": "Duração da redução de visão do Q aumentada.",
+   "nota": "Já faz um tempinho desde que demos um pouco de atenção para Valor e sua humana de estimação, sem falar que muitos dos seus oponentes corpo a corpo na rota superior foram fortalecidos recentemente. Nosso foco será a utilidade, pois o dano já se beneficia do fortalecimento da Lâmina Sanguinária (opa, spoiler!), que deve ser mais utilizada por ela depois dessa atualização.",
+   "habilidades": [
+    {
+     "nome": "Q - Investida Anuviante",
+     "atributos": [
+      {
+       "atributo": "DURAÇÃO DA REDUÇÃO DE VISÃO",
+       "antes": "1,5s",
+       "depois": "1,75s"
+      }
+     ],
+     "img": "QuinnQ.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Trundle",
+   "img": "Trundle.png",
+   "mod": "Tempo de Recarga do R aumentado.",
+   "nota": "Trundle tem ido para cima e arrebentado seus oponentes, independentemente de Vida ou risco, especialmente no cenário profissional. Reduziremos sua habilidade de deixar os outros vulneráveis para aumentar a frequência de lutas mais justas.",
+   "habilidades": [
+    {
+     "nome": "R - Subjugar",
+     "atributos": [
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "100/80/60s",
+       "depois": "120/100/80s"
+      }
+     ],
+     "img": "TrundlePain.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Wukong",
+   "img": "MonkeyKing.png",
+   "mod": "Armadura base reduzida. Dano do Q reduzido. Dano do clone do W reduzido.",
+   "nota": "Continuaremos calibrando e tentando colocar o Macaco Rei nos eixos, já que temos visto cada vez mais jogadores aproveitando o poder obtido pelo rework.",
+   "habilidades": [
+    {
+     "nome": "Atributos base ",
+     "atributos": [
+      {
+       "atributo": "ARMADURA",
+       "antes": "34",
+       "depois": "31"
+      }
+     ]
+    },
+    {
+     "nome": "Q - Golpe Destruidor",
+     "atributos": [
+      {
+       "atributo": "DANO",
+       "antes": "30/55/80/105/130",
+       "depois": "20/45/70/95/120"
+      }
+     ],
+     "img": "MonkeyKingDoubleAttack.png"
+    },
+    {
+     "nome": "W - Guerreiro Trapaceiro",
+     "atributos": [
+      {
+       "atributo": "DANO DO CLONE",
+       "antes": "40/45/50/55/60%",
+       "depois": "35/40/45/50/55%"
+      }
+     ],
+     "img": "MonkeyKingDecoy.png"
+    }
+   ]
+  }
+ ],
+ "runes": [],
+ "fixes": [
+  {
+   "note": "O temporizador de ultimate de Sylas em Campeões específicos deixa de aparecer no Modo Espectador."
+  },
+  {
+   "note": "Falas de Ascensão adicionadas para Azir, Cassiopeia, Renekton, Sivir e Xerath."
+  },
+  {
+   "note": "As falas de provocação de Aatrox agora são as piadas dele. Três das falas ao ressuscitar com a antiga ultimate agora são falas de provocação."
+  },
+  {
+   "note": "Corrigimos um problema na Seleção de Campeões em que trocas eram canceladas se mais de uma troca estivesse acontecendo ao mesmo tempo."
+  },
+  {
+   "note": "Quando Neeko assumir a forma do Kayn aliado com a Passiva - Encanto Inerente, terá a aparência correta do Assassino das Sombras ou Rhaast, se ele estiver transformado.",
+   "champs": [
+    "Kayn"
+   ]
+  },
+  {
+   "note": "O indicador ligado ao inimigo do R - Fúria do Dragão de Lee Sin deixa de ser visível na Névoa de Guerra."
+  },
+  {
+   "note": "Os ataques básicos fortalecidos pelo Q - Poder do Sifão de Viktor deixam de destruir sentinelas em apenas dois acertos."
+  },
+  {
+   "note": "O R - Centelha Final de Lux deixa de entrar em Tempo de Recarga completo se ela morrer durante a conjuração."
+  },
+  {
+   "note": "Kled agora ganha Coragem ao atacar Campeões enquanto estiver desmontado."
+  },
+  {
+   "note": "O Q - Asas Quebradas de Riven agora ativará a runa Conquistador devidamente e concederá 4 acúmulos ao ser conjurado rapidamente duas vezes no mesmo alvo."
+  },
+  {
+   "note": "Quando Fiora bloquear os ataques básicos de Jhin com W - Ripostar, ela deixa de receber uma marca falsa de Encontrada na visão de Jhin."
+  },
+  {
+   "note": "O W - Proteger de Lee Sin agora funciona corretamente com clones de Campeões e os protege quando for utilizado."
+  },
+  {
+   "note": "Sett deixa de ser interrompido por terrenos gerados por Campeões (como o R - Cataclisma) quando conjurar R - Hora do Show."
+  },
+  {
+   "note": "A Lanterna do Thresh Estrela Negra agora é exibida corretamente depois que ele morre e ressurge."
+  },
+  {
+   "note": "O clone de Shaco deixa de receber um surto de Velocidade de Movimento do Manto de Nimbus."
+  },
+  {
+   "note": "O Santuário de Velocidade de Movimento do Aronguejo agora funciona corretamente fora do Reino da Morte, mesmo quando Mordekaiser captura o Campeão que o abateu em seu R - Reino da Morte."
+  },
+  {
+   "note": "Os ataques básicos fortalecidos pela Passiva - Batida do Amor de Miss Fortune agora recebem acúmulos de Conquistador."
+  },
+  {
+   "note": "Quando Warwick conjura seu Q - Presas da Fera no Sion que está prestes a ressurgir durante a Passiva - In Gloria Mori, ele deixa de ser teleportado para o Sion verdadeiro na fonte inimiga."
+  },
+  {
+   "note": "O W - Armadilha Mecânica Yordle da Caitlyn agora fortalece corretamente apenas um ataque básico."
+  },
+  {
+   "note": "Shaco deixa de receber um Double Kill e o dobro de ouro ao abater com seu clone e conjurar E - Veneno de Dois Gumes dentro do R - Reino da Morte inimigo."
+  },
+  {
+   "note": "O dano causado por itens ativados acionará a runa Colheita Sombria corretamente."
+  }
+ ]
+}
