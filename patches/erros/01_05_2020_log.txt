@@ -1,0 +1,4 @@
+(14:31:35): 
+ - OCR 10.8
+Error: Setting explicit features is not supported on this method. Use the #annotateImage method instead.
+🔚🔚🔚🔚

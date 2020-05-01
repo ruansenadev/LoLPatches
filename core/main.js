@@ -208,7 +208,7 @@ async function fetchPatchesImages(items) {
 
 // --fetch news patches--
 // fetchPatches(data => {
-//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data, null, 2), 'utf-8', (err) => {
+//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data, null, 1), 'utf-8', (err) => {
 //         if (err) { throw err }
 //         console.log('\nPatches updated with success ^-^')
 //         console.log("News images saved at " + path.join(patchesDir, imagesDir))
@@ -217,7 +217,7 @@ async function fetchPatchesImages(items) {
 
 // --FETCH NEWS PATCHES SCRAP THEM AND WRITE--
 // fetchPatches((data) => {
-//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0], null, 2), 'utf-8', (err) => {
+//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0], null, 1), 'utf-8', (err) => {
 //         if (err) { throw err }
 //         console.log('\nPatches updated with success ^-^')
 //         console.log("News images saved at " + path.join(patchesDir, imagesDir))
@@ -227,7 +227,7 @@ async function fetchPatchesImages(items) {
 //             results.forEach(scrap => {
 //                 fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
 //                     if (err) { throw err }
-//                     fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
+//                     fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
 //                         if (err) { throw err }
 //                         console.log(`Writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
 //                     })
@@ -242,7 +242,7 @@ async function fetchPatchesImages(items) {
 //     results.forEach(scrap => {
 //         fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
 //             if (err) { throw err }
-//             fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 2), (err) => {
+//             fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
 //                 if (err) { throw err }
 //                 console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
 //             })
@@ -275,7 +275,7 @@ function lookAround(patches) {
         patchesFt.forEach(item => {
             if (Object.keys(item.destaques).length) patches.items[item.patch].destaques = item.destaques
         })
-        fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(patches, null, 2), err => {
+        fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(patches, null, 1), err => {
             if (err) { throw err }
             console.log('Rewrited patches data.')
         })

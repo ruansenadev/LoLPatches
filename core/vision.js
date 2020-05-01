@@ -39,9 +39,18 @@ function titleType(title, array) {
     return [type, titleIndex]
 }
 
-exports.look = async function(img) {
+exports.look = async function (img) {
     let data = {}
-    const [result] = await client.textDetection(img)
+    const [result] = await client.textDetection({
+        "image": {
+            "source": {
+                "filename": img
+            }
+        },
+        "imageContext": {
+            "languageHints": ["pt", "en"]
+        }
+    })
     let detections = result.textAnnotations
     if (!detections.length) {
         return data
@@ -86,7 +95,7 @@ exports.look = async function(img) {
                     box.r = detections[j].boundingBox.r
                     box.m = box.l + Math.round((box.r - box.l) / 2)
                     // check if phrase has ended
-                    if(!/\w/g.test(p.split(detections[j].text)[1])) {
+                    if (!/\w/g.test(p.split(detections[j].text)[1])) {
                         detections.splice(j, 1)
                         j--
                         break
@@ -205,16 +214,16 @@ exports.look = async function(img) {
         joined.push(p)
         return joined
     }, [])
-    // format to object data
+    // format to object
     let lastTitle
     phrases.forEach(phrase => {
         if (phrase.type == 't') {
             lastTitle = phrase.text.toLowerCase()
             data[lastTitle] = []
         } else {
-            data[lastTitle].push(phrase.text)
+            data[lastTitle].push({'nome': phrase.text})
         }
     })
-    
+
     return data
 }

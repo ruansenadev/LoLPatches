@@ -1,338 +1,600 @@
 {
-  "items": [
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-8/",
-      "img": "Patch_10.8_Notes_Banner.jpg",
-      "titulo": "10.8",
-      "autor": "Anacronista e Natchy",
-      "data": "2020-04-14T18:00:00.000Z",
-      "destaques": {
-        "buffs": [
-          "Ashe",
-          "Evelynn",
-          "Orianna",
-          "Ryze",
-          "Soraka",
-          "Tristana",
-          "Urgot",
-          "Xayah"
-        ],
-        "nerfs": [
-          "Aphelios",
-          "Kalista",
-          "Master Yi",
-          "Senna",
-          "Sett",
-          "Varus"
-        ],
-        "novidades": [
-          "Żyra Congregação das Bruxas",
-          "LeBlanc Congregação das Bruxas",
-          "Zyra Congregação das Bruxas Edição de Prestígio",
-          "Morgana Congregação das Bruxas"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-7/",
-      "img": "LOL_PROMOART_10_banner.jpg",
-      "titulo": "10.7",
-      "autor": "Anacronista e Natchy",
-      "data": "2020-03-31T19:00:00.000Z",
-      "destaques": {
-        "buffs": [
-          "Akali",
-          "Corki",
-          "Galio",
-          "Ivern",
-          "Kai'Sa",
-          "Nasus",
-          "Riven",
-          "Xin Zhao"
-        ],
-        "nerfs": [
-          "Garen",
-          "Nocturne",
-          "Talon",
-          "Wukong"
-        ],
-        "novidades": [
-          "Urgot Cosplay de Pijaminha Estelar",
-          "Veigar Cosplay de Ranzinzim",
-          "Tristana Cosplay de Pingu",
-          "Sion Quebra-mundos",
-          "Malzahar Quebra-mundos",
-          "Maokai Quebra-mundos"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-6/",
-      "img": "LOL_PROMOART_9-2.jpg",
-      "titulo": "10.6",
-      "autor": "Anacronista e Natchy",
-      "data": "2020-03-17T19:00:00.000Z",
-      "destaques": {
-        "buffs": [
-          "Draven",
-          "Hecarim",
-          "Kayn",
-          "Kindred",
-          "Morgana",
-          "Ryze",
-          "Soraka",
-          "Twisted Fate",
-          "Urgot",
-          "Veigar",
-          "Xerath"
-        ],
-        "nerfs": [
-          "Aphelios",
-          "Darius",
-          "Garen",
-          "Senna",
-          "Shaco"
-        ],
-        "ajustės": [
-          "Wukong"
-        ],
-        "novidades": [
-          "Malphite Estrela Negra",
-          "Malphite Estrela Negra Edição de Prestígio",
-          "Mordekaiser Estrela Negra",
-          "Lux Cósmica",
-          "Lux Cosmos Negro",
-          "Xerath Estrela Negra",
-          "Talon Bosque Sombrio",
-          "Taric Escudo Cintilante",
-          "Twitch Passos Leves"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-5/",
-      "img": "Patch_105_Notes_Banner.jpg",
-      "titulo": "10.5",
-      "autor": "shio shoujo",
-      "data": "2020-03-03T19:00:00.000Z",
-      "destaques": {
-        "buffs": [
-          "Alistar",
-          "Graves",
-          "Kayn",
-          "Lissandra",
-          "Neeko",
-          "Sivir",
-          "Sona"
-        ],
-        "nerfs": [
-          "Amumu",
-          "Bardo",
-          "Blitzcrank",
-          "Ornn",
-          "Rammus",
-          "Sett"
-        ],
-        "novidades": [
-          "Sejuani Hextec",
-          "Rek`sai Gelo Sombrio",
-          "Alistar e Renekton Gelo Sombrio"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-4/",
-      "img": "LOL_PROMOART_6.jpg",
-      "titulo": "10.4",
-      "autor": "Anacronista e Natchy",
-      "data": "2020-02-18T19:00:00.000Z",
-      "destaques": {
-        "buffs": [
-          "Amumu",
-          "Caitlyn",
-          "Darius",
-          "Diana",
-          "Garen",
-          "Gnar",
-          "Jayce",
-          "Lux",
-          "Mordekaiser",
-          "Rammus",
-          "Sylas",
-          "Talon",
-          "Udyr",
-          "Zed"
-        ],
-        "nerfs": [
-          "Aurelion Sol",
-          "Aphelios",
-          "Singed",
-          "Sona",
-          "Soraka"
-        ],
-        "novidades": [
-          "Tryndamere Lua Sangrenta",
-          "Katarina e Master Yi Lua Sangrenta"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-3/",
-      "img": "LOL_PROMOART_5.jpg",
-      "titulo": "10.3",
-      "autor": "Anacronista e Natchy",
-      "data": "2020-02-04T19:00:00.000Z",
-      "destaques": {
-        "novidades": [
-          "Jinx Cupido Mortal",
-          "Senna True Damage Edição de Prestígio",
-          "Yuumi Cupido Mortal"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-2/",
-      "img": "header.jpg",
-      "titulo": "10.2",
-      "autor": "Anacronista e Natchy",
-      "data": "2020-01-21T19:00:00.000Z",
-      "destaques": {
-        "novidades": [
-          "Janna Guardiã das Areias",
-          "Rengar Guardião das Areias",
-          "Ryze Guardião das Areias",
-          "Olaf Caçador de Dragões",
-          "Trundle Caçador de Dragões",
-          "Diana Caçadora de Dragões"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-1/",
-      "img": "Patch_10.1_Notes_Article.jpg",
-      "titulo": "10.1",
-      "autor": "shio shoujo",
-      "data": "2020-01-07T19:00:00.000Z",
-      "destaques": {
-        "novidades": [
-          "Sett",
-          "Sett Reinos Mech",
-          "Sylas de Freljord",
-          "Jax Reinos Mech",
-          "Garen Reinos Mech Edição de Prestígio",
-          "Garen Reinos Mech",
-          "Leona Reinos Mech",
-          "Draven Reinos Mech"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-24b/",
-      "img": "LOL_PROMOART_4.jpg",
-      "titulo": "9.24b",
-      "autor": "shio shoujo",
-      "data": "2019-12-18T19:00:00.000Z"
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-24/",
-      "img": "LOL_PROMOART_12.jpg",
-      "titulo": "9.24",
-      "autor": "shio shoujo",
-      "data": "2019-12-10T19:00:00.000Z"
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-23/",
-      "img": "LOL_PROMOART_9-2.jpg",
-      "titulo": "9.23",
-      "autor": "Riot Aether",
-      "data": "2019-11-19T18:30:00.000Z",
-      "destaques": {
-        "novidades": [
-          "Pulsefire Thresh",
-          "Pulsefire Thresh Prestige Edition",
-          "Victorious Aatrox"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-22/",
-      "img": "pn-922-replacement.jpg",
-      "titulo": "9.22",
-      "autor": "shio shoujo",
-      "data": "2019-11-02T00:14:18.000Z",
-      "destaques": {
-        "novidades": [
-          "Yasuo True Damage",
-          "Akali True Damage",
-          "Qiyana True Damage",
-          "Ekko True Damage",
-          "Senna True Damage",
-          "Qiyana True Damage Edição de Prestígio"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-21/",
-      "img": "lol_promoart_15_0.jpg",
-      "titulo": "9.21",
-      "autor": "shio shoujo",
-      "data": "2019-10-18T20:40:53.000Z"
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-de-atualizacao-9-20/",
-      "img": "pn920_header.jpg",
-      "titulo": "9.20",
-      "autor": "shio shoujo",
-      "data": "2019-10-07T22:12:12.000Z",
-      "destaques": {
-        "novidades": [
-          "Ashe Velho Oeste",
-          "Hecarim Velho Oeste",
-          "Darius Velho Oeste"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-19/",
-      "img": "Patch_9.19_Notes_Header.jpg",
-      "titulo": "9.19",
-      "autor": "",
-      "data": "2019-09-23T21:18:45.000Z"
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-18/",
-      "img": "LOL_PROMOART_9-2.jpg",
-      "titulo": "9.18",
-      "autor": "shio shoujo, Riot Aether",
-      "data": "2019-09-05T01:45:14.000Z",
-      "destaques": {
-        "novidades": [
-          "Rakan Guardião e Xayah Guardiã Estelar",
-          "Neeko Guardiã Estelar",
-          "Zoe Guardiã Estelar"
-        ]
-      }
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-3/",
-      "img": "lol_promoart_15_0.jpg",
-      "titulo": "9.3",
-      "autor": "Riot Aether",
-      "data": "2019-02-05T19:00:00.000Z"
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-2/",
-      "img": "LOL_PROMOART_12.jpg",
-      "titulo": "9.2",
-      "autor": "Riot Aether",
-      "data": "2019-01-23T19:00:00.000Z"
-    },
-    {
-      "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-1/",
-      "img": "LOL_PROMOART_13.jpg",
-      "titulo": "9.1",
-      "autor": "Riot Aether",
-      "data": "2019-01-08T18:00:00.000Z"
-    }
-  ]
+ "items": [
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-8/",
+   "img": "Patch_10.8_Notes_Banner.jpg",
+   "titulo": "10.8",
+   "autor": "Anacronista e Natchy",
+   "data": "2020-04-14T18:00:00.000Z",
+   "destaques": {
+    "buffs": [
+     {
+      "nome": "Ashe"
+     },
+     {
+      "nome": "Evelynn"
+     },
+     {
+      "nome": "Orianna"
+     },
+     {
+      "nome": "Ryze"
+     },
+     {
+      "nome": "Soraka"
+     },
+     {
+      "nome": "Tristana"
+     },
+     {
+      "nome": "Urgot"
+     },
+     {
+      "nome": "Xayah"
+     }
+    ],
+    "nerfs": [
+     {
+      "nome": "Aphelios"
+     },
+     {
+      "nome": "Kalista"
+     },
+     {
+      "nome": "Master Yi"
+     },
+     {
+      "nome": "Senna"
+     },
+     {
+      "nome": "Sett"
+     },
+     {
+      "nome": "Varus"
+     }
+    ],
+    "novidades": [
+     {
+      "nome": "Żyra Congregação das Bruxas"
+     },
+     {
+      "nome": "LeBlanc Congregação das Bruxas"
+     },
+     {
+      "nome": "Zyra Congregação das Bruxas Edição de Prestígio"
+     },
+     {
+      "nome": "Morgana Congregação das Bruxas"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-7/",
+   "img": "LOL_PROMOART_10_banner.jpg",
+   "titulo": "10.7",
+   "autor": "Anacronista e Natchy",
+   "data": "2020-03-31T19:00:00.000Z",
+   "destaques": {
+    "buffs": [
+     {
+      "nome": "Akali"
+     },
+     {
+      "nome": "Corki"
+     },
+     {
+      "nome": "Galio"
+     },
+     {
+      "nome": "Ivern"
+     },
+     {
+      "nome": "Kai'Sa"
+     },
+     {
+      "nome": "Nasus"
+     },
+     {
+      "nome": "Riven"
+     },
+     {
+      "nome": "Xin Zhao"
+     }
+    ],
+    "nerfs": [
+     {
+      "nome": "Garen"
+     },
+     {
+      "nome": "Nocturne"
+     },
+     {
+      "nome": "Talon"
+     },
+     {
+      "nome": "Wukong"
+     }
+    ],
+    "novidades": [
+     {
+      "nome": "Urgot Cosplay de Pijaminha Estelar"
+     },
+     {
+      "nome": "Veigar Cosplay de Ranzinzim"
+     },
+     {
+      "nome": "Tristana Cosplay de Pingu"
+     },
+     {
+      "nome": "Sion Quebra-mundos"
+     },
+     {
+      "nome": "Malzahar Quebra-mundos"
+     },
+     {
+      "nome": "Maokai Quebra-mundos"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-6/",
+   "img": "LOL_PROMOART_9-2.jpg",
+   "titulo": "10.6",
+   "autor": "Anacronista e Natchy",
+   "data": "2020-03-17T19:00:00.000Z",
+   "destaques": {
+    "buffs": [
+     {
+      "nome": "Draven"
+     },
+     {
+      "nome": "Hecarim"
+     },
+     {
+      "nome": "Kayn"
+     },
+     {
+      "nome": "Kindred"
+     },
+     {
+      "nome": "Morgana"
+     },
+     {
+      "nome": "Ryze"
+     },
+     {
+      "nome": "Soraka"
+     },
+     {
+      "nome": "Twisted Fate"
+     },
+     {
+      "nome": "Urgot"
+     },
+     {
+      "nome": "Veigar"
+     },
+     {
+      "nome": "Xerath"
+     }
+    ],
+    "nerfs": [
+     {
+      "nome": "Aphelios"
+     },
+     {
+      "nome": "Darius"
+     },
+     {
+      "nome": "Garen"
+     },
+     {
+      "nome": "Senna"
+     },
+     {
+      "nome": "Shaco"
+     }
+    ],
+    "ajustės": [
+     {
+      "nome": "Wukong"
+     }
+    ],
+    "novidades": [
+     {
+      "nome": "Malphite Estrela Negra"
+     },
+     {
+      "nome": "Malphite Estrela Negra Edição de Prestígio"
+     },
+     {
+      "nome": "Mordekaiser Estrela Negra"
+     },
+     {
+      "nome": "Lux Cósmica"
+     },
+     {
+      "nome": "Lux Cosmos Negro"
+     },
+     {
+      "nome": "Xerath Estrela Negra"
+     },
+     {
+      "nome": "Talon Bosque Sombrio"
+     },
+     {
+      "nome": "Taric Escudo Cintilante"
+     },
+     {
+      "nome": "Twitch Passos Leves"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-5/",
+   "img": "Patch_105_Notes_Banner.jpg",
+   "titulo": "10.5",
+   "autor": "shio shoujo",
+   "data": "2020-03-03T19:00:00.000Z",
+   "destaques": {
+    "buffs": [
+     {
+      "nome": "Alistar"
+     },
+     {
+      "nome": "Graves"
+     },
+     {
+      "nome": "Kayn"
+     },
+     {
+      "nome": "Lissandra"
+     },
+     {
+      "nome": "Neeko"
+     },
+     {
+      "nome": "Sivir"
+     },
+     {
+      "nome": "Sona"
+     }
+    ],
+    "nerfs": [
+     {
+      "nome": "Amumu"
+     },
+     {
+      "nome": "Bardo"
+     },
+     {
+      "nome": "Blitzcrank"
+     },
+     {
+      "nome": "Ornn"
+     },
+     {
+      "nome": "Rammus"
+     },
+     {
+      "nome": "Sett"
+     }
+    ],
+    "novidades": [
+     {
+      "nome": "Sejuani Hextec"
+     },
+     {
+      "nome": "Rek`sai Gelo Sombrio"
+     },
+     {
+      "nome": "Alistar e Renekton Gelo Sombrio"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-4/",
+   "img": "LOL_PROMOART_6.jpg",
+   "titulo": "10.4",
+   "autor": "Anacronista e Natchy",
+   "data": "2020-02-18T19:00:00.000Z",
+   "destaques": {
+    "buffs": [
+     {
+      "nome": "Amumu"
+     },
+     {
+      "nome": "Caitlyn"
+     },
+     {
+      "nome": "Darius"
+     },
+     {
+      "nome": "Diana"
+     },
+     {
+      "nome": "Garen"
+     },
+     {
+      "nome": "Gnar"
+     },
+     {
+      "nome": "Jayce"
+     },
+     {
+      "nome": "Lux"
+     },
+     {
+      "nome": "Mordekaiser"
+     },
+     {
+      "nome": "Rammus"
+     },
+     {
+      "nome": "Sylas"
+     },
+     {
+      "nome": "Talon"
+     },
+     {
+      "nome": "Udyr"
+     },
+     {
+      "nome": "Zed"
+     }
+    ],
+    "nerfs": [
+     {
+      "nome": "Aurelion Sol"
+     },
+     {
+      "nome": "Aphelios"
+     },
+     {
+      "nome": "Singed"
+     },
+     {
+      "nome": "Sona"
+     },
+     {
+      "nome": "Soraka"
+     }
+    ],
+    "novidades": [
+     {
+      "nome": "Tryndamere Lua Sangrenta"
+     },
+     {
+      "nome": "Katarina e Master Yi Lua Sangrenta"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-3/",
+   "img": "LOL_PROMOART_5.jpg",
+   "titulo": "10.3",
+   "autor": "Anacronista e Natchy",
+   "data": "2020-02-04T19:00:00.000Z",
+   "destaques": {
+    "novidades": [
+     {
+      "nome": "Jinx Cupido Mortal"
+     },
+     {
+      "nome": "Senna True Damage Edição de Prestígio"
+     },
+     {
+      "nome": "Yuumi Cupido Mortal"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-2/",
+   "img": "header.jpg",
+   "titulo": "10.2",
+   "autor": "Anacronista e Natchy",
+   "data": "2020-01-21T19:00:00.000Z",
+   "destaques": {
+    "novidades": [
+     {
+      "nome": "Janna Guardiã das Areias"
+     },
+     {
+      "nome": "Rengar Guardião das Areias"
+     },
+     {
+      "nome": "Ryze Guardião das Areias"
+     },
+     {
+      "nome": "Olaf Caçador de Dragões"
+     },
+     {
+      "nome": "Trundle Caçador de Dragões"
+     },
+     {
+      "nome": "Diana Caçadora de Dragões"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-1/",
+   "img": "Patch_10.1_Notes_Article.jpg",
+   "titulo": "10.1",
+   "autor": "shio shoujo",
+   "data": "2020-01-07T19:00:00.000Z",
+   "destaques": {
+    "novidades": [
+     {
+      "nome": "Sett"
+     },
+     {
+      "nome": "Sett Reinos Mech"
+     },
+     {
+      "nome": "Sylas de Freljord"
+     },
+     {
+      "nome": "Jax Reinos Mech"
+     },
+     {
+      "nome": "Garen Reinos Mech Edição de Prestígio"
+     },
+     {
+      "nome": "Garen Reinos Mech"
+     },
+     {
+      "nome": "Leona Reinos Mech"
+     },
+     {
+      "nome": "Draven Reinos Mech"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-24b/",
+   "img": "LOL_PROMOART_4.jpg",
+   "titulo": "9.24b",
+   "autor": "shio shoujo",
+   "data": "2019-12-18T19:00:00.000Z"
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-24/",
+   "img": "LOL_PROMOART_12.jpg",
+   "titulo": "9.24",
+   "autor": "shio shoujo",
+   "data": "2019-12-10T19:00:00.000Z"
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-23/",
+   "img": "LOL_PROMOART_9-2.jpg",
+   "titulo": "9.23",
+   "autor": "Riot Aether",
+   "data": "2019-11-19T18:30:00.000Z",
+   "destaques": {
+    "novidades": [
+     {
+      "nome": "Pulsefire Thresh"
+     },
+     {
+      "nome": "Pulsefire Thresh Prestige Edition"
+     },
+     {
+      "nome": "Victorious Aatrox"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-22/",
+   "img": "pn-922-replacement.jpg",
+   "titulo": "9.22",
+   "autor": "shio shoujo",
+   "data": "2019-11-02T00:14:18.000Z",
+   "destaques": {
+    "novidades": [
+     {
+      "nome": "Yasuo True Damage"
+     },
+     {
+      "nome": "Akali True Damage"
+     },
+     {
+      "nome": "Qiyana True Damage"
+     },
+     {
+      "nome": "Ekko True Damage"
+     },
+     {
+      "nome": "Senna True Damage"
+     },
+     {
+      "nome": "Qiyana True Damage Edição de Prestígio"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-21/",
+   "img": "lol_promoart_15_0.jpg",
+   "titulo": "9.21",
+   "autor": "shio shoujo",
+   "data": "2019-10-18T20:40:53.000Z"
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-de-atualizacao-9-20/",
+   "img": "pn920_header.jpg",
+   "titulo": "9.20",
+   "autor": "shio shoujo",
+   "data": "2019-10-07T22:12:12.000Z",
+   "destaques": {
+    "novidades": [
+     {
+      "nome": "Ashe Velho Oeste"
+     },
+     {
+      "nome": "Hecarim Velho Oeste"
+     },
+     {
+      "nome": "Darius Velho Oeste"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-19/",
+   "img": "Patch_9.19_Notes_Header.jpg",
+   "titulo": "9.19",
+   "autor": "",
+   "data": "2019-09-23T21:18:45.000Z"
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-18/",
+   "img": "LOL_PROMOART_9-2.jpg",
+   "titulo": "9.18",
+   "autor": "shio shoujo, Riot Aether",
+   "data": "2019-09-05T01:45:14.000Z",
+   "destaques": {
+    "novidades": [
+     {
+      "nome": "Rakan Guardião e Xayah Guardiã Estelar"
+     },
+     {
+      "nome": "Neeko Guardiã Estelar"
+     },
+     {
+      "nome": "Zoe Guardiã Estelar"
+     }
+    ]
+   }
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-3/",
+   "img": "lol_promoart_15_0.jpg",
+   "titulo": "9.3",
+   "autor": "Riot Aether",
+   "data": "2019-02-05T19:00:00.000Z"
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-2/",
+   "img": "LOL_PROMOART_12.jpg",
+   "titulo": "9.2",
+   "autor": "Riot Aether",
+   "data": "2019-01-23T19:00:00.000Z"
+  },
+  {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-9-1/",
+   "img": "LOL_PROMOART_13.jpg",
+   "titulo": "9.1",
+   "autor": "Riot Aether",
+   "data": "2019-01-08T18:00:00.000Z"
+  }
+ ]
 }
