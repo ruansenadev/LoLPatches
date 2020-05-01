@@ -68,7 +68,7 @@
       	margin-bottom: .5rem;
       	text-transform: uppercase;
       	white-space: nowrap;
-      	color: #2F8BFE;
+      	color: #0D1B0A;
     }
     .card-header {
       	padding: 1rem 2rem;
@@ -107,6 +107,36 @@
     .button-primary:hover {
       	text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     }
+    .card-body {
+    	color: #0D1B0A;
+    }
+    .destaque {
+    	padding: .5rem 1rem;
+      	border: none;
+      	outline: none;
+    	text-transform: uppercase;
+    	letter-spacing: 1px;
+    	text-align: center;
+    	font-weight: 400;
+		font-size: 1rem;
+		background-color: #FAFBF7;
+		border-bottom: 1px solid #EAF2DA;
+		color: #D6A918;
+    }
+    section:last-child>.destaque {
+    	border-bottom: none;
+    }
+    .col.destaque-item {
+    	white-space: nowrap;
+    	padding: 1rem .5rem;
+    	text-align: center;
+    }
+    .buffs {
+    }
+    .nerfs {
+    }
+    .novidades {
+    }
     </style>
     <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
     <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
@@ -125,8 +155,9 @@
                 <header>
                     <div class="categoria">Notas de atualização</div>
                 </header>
-                <amp-list src="patches/data.json" width="800" height="1000" layout="responsive">
+                <amp-list src="patches/data.json" width="800" height="200" layout="responsive">
                     <template type="amp-mustache">
+                        {{#destaques}}
                         <div class="my-3">
                             <amp-accordion animate>
                                 <section>
@@ -136,14 +167,79 @@
                                             <a href="#" class="col-4 col-sm-3 button button-primary" role="button">Ler</a>
                                         </div>
                                         <div class="row flex-row-reverse justify-content-between py-1">
-                                            <amp-timeago datetime="{{data}}" width="auto" height="20">new Date({{data}})</amp-timeago>
+                                            <amp-timeago datetime="{{data}}" locale="ptBR" width="auto" height="20">{{data}}</amp-timeago>
                                             <small>{{autor}}</small>
                                         </div>
                                     </header>
-                                    <amp-img class="card-body" src="patches/imagens/{{img}}" width="16" height="9" layout="responsive"></amp-img>
+                                    <div class="card-body">
+                                        <amp-accordion animate>
+                                            <section>
+                                                <header class="destaque">
+                                                    <amp-fit-text class="destaque-title" width="auto" height="40" max-font-size="24">Buffs</amp-fit-text>
+                                                </header>
+                                                <div class="buffs">
+	                                                <div class="py-2 row row-cols-2 row-cols-sm-4 row-cols-lg-6 no-gutters justify-content-around align-items-center">
+	                                                    {{#buffs}}
+	                                                    <div class="col col-lg-3 destaque-item buff">{{nome}}</div>
+	                                                    {{/buffs}}
+	                                                    {{^buffs}}
+	                                                    <div class="col col-lg-3 destaque-item buff">Sem Buffs (´･_･`)</div>
+	                                                    {{/buffs}}
+	                                                </div>
+                                                </div>
+                                            </section>
+                                            <section>
+                                                <header class="destaque">
+                                                    <amp-fit-text class="destaque-title" width="auto" height="40" max-font-size="24">Nerfs</amp-fit-text>
+                                                </header>
+                                                <div class="nerfs">
+	                                                <div class="py-2 row row-cols-2 row-cols-sm-4 row-cols-lg-6 no-gutters justify-content-around align-items-center">
+	                                                    {{#nerfs}}
+	                                                    <div class="col col-lg-3 destaque-item nerf">{{nome}}</div>
+	                                                    {{/nerfs}}
+	                                                    {{^nerfs}}
+	                                                    <div class="col col-lg-3 destaque-item nerf">Sem Nerfs ◔_◔</div>
+	                                                    {{/nerfs}}
+	                                                </div>
+                                                </div>
+                                            </section>
+                                            <section>
+                                                <header class="destaque">
+                                                    <amp-fit-text class="destaque-title" width="auto" height="40" max-font-size="24">Novidades</amp-fit-text>
+                                                </header>
+                                                <div class="novidades">
+	                                                <div class="py-2 row row-cols-1 row-cols-lg-2 no-gutters justify-content-center align-items-center">
+	                                                    {{#novidades}}
+	                                                    <div class="col destaque-item new">{{nome}}</div>
+	                                                    {{/novidades}}
+	                                                    {{^novidades}}
+	                                                    <div class="col destaque-item new">Sem Novidades (╥_╥)</div>
+	                                                    {{/novidades}}
+	                                                </div>
+                                                </div>
+                                            </section>
+                                        </amp-accordion>
+                                    </div>
                                 </section>
                             </amp-accordion>
                         </div>
+                        {{/destaques}}
+                        {{^destaques}}
+                        <div class="my-3">
+                            <section>
+                                <header class="card-header">
+                                    <div class="row align-items-center justify-content-between px-3">
+                                        <amp-fit-text class="card-title col-4" width="120" height="96" max-font-size="64">{{titulo}}</amp-fit-text>
+                                        <a href="#" class="col-4 col-sm-3 button button-primary" role="button">Ler</a>
+                                    </div>
+                                    <div class="row flex-row-reverse justify-content-between py-1">
+                                        <amp-timeago datetime="{{data}}" locale="pt" width="auto" height="20">new Date({{data}}).toLocaleDateString()</amp-timeago>
+                                        <small>{{autor}}</small>
+                                    </div>
+                                </header>
+                            </section>
+                        </div>
+                        {{/destaques}}
                     </template>
                 </amp-list>
             </section>
