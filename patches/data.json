@@ -1,6 +1,69 @@
 {
  "items": [
   {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-9/",
+   "img": "LOL_PROMOART_13.jpg",
+   "titulo": "10.9",
+   "autor": "Anacronista e Natchy",
+   "data": "2020-04-28T19:00:00.000Z",
+   "destaques": {
+    "buffs": [
+     {
+      "nome": "Cho’Gath"
+     },
+     {
+      "nome": "Fiddlesticks"
+     },
+     {
+      "nome": "Gnar"
+     },
+     {
+      "nome": "Kayn"
+     },
+     {
+      "nome": "Lissandra"
+     },
+     {
+      "nome": "Quinn"
+     }
+    ],
+    "nerfs": [
+     {
+      "nome": "Bardo"
+     },
+     {
+      "nome": "Karthus"
+     },
+     {
+      "nome": "Nami"
+     },
+     {
+      "nome": "Trundle"
+     },
+     {
+      "nome": "Wukong"
+     }
+    ],
+    "novidades": [
+     {
+      "nome": "FPX Thresh"
+     },
+     {
+      "nome": "FPX Vayne"
+     },
+     {
+      "nome": "FPX Malphite"
+     },
+     {
+      "nome": "FPX Lee Sin"
+     },
+     {
+      "nome": "FPX Gangplank"
+     }
+    ]
+   }
+  },
+  {
    "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-8/",
    "img": "Patch_10.8_Notes_Banner.jpg",
    "titulo": "10.8",

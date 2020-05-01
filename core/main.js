@@ -116,7 +116,7 @@ async function fetchPatchesImages(items) {
                 patchesBanners.push(function (cb) {
                     axios({ method: 'get', url, responseType: 'stream' })
                         .then(res => {
-                            res.data.pipe(fs.createWriteStream(path.join(patchesDir, patch[1], patch[0].ft.img)).on('close', () => { console.log('+ ' + champ.img); cb(null, patch[0].ft.img) }))
+                            res.data.pipe(fs.createWriteStream(path.join(patchesDir, patch[1], patch[0].ft.img)).on('close', () => { console.log('+ ' + patch[0].ft.img); cb(null, patch[0].ft.img) }))
                         })
                         .catch(cb)
                 })

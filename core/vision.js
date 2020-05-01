@@ -109,10 +109,15 @@ exports.look = async function (img) {
                 j--
             }
         }
-        let type = /[A-Z]{2,}/.test(p) ? 't' : 'p'
+        let type = /[a-z]/.test(p) ? 'p' : 't'
         return { text: p, type, boundingBox: box }
     })
-    let titles = phrases.filter(phrase => phrase.type == 't')
+    let titles = phrases.filter(phrase => {
+        if(phrase.type == 't') {
+            if(phrase.text == 'NEW') phrase.text = 'NOVIDADES'
+            return phrase
+        }
+    })
     if (!titles.length) {
         // set default title
         let title = { text: 'novidades', type: 't', boundingBox: detections[0].boundingBox }
@@ -128,9 +133,9 @@ exports.look = async function (img) {
         let title2
         let title2L
         let phrasesAfter
+        let interval
         switch (titleCase[0]) {
             case 3:
-                let interval
                 next:
                 for (let i = titleCase[1] + 2; i < phrases.length; i++) {
                     if (phrases[i].type == 't') {
