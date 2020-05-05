@@ -248,8 +248,8 @@
                 <header>
                     <div class="categoria">Notas de atualização</div>
                 </header>
-                <!-- each item has 200 height and button (32)2rem height -->
-                <amp-list src="/resources/patches" height="656" [src]="patches.items" binding="refresh" [height]="patches.items.length * 156 + 32" width="auto" layout="fixed-height">
+                <!-- item 156 height, margin and button height -->
+                <amp-list src="/resources/patches" height="656" [src]="patches.items" binding="refresh" [height]="patches.items.length * (156 + 16) + 40" width="auto" layout="fixed-height">
                     <template type="amp-mustache">
                         {{#destaques}}
                         <div class="my-3">
@@ -258,7 +258,7 @@
                                     <header class="card-header">
                                         <div class="row align-items-center justify-content-between px-3">
                                             <amp-fit-text class="card-title col-4" width="120" height="96" max-font-size="64">{{titulo}}</amp-fit-text>
-                                            <a href="#" class="col-4 col-sm-3 button button-primary" role="button">Ler</a>
+                                            <a href="/patches/{{titulo}}" class="col-4 col-sm-3 button button-primary" role="button">Ler</a>
                                         </div>
                                         <div class="row flex-row-reverse justify-content-between py-1">
                                             <amp-timeago datetime="{{data}}" locale="ptBR" width="auto" height="20">{{data}}</amp-timeago>
@@ -311,7 +311,7 @@
                                 <header class="card-header">
                                     <div class="row align-items-center justify-content-between px-3">
                                         <amp-fit-text class="card-title col-4" width="120" height="96" max-font-size="64">{{titulo}}</amp-fit-text>
-                                        <a href="#" class="col-4 col-sm-3 button button-primary" role="button">Ler</a>
+                                        <a href="/patches/{{titulo}}" class="col-4 col-sm-3 button button-primary" role="button">Ler</a>
                                     </div>
                                     <div class="row flex-row-reverse justify-content-between py-1">
                                         <amp-timeago datetime="{{data}}" locale="pt" width="auto" height="20">new Date({{data}}).toLocaleDateString()</amp-timeago>
