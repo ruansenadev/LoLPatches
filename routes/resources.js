@@ -29,7 +29,6 @@ router.get('/patches', function(req, res, next) {
     let items = req.query.items ? Number(req.query.items) : 4
     let data = JSON.parse(fs.readFileSync(path.join(__dirname, '../patches', 'data.json'), 'utf8'))
     data = paginate(data.items, page, items)
-    console.log(data)
     res.json(data)
 })
 

@@ -101,6 +101,9 @@
     .button:active {
       	box-shadow: none;
     }
+    .button:focus {
+        outline: none;
+    }
       .button-primary, .button-primary:hover {
       	color: white;
     }
@@ -137,11 +140,18 @@
     }
     .novidades {
     }
+    .load-more {
+        min-width: 9.75rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
     </style>
-    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
     <script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
 </head>
 
@@ -151,11 +161,22 @@
     </header>
     <main>
         <div class="container">
+            <!-- starts with same content of amp list -->
+            <amp-state id="patches" src="/resources/patches"></amp-state>
+            <amp-state id="more">
+                <script type="application/json">
+                    {
+                        "pageIndex": 2,
+                        "hasMore": true
+                    }
+                </script>
+            </amp-state>
             <section class="patches">
                 <header>
                     <div class="categoria">Notas de atualização</div>
                 </header>
-                <amp-list src="/resources" width="800" height="200" layout="responsive">
+                <!-- each item has 200 height and button (32)2rem height -->
+                <amp-list src="/resources/patches" height="656" [src]="patches.items" binding="refresh" [height]="patches.items.length * 156 + 32" width="auto" layout="fixed-height">
                     <template type="amp-mustache">
                         {{#destaques}}
                         <div class="my-3">
@@ -254,6 +275,19 @@
                     </template>
                 </amp-list>
             </section>
+            <form class="row justify-content-center" action="/resources/patches" action-xhr="/resources/patches" target="_top" method="get" on="submit-success: AMP.setState({
+                patches: {
+                    items: patches.items.concat(event.response.items)
+                },
+                more: {
+                    pageIndex: more.pageIndex + 1,
+                    hasMore: event.response.left
+                }
+            })">
+                <input type="hidden" name="items" value="4">
+                <input type="hidden" name="page" value="2" [value]="more.pageIndex">
+                <input class="button button-primary load-more col-2" value="Ver mais" type="submit" [hidden]="!more.hasMore"></input>
+            </form>
         </div>
     </main>
     <footer>
