@@ -7,60 +7,66 @@
    "autor": "Anacronista e Natchy",
    "data": "2020-04-28T19:00:00.000Z",
    "destaques": {
-    "buffs": [
-     {
-      "nome": "Cho’Gath"
-     },
-     {
-      "nome": "Fiddlesticks"
-     },
-     {
-      "nome": "Gnar"
-     },
-     {
-      "nome": "Kayn"
-     },
-     {
-      "nome": "Lissandra"
-     },
-     {
-      "nome": "Quinn"
-     }
-    ],
-    "nerfs": [
-     {
-      "nome": "Bardo"
-     },
-     {
-      "nome": "Karthus"
-     },
-     {
-      "nome": "Nami"
-     },
-     {
-      "nome": "Trundle"
-     },
-     {
-      "nome": "Wukong"
-     }
-    ],
-    "novidades": [
-     {
-      "nome": "FPX Thresh"
-     },
-     {
-      "nome": "FPX Vayne"
-     },
-     {
-      "nome": "FPX Malphite"
-     },
-     {
-      "nome": "FPX Lee Sin"
-     },
-     {
-      "nome": "FPX Gangplank"
-     }
-    ]
+    "buffs": {
+     "items": [
+      {
+       "nome": "Cho’Gath"
+      },
+      {
+       "nome": "Fiddlesticks"
+      },
+      {
+       "nome": "Gnar"
+      },
+      {
+       "nome": "Kayn"
+      },
+      {
+       "nome": "Lissandra"
+      },
+      {
+       "nome": "Quinn"
+      }
+     ]
+    },
+    "nerfs": {
+     "items": [
+      {
+       "nome": "Bardo"
+      },
+      {
+       "nome": "Karthus"
+      },
+      {
+       "nome": "Nami"
+      },
+      {
+       "nome": "Trundle"
+      },
+      {
+       "nome": "Wukong"
+      }
+     ]
+    },
+    "novidades": {
+     "items": [
+      {
+       "nome": "FPX Thresh"
+      },
+      {
+       "nome": "FPX Vayne"
+      },
+      {
+       "nome": "FPX Malphite"
+      },
+      {
+       "nome": "FPX Lee Sin"
+      },
+      {
+       "nome": "FPX Gangplank"
+      }
+     ]
+    }
    }
   },
   {
@@ -70,66 +76,72 @@
    "autor": "Anacronista e Natchy",
    "data": "2020-04-14T18:00:00.000Z",
    "destaques": {
-    "buffs": [
-     {
-      "nome": "Ashe"
-     },
-     {
-      "nome": "Evelynn"
-     },
-     {
-      "nome": "Orianna"
-     },
-     {
-      "nome": "Ryze"
-     },
-     {
-      "nome": "Soraka"
-     },
-     {
-      "nome": "Tristana"
-     },
-     {
-      "nome": "Urgot"
-     },
-     {
-      "nome": "Xayah"
-     }
-    ],
-    "nerfs": [
-     {
-      "nome": "Aphelios"
-     },
-     {
-      "nome": "Kalista"
-     },
-     {
-      "nome": "Master Yi"
-     },
-     {
-      "nome": "Senna"
-     },
-     {
-      "nome": "Sett"
-     },
-     {
-      "nome": "Varus"
-     }
-    ],
-    "novidades": [
-     {
-      "nome": "Żyra Congregação das Bruxas"
-     },
-     {
-      "nome": "LeBlanc Congregação das Bruxas"
-     },
-     {
-      "nome": "Zyra Congregação das Bruxas Edição de Prestígio"
-     },
-     {
-      "nome": "Morgana Congregação das Bruxas"
-     }
-    ]
+    "buffs": {
+     "items": [
+      {
+       "nome": "Ashe"
+      },
+      {
+       "nome": "Evelynn"
+      },
+      {
+       "nome": "Orianna"
+      },
+      {
+       "nome": "Ryze"
+      },
+      {
+       "nome": "Soraka"
+      },
+      {
+       "nome": "Tristana"
+      },
+      {
+       "nome": "Urgot"
+      },
+      {
+       "nome": "Xayah"
+      }
+     ]
+    },
+    "nerfs": {
+     "items": [
+      {
+       "nome": "Aphelios"
+      },
+      {
+       "nome": "Kalista"
+      },
+      {
+       "nome": "Master Yi"
+      },
+      {
+       "nome": "Senna"
+      },
+      {
+       "nome": "Sett"
+      },
+      {
+       "nome": "Varus"
+      }
+     ]
+    },
+    "novidades": {
+     "items": [
+      {
+       "nome": "Żyra Congregação das Bruxas"
+      },
+      {
+       "nome": "LeBlanc Congregação das Bruxas"
+      },
+      {
+       "nome": "Zyra Congregação das Bruxas Edição de Prestígio"
+      },
+      {
+       "nome": "Morgana Congregação das Bruxas"
+      }
+     ]
+    }
    }
   },
   {
@@ -139,66 +151,72 @@
    "autor": "Anacronista e Natchy",
    "data": "2020-03-31T19:00:00.000Z",
    "destaques": {
-    "buffs": [
-     {
-      "nome": "Akali"
-     },
-     {
-      "nome": "Corki"
-     },
-     {
-      "nome": "Galio"
-     },
-     {
-      "nome": "Ivern"
-     },
-     {
-      "nome": "Kai'Sa"
-     },
-     {
-      "nome": "Nasus"
-     },
-     {
-      "nome": "Riven"
-     },
-     {
-      "nome": "Xin Zhao"
-     }
-    ],
-    "nerfs": [
-     {
-      "nome": "Garen"
-     },
-     {
-      "nome": "Nocturne"
-     },
-     {
-      "nome": "Talon"
-     },
-     {
-      "nome": "Wukong"
-     }
-    ],
-    "novidades": [
-     {
-      "nome": "Urgot Cosplay de Pijaminha Estelar"
-     },
-     {
-      "nome": "Veigar Cosplay de Ranzinzim"
-     },
-     {
-      "nome": "Tristana Cosplay de Pingu"
-     },
-     {
-      "nome": "Sion Quebra-mundos"
-     },
-     {
-      "nome": "Malzahar Quebra-mundos"
-     },
-     {
-      "nome": "Maokai Quebra-mundos"
-     }
-    ]
+    "buffs": {
+     "items": [
+      {
+       "nome": "Akali"
+      },
+      {
+       "nome": "Corki"
+      },
+      {
+       "nome": "Galio"
+      },
+      {
+       "nome": "Ivern"
+      },
+      {
+       "nome": "Kai'Sa"
+      },
+      {
+       "nome": "Nasus"
+      },
+      {
+       "nome": "Riven"
+      },
+      {
+       "nome": "Xin Zhao"
+      }
+     ]
+    },
+    "nerfs": {
+     "items": [
+      {
+       "nome": "Garen"
+      },
+      {
+       "nome": "Nocturne"
+      },
+      {
+       "nome": "Talon"
+      },
+      {
+       "nome": "Wukong"
+      }
+     ]
+    },
+    "novidades": {
+     "items": [
+      {
+       "nome": "Urgot Cosplay de Pijaminha Estelar"
+      },
+      {
+       "nome": "Veigar Cosplay de Ranzinzim"
+      },
+      {
+       "nome": "Tristana Cosplay de Pingu"
+      },
+      {
+       "nome": "Sion Quebra-mundos"
+      },
+      {
+       "nome": "Malzahar Quebra-mundos"
+      },
+      {
+       "nome": "Maokai Quebra-mundos"
+      }
+     ]
+    }
    }
   },
   {
@@ -208,92 +226,100 @@
    "autor": "Anacronista e Natchy",
    "data": "2020-03-17T19:00:00.000Z",
    "destaques": {
-    "buffs": [
-     {
-      "nome": "Draven"
-     },
-     {
-      "nome": "Hecarim"
-     },
-     {
-      "nome": "Kayn"
-     },
-     {
-      "nome": "Kindred"
-     },
-     {
-      "nome": "Morgana"
-     },
-     {
-      "nome": "Ryze"
-     },
-     {
-      "nome": "Soraka"
-     },
-     {
-      "nome": "Twisted Fate"
-     },
-     {
-      "nome": "Urgot"
-     },
-     {
-      "nome": "Veigar"
-     },
-     {
-      "nome": "Xerath"
-     }
-    ],
-    "nerfs": [
-     {
-      "nome": "Aphelios"
-     },
-     {
-      "nome": "Darius"
-     },
-     {
-      "nome": "Garen"
-     },
-     {
-      "nome": "Senna"
-     },
-     {
-      "nome": "Shaco"
-     }
-    ],
-    "ajustės": [
-     {
-      "nome": "Wukong"
-     }
-    ],
-    "novidades": [
-     {
-      "nome": "Malphite Estrela Negra"
-     },
-     {
-      "nome": "Malphite Estrela Negra Edição de Prestígio"
-     },
-     {
-      "nome": "Mordekaiser Estrela Negra"
-     },
-     {
-      "nome": "Lux Cósmica"
-     },
-     {
-      "nome": "Lux Cosmos Negro"
-     },
-     {
-      "nome": "Xerath Estrela Negra"
-     },
-     {
-      "nome": "Talon Bosque Sombrio"
-     },
-     {
-      "nome": "Taric Escudo Cintilante"
-     },
-     {
-      "nome": "Twitch Passos Leves"
-     }
-    ]
+    "buffs": {
+     "items": [
+      {
+       "nome": "Draven"
+      },
+      {
+       "nome": "Hecarim"
+      },
+      {
+       "nome": "Kayn"
+      },
+      {
+       "nome": "Kindred"
+      },
+      {
+       "nome": "Morgana"
+      },
+      {
+       "nome": "Ryze"
+      },
+      {
+       "nome": "Soraka"
+      },
+      {
+       "nome": "Twisted Fate"
+      },
+      {
+       "nome": "Urgot"
+      },
+      {
+       "nome": "Veigar"
+      },
+      {
+       "nome": "Xerath"
+      }
+     ]
+    },
+    "nerfs": {
+     "items": [
+      {
+       "nome": "Aphelios"
+      },
+      {
+       "nome": "Darius"
+      },
+      {
+       "nome": "Garen"
+      },
+      {
+       "nome": "Senna"
+      },
+      {
+       "nome": "Shaco"
+      }
+     ]
+    },
+    "ajustes": {
+     "items": [
+      {
+       "nome": "Wukong"
+      }
+     ]
+    },
+    "novidades": {
+     "items": [
+      {
+       "nome": "Malphite Estrela Negra"
+      },
+      {
+       "nome": "Malphite Estrela Negra Edição de Prestígio"
+      },
+      {
+       "nome": "Mordekaiser Estrela Negra"
+      },
+      {
+       "nome": "Lux Cósmica"
+      },
+      {
+       "nome": "Lux Cosmos Negro"
+      },
+      {
+       "nome": "Xerath Estrela Negra"
+      },
+      {
+       "nome": "Talon Bosque Sombrio"
+      },
+      {
+       "nome": "Taric Escudo Cintilante"
+      },
+      {
+       "nome": "Twitch Passos Leves"
+      }
+     ]
+    }
    }
   },
   {
@@ -303,60 +329,66 @@
    "autor": "shio shoujo",
    "data": "2020-03-03T19:00:00.000Z",
    "destaques": {
-    "buffs": [
-     {
-      "nome": "Alistar"
-     },
-     {
-      "nome": "Graves"
-     },
-     {
-      "nome": "Kayn"
-     },
-     {
-      "nome": "Lissandra"
-     },
-     {
-      "nome": "Neeko"
-     },
-     {
-      "nome": "Sivir"
-     },
-     {
-      "nome": "Sona"
-     }
-    ],
-    "nerfs": [
-     {
-      "nome": "Amumu"
-     },
-     {
-      "nome": "Bardo"
-     },
-     {
-      "nome": "Blitzcrank"
-     },
-     {
-      "nome": "Ornn"
-     },
-     {
-      "nome": "Rammus"
-     },
-     {
-      "nome": "Sett"
-     }
-    ],
-    "novidades": [
-     {
-      "nome": "Sejuani Hextec"
-     },
-     {
-      "nome": "Rek`sai Gelo Sombrio"
-     },
-     {
-      "nome": "Alistar e Renekton Gelo Sombrio"
-     }
-    ]
+    "buffs": {
+     "items": [
+      {
+       "nome": "Alistar"
+      },
+      {
+       "nome": "Graves"
+      },
+      {
+       "nome": "Kayn"
+      },
+      {
+       "nome": "Lissandra"
+      },
+      {
+       "nome": "Neeko"
+      },
+      {
+       "nome": "Sivir"
+      },
+      {
+       "nome": "Sona"
+      }
+     ]
+    },
+    "nerfs": {
+     "items": [
+      {
+       "nome": "Amumu"
+      },
+      {
+       "nome": "Bardo"
+      },
+      {
+       "nome": "Blitzcrank"
+      },
+      {
+       "nome": "Ornn"
+      },
+      {
+       "nome": "Rammus"
+      },
+      {
+       "nome": "Sett"
+      }
+     ]
+    },
+    "novidades": {
+     "items": [
+      {
+       "nome": "Sejuani Hextec"
+      },
+      {
+       "nome": "Rek`sai Gelo Sombrio"
+      },
+      {
+       "nome": "Alistar e Renekton Gelo Sombrio"
+      }
+     ]
+    }
    }
   },
   {
@@ -366,75 +398,81 @@
    "autor": "Anacronista e Natchy",
    "data": "2020-02-18T19:00:00.000Z",
    "destaques": {
-    "buffs": [
-     {
-      "nome": "Amumu"
-     },
-     {
-      "nome": "Caitlyn"
-     },
-     {
-      "nome": "Darius"
-     },
-     {
-      "nome": "Diana"
-     },
-     {
-      "nome": "Garen"
-     },
-     {
-      "nome": "Gnar"
-     },
-     {
-      "nome": "Jayce"
-     },
-     {
-      "nome": "Lux"
-     },
-     {
-      "nome": "Mordekaiser"
-     },
-     {
-      "nome": "Rammus"
-     },
-     {
-      "nome": "Sylas"
-     },
-     {
-      "nome": "Talon"
-     },
-     {
-      "nome": "Udyr"
-     },
-     {
-      "nome": "Zed"
-     }
-    ],
-    "nerfs": [
-     {
-      "nome": "Aurelion Sol"
-     },
-     {
-      "nome": "Aphelios"
-     },
-     {
-      "nome": "Singed"
-     },
-     {
-      "nome": "Sona"
-     },
-     {
-      "nome": "Soraka"
-     }
-    ],
-    "novidades": [
-     {
-      "nome": "Tryndamere Lua Sangrenta"
-     },
-     {
-      "nome": "Katarina e Master Yi Lua Sangrenta"
-     }
-    ]
+    "buffs": {
+     "items": [
+      {
+       "nome": "Amumu"
+      },
+      {
+       "nome": "Caitlyn"
+      },
+      {
+       "nome": "Darius"
+      },
+      {
+       "nome": "Diana"
+      },
+      {
+       "nome": "Garen"
+      },
+      {
+       "nome": "Gnar"
+      },
+      {
+       "nome": "Jayce"
+      },
+      {
+       "nome": "Lux"
+      },
+      {
+       "nome": "Mordekaiser"
+      },
+      {
+       "nome": "Rammus"
+      },
+      {
+       "nome": "Sylas"
+      },
+      {
+       "nome": "Talon"
+      },
+      {
+       "nome": "Udyr"
+      },
+      {
+       "nome": "Zed"
+      }
+     ]
+    },
+    "nerfs": {
+     "items": [
+      {
+       "nome": "Aurelion Sol"
+      },
+      {
+       "nome": "Aphelios"
+      },
+      {
+       "nome": "Singed"
+      },
+      {
+       "nome": "Sona"
+      },
+      {
+       "nome": "Soraka"
+      }
+     ]
+    },
+    "novidades": {
+     "items": [
+      {
+       "nome": "Tryndamere Lua Sangrenta"
+      },
+      {
+       "nome": "Katarina e Master Yi Lua Sangrenta"
+      }
+     ]
+    }
    }
   },
   {
@@ -444,17 +482,19 @@
    "autor": "Anacronista e Natchy",
    "data": "2020-02-04T19:00:00.000Z",
    "destaques": {
-    "novidades": [
-     {
-      "nome": "Jinx Cupido Mortal"
-     },
-     {
-      "nome": "Senna True Damage Edição de Prestígio"
-     },
-     {
-      "nome": "Yuumi Cupido Mortal"
-     }
-    ]
+    "novidades": {
+     "items": [
+      {
+       "nome": "Jinx Cupido Mortal"
+      },
+      {
+       "nome": "Senna True Damage Edição de Prestígio"
+      },
+      {
+       "nome": "Yuumi Cupido Mortal"
+      }
+     ]
+    }
    }
   },
   {
@@ -464,26 +504,28 @@
    "autor": "Anacronista e Natchy",
    "data": "2020-01-21T19:00:00.000Z",
    "destaques": {
-    "novidades": [
-     {
-      "nome": "Janna Guardiã das Areias"
-     },
-     {
-      "nome": "Rengar Guardião das Areias"
-     },
-     {
-      "nome": "Ryze Guardião das Areias"
-     },
-     {
-      "nome": "Olaf Caçador de Dragões"
-     },
-     {
-      "nome": "Trundle Caçador de Dragões"
-     },
-     {
-      "nome": "Diana Caçadora de Dragões"
-     }
-    ]
+    "novidades": {
+     "items": [
+      {
+       "nome": "Janna Guardiã das Areias"
+      },
+      {
+       "nome": "Rengar Guardião das Areias"
+      },
+      {
+       "nome": "Ryze Guardião das Areias"
+      },
+      {
+       "nome": "Olaf Caçador de Dragões"
+      },
+      {
+       "nome": "Trundle Caçador de Dragões"
+      },
+      {
+       "nome": "Diana Caçadora de Dragões"
+      }
+     ]
+    }
    }
   },
   {
@@ -493,32 +535,34 @@
    "autor": "shio shoujo",
    "data": "2020-01-07T19:00:00.000Z",
    "destaques": {
-    "novidades": [
-     {
-      "nome": "Sett"
-     },
-     {
-      "nome": "Sett Reinos Mech"
-     },
-     {
-      "nome": "Sylas de Freljord"
-     },
-     {
-      "nome": "Jax Reinos Mech"
-     },
-     {
-      "nome": "Garen Reinos Mech Edição de Prestígio"
-     },
-     {
-      "nome": "Garen Reinos Mech"
-     },
-     {
-      "nome": "Leona Reinos Mech"
-     },
-     {
-      "nome": "Draven Reinos Mech"
-     }
-    ]
+    "novidades": {
+     "items": [
+      {
+       "nome": "Sett"
+      },
+      {
+       "nome": "Sett Reinos Mech"
+      },
+      {
+       "nome": "Sylas de Freljord"
+      },
+      {
+       "nome": "Jax Reinos Mech"
+      },
+      {
+       "nome": "Garen Reinos Mech Edição de Prestígio"
+      },
+      {
+       "nome": "Garen Reinos Mech"
+      },
+      {
+       "nome": "Leona Reinos Mech"
+      },
+      {
+       "nome": "Draven Reinos Mech"
+      }
+     ]
+    }
    }
   },
   {
@@ -542,17 +586,19 @@
    "autor": "Riot Aether",
    "data": "2019-11-19T18:30:00.000Z",
    "destaques": {
-    "novidades": [
-     {
-      "nome": "Pulsefire Thresh"
-     },
-     {
-      "nome": "Pulsefire Thresh Prestige Edition"
-     },
-     {
-      "nome": "Victorious Aatrox"
-     }
-    ]
+    "novidades": {
+     "items": [
+      {
+       "nome": "Pulsefire Thresh"
+      },
+      {
+       "nome": "Pulsefire Thresh Prestige Edition"
+      },
+      {
+       "nome": "Victorious Aatrox"
+      }
+     ]
+    }
    }
   },
   {
@@ -562,26 +608,28 @@
    "autor": "shio shoujo",
    "data": "2019-11-02T00:14:18.000Z",
    "destaques": {
-    "novidades": [
-     {
-      "nome": "Yasuo True Damage"
-     },
-     {
-      "nome": "Akali True Damage"
-     },
-     {
-      "nome": "Qiyana True Damage"
-     },
-     {
-      "nome": "Ekko True Damage"
-     },
-     {
-      "nome": "Senna True Damage"
-     },
-     {
-      "nome": "Qiyana True Damage Edição de Prestígio"
-     }
-    ]
+    "novidades": {
+     "items": [
+      {
+       "nome": "Yasuo True Damage"
+      },
+      {
+       "nome": "Akali True Damage"
+      },
+      {
+       "nome": "Qiyana True Damage"
+      },
+      {
+       "nome": "Ekko True Damage"
+      },
+      {
+       "nome": "Senna True Damage"
+      },
+      {
+       "nome": "Qiyana True Damage Edição de Prestígio"
+      }
+     ]
+    }
    }
   },
   {
@@ -598,17 +646,19 @@
    "autor": "shio shoujo",
    "data": "2019-10-07T22:12:12.000Z",
    "destaques": {
-    "novidades": [
-     {
-      "nome": "Ashe Velho Oeste"
-     },
-     {
-      "nome": "Hecarim Velho Oeste"
-     },
-     {
-      "nome": "Darius Velho Oeste"
-     }
-    ]
+    "novidades": {
+     "items": [
+      {
+       "nome": "Ashe Velho Oeste"
+      },
+      {
+       "nome": "Hecarim Velho Oeste"
+      },
+      {
+       "nome": "Darius Velho Oeste"
+      }
+     ]
+    }
    }
   },
   {
@@ -625,17 +675,19 @@
    "autor": "shio shoujo, Riot Aether",
    "data": "2019-09-05T01:45:14.000Z",
    "destaques": {
-    "novidades": [
-     {
-      "nome": "Rakan Guardião e Xayah Guardiã Estelar"
-     },
-     {
-      "nome": "Neeko Guardiã Estelar"
-     },
-     {
-      "nome": "Zoe Guardiã Estelar"
-     }
-    ]
+    "novidades": {
+     "items": [
+      {
+       "nome": "Rakan Guardião e Xayah Guardiã Estelar"
+      },
+      {
+       "nome": "Neeko Guardiã Estelar"
+      },
+      {
+       "nome": "Zoe Guardiã Estelar"
+      }
+     ]
+    }
    }
   },
   {
