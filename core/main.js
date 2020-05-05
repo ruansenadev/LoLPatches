@@ -9,7 +9,7 @@ const d = new Date()
 
 const errorsDir = 'erros'
 const patchesDir = 'patches'
-const imagesDir = 'imagens'
+const imagesDir = 'public/images'
 const champsDir = 'champs'
 const spellsDir = 'skills'
 const runesDir = 'runes'
