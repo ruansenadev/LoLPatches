@@ -224,9 +224,9 @@ exports.look = async function (img) {
     phrases.forEach(phrase => {
         if (phrase.type == 't') {
             lastTitle = phrase.text.toLowerCase()
-            data[lastTitle] = []
+            data[lastTitle] = {items: []}
         } else {
-            data[lastTitle].push({'nome': phrase.text})
+            data[lastTitle].items.push({'nome': phrase.text})
         }
     })
 
