@@ -237,18 +237,18 @@ async function fetchPatchesImages(items) {
 // }, true)
 
 // --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
-// fetchPatchesImages()
-// .then(results => {
-//     results.forEach(scrap => {
-//         fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
-//             if (err) { throw err }
-//             fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
-//                 if (err) { throw err }
-//                 console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
-//             })
-//         })
-//     })
-// })
+fetchPatchesImages()
+.then(results => {
+    results.forEach(scrap => {
+        fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
+            if (err) { throw err }
+            fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
+                if (err) { throw err }
+                console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+            })
+        })
+    })
+})
 
 function lookAround(patches) {
     patches = patches || JSON.parse(fs.readFileSync(path.join(patchesDir, 'data.json')))
@@ -282,4 +282,4 @@ function lookAround(patches) {
     })
 }
 
-lookAround()
+// lookAround()

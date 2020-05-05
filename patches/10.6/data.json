@@ -1,786 +1,787 @@
 {
-  "note": "Saudações, terráqueos! Nesta atualização, damos as boas-vindas ao novo Wukong, mais trapaceiro do que nunca, e atualizamos o sistema de gerenciamento para que menos partidas apresentam desequilíbrios em relação ao número de jogadores de preenchimento em cada equipe. Os detalhes são muito mais interessantes do que esse resumão aqui, então confiram as novidades na íntegra logo abaixo! Também temos uma terceira rodada de mudanças para que novos Campeões se aventurem na selva e mais algumas mudanças sistêmicas com o objetivo de continuar ajudando os jogadores da rota superior a terem mais impacto durante toda a partida. Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
-  "ft": {
-    "img": "Patch_10_6_Infographic_1080x1080_v2_por-BR.jpg",
-    "mod": "Talon Bosque Sombrio, Taric Escudo Cintilante e Twitch Passos Leves estarão disponíveis no dia 19 de março de 2020. Mordekaiser, Xerath e Malphite Estrelas Negras, Malphite Estrela Negra Edição de Prestígio, juntamente com Lux Cósmica e Cosmos Negro, estarão disponíveis no dia 26 de março de 2020."
+ "title": "Notas da Atualização 10.6",
+ "note": "Saudações, terráqueos! Nesta atualização, damos as boas-vindas ao novo Wukong, mais trapaceiro do que nunca, e atualizamos o sistema de gerenciamento para que menos partidas apresentam desequilíbrios em relação ao número de jogadores de preenchimento em cada equipe. Os detalhes são muito mais interessantes do que esse resumão aqui, então confiram as novidades na íntegra logo abaixo! Também temos uma terceira rodada de mudanças para que novos Campeões se aventurem na selva e mais algumas mudanças sistêmicas com o objetivo de continuar ajudando os jogadores da rota superior a terem mais impacto durante toda a partida. Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
+ "ft": {
+  "img": "Patch_10_6_Infographic_1080x1080_v2_por-BR.jpg",
+  "mod": "Talon Bosque Sombrio, Taric Escudo Cintilante e Twitch Passos Leves estarão disponíveis no dia 19 de março de 2020. Mordekaiser, Xerath e Malphite Estrelas Negras, Malphite Estrela Negra Edição de Prestígio, juntamente com Lux Cósmica e Cosmos Negro, estarão disponíveis no dia 26 de março de 2020."
+ },
+ "champs": [
+  {
+   "campeao": "Anivia",
+   "img": "Anivia.png",
+   "mod": "Duração do efeito de Gelo do R aumentado.",
+   "nota": "Tonaremos o efeito negativo de Gelo da Anivia mais consistente (aquele que dobra o dano do E) fazendo com que a duração seja a mesma para todas as habilidades que o utilizam (ultimate e Q).",
+   "habilidades": [
+    {
+     "nome": "R - Tempestade Glacial",
+     "atributos": [
+      {
+       "atributo": "DURAÇÃO DO EFEITO DE GELO",
+       "antes": "2s",
+       "depois": "3s (agora tem a mesma duração do efeito de Gelo do Q - Lampejo Gelado)"
+      }
+     ],
+     "img": "GlacialStorm.png"
+    }
+   ]
   },
-  "champs": [
+  {
+   "campeao": "Aphelios ",
+   "img": "Aphelios.png",
+   "mod": "Cura inata de Severum e dano inato de Infernum contra tropas reduzidos. Dano fortalecido de Crescendum reduzido.",
+   "nota": "Aphelios continua dominando o cenário profissional, então vamos enfraquecer as mecânicas que são mais valiosas para esse grupo do que para os outros jogadores.",
+   "habilidades": [
     {
-      "campeao": "Anivia",
-      "img": "Anivia.png",
-      "mod": "Duração do efeito de Gelo do R aumentado.",
-      "nota": "Tonaremos o efeito negativo de Gelo da Anivia mais consistente (aquele que dobra o dano do E) fazendo com que a duração seja a mesma para todas as habilidades que o utilizam (ultimate e Q).",
-      "habilidades": [
-        {
-          "nome": "R - Tempestade Glacial",
-          "atributos": [
-            {
-              "atributo": "DURAÇÃO DO EFEITO DE GELO",
-              "antes": "2s",
-              "depois": "3s (agora tem a mesma duração do efeito de Gelo do Q - Lampejo Gelado)"
-            }
-          ],
-          "img": "GlacialStorm.png"
-        }
-      ]
+     "nome": "Severum, a Pistola-Foice ",
+     "atributos": [
+      {
+       "atributo": "INATO - CURA RESSURGENTE",
+       "antes": "8% - 25% (nos níveis 1 a 18) do dano causado",
+       "depois": "3% - 20% (nos níveis 1 a 18) do dano causado"
+      }
+     ],
+     "img": "Q_Severum.jpg"
     },
     {
-      "campeao": "Aphelios ",
-      "img": "Aphelios.png",
-      "mod": "Cura inata de Severum e dano inato de Infernum contra tropas reduzidos. Dano fortalecido de Crescendum reduzido.",
-      "nota": "Aphelios continua dominando o cenário profissional, então vamos enfraquecer as mecânicas que são mais valiosas para esse grupo do que para os outros jogadores.",
-      "habilidades": [
-        {
-          "nome": "Severum, a Pistola-Foice ",
-          "atributos": [
-            {
-              "atributo": "INATO - CURA RESSURGENTE",
-              "antes": "8% - 25% (nos níveis 1 a 18) do dano causado",
-              "depois": "3% - 20% (nos níveis 1 a 18) do dano causado"
-            }
-          ],
-          "img": "Q_Severum.jpg"
-        },
-        {
-          "nome": "Infernum, o Lança-chamas",
-          "atributos": [
-            {
-              "atributo": "INATO - DANO INCENDIÁRIO EM ÁREA DE AÇÃO CONTRA TROPAS",
-              "antes": "45% (no nível 9) do dano em área de ação",
-              "depois": "30% (no nível 9) do dano em área de ação"
-            }
-          ],
-          "img": "Q_Infernum.jpg"
-        },
-        {
-          "nome": "Crescendum, o Chakram ",
-          "atributos": [
-            {
-              "atributo": "DANO DO ATAQUE BÁSICO FORTALECIDO DO CHAKRAM",
-              "antes": "30% - 173% do Dano de Ataque total",
-              "depois": "24% - 164% do Dano de Ataque total"
-            }
-          ],
-          "img": "Q_Crescendum.jpg"
-        }
-      ]
+     "nome": "Infernum, o Lança-chamas",
+     "atributos": [
+      {
+       "atributo": "INATO - DANO INCENDIÁRIO EM ÁREA DE AÇÃO CONTRA TROPAS",
+       "antes": "45% (no nível 9) do dano em área de ação",
+       "depois": "30% (no nível 9) do dano em área de ação"
+      }
+     ],
+     "img": "Q_Infernum.jpg"
     },
     {
-      "campeao": "Darius",
-      "img": "Darius.png",
-      "mod": "Dano adicional do W reduzido e custo aumentado. Custo do E aumentado e agora é reduzido a cada nível. ",
-      "nota": "Darius está passando dos limites depois de todas as alterações na rota superior e nos itens para lutadores. O objetivo desse leve enfraquecimento é fazer de Apreender uma decisão estratégica ainda mais importante.",
-      "habilidades": [
-        {
-          "nome": "W - Ataque Mutilador",
-          "atributos": [
-            {
-              "atributo": "DANO FÍSICO ADICIONAL",
-              "antes": "50/55/60/65/70% do Dano de Ataque total",
-              "depois": "40/45/50/55/60% do Dano de Ataque total"
-            },
-            {
-              "atributo": "CUSTO",
-              "antes": "30 de Mana",
-              "depois": "40 de Mana"
-            }
-          ],
-          "img": "DariusNoxianTacticsONH.png"
-        },
-        {
-          "nome": "E - Apreender",
-          "atributos": [
-            {
-              "atributo": "CUSTO",
-              "antes": "45 de Mana",
-              "depois": "70/60/50/40/30 de Mana"
-            }
-          ],
-          "img": "DariusAxeGrabCone.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Draven",
-      "img": "Draven.png",
-      "mod": "Velocidade de Movimento decadente do W aumentada. ",
-      "nota": "Fortaleceremos o Draven para que os jogadores mais experientes possam aproveitá-lo nas partidas de alto nível de habilidade.",
-      "habilidades": [
-        {
-          "nome": "W - Adrenalina",
-          "atributos": [
-            {
-              "atributo": "VELOCIDADE DE MOVIMENTO DECADENTE",
-              "antes": "40/45/50/55/60%",
-              "depois": "50/55/60/65/70%"
-            }
-          ],
-          "img": "DravenFury.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Garen",
-      "img": "Garen.png",
-      "mod": "Crescimento de Resistência Mágica base reduzido. Multiplicador de Acerto Crítico do E reduzido. ",
-      "nota": "Atualmente, Garen está com grande diversidade de itemização, mas ainda não chegou onde queríamos. Vamos enfraquecer alguns de seus atributos para seguirmos com a tendência de itemizações de dano. A Espada de Demacia anda bem forte...",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "CRESCIMENTO DE RESISTÊNCIA MÁGICA",
-              "antes": "1,25",
-              "depois": "0,75"
-            }
-          ]
-        },
-        {
-          "nome": "E - Julgamento",
-          "atributos": [
-            {
-              "atributo": "MULTIPLICADOR DE ACERTO CRÍTICO",
-              "antes": "50%",
-              "depois": "33%"
-            }
-          ],
-          "img": "GarenE.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Hecarim",
-      "img": "Hecarim.png",
-      "mod": "Duração do temor do R aumentada.",
-      "nota": "Hecarim agora pode se arriscar mais com iniciações de alcance máximo.",
-      "habilidades": [
-        {
-          "nome": "R - Massacre das Sombras",
-          "atributos": [
-            {
-              "atributo": "DURAÇÃO DO TEMOR",
-              "antes": "0,75s - 1,5s (com base na distância percorrida)",
-              "depois": "0,75s - 2s (com base na distância percorrida)"
-            }
-          ],
-          "img": "HecarimUlt.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Kayn",
-      "img": "Kayn.png",
-      "mod": "Recebimento de orbes da Passiva aumentado no meio de partida.",
-      "nota": "Na última atualização, suavizamos o recebimento de orbes do Kayn, mas agora sua transformação está acontecendo mais tarde. Faremos com que ele se transforme próximo ao tempo de antigamente.",
-      "habilidades": [
-        {
-          "nome": "Passiva - A Foice Darkin",
-          "atributos": [
-            {
-              "atributo": "RECEBIMENTO DE ORBES",
-              "depois": "Aos 10min - 13min de partida, Kayn receberá 15% a mais de orbes, aumentando ao longo da duração."
-            }
-          ],
-          "img": "Kayn_Passive_Primary.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Kindred",
-      "img": "Kindred.png",
-      "mod": "Crescimento de Dano de Ataque base e Regeneração de Mana aumentados. Restauração de Vida do W aumentada. Cura do R aumentada.",
-      "nota": "Os Kindred nem se lembram do gosto de um fortalecimento. Como estão fraquinhos já faz algum tempo, vamos alimentá-los com cura e escalamento.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "CRESCIMENTO DE DANO DE ATAQUE",
-              "antes": "2,26",
-              "depois": "2,5"
-            },
-            {
-              "atributo": "REGENERAÇÃO DE MANA",
-              "antes": "6,972",
-              "depois": "7"
-            }
-          ]
-        },
-        {
-          "nome": "W - Frenesi do Lobo",
-          "atributos": [
-            {
-              "atributo": "RESTAURAÇÃO DE VIDA",
-              "antes": "32 - 100 (nos níveis 1 a 18) com base na Vida perdida",
-              "depois": "49 - 100 (nos níveis 1 a 18) com base na Vida perdida"
-            }
-          ],
-          "img": "KindredW.png"
-        },
-        {
-          "nome": "R - Refúgio da Ovelha",
-          "atributos": [
-            {
-              "atributo": "CURA",
-              "antes": "200/250/300",
-              "depois": "250/325/400"
-            }
-          ],
-          "img": "KindredR.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Morgana",
-      "img": "Morgana.png",
-      "mod": "Velocidade de Movimento base aumentada. Escudo do E aumentado nos primeiros níveis.",
-      "nota": "Fortalecimentos direcionados à função de suporte, pois ela está bem balanceada na rota do meio.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "VELOCIDADE DE MOVIMENTO",
-              "antes": "330",
-              "depois": "335"
-            }
-          ]
-        },
-        {
-          "nome": "E - Escudo Negro",
-          "atributos": [
-            {
-              "atributo": "ESCUDO",
-              "antes": "60/120/180/240/300",
-              "depois": "80/135/190/245/300"
-            }
-          ],
-          "img": "MorganaE.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Ryze",
-      "img": "Ryze.png",
-      "mod": "Crescimento de Regeneração de Mana base aumentado. Dano do W aumentado nos últimos níveis. ",
-      "nota": "Queremos gerenciar a presença do Ryze no cenário profissional e garantir que ele não domine as escolhas dos jogadores, mas seu fim de jogo ainda não está tão forte. Vamos consolidá-lo como um dos \"reis do nível 18\" para que ele possa aproveitar as partidas de maior duração.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "CRESCIMENTO DE REGENERAÇÃO DE MANA",
-              "antes": "0,8",
-              "depois": "1"
-            }
-          ]
-        },
-        {
-          "nome": "W - Prisão de Runa",
-          "atributos": [
-            {
-              "atributo": "DANO",
-              "antes": "80/100/120/140/160",
-              "depois": "80/110/140/170/200"
-            }
-          ],
-          "img": "RyzeW.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Senna",
-      "img": "Senna.png",
-      "mod": "Dano de Ataque por alma da Passiva reduzido e Tempo de Recarga do efeito Névoa agora escala.",
-      "nota": "No momento, a Senna suporte está forte demais, principalmente quando enfrenta tanques defensivos. Reduziremos o valor e o ritmo das Almas para que ela não agrida seus oponentes constantemente, algo que consegue fazer com uma frequência maior ainda quando conta com um tanque para protegê-la.",
-      "habilidades": [
-        {
-          "nome": "Passiva - Absolvição",
-          "atributos": [
-            {
-              "atributo": "DANO DE ATAQUE POR ALMA",
-              "antes": "1",
-              "depois": "0,75"
-            },
-            {
-              "atributo": "TEMPO DE RECARGA DE INATO - ALMA ENFRAQUECIDA",
-              "antes": "4s",
-              "depois": "6/5/4s (nos níveis 1/6/11)"
-            }
-          ],
-          "img": "Senna_Passive.Senna.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Shaco",
-      "img": "Shaco.png",
-      "mod": "Dano do ataque básico do clone reduzido. ",
-      "nota": "A itemização de DdA está bem forte no Shaco, então vamos enfraquecê-lo de leve.",
-      "habilidades": [
-        {
-          "nome": "R - Alucinação",
-          "atributos": [
-            {
-              "atributo": "DANO DO ATAQUE BÁSICO DO CLONE",
-              "antes": "75% do Dano de Ataque total",
-              "depois": "60% do Dano de Ataque total"
-            }
-          ],
-          "img": "HallucinateFull.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Soraka",
-      "img": "Soraka.png",
-      "mod": "Cura de Rejuvenescimento e Velocidade de Movimento adicional do Q aumentadas.",
-      "nota": "Agora que a maldição da Soraka na rota superior não ameaça mais nosso universo, devolveremos parte do poder de Chamado Estelar.",
-      "habilidades": [
-        {
-          "nome": "Q - Chamado Estelar",
-          "atributos": [
-            {
-              "atributo": "CURA TOTAL DE REJUVENESCIMENTO",
-              "antes": "40/50/60/70/80 (+0,3 de Poder de Habilidade)",
-              "depois": "50/60/70/80/90 (+0,3 de Poder de Habilidade)"
-            },
-            {
-              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
-              "antes": "10% - 20%",
-              "depois": "15% - 25%"
-            }
-          ],
-          "img": "SorakaQ.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Twisted Fate",
-      "img": "TwistedFate.png",
-      "mod": "Multiplicadores de PdH da carta azul e da carta vermelha aumentados. ",
-      "nota": "Com essa mudança, talvez uma carta errada no fim de jogo não seja tão errada assim.",
-      "habilidades": [
-        {
-          "nome": "W - Escolha uma Carta",
-          "atributos": [
-            {
-              "atributo": "MULTIPLICADOR DE PDH DA CARTA AZUL",
-              "antes": "0,5 de Poder de Habilidade",
-              "depois": "0,9 de Poder de Habilidade"
-            },
-            {
-              "atributo": "MULTIPLICADOR DE PDH DA CARTA VERMELHA",
-              "antes": "0,5 de Poder de Habilidade",
-              "depois": "0,6 de Poder de Habilidade"
-            }
-          ],
-          "img": "PickACard.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Urgot",
-      "img": "Urgot.png",
-      "mod": "Duração da Redução de Velocidade do Q aumentada. Duração do atordoamento do E aumentada. ",
-      "nota": "Com Expurgar sendo a principal habilidade a ser maximizada primeiro, as outras habilidades podem não ser tão satisfatórias. Esses pequenos fortalecimentos no potencial de CG devem aumentar a confiabilidade do combo, mesmo através de Tenacidade, e manter o Urgotão bem fortão.",
-      "habilidades": [
-        {
-          "nome": "Q - Carga Corrosiva",
-          "atributos": [
-            {
-              "atributo": "DURAÇÃO DA REDUÇÃO DE VELOCIDADE",
-              "antes": "1s",
-              "depois": "1,25s"
-            }
-          ],
-          "img": "UrgotQ.png"
-        },
-        {
-          "nome": "E - Desdém",
-          "atributos": [
-            {
-              "atributo": "DURAÇÃO DO ATORDOAMENTO",
-              "antes": "0,75s",
-              "depois": "1s"
-            }
-          ],
-          "img": "UrgotE.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Veigar",
-      "img": "Veigar.png",
-      "mod": "DdA base, crescimento de DdA e Armadura aumentados. Dano base do Q aumentado.",
-      "nota": "Uma ajudinha para o nosso vilãozinho (ele é mau, parem de rir!).",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "DANO DE ATAQUE",
-              "antes": "50,71",
-              "depois": "52"
-            },
-            {
-              "atributo": "CRESCIMENTO DE DANO DE ATAQUE",
-              "antes": "2,625",
-              "depois": "2,7"
-            },
-            {
-              "atributo": "ARMADURA",
-              "antes": "22,55",
-              "depois": "23"
-            }
-          ]
-        },
-        {
-          "nome": "Q - Golpe Maligno",
-          "atributos": [
-            {
-              "atributo": "DANO BASE",
-              "antes": "70/110/150/190/230",
-              "depois": "80/120/160/200/240"
-            }
-          ],
-          "img": "VeigarBalefulStrike.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Wukong",
-      "img": "MonkeyKing.png",
-      "mod": "A Passiva aumenta atributos com base no número de Campeões sendo enfrentados, em vez de proximidade. W agora tem um avanço e um chamariz que imita ataques básicos e habilidades. R agora pode ser conjurado duas vezes. ",
-      "nota": "Um dos nossos principais objetivos com essa atualização é dar ao Wukong o estilo de jogo trapaceiro que ele não tinha. Com isso em mente, o padrão de combate terá mais versatilidade e maneiras de superar os oponentes. Esse macaco finalmente conseguirá enganar algumas pessoas em vez de simplesmente explodi-las com seu bastão. Também queremos potencializar as itemizações de lutador, rota superior e selva dele, já que as itemizações de rota do meio como assassino (apesar de fortes) não são satisfatórias (seja jogando com elas ou as enfrentando). Ah, já sabemos que isso está planejado faz mais de 200 anos, mas só ficou pronto agora.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "RESISTÊNCIA MÁGICA",
-              "antes": "32,1",
-              "depois": "28"
-            },
-            {
-              "atributo": "VIDA",
-              "antes": "577,8",
-              "depois": "540"
-            },
-            {
-              "atributo": "MANA",
-              "antes": "265",
-              "depois": "300"
-            },
-            {
-              "atributo": "CRESCIMENTO DE MANA",
-              "antes": "38",
-              "depois": "45"
-            },
-            {
-              "atributo": "ITENS RECOMENDADOS",
-              "depois": "Foram atualizados para refletir a força das itemizações de lutador no Wukong."
-            }
-          ]
-        },
-        {
-          "nome": "Passivo - Pele de Pedra",
-          "atributos": [
-            {
-              "atributo": "ARMADURA",
-              "antes": "4/6/8 (nos níveis 1/7/13) a cada Campeão próximo",
-              "depois": "5 - 11 (nos níveis 1 a 18) a cada Campeão próximo"
-            },
-            {
-              "atributo": "RESISTÊNCIA MÁGICA",
-              "rotulo": "removido",
-              "depois": "Wukong deixa de receber 4/6/8 (nos níveis 1/7/13) de Resistência Mágica adicional a cada Campeão próximo."
-            },
-            {
-              "atributo": "REGENERAÇÃO DE VIDA",
-              "rotulo": "novo",
-              "depois": "Agora, concede 0,5% de Regeneração de Vida máxima a cada 5s."
-            },
-            {
-              "atributo": "ESPELHO, ESPELHO MEU",
-              "rotulo": "novo",
-              "depois": "Efeitos são aumentados em 62,5% por 5s toda vez que Wukong e/ou seu chamariz atingirem um Campeão inimigo ou monstro (acumulando até 8 vezes, com um total de 500%)"
-            }
-          ],
-          "img": "MonkeyKingStoneSkin.png"
-        },
-        {
-          "nome": "Q - Golpe Destruidor",
-          "atributos": [
-            {
-              "atributo": "DANO ADICIONAL DE ATAQUE BÁSICO",
-              "antes": "10/40/70/100/130 (+0/0,1/0,2/0,3/0,4 de Dano de Ataque total)",
-              "depois": "30/55/80/105/130 (+0,5 de Dano de Ataque adicional)"
-            },
-            {
-              "atributo": "ALCANCE ADICIONAL",
-              "antes": "125",
-              "depois": "75/100/125/150/175"
-            },
-            {
-              "atributo": "ATAQUE RÁPIDO",
-              "rotulo": "novo",
-              "depois": "Tempo de conjuração agora escala com a Velocidade de Ataque do Wukong."
-            },
-            {
-              "atributo": "QUALIDADE DE VIDA",
-              "depois": "Temporizador adicionado ao ícone da habilidade para mostrar quanto tempo ainda resta para usar o ataque fortalecido."
-            },
-            {
-              "atributo": "RTR DO CHAMARIZ",
-              "rotulo": "novo",
-              "depois": "Sempre que Wukong ou seu chamariz causarem dano com ataques básicos ou habilidades, o Tempo de Recarga do Q - Golpe Destruidor é reduzido em 0,5s."
-            },
-            {
-              "atributo": "TEMPO DE RECARGA",
-              "antes": "9/8/7/6/5s",
-              "depois": "9/8,5/8/7,5/7s"
-            }
-          ],
-          "img": "MonkeyKingDoubleAttack.png"
-        },
-        {
-          "nome": "W - Guerreiro Trapaceiro",
-          "atributos": [
-            {
-              "atributo": "CADA MACACO NA SUA ROTA",
-              "rotulo": "novo",
-              "depois": "Adicionado um avanço com 300 de alcance que não pode atravessar paredes."
-            },
-            {
-              "atributo": "DURAÇÃO DA FURTIVIDADE",
-              "antes": "1,5s",
-              "depois": "1s"
-            },
-            {
-              "atributo": "PUF!",
-              "rotulo": "removido",
-              "depois": "O chamariz de Wukong deixa de causar Dano Mágico em área de ação antes de desaparecer."
-            },
-            {
-              "atributo": "TEMPO DE RECARGA",
-              "antes": "18/16/14/12/10s",
-              "depois": "20/19/18/17/16s"
-            },
-            {
-              "atributo": "CUSTO",
-              "antes": "50/55/60/65/70 de Mana",
-              "depois": "60 de Mana"
-            },
-            {
-              "atributo": "REDUÇÃO DE DANO DO CHAMARIZ",
-              "rotulo": "novo",
-              "depois": "O chamariz do Wukong agora imita seus ataques e ultimate, mas causa 50/55/60/65/70% de dano."
-            },
-            {
-              "atributo": "ATAQUES BÁSICOS DO CHAMARIZ",
-              "rotulo": "novo",
-              "depois": "O chamariz tentará atacar os inimigos que Wukong atacou recentemente."
-            },
-            {
-              "atributo": "Q - GOLPE DESTRUIDOR DO CHAMARIZ",
-              "rotulo": "novo",
-              "depois": "O próximo ataque do chamariz é fortalecido."
-            },
-            {
-              "atributo": "E - RESPLENDOR DAS NUVENS DO CHAMARIZ",
-              "rotulo": "novo",
-              "depois": "O chamariz recebe Velocidade de Ataque adicional."
-            },
-            {
-              "atributo": "R - CICLONE DO CHAMARIZ",
-              "rotulo": "novo",
-              "depois": "O chamariz começará a girar e arremessará ao ar inimigos que ainda não foram arremessados na conjuração inicial da ultimate."
-            }
-          ],
-          "img": "MonkeyKingDecoy.png",
-          "rotulo": "atualizado"
-        },
-        {
-          "nome": "E - Resplendor das Nuvens",
-          "atributos": [
-            {
-              "atributo": "DANO",
-              "antes": " 65/100/135/170/205 (+0,8 de Dano de Ataque adicional) de Dano Físico",
-              "depois": "80/120/160/200/240 (+0,8 de Poder de Habilidade) de Dano Mágico"
-            },
-            {
-              "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
-              "antes": "30/35/40/45/50%",
-              "depois": "40/45/50/55/60%"
-            },
-            {
-              "atributo": "DURAÇÃO DO EFEITO DE VELOCIDADE DE ATAQUE",
-              "antes": "4s",
-              "depois": "5s"
-            },
-            {
-              "atributo": "TEMPO DE RECARGA",
-              "antes": "8s",
-              "depois": "10/9,5/9/8,5/8s"
-            },
-            {
-              "atributo": "CUSTO",
-              "antes": "45/50/55/60/65 de Mana ",
-              "depois": "30/35/40/45/50 de Mana"
-            },
-            {
-              "atributo": "DISTÂNCIA DO ALVO DEPOIS DO AVANÇO",
-              "antes": "0",
-              "depois": "75"
-            }
-          ],
-          "img": "MonkeyKingNimbus.png"
-        },
-        {
-          "nome": "R - Ciclone",
-          "atributos": [
-            {
-              "atributo": "PROBLEMA EM DOBRO",
-              "rotulo": "novo",
-              "depois": "Wukong agora pode conjurar sua ultimate uma segunda vez dentro de 8s. A segunda conjuração pode arremessar inimigos ao ar novamente."
-            },
-            {
-              "atributo": "DURAÇÃO",
-              "antes": "1s",
-              "depois": "0,75s"
-            },
-            {
-              "atributo": "DURAÇÃO DO GIRO",
-              "antes": "4s",
-              "depois": "2s"
-            },
-            {
-              "atributo": "DANO POR SEGUNDO",
-              "antes": "20 - 200 (+1,1 de Dano de Ataque total)",
-              "depois": " 4% - 8% da Vida máxima (+1,1 de Dano de Ataque total)"
-            },
-            {
-              "atributo": "VELOCIDADE DE MOVIMENTO DO GIRO",
-              "antes": "5% - 40% (com base na duração do giro)",
-              "depois": "20%"
-            },
-            {
-              "atributo": "CANCELAMENTO DO GIRO",
-              "antes": "Depois de 1s",
-              "depois": "Depois de 0,5s"
-            },
-            {
-              "atributo": "FREQUÊNCIA DE CICLO DE DANO",
-              "antes": "0,5s",
-              "depois": "0,25s (cada ciclo de dano agora aplica Conquistador)"
-            },
-            {
-              "atributo": "DISTÂNCIA ATÉ O ALVO ENQUANTO GIRA",
-              "antes": "175",
-              "depois": "50 (isso fará com que Wukong fique mais próximo do alvo)"
-            },
-            {
-              "atributo": "MACAQUINHO COM GIRATÓRIA NO SEU QUADRADO",
-              "rotulo": "novo",
-              "depois": "Wukong agora pode conjurar outras habilidades para cancelar a ultimate, parando de girar."
-            },
-            {
-              "atributo": "GIRANDO, GIRANDO",
-              "depois": "A duração da Velocidade de Ataque adicional de E - Resplendor das Nuvens é restaurada enquanto gira."
-            },
-            {
-              "atributo": "QUALIDADE DE VIDA",
-              "depois": "Temporizador adicionado ao ícone da habilidade para mostrar quanto tempo de giro ainda resta e se ainda é possível conjurar a habilidade novamente antes que ela entre em Tempo de Recarga."
-            }
-          ],
-          "img": "MonkeyKingSpinToWin.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Xerath",
-      "img": "Xerath.png",
-      "mod": "Amplificação de dano no centro do W aumentada. Dano do R por disparo aumentado nos últimos níveis. ",
-      "nota": "Fortaleceremos as habilidades do Xerath que exigem mais precisão para recompensar quem sabe mirar direitinho.",
-      "habilidades": [
-        {
-          "nome": "W - Olho da Destruição",
-          "atributos": [
-            {
-              "atributo": "AMPLIFICAÇÃO DE DANO NO CENTRO",
-              "antes": "50% de amplificação",
-              "depois": "66,7% de amplificação"
-            }
-          ],
-          "img": "XerathArcaneBarrage2.png"
-        },
-        {
-          "nome": "R - Ritual Arcano",
-          "atributos": [
-            {
-              "atributo": "DANO POR DISPARO",
-              "antes": "200/240/280 (+0,43 de Poder de Habilidade)",
-              "depois": "200/250/300 (+0,45 de Poder de Habilidade)"
-            }
-          ],
-          "img": "XerathLocusOfPower2.png"
-        }
-      ]
+     "nome": "Crescendum, o Chakram ",
+     "atributos": [
+      {
+       "atributo": "DANO DO ATAQUE BÁSICO FORTALECIDO DO CHAKRAM",
+       "antes": "30% - 173% do Dano de Ataque total",
+       "depois": "24% - 164% do Dano de Ataque total"
+      }
+     ],
+     "img": "Q_Crescendum.jpg"
     }
-  ],
-  "runes": [],
-  "fixes": [
+   ]
+  },
+  {
+   "campeao": "Darius",
+   "img": "Darius.png",
+   "mod": "Dano adicional do W reduzido e custo aumentado. Custo do E aumentado e agora é reduzido a cada nível. ",
+   "nota": "Darius está passando dos limites depois de todas as alterações na rota superior e nos itens para lutadores. O objetivo desse leve enfraquecimento é fazer de Apreender uma decisão estratégica ainda mais importante.",
+   "habilidades": [
     {
-      "note": "Modais no LCU permitirão que você clique fora do modal para fechá-lo (em vez de exigirem um clique no botão de X)."
+     "nome": "W - Ataque Mutilador",
+     "atributos": [
+      {
+       "atributo": "DANO FÍSICO ADICIONAL",
+       "antes": "50/55/60/65/70% do Dano de Ataque total",
+       "depois": "40/45/50/55/60% do Dano de Ataque total"
+      },
+      {
+       "atributo": "CUSTO",
+       "antes": "30 de Mana",
+       "depois": "40 de Mana"
+      }
+     ],
+     "img": "DariusNoxianTacticsONH.png"
     },
     {
-      "note": "Rek'Sai deixa de receber imunidade contra CG por 3s depois de saltar com R - Investida do Vazio em clones."
-    },
-    {
-      "note": "Ao tentar conjurar o E - Chuva de Disparos da Miss Fortune, o Q - Esfera Negra da Syndra ou o E - Chuva de Flechas do Varus fora do alcance máximo imediatamente após utilizar Flash, a posição da habilidade será devidamente atualizada e a conjuração utilizará o novo alcance máximo."
-    },
-    {
-      "note": "Utilizar um Feitiço de Invocador para ativar o Manto de Nimbus deixará de redefinir qualquer animação de ataque básico em andamento."
-    },
-    {
-      "note": "Ao ser suprimida pelo R - Hora do Show do Sett, LeBlanc não retornará para a marca do seu W - Distorção e sofrerá a duração correta do CG."
-    },
-    {
-      "note": "Gangplank agora receberá o número correto de ouro adicional ou Serpentes de Prata do Q - Negociarrr se o relâmpago energizado da Faca de Statikk abater um alvo."
-    },
-    {
-      "note": "O R - Reino da Morte do Mordekaiser deixa de causar um dano adicional de 10% da Vida máxima do alvo ao ser conjurado em um alvo com Vida cheia."
-    },
-    {
-      "note": "Vampirismo universal e Vampirismo Mágico agora concedem o valor de cura correto, mesmo se o alvo estiver com escudo."
-    },
-    {
-      "note": "A Faixa de Fluxo de Mana agora é acionada corretamente quando um Campeão inimigo é atingido por uma habilidade."
-    },
-    {
-      "note": "Graves agora causa a quantidade correta de dano ao atacar um alvo com um ataque básico Energizado no alcance máximo (Efeito Energizado do Canhão Fumegante)."
-    },
-    {
-      "note": "Os aprimoramentos do Emote de Maestria ao completar conjuntos de Eternos (chegar ao marco 15) agora devem ser concedidos corretamente."
-    },
-    {
-      "note": "O Eterno \"Assalta-Pirata\" agora rastreia o valor correto de ouro obtido por dano indireto do Q - Negociarrr (ex.: explosões em cadeia de barris)."
-    },
-    {
-      "note": "As notificações de Marco dos Eternos deixarão de desaparecer rapidamente se o jogador entrar em combate logo que elas aparecerem."
-    },
-    {
-      "note": "As notificações de Marco dos Eternos inimigos não aparecerão quando a opção \"Apenas próprio e equipe\" for selecionada nas Configurações - Em Jogo - Interface."
-    },
-    {
-      "note": "As configurações de exibição de Marco dos Eternos agora devem continuar no cliente entre uma sessão e outra."
-    },
-    {
-      "note": "Os Marcos dos Eternos agora serão exibidos corretamente depois que um jogador sair de combate se a ação que contribui para o Eterno tiver que colocar o jogador em combate."
-    },
-    {
-      "note": "O progresso dentro de jogo dos Marcos de Eternos agora será exibido corretamente no cliente."
+     "nome": "E - Apreender",
+     "atributos": [
+      {
+       "atributo": "CUSTO",
+       "antes": "45 de Mana",
+       "depois": "70/60/50/40/30 de Mana"
+      }
+     ],
+     "img": "DariusAxeGrabCone.png"
     }
-  ]
+   ]
+  },
+  {
+   "campeao": "Draven",
+   "img": "Draven.png",
+   "mod": "Velocidade de Movimento decadente do W aumentada. ",
+   "nota": "Fortaleceremos o Draven para que os jogadores mais experientes possam aproveitá-lo nas partidas de alto nível de habilidade.",
+   "habilidades": [
+    {
+     "nome": "W - Adrenalina",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO DECADENTE",
+       "antes": "40/45/50/55/60%",
+       "depois": "50/55/60/65/70%"
+      }
+     ],
+     "img": "DravenFury.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Garen",
+   "img": "Garen.png",
+   "mod": "Crescimento de Resistência Mágica base reduzido. Multiplicador de Acerto Crítico do E reduzido. ",
+   "nota": "Atualmente, Garen está com grande diversidade de itemização, mas ainda não chegou onde queríamos. Vamos enfraquecer alguns de seus atributos para seguirmos com a tendência de itemizações de dano. A Espada de Demacia anda bem forte...",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "CRESCIMENTO DE RESISTÊNCIA MÁGICA",
+       "antes": "1,25",
+       "depois": "0,75"
+      }
+     ]
+    },
+    {
+     "nome": "E - Julgamento",
+     "atributos": [
+      {
+       "atributo": "MULTIPLICADOR DE ACERTO CRÍTICO",
+       "antes": "50%",
+       "depois": "33%"
+      }
+     ],
+     "img": "GarenE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Hecarim",
+   "img": "Hecarim.png",
+   "mod": "Duração do temor do R aumentada.",
+   "nota": "Hecarim agora pode se arriscar mais com iniciações de alcance máximo.",
+   "habilidades": [
+    {
+     "nome": "R - Massacre das Sombras",
+     "atributos": [
+      {
+       "atributo": "DURAÇÃO DO TEMOR",
+       "antes": "0,75s - 1,5s (com base na distância percorrida)",
+       "depois": "0,75s - 2s (com base na distância percorrida)"
+      }
+     ],
+     "img": "HecarimUlt.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Kayn",
+   "img": "Kayn.png",
+   "mod": "Recebimento de orbes da Passiva aumentado no meio de partida.",
+   "nota": "Na última atualização, suavizamos o recebimento de orbes do Kayn, mas agora sua transformação está acontecendo mais tarde. Faremos com que ele se transforme próximo ao tempo de antigamente.",
+   "habilidades": [
+    {
+     "nome": "Passiva - A Foice Darkin",
+     "atributos": [
+      {
+       "atributo": "RECEBIMENTO DE ORBES",
+       "depois": "Aos 10min - 13min de partida, Kayn receberá 15% a mais de orbes, aumentando ao longo da duração."
+      }
+     ],
+     "img": "Kayn_Passive_Primary.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Kindred",
+   "img": "Kindred.png",
+   "mod": "Crescimento de Dano de Ataque base e Regeneração de Mana aumentados. Restauração de Vida do W aumentada. Cura do R aumentada.",
+   "nota": "Os Kindred nem se lembram do gosto de um fortalecimento. Como estão fraquinhos já faz algum tempo, vamos alimentá-los com cura e escalamento.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "CRESCIMENTO DE DANO DE ATAQUE",
+       "antes": "2,26",
+       "depois": "2,5"
+      },
+      {
+       "atributo": "REGENERAÇÃO DE MANA",
+       "antes": "6,972",
+       "depois": "7"
+      }
+     ]
+    },
+    {
+     "nome": "W - Frenesi do Lobo",
+     "atributos": [
+      {
+       "atributo": "RESTAURAÇÃO DE VIDA",
+       "antes": "32 - 100 (nos níveis 1 a 18) com base na Vida perdida",
+       "depois": "49 - 100 (nos níveis 1 a 18) com base na Vida perdida"
+      }
+     ],
+     "img": "KindredW.png"
+    },
+    {
+     "nome": "R - Refúgio da Ovelha",
+     "atributos": [
+      {
+       "atributo": "CURA",
+       "antes": "200/250/300",
+       "depois": "250/325/400"
+      }
+     ],
+     "img": "KindredR.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Morgana",
+   "img": "Morgana.png",
+   "mod": "Velocidade de Movimento base aumentada. Escudo do E aumentado nos primeiros níveis.",
+   "nota": "Fortalecimentos direcionados à função de suporte, pois ela está bem balanceada na rota do meio.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "330",
+       "depois": "335"
+      }
+     ]
+    },
+    {
+     "nome": "E - Escudo Negro",
+     "atributos": [
+      {
+       "atributo": "ESCUDO",
+       "antes": "60/120/180/240/300",
+       "depois": "80/135/190/245/300"
+      }
+     ],
+     "img": "MorganaE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Ryze",
+   "img": "Ryze.png",
+   "mod": "Crescimento de Regeneração de Mana base aumentado. Dano do W aumentado nos últimos níveis. ",
+   "nota": "Queremos gerenciar a presença do Ryze no cenário profissional e garantir que ele não domine as escolhas dos jogadores, mas seu fim de jogo ainda não está tão forte. Vamos consolidá-lo como um dos \"reis do nível 18\" para que ele possa aproveitar as partidas de maior duração.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "CRESCIMENTO DE REGENERAÇÃO DE MANA",
+       "antes": "0,8",
+       "depois": "1"
+      }
+     ]
+    },
+    {
+     "nome": "W - Prisão de Runa",
+     "atributos": [
+      {
+       "atributo": "DANO",
+       "antes": "80/100/120/140/160",
+       "depois": "80/110/140/170/200"
+      }
+     ],
+     "img": "RyzeW.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Senna",
+   "img": "Senna.png",
+   "mod": "Dano de Ataque por alma da Passiva reduzido e Tempo de Recarga do efeito Névoa agora escala.",
+   "nota": "No momento, a Senna suporte está forte demais, principalmente quando enfrenta tanques defensivos. Reduziremos o valor e o ritmo das Almas para que ela não agrida seus oponentes constantemente, algo que consegue fazer com uma frequência maior ainda quando conta com um tanque para protegê-la.",
+   "habilidades": [
+    {
+     "nome": "Passiva - Absolvição",
+     "atributos": [
+      {
+       "atributo": "DANO DE ATAQUE POR ALMA",
+       "antes": "1",
+       "depois": "0,75"
+      },
+      {
+       "atributo": "TEMPO DE RECARGA DE INATO - ALMA ENFRAQUECIDA",
+       "antes": "4s",
+       "depois": "6/5/4s (nos níveis 1/6/11)"
+      }
+     ],
+     "img": "Senna_Passive.Senna.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Shaco",
+   "img": "Shaco.png",
+   "mod": "Dano do ataque básico do clone reduzido. ",
+   "nota": "A itemização de DdA está bem forte no Shaco, então vamos enfraquecê-lo de leve.",
+   "habilidades": [
+    {
+     "nome": "R - Alucinação",
+     "atributos": [
+      {
+       "atributo": "DANO DO ATAQUE BÁSICO DO CLONE",
+       "antes": "75% do Dano de Ataque total",
+       "depois": "60% do Dano de Ataque total"
+      }
+     ],
+     "img": "HallucinateFull.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Soraka",
+   "img": "Soraka.png",
+   "mod": "Cura de Rejuvenescimento e Velocidade de Movimento adicional do Q aumentadas.",
+   "nota": "Agora que a maldição da Soraka na rota superior não ameaça mais nosso universo, devolveremos parte do poder de Chamado Estelar.",
+   "habilidades": [
+    {
+     "nome": "Q - Chamado Estelar",
+     "atributos": [
+      {
+       "atributo": "CURA TOTAL DE REJUVENESCIMENTO",
+       "antes": "40/50/60/70/80 (+0,3 de Poder de Habilidade)",
+       "depois": "50/60/70/80/90 (+0,3 de Poder de Habilidade)"
+      },
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL",
+       "antes": "10% - 20%",
+       "depois": "15% - 25%"
+      }
+     ],
+     "img": "SorakaQ.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Twisted Fate",
+   "img": "TwistedFate.png",
+   "mod": "Multiplicadores de PdH da carta azul e da carta vermelha aumentados. ",
+   "nota": "Com essa mudança, talvez uma carta errada no fim de jogo não seja tão errada assim.",
+   "habilidades": [
+    {
+     "nome": "W - Escolha uma Carta",
+     "atributos": [
+      {
+       "atributo": "MULTIPLICADOR DE PDH DA CARTA AZUL",
+       "antes": "0,5 de Poder de Habilidade",
+       "depois": "0,9 de Poder de Habilidade"
+      },
+      {
+       "atributo": "MULTIPLICADOR DE PDH DA CARTA VERMELHA",
+       "antes": "0,5 de Poder de Habilidade",
+       "depois": "0,6 de Poder de Habilidade"
+      }
+     ],
+     "img": "PickACard.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Urgot",
+   "img": "Urgot.png",
+   "mod": "Duração da Redução de Velocidade do Q aumentada. Duração do atordoamento do E aumentada. ",
+   "nota": "Com Expurgar sendo a principal habilidade a ser maximizada primeiro, as outras habilidades podem não ser tão satisfatórias. Esses pequenos fortalecimentos no potencial de CG devem aumentar a confiabilidade do combo, mesmo através de Tenacidade, e manter o Urgotão bem fortão.",
+   "habilidades": [
+    {
+     "nome": "Q - Carga Corrosiva",
+     "atributos": [
+      {
+       "atributo": "DURAÇÃO DA REDUÇÃO DE VELOCIDADE",
+       "antes": "1s",
+       "depois": "1,25s"
+      }
+     ],
+     "img": "UrgotQ.png"
+    },
+    {
+     "nome": "E - Desdém",
+     "atributos": [
+      {
+       "atributo": "DURAÇÃO DO ATORDOAMENTO",
+       "antes": "0,75s",
+       "depois": "1s"
+      }
+     ],
+     "img": "UrgotE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Veigar",
+   "img": "Veigar.png",
+   "mod": "DdA base, crescimento de DdA e Armadura aumentados. Dano base do Q aumentado.",
+   "nota": "Uma ajudinha para o nosso vilãozinho (ele é mau, parem de rir!).",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "DANO DE ATAQUE",
+       "antes": "50,71",
+       "depois": "52"
+      },
+      {
+       "atributo": "CRESCIMENTO DE DANO DE ATAQUE",
+       "antes": "2,625",
+       "depois": "2,7"
+      },
+      {
+       "atributo": "ARMADURA",
+       "antes": "22,55",
+       "depois": "23"
+      }
+     ]
+    },
+    {
+     "nome": "Q - Golpe Maligno",
+     "atributos": [
+      {
+       "atributo": "DANO BASE",
+       "antes": "70/110/150/190/230",
+       "depois": "80/120/160/200/240"
+      }
+     ],
+     "img": "VeigarBalefulStrike.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Wukong",
+   "img": "MonkeyKing.png",
+   "mod": "A Passiva aumenta atributos com base no número de Campeões sendo enfrentados, em vez de proximidade. W agora tem um avanço e um chamariz que imita ataques básicos e habilidades. R agora pode ser conjurado duas vezes. ",
+   "nota": "Um dos nossos principais objetivos com essa atualização é dar ao Wukong o estilo de jogo trapaceiro que ele não tinha. Com isso em mente, o padrão de combate terá mais versatilidade e maneiras de superar os oponentes. Esse macaco finalmente conseguirá enganar algumas pessoas em vez de simplesmente explodi-las com seu bastão. Também queremos potencializar as itemizações de lutador, rota superior e selva dele, já que as itemizações de rota do meio como assassino (apesar de fortes) não são satisfatórias (seja jogando com elas ou as enfrentando). Ah, já sabemos que isso está planejado faz mais de 200 anos, mas só ficou pronto agora.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "RESISTÊNCIA MÁGICA",
+       "antes": "32,1",
+       "depois": "28"
+      },
+      {
+       "atributo": "VIDA",
+       "antes": "577,8",
+       "depois": "540"
+      },
+      {
+       "atributo": "MANA",
+       "antes": "265",
+       "depois": "300"
+      },
+      {
+       "atributo": "CRESCIMENTO DE MANA",
+       "antes": "38",
+       "depois": "45"
+      },
+      {
+       "atributo": "ITENS RECOMENDADOS",
+       "depois": "Foram atualizados para refletir a força das itemizações de lutador no Wukong."
+      }
+     ]
+    },
+    {
+     "nome": "Passivo - Pele de Pedra",
+     "atributos": [
+      {
+       "atributo": "ARMADURA",
+       "antes": "4/6/8 (nos níveis 1/7/13) a cada Campeão próximo",
+       "depois": "5 - 11 (nos níveis 1 a 18) a cada Campeão próximo"
+      },
+      {
+       "atributo": "RESISTÊNCIA MÁGICA",
+       "rotulo": "removido",
+       "depois": "Wukong deixa de receber 4/6/8 (nos níveis 1/7/13) de Resistência Mágica adicional a cada Campeão próximo."
+      },
+      {
+       "atributo": "REGENERAÇÃO DE VIDA",
+       "rotulo": "novo",
+       "depois": "Agora, concede 0,5% de Regeneração de Vida máxima a cada 5s."
+      },
+      {
+       "atributo": "ESPELHO, ESPELHO MEU",
+       "rotulo": "novo",
+       "depois": "Efeitos são aumentados em 62,5% por 5s toda vez que Wukong e/ou seu chamariz atingirem um Campeão inimigo ou monstro (acumulando até 8 vezes, com um total de 500%)"
+      }
+     ],
+     "img": "MonkeyKingStoneSkin.png"
+    },
+    {
+     "nome": "Q - Golpe Destruidor",
+     "atributos": [
+      {
+       "atributo": "DANO ADICIONAL DE ATAQUE BÁSICO",
+       "antes": "10/40/70/100/130 (+0/0,1/0,2/0,3/0,4 de Dano de Ataque total)",
+       "depois": "30/55/80/105/130 (+0,5 de Dano de Ataque adicional)"
+      },
+      {
+       "atributo": "ALCANCE ADICIONAL",
+       "antes": "125",
+       "depois": "75/100/125/150/175"
+      },
+      {
+       "atributo": "ATAQUE RÁPIDO",
+       "rotulo": "novo",
+       "depois": "Tempo de conjuração agora escala com a Velocidade de Ataque do Wukong."
+      },
+      {
+       "atributo": "QUALIDADE DE VIDA",
+       "depois": "Temporizador adicionado ao ícone da habilidade para mostrar quanto tempo ainda resta para usar o ataque fortalecido."
+      },
+      {
+       "atributo": "RTR DO CHAMARIZ",
+       "rotulo": "novo",
+       "depois": "Sempre que Wukong ou seu chamariz causarem dano com ataques básicos ou habilidades, o Tempo de Recarga do Q - Golpe Destruidor é reduzido em 0,5s."
+      },
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "9/8/7/6/5s",
+       "depois": "9/8,5/8/7,5/7s"
+      }
+     ],
+     "img": "MonkeyKingDoubleAttack.png"
+    },
+    {
+     "nome": "W - Guerreiro Trapaceiro",
+     "atributos": [
+      {
+       "atributo": "CADA MACACO NA SUA ROTA",
+       "rotulo": "novo",
+       "depois": "Adicionado um avanço com 300 de alcance que não pode atravessar paredes."
+      },
+      {
+       "atributo": "DURAÇÃO DA FURTIVIDADE",
+       "antes": "1,5s",
+       "depois": "1s"
+      },
+      {
+       "atributo": "PUF!",
+       "rotulo": "removido",
+       "depois": "O chamariz de Wukong deixa de causar Dano Mágico em área de ação antes de desaparecer."
+      },
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "18/16/14/12/10s",
+       "depois": "20/19/18/17/16s"
+      },
+      {
+       "atributo": "CUSTO",
+       "antes": "50/55/60/65/70 de Mana",
+       "depois": "60 de Mana"
+      },
+      {
+       "atributo": "REDUÇÃO DE DANO DO CHAMARIZ",
+       "rotulo": "novo",
+       "depois": "O chamariz do Wukong agora imita seus ataques e ultimate, mas causa 50/55/60/65/70% de dano."
+      },
+      {
+       "atributo": "ATAQUES BÁSICOS DO CHAMARIZ",
+       "rotulo": "novo",
+       "depois": "O chamariz tentará atacar os inimigos que Wukong atacou recentemente."
+      },
+      {
+       "atributo": "Q - GOLPE DESTRUIDOR DO CHAMARIZ",
+       "rotulo": "novo",
+       "depois": "O próximo ataque do chamariz é fortalecido."
+      },
+      {
+       "atributo": "E - RESPLENDOR DAS NUVENS DO CHAMARIZ",
+       "rotulo": "novo",
+       "depois": "O chamariz recebe Velocidade de Ataque adicional."
+      },
+      {
+       "atributo": "R - CICLONE DO CHAMARIZ",
+       "rotulo": "novo",
+       "depois": "O chamariz começará a girar e arremessará ao ar inimigos que ainda não foram arremessados na conjuração inicial da ultimate."
+      }
+     ],
+     "img": "MonkeyKingDecoy.png",
+     "rotulo": "atualizado"
+    },
+    {
+     "nome": "E - Resplendor das Nuvens",
+     "atributos": [
+      {
+       "atributo": "DANO",
+       "antes": " 65/100/135/170/205 (+0,8 de Dano de Ataque adicional) de Dano Físico",
+       "depois": "80/120/160/200/240 (+0,8 de Poder de Habilidade) de Dano Mágico"
+      },
+      {
+       "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
+       "antes": "30/35/40/45/50%",
+       "depois": "40/45/50/55/60%"
+      },
+      {
+       "atributo": "DURAÇÃO DO EFEITO DE VELOCIDADE DE ATAQUE",
+       "antes": "4s",
+       "depois": "5s"
+      },
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "8s",
+       "depois": "10/9,5/9/8,5/8s"
+      },
+      {
+       "atributo": "CUSTO",
+       "antes": "45/50/55/60/65 de Mana ",
+       "depois": "30/35/40/45/50 de Mana"
+      },
+      {
+       "atributo": "DISTÂNCIA DO ALVO DEPOIS DO AVANÇO",
+       "antes": "0",
+       "depois": "75"
+      }
+     ],
+     "img": "MonkeyKingNimbus.png"
+    },
+    {
+     "nome": "R - Ciclone",
+     "atributos": [
+      {
+       "atributo": "PROBLEMA EM DOBRO",
+       "rotulo": "novo",
+       "depois": "Wukong agora pode conjurar sua ultimate uma segunda vez dentro de 8s. A segunda conjuração pode arremessar inimigos ao ar novamente."
+      },
+      {
+       "atributo": "DURAÇÃO",
+       "antes": "1s",
+       "depois": "0,75s"
+      },
+      {
+       "atributo": "DURAÇÃO DO GIRO",
+       "antes": "4s",
+       "depois": "2s"
+      },
+      {
+       "atributo": "DANO POR SEGUNDO",
+       "antes": "20 - 200 (+1,1 de Dano de Ataque total)",
+       "depois": " 4% - 8% da Vida máxima (+1,1 de Dano de Ataque total)"
+      },
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO DO GIRO",
+       "antes": "5% - 40% (com base na duração do giro)",
+       "depois": "20%"
+      },
+      {
+       "atributo": "CANCELAMENTO DO GIRO",
+       "antes": "Depois de 1s",
+       "depois": "Depois de 0,5s"
+      },
+      {
+       "atributo": "FREQUÊNCIA DE CICLO DE DANO",
+       "antes": "0,5s",
+       "depois": "0,25s (cada ciclo de dano agora aplica Conquistador)"
+      },
+      {
+       "atributo": "DISTÂNCIA ATÉ O ALVO ENQUANTO GIRA",
+       "antes": "175",
+       "depois": "50 (isso fará com que Wukong fique mais próximo do alvo)"
+      },
+      {
+       "atributo": "MACAQUINHO COM GIRATÓRIA NO SEU QUADRADO",
+       "rotulo": "novo",
+       "depois": "Wukong agora pode conjurar outras habilidades para cancelar a ultimate, parando de girar."
+      },
+      {
+       "atributo": "GIRANDO, GIRANDO",
+       "depois": "A duração da Velocidade de Ataque adicional de E - Resplendor das Nuvens é restaurada enquanto gira."
+      },
+      {
+       "atributo": "QUALIDADE DE VIDA",
+       "depois": "Temporizador adicionado ao ícone da habilidade para mostrar quanto tempo de giro ainda resta e se ainda é possível conjurar a habilidade novamente antes que ela entre em Tempo de Recarga."
+      }
+     ],
+     "img": "MonkeyKingSpinToWin.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Xerath",
+   "img": "Xerath.png",
+   "mod": "Amplificação de dano no centro do W aumentada. Dano do R por disparo aumentado nos últimos níveis. ",
+   "nota": "Fortaleceremos as habilidades do Xerath que exigem mais precisão para recompensar quem sabe mirar direitinho.",
+   "habilidades": [
+    {
+     "nome": "W - Olho da Destruição",
+     "atributos": [
+      {
+       "atributo": "AMPLIFICAÇÃO DE DANO NO CENTRO",
+       "antes": "50% de amplificação",
+       "depois": "66,7% de amplificação"
+      }
+     ],
+     "img": "XerathArcaneBarrage2.png"
+    },
+    {
+     "nome": "R - Ritual Arcano",
+     "atributos": [
+      {
+       "atributo": "DANO POR DISPARO",
+       "antes": "200/240/280 (+0,43 de Poder de Habilidade)",
+       "depois": "200/250/300 (+0,45 de Poder de Habilidade)"
+      }
+     ],
+     "img": "XerathLocusOfPower2.png"
+    }
+   ]
+  }
+ ],
+ "runes": [],
+ "fixes": [
+  {
+   "note": "Modais no LCU permitirão que você clique fora do modal para fechá-lo (em vez de exigirem um clique no botão de X)."
+  },
+  {
+   "note": "Rek'Sai deixa de receber imunidade contra CG por 3s depois de saltar com R - Investida do Vazio em clones."
+  },
+  {
+   "note": "Ao tentar conjurar o E - Chuva de Disparos da Miss Fortune, o Q - Esfera Negra da Syndra ou o E - Chuva de Flechas do Varus fora do alcance máximo imediatamente após utilizar Flash, a posição da habilidade será devidamente atualizada e a conjuração utilizará o novo alcance máximo."
+  },
+  {
+   "note": "Utilizar um Feitiço de Invocador para ativar o Manto de Nimbus deixará de redefinir qualquer animação de ataque básico em andamento."
+  },
+  {
+   "note": "Ao ser suprimida pelo R - Hora do Show do Sett, LeBlanc não retornará para a marca do seu W - Distorção e sofrerá a duração correta do CG."
+  },
+  {
+   "note": "Gangplank agora receberá o número correto de ouro adicional ou Serpentes de Prata do Q - Negociarrr se o relâmpago energizado da Faca de Statikk abater um alvo."
+  },
+  {
+   "note": "O R - Reino da Morte do Mordekaiser deixa de causar um dano adicional de 10% da Vida máxima do alvo ao ser conjurado em um alvo com Vida cheia."
+  },
+  {
+   "note": "Vampirismo universal e Vampirismo Mágico agora concedem o valor de cura correto, mesmo se o alvo estiver com escudo."
+  },
+  {
+   "note": "A Faixa de Fluxo de Mana agora é acionada corretamente quando um Campeão inimigo é atingido por uma habilidade."
+  },
+  {
+   "note": "Graves agora causa a quantidade correta de dano ao atacar um alvo com um ataque básico Energizado no alcance máximo (Efeito Energizado do Canhão Fumegante)."
+  },
+  {
+   "note": "Os aprimoramentos do Emote de Maestria ao completar conjuntos de Eternos (chegar ao marco 15) agora devem ser concedidos corretamente."
+  },
+  {
+   "note": "O Eterno \"Assalta-Pirata\" agora rastreia o valor correto de ouro obtido por dano indireto do Q - Negociarrr (ex.: explosões em cadeia de barris)."
+  },
+  {
+   "note": "As notificações de Marco dos Eternos deixarão de desaparecer rapidamente se o jogador entrar em combate logo que elas aparecerem."
+  },
+  {
+   "note": "As notificações de Marco dos Eternos inimigos não aparecerão quando a opção \"Apenas próprio e equipe\" for selecionada nas Configurações - Em Jogo - Interface."
+  },
+  {
+   "note": "As configurações de exibição de Marco dos Eternos agora devem continuar no cliente entre uma sessão e outra."
+  },
+  {
+   "note": "Os Marcos dos Eternos agora serão exibidos corretamente depois que um jogador sair de combate se a ação que contribui para o Eterno tiver que colocar o jogador em combate."
+  },
+  {
+   "note": "O progresso dentro de jogo dos Marcos de Eternos agora será exibido corretamente no cliente."
+  }
+ ]
 }

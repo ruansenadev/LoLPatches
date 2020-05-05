@@ -29,6 +29,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 	return data
 }) {
 	let SCRAP = {
+		title: "",
 		note: "",
 		ft: {},
 		champs: [],
@@ -45,6 +46,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 				let page = cheerio.load(data)
 				// create path for scrap data
 				let title = page('h1').text()
+				SCRAP.title = title
 				try {
 					folder = title.match(/\d+.\d*[a-z]*/)[0]
 				} catch (error) {

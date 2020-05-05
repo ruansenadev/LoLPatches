@@ -1,493 +1,494 @@
 {
-  "note": "Olá, leitores das Notas da Atualização. Querem fazer um contrato comigo? Estamos chegando à reta final! A 9.19 será a Atualização em que o Mundial será jogado, então as mudanças que realizaremos não devem agitar muito as coisas, mas encorajar a diversidade de Campeões e momentos divertidos durante o evento mais esperado do ano! Com isso em mente, nessa Atualização vamos fazer outra passagem pelo Aatrox e pela Akali especificamente, assim garantiremos que eles não dominem o meta por completo, já que a taxa de escolha deles permaneceu alta durante o cenário profissional ao longo do ano. A gente se vê em duas semanas! Mas se vocês quiserem entregar suas almas pelo bem do universo, podem me ligar a qualquer hora.",
-  "ft": {
-    "img": "Instagram_Patch_9_18_Infographic_1080x1080_cropped_por-BR.jpg",
-    "mod": "Rakan Guardião Estelar, Xayah Guardiã Estelar, Neeko Guardiã Estelar (além de sua Edição de Prestígio) e Zoe Guardiã Estelar estarão disponíveis em 12 de setembro de 2019."
+ "title": "Notas da Atualização 9.18",
+ "note": "Olá, leitores das Notas da Atualização. Querem fazer um contrato comigo? Estamos chegando à reta final! A 9.19 será a Atualização em que o Mundial será jogado, então as mudanças que realizaremos não devem agitar muito as coisas, mas encorajar a diversidade de Campeões e momentos divertidos durante o evento mais esperado do ano! Com isso em mente, nessa Atualização vamos fazer outra passagem pelo Aatrox e pela Akali especificamente, assim garantiremos que eles não dominem o meta por completo, já que a taxa de escolha deles permaneceu alta durante o cenário profissional ao longo do ano. A gente se vê em duas semanas! Mas se vocês quiserem entregar suas almas pelo bem do universo, podem me ligar a qualquer hora.",
+ "ft": {
+  "img": "Instagram_Patch_9_18_Infographic_1080x1080_cropped_por-BR.jpg",
+  "mod": "Rakan Guardião Estelar, Xayah Guardiã Estelar, Neeko Guardiã Estelar (além de sua Edição de Prestígio) e Zoe Guardiã Estelar estarão disponíveis em 12 de setembro de 2019."
+ },
+ "champs": [
+  {
+   "campeao": "Aatrox",
+   "img": "Aatrox.png",
+   "mod": "Passiva agora cura menos contra tropas. Dano do Q contra tropas reduzido e padronizado.",
+   "nota": "Aatrox ainda está se mostrando muito valioso no cenário profissional, por isso faremos mais algumas alterações nele. Estamos enfraquecendo sua sustentação e limpeza no final da fase de rotas (nível 7-11), assim ele terá menos flexibilidade nos duelos e ao atuar em múltiplas funções.",
+   "habilidades": [
+    {
+     "nome": "Passiva - Postura do Arauto da Morte",
+     "atributos": [
+      {
+       "atributo": "CURA",
+       "antes": "Cura adicional ao causar Dano Físico contra qualquer coisa",
+       "depois": "Cura em 25% do dano causado ao atingir tropas (cura contra outros alvos inalterada)"
+      }
+     ],
+     "img": "Aatrox_Passive.png"
+    },
+    {
+     "nome": "Q - A Espada Darkin",
+     "atributos": [
+      {
+       "atributo": "DANO CONTRA TROPAS",
+       "antes": "50-100% (níveis 1-18)",
+       "depois": "40% em todos os níveis"
+      }
+     ],
+     "img": "AatroxQ.png"
+    }
+   ]
   },
-  "champs": [
+  {
+   "campeao": "Akali",
+   "img": "Akali.png",
+   "mod": "Tempo de Recarga do R aumentado no início. Atordoamento do R1 removido. Dano base máximo do R2 reduzido nos primeiros níveis.",
+   "nota": "Similar ao Aatrox, focaremos nossas mudanças na presença da Akali no cenário profissional, principalmente limitando seu poder antes do pico no nível 11. Removeremos o atordoamento do R1 para aumentar as opções de contrajogadas e aumentar o número de Campeões que possam enfrentá-la. Achamos que isso será uma boa mudança pra ela a longo prazo.",
+   "habilidades": [
     {
-      "campeao": "Aatrox",
-      "img": "Aatrox.png",
-      "mod": "Passiva agora cura menos contra tropas. Dano do Q contra tropas reduzido e padronizado.",
-      "nota": "Aatrox ainda está se mostrando muito valioso no cenário profissional, por isso faremos mais algumas alterações nele. Estamos enfraquecendo sua sustentação e limpeza no final da fase de rotas (nível 7-11), assim ele terá menos flexibilidade nos duelos e ao atuar em múltiplas funções.",
-      "habilidades": [
-        {
-          "nome": "Passiva - Postura do Arauto da Morte",
-          "atributos": [
-            {
-              "atributo": "CURA",
-              "antes": "Cura adicional ao causar Dano Físico contra qualquer coisa",
-              "depois": "Cura em 25% do dano causado ao atingir tropas (cura contra outros alvos inalterada)"
-            }
-          ],
-          "img": "Aatrox_Passive.png"
-        },
-        {
-          "nome": "Q - A Espada Darkin",
-          "atributos": [
-            {
-              "atributo": "DANO CONTRA TROPAS",
-              "antes": "50-100% (níveis 1-18)",
-              "depois": "40% em todos os níveis"
-            }
-          ],
-          "img": "AatroxQ.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Akali",
-      "img": "Akali.png",
-      "mod": "Tempo de Recarga do R aumentado no início. Atordoamento do R1 removido. Dano base máximo do R2 reduzido nos primeiros níveis.",
-      "nota": "Similar ao Aatrox, focaremos nossas mudanças na presença da Akali no cenário profissional, principalmente limitando seu poder antes do pico no nível 11. Removeremos o atordoamento do R1 para aumentar as opções de contrajogadas e aumentar o número de Campeões que possam enfrentá-la. Achamos que isso será uma boa mudança pra ela a longo prazo.",
-      "habilidades": [
-        {
-          "nome": "R - Execução Perfeita",
-          "atributos": [
-            {
-              "atributo": " removidoATORDOAMENTO NO R1",
-              "depois": "Akali deixa de atordoar seus inimigos por 0,5s"
-            },
-            {
-              "atributo": "DANO MÁXIMO DO R2",
-              "antes": "255/450/645 (+0,9 de Poder de Habilidade)",
-              "depois": "195/420/645 (+0,9 de Poder de Habilidade)"
-            },
-            {
-              "atributo": "TEMPO DE RECARGA",
-              "antes": "120/110/100s",
-              "depois": "160/130/100s"
-            }
-          ],
-          "img": "AkaliR.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Annie",
-      "img": "Annie.png",
-      "mod": "E agora concede Velocidade de Movimento decadente; redução de dano reduzida; Tempo de Recarga aumentado.",
-      "nota": "Vamos dar à Annie um pouco de gingado na rota com um benefício adicional em seu E, assim ela poderá realizar mais jogadas sozinha.",
-      "habilidades": [
-        {
-          "nome": "E - Escudo Fundido",
-          "atributos": [
-            {
-              "atributo": "VELOCIDADE DE MOVIMENTO",
-              "rotulo": "novo",
-              "depois": "Annie recebe 25% + 1,5% por nível de Velocidade de Movimento adicional que decai ao longo de 1,5s"
-            },
-            {
-              "atributo": "REDUÇÃO DE DANO",
-              "antes": "16/22/28/34/40%",
-              "depois": "10/13/16/19/22%"
-            },
-            {
-              "atributo": "TEMPO DE RECARGA",
-              "antes": "10s em todos os níveis",
-              "depois": "15s em todos os níveis"
-            }
-          ],
-          "img": "AnnieE.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Aurelion Sol",
-      "img": "AurelionSol.png",
-      "mod": "Vida base aumentada.",
-      "nota": "Dando continuidade às mudanças da 9.17, realizaremos um pequeno ajuste agora que o início de jogo do Aurelion Sol tem mais contrajogadas.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "VIDA",
-              "antes": "510",
-              "depois": "575"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "campeao": "Caitlyn",
-      "img": "Caitlyn.png",
-      "mod": "Dano de Ataque base aumentado.",
-      "nota": "Aumentando um pouco o poder da Caitlyn na rota no início de jogo para que ela possa punir aqueles que dependem de escalamento.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "DANO DE ATAQUE",
-              "antes": "60",
-              "depois": "62"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "campeao": "Ekko",
-      "img": "Ekko.png",
-      "mod": "Custo do W reduzido; duração do atordoamento aumentada.",
-      "nota": "Nossos fortalecimentos no Ekko na 9.16 não fizeram o que esperávamos. Vamos colocá-lo em um estilo de jogo mais agressivo com grande compensação e baixo custo.",
-      "habilidades": [
-        {
-          "nome": "W - Convergência Paralela",
-          "atributos": [
-            {
-              "atributo": "CUSTO",
-              "antes": "50/55/60/65/70 de Mana",
-              "depois": "30/35/40/45/50 de Mana"
-            },
-            {
-              "atributo": "DURAÇÃO DO ATORDOAMENTO",
-              "antes": "1,75s",
-              "depois": "2,25s"
-            }
-          ],
-          "img": "EkkoW.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Evelynn",
-      "img": "Evelynn.png",
-      "mod": "Amplificador do dano fortalecido do R e dano máximo fortalecido aumentados.",
-      "nota": "Evelynn não está exatamente fraca no momento, mas queremos que ela seja mais confiável em abater seus alvos se conseguir chegar no limiar de execução.",
-      "habilidades": [
-        {
-          "nome": "R - Última Carícia",
-          "atributos": [
-            {
-              "atributo": "AMPLIFICADOR DO DANO FORTALECIDO",
-              "antes": "100% contra inimigos abaixo de 30% da Vida máxima",
-              "depois": "140% contra inimigos abaixo de 30% da Vida máxima"
-            },
-            {
-              "atributo": "DANO FORTALECIDO",
-              "antes": "250/500/750 (+1,5 de Poder de Habilidade)",
-              "depois": "300/600/900 (+1,8 de Poder de Habilidade)"
-            }
-          ],
-          "img": "EvelynnR.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Jhin",
-      "img": "Jhin.png",
-      "mod": "Dano de Ataque base aumentado.",
-      "nota": "Daremos uma forcinha para o Jhin conseguir ser um melhor agressor contra seus oponentes de rota mais gananciosos.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "DANO DE ATAQUE",
-              "antes": "57",
-              "depois": "59"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "campeao": "Kai'Sa",
-      "img": "Kaisa.png",
-      "mod": "Velocidade de Ataque adicional do E reduzida nos últimos níveis.",
-      "nota": "Reduziremos o dano consistente da Kai'Sa para que ela esteja mais disposta a assassinar alvos importantes em vez de acabar com os inimigos um de cada vez.",
-      "habilidades": [
-        {
-          "nome": "E - Sobrecarga",
-          "atributos": [
-            {
-              "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
-              "antes": "40/50/60/70/80%",
-              "depois": "40/45/50/55/60%"
-            }
-          ],
-          "img": "KaisaE.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Kayle",
-      "img": "Kayle.png",
-      "mod": "Dano base passivo do E aumentado.",
-      "nota": "Estamos satisfeitos com as mudanças que realizamos na Kayle durante a 9.17, mas ela acabou ficando um pouco mais fraca do que o previsto. Vamos fortalecer o dano passivo do E para tornar seus ataques básicos mais fortes ao longo da partida.",
-      "habilidades": [
-        {
-          "nome": "E - Lâmina de Fogo Estelar",
-          "atributos": [
-            {
-              "atributo": "DANO BASE PASSIVO",
-              "antes": "10/15/20/25/30",
-              "depois": "15/20/25/30/35"
-            }
-          ],
-          "img": "KayleE.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Lee Sin",
-      "img": "LeeSin.png",
-      "mod": "Vida base e Dano de Ataque aumentados. Dano do R aumentado.",
-      "nota": "Permitiremos que Lee Sin explore melhor jogadas de sucesso no início de jogo com ultimates mais poderosas, causando um maior impacto.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "VIDA",
-              "antes": "570,8",
-              "depois": "575"
-            },
-            {
-              "atributo": "DANO DE ATAQUE",
-              "antes": "69,2",
-              "depois": "70"
-            }
-          ]
-        },
-        {
-          "nome": "R - Fúria do Dragão",
-          "atributos": [
-            {
-              "atributo": "DANO",
-              "antes": "150/375/600",
-              "depois": "175/400/625"
-            }
-          ],
-          "img": "BlindMonkRKick.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Miss Fortune",
-      "img": "MissFortune.png",
-      "mod": "Redução de velocidade do E aumentada nos primeiros níveis.",
-      "nota": "Quase não vale a pena conjurar o E da Miss Fortune nos primeiros níveis, considerando o custo de Mana, então vamos fortalecê-lo nos níveis iniciais.",
-      "habilidades": [
-        {
-          "nome": "E - Chuva de Disparos",
-          "atributos": [
-            {
-              "atributo": "REDUÇÃO DE VELOCIDADE",
-              "antes": "28/36/44/52/60%",
-              "depois": "40/45/50/55/60%"
-            }
-          ],
-          "img": "MissFortuneScattershot.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Nunu e Willump",
-      "img": "Nunu.png",
-      "mod": "Atributos base reduzidos. Redução de velocidade do E agora escala.",
-      "nota": "Quem diria que Nunu e Willump seriam tão bons com o efeito bola de neve? Reduziremos um pouco do seu potencial de emboscada no início de jogo e suas defesas com escalamento, assim elas não serão completamente impenetráveis depois de certo ponto.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "CRESCIMENTO DE VIDA",
-              "antes": "90",
-              "depois": "82"
-            },
-            {
-              "atributo": "CRESCIMENTO DE ARMADURA",
-              "antes": "3,5",
-              "depois": "3"
-            },
-            {
-              "atributo": "MANA",
-              "antes": "283,56",
-              "depois": "280"
-            },
-            {
-              "atributo": "REGENERAÇÃO DE MANA",
-              "antes": "7,44 ",
-              "depois": "7"
-            }
-          ]
-        },
-        {
-          "nome": "E - Rajada de Bolas de Neve",
-          "atributos": [
-            {
-              "atributo": "REDUÇÃO DE VELOCIDADE",
-              "antes": "50%",
-              "depois": "30/35/40/45/50%"
-            }
-          ],
-          "img": "NunuE.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Teemo",
-      "img": "Teemo.png",
-      "mod": "Mudanças de qualidade de vida no Q e W. Ajustes nos cogumelos do R, mais cargas e ressalto infinito.",
-      "nota": "Essas mudanças devem dar um polimento no nosso Teemo. Também tornaremos seus cogumelos mais funcionais conforme a partida avança.",
-      "habilidades": [
-        {
-          "nome": "Q - Dardo Ofuscante",
-          "atributos": [
-            {
-              "atributo": "PRA SURDO OUVIR, PRA CEGO VER",
-              "depois": "Alvos cegos agora verão uma luz verde ao redor da tela quando estiverem afetados pelo Q do Teemo"
-            }
-          ],
-          "img": "BlindingDart.png"
-        },
-        {
-          "nome": "W - Mover Depressa",
-          "atributos": [
-            {
-              "atributo": "VELOCÍMETRO REGULADO",
-              "depois": "O ícone de habilidade de Mover Depressa agora terá uma barra acima dele para mostrar a duração do efeito ativo"
-            }
-          ],
-          "img": "MoveQuick.png"
-        },
-        {
-          "nome": "R - Armadilha Venenosa",
-          "atributos": [
-            {
-              "atributo": "ECA, PISEI EM ALGO!",
-              "depois": "Cogumelos agora são ativados de forma mais responsiva, especialmente em inimigos que avançam por eles rápido demais"
-            },
-            {
-              "atributo": "O ARONGUEJO, O ARONGUEJO QUANDO TOCA, O COGUMELO AGORA NÃO PIPOCA",
-              "depois": "O Aronguejo deixa de ativar cogumelos quando não está em combate"
-            },
-            {
-              "atributo": "COGUMELOS BORRACHUDOS",
-              "antes": "Cogumelos agora podem ressaltar ",
-              "depois": "infinitamente"
-            },
-            {
-              "atributo": "MÁX. DE CARGAS",
-              "antes": "3 cogumelos em todos os níveis",
-              "depois": "3/4/5 cogumelos de uma vez"
-            }
-          ],
-          "img": "TeemoRCast.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Warwick",
-      "img": "Warwick.png",
-      "mod": "W agora concede devidamente Velocidade de Ataque adicional contra inimigos afetados por Caçada Sangrenta.",
-      "nota": "Vamos destacar uma correção de bug aqui, já que ela é um grande fortalecimento para o Warwick.",
-      "habilidades": [
-        {
-          "nome": "W - Caçada Sangrenta",
-          "atributos": [
-            {
-              "atributo": "CORREÇÃO DE BUG",
-              "depois": "Warwick agora recebe devidamente Velocidade de Ataque adicional contra todos os inimigos afetados por Caçada Sangrenta"
-            }
-          ],
-          "img": "Blood_Hunt.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Xayah",
-      "img": "Xayah.png",
-      "mod": "Armadura base reduzida. Tempo de Recarga do R aumentado.",
-      "nota": "Nos níveis mais altos de jogo, Xayah é uma escolha extremamente confiável devido ao seu dano e segurança no início de jogo. Reduziremos essa garantia para que exista riscos quando ela for escolhida.",
-      "habilidades": [
-        {
-          "nome": "Atributos base",
-          "atributos": [
-            {
-              "atributo": "ARMADURA",
-              "antes": "28",
-              "depois": "25"
-            }
-          ]
-        },
-        {
-          "nome": "\n\t\t\t\tR - Tempestade de Plumas\n\t\t\t\t",
-          "atributos": [
-            {
-              "atributo": "TEMPO DE RECARGA",
-              "antes": "140/125/110s",
-              "depois": "160/145/130s"
-            }
-          ],
-          "img": "XayahR.png"
-        }
-      ]
-    },
-    {
-      "campeao": "Zoe",
-      "img": "Zoe.png",
-      "mod": "Dano da Passiva aumentado.",
-      "nota": "No momento, o início da fase de rotas da Zoe é mais fraco do que o previsto, então vamos fortalecê-la sem aumentar seu dano explosivo.",
-      "habilidades": [
-        {
-          "nome": "Passiva - Brililim!",
-          "atributos": [
-            {
-              "atributo": "DANO",
-              "antes": "10/12/16/20/24/28/34/40/46/52/60/68/76/84/94/104/114/124",
-              "depois": "16/20/24/28/32/36/42/48/54/60/66/74/82/90/100/110/120/130"
-            }
-          ],
-          "img": "Zoe_P.png"
-        }
-      ]
+     "nome": "R - Execução Perfeita",
+     "atributos": [
+      {
+       "atributo": " removidoATORDOAMENTO NO R1",
+       "depois": "Akali deixa de atordoar seus inimigos por 0,5s"
+      },
+      {
+       "atributo": "DANO MÁXIMO DO R2",
+       "antes": "255/450/645 (+0,9 de Poder de Habilidade)",
+       "depois": "195/420/645 (+0,9 de Poder de Habilidade)"
+      },
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "120/110/100s",
+       "depois": "160/130/100s"
+      }
+     ],
+     "img": "AkaliR.png"
     }
-  ],
-  "runes": [],
-  "fixes": [
+   ]
+  },
+  {
+   "campeao": "Annie",
+   "img": "Annie.png",
+   "mod": "E agora concede Velocidade de Movimento decadente; redução de dano reduzida; Tempo de Recarga aumentado.",
+   "nota": "Vamos dar à Annie um pouco de gingado na rota com um benefício adicional em seu E, assim ela poderá realizar mais jogadas sozinha.",
+   "habilidades": [
     {
-      "note": "O E - Portão Acelerador do Jayce agora funciona devidamente quando conjurado sobre dele."
-    },
-    {
-      "note": "Pingar o R - Constelação Cadente de Pantheon informará aos aliados quais inimigos estão dentro do alcance."
-    },
-    {
-      "note": "O Lobo deixa de conceder visão adicional e não funcional aos Kindred quando estiver ao redor da Ovelha."
-    },
-    {
-      "note": "Campeões afetados por Estase deixam de se mover durante o efeito."
-    },
-    {
-      "note": "Aliados a caminho de entrarem no R - Viagem Abissal deixarão de ficarem presos quando Tahm Kench for atingido por um inimigo."
-    },
-    {
-      "note": "Quando Shaco amedrontar um alvo com W - Caixinha Surpresa, ele receberá devidamente uma assistência se este alvo for abatido logo depois."
-    },
-    {
-      "note": "A dica flutuante da Passiva - Espada de Prata Lunar de Diana agora é atualizada devidamente quando ela aumenta o nível de E - Colapso Minguante"
-    },
-    {
-      "note": "O E - Mordidinha Flamejante de Jinx agora impede devidamente que Akali se mova quando utilizar R - Execução Perfeita através da habilidade.",
-      "champs": [
-        "Akali"
-      ]
-    },
-    {
-      "note": "O Q - Voleio Entrelaçado de Taliyah agora consome devidamente o custo total de Mana depois que ela sair do Terreno Manipulado."
-    },
-    {
-      "note": "Illaoi não pode mais avançar uma curta distância utilizando W - Lição Dura quando estiver enraizada ou imobilizada."
-    },
-    {
-      "note": "Os ataques em cone com mipes do Bardo agora quebram escudos de feitiço devidamente."
-    },
-    {
-      "note": "Quando Karthus estiver sob o efeito de Passiva - Desafio da Morte, seu W - Barreira da Dor agora concede visão ao redor da parede devidamente."
+     "nome": "E - Escudo Fundido",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "rotulo": "novo",
+       "depois": "Annie recebe 25% + 1,5% por nível de Velocidade de Movimento adicional que decai ao longo de 1,5s"
+      },
+      {
+       "atributo": "REDUÇÃO DE DANO",
+       "antes": "16/22/28/34/40%",
+       "depois": "10/13/16/19/22%"
+      },
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "10s em todos os níveis",
+       "depois": "15s em todos os níveis"
+      }
+     ],
+     "img": "AnnieE.png"
     }
-  ]
+   ]
+  },
+  {
+   "campeao": "Aurelion Sol",
+   "img": "AurelionSol.png",
+   "mod": "Vida base aumentada.",
+   "nota": "Dando continuidade às mudanças da 9.17, realizaremos um pequeno ajuste agora que o início de jogo do Aurelion Sol tem mais contrajogadas.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "VIDA",
+       "antes": "510",
+       "depois": "575"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "campeao": "Caitlyn",
+   "img": "Caitlyn.png",
+   "mod": "Dano de Ataque base aumentado.",
+   "nota": "Aumentando um pouco o poder da Caitlyn na rota no início de jogo para que ela possa punir aqueles que dependem de escalamento.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "DANO DE ATAQUE",
+       "antes": "60",
+       "depois": "62"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "campeao": "Ekko",
+   "img": "Ekko.png",
+   "mod": "Custo do W reduzido; duração do atordoamento aumentada.",
+   "nota": "Nossos fortalecimentos no Ekko na 9.16 não fizeram o que esperávamos. Vamos colocá-lo em um estilo de jogo mais agressivo com grande compensação e baixo custo.",
+   "habilidades": [
+    {
+     "nome": "W - Convergência Paralela",
+     "atributos": [
+      {
+       "atributo": "CUSTO",
+       "antes": "50/55/60/65/70 de Mana",
+       "depois": "30/35/40/45/50 de Mana"
+      },
+      {
+       "atributo": "DURAÇÃO DO ATORDOAMENTO",
+       "antes": "1,75s",
+       "depois": "2,25s"
+      }
+     ],
+     "img": "EkkoW.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Evelynn",
+   "img": "Evelynn.png",
+   "mod": "Amplificador do dano fortalecido do R e dano máximo fortalecido aumentados.",
+   "nota": "Evelynn não está exatamente fraca no momento, mas queremos que ela seja mais confiável em abater seus alvos se conseguir chegar no limiar de execução.",
+   "habilidades": [
+    {
+     "nome": "R - Última Carícia",
+     "atributos": [
+      {
+       "atributo": "AMPLIFICADOR DO DANO FORTALECIDO",
+       "antes": "100% contra inimigos abaixo de 30% da Vida máxima",
+       "depois": "140% contra inimigos abaixo de 30% da Vida máxima"
+      },
+      {
+       "atributo": "DANO FORTALECIDO",
+       "antes": "250/500/750 (+1,5 de Poder de Habilidade)",
+       "depois": "300/600/900 (+1,8 de Poder de Habilidade)"
+      }
+     ],
+     "img": "EvelynnR.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Jhin",
+   "img": "Jhin.png",
+   "mod": "Dano de Ataque base aumentado.",
+   "nota": "Daremos uma forcinha para o Jhin conseguir ser um melhor agressor contra seus oponentes de rota mais gananciosos.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "DANO DE ATAQUE",
+       "antes": "57",
+       "depois": "59"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "campeao": "Kai'Sa",
+   "img": "Kaisa.png",
+   "mod": "Velocidade de Ataque adicional do E reduzida nos últimos níveis.",
+   "nota": "Reduziremos o dano consistente da Kai'Sa para que ela esteja mais disposta a assassinar alvos importantes em vez de acabar com os inimigos um de cada vez.",
+   "habilidades": [
+    {
+     "nome": "E - Sobrecarga",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE ATAQUE ADICIONAL",
+       "antes": "40/50/60/70/80%",
+       "depois": "40/45/50/55/60%"
+      }
+     ],
+     "img": "KaisaE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Kayle",
+   "img": "Kayle.png",
+   "mod": "Dano base passivo do E aumentado.",
+   "nota": "Estamos satisfeitos com as mudanças que realizamos na Kayle durante a 9.17, mas ela acabou ficando um pouco mais fraca do que o previsto. Vamos fortalecer o dano passivo do E para tornar seus ataques básicos mais fortes ao longo da partida.",
+   "habilidades": [
+    {
+     "nome": "E - Lâmina de Fogo Estelar",
+     "atributos": [
+      {
+       "atributo": "DANO BASE PASSIVO",
+       "antes": "10/15/20/25/30",
+       "depois": "15/20/25/30/35"
+      }
+     ],
+     "img": "KayleE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Lee Sin",
+   "img": "LeeSin.png",
+   "mod": "Vida base e Dano de Ataque aumentados. Dano do R aumentado.",
+   "nota": "Permitiremos que Lee Sin explore melhor jogadas de sucesso no início de jogo com ultimates mais poderosas, causando um maior impacto.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "VIDA",
+       "antes": "570,8",
+       "depois": "575"
+      },
+      {
+       "atributo": "DANO DE ATAQUE",
+       "antes": "69,2",
+       "depois": "70"
+      }
+     ]
+    },
+    {
+     "nome": "R - Fúria do Dragão",
+     "atributos": [
+      {
+       "atributo": "DANO",
+       "antes": "150/375/600",
+       "depois": "175/400/625"
+      }
+     ],
+     "img": "BlindMonkRKick.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Miss Fortune",
+   "img": "MissFortune.png",
+   "mod": "Redução de velocidade do E aumentada nos primeiros níveis.",
+   "nota": "Quase não vale a pena conjurar o E da Miss Fortune nos primeiros níveis, considerando o custo de Mana, então vamos fortalecê-lo nos níveis iniciais.",
+   "habilidades": [
+    {
+     "nome": "E - Chuva de Disparos",
+     "atributos": [
+      {
+       "atributo": "REDUÇÃO DE VELOCIDADE",
+       "antes": "28/36/44/52/60%",
+       "depois": "40/45/50/55/60%"
+      }
+     ],
+     "img": "MissFortuneScattershot.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Nunu e Willump",
+   "img": "Nunu.png",
+   "mod": "Atributos base reduzidos. Redução de velocidade do E agora escala.",
+   "nota": "Quem diria que Nunu e Willump seriam tão bons com o efeito bola de neve? Reduziremos um pouco do seu potencial de emboscada no início de jogo e suas defesas com escalamento, assim elas não serão completamente impenetráveis depois de certo ponto.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "CRESCIMENTO DE VIDA",
+       "antes": "90",
+       "depois": "82"
+      },
+      {
+       "atributo": "CRESCIMENTO DE ARMADURA",
+       "antes": "3,5",
+       "depois": "3"
+      },
+      {
+       "atributo": "MANA",
+       "antes": "283,56",
+       "depois": "280"
+      },
+      {
+       "atributo": "REGENERAÇÃO DE MANA",
+       "antes": "7,44 ",
+       "depois": "7"
+      }
+     ]
+    },
+    {
+     "nome": "E - Rajada de Bolas de Neve",
+     "atributos": [
+      {
+       "atributo": "REDUÇÃO DE VELOCIDADE",
+       "antes": "50%",
+       "depois": "30/35/40/45/50%"
+      }
+     ],
+     "img": "NunuE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Teemo",
+   "img": "Teemo.png",
+   "mod": "Mudanças de qualidade de vida no Q e W. Ajustes nos cogumelos do R, mais cargas e ressalto infinito.",
+   "nota": "Essas mudanças devem dar um polimento no nosso Teemo. Também tornaremos seus cogumelos mais funcionais conforme a partida avança.",
+   "habilidades": [
+    {
+     "nome": "Q - Dardo Ofuscante",
+     "atributos": [
+      {
+       "atributo": "PRA SURDO OUVIR, PRA CEGO VER",
+       "depois": "Alvos cegos agora verão uma luz verde ao redor da tela quando estiverem afetados pelo Q do Teemo"
+      }
+     ],
+     "img": "BlindingDart.png"
+    },
+    {
+     "nome": "W - Mover Depressa",
+     "atributos": [
+      {
+       "atributo": "VELOCÍMETRO REGULADO",
+       "depois": "O ícone de habilidade de Mover Depressa agora terá uma barra acima dele para mostrar a duração do efeito ativo"
+      }
+     ],
+     "img": "MoveQuick.png"
+    },
+    {
+     "nome": "R - Armadilha Venenosa",
+     "atributos": [
+      {
+       "atributo": "ECA, PISEI EM ALGO!",
+       "depois": "Cogumelos agora são ativados de forma mais responsiva, especialmente em inimigos que avançam por eles rápido demais"
+      },
+      {
+       "atributo": "O ARONGUEJO, O ARONGUEJO QUANDO TOCA, O COGUMELO AGORA NÃO PIPOCA",
+       "depois": "O Aronguejo deixa de ativar cogumelos quando não está em combate"
+      },
+      {
+       "atributo": "COGUMELOS BORRACHUDOS",
+       "antes": "Cogumelos agora podem ressaltar ",
+       "depois": "infinitamente"
+      },
+      {
+       "atributo": "MÁX. DE CARGAS",
+       "antes": "3 cogumelos em todos os níveis",
+       "depois": "3/4/5 cogumelos de uma vez"
+      }
+     ],
+     "img": "TeemoRCast.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Warwick",
+   "img": "Warwick.png",
+   "mod": "W agora concede devidamente Velocidade de Ataque adicional contra inimigos afetados por Caçada Sangrenta.",
+   "nota": "Vamos destacar uma correção de bug aqui, já que ela é um grande fortalecimento para o Warwick.",
+   "habilidades": [
+    {
+     "nome": "W - Caçada Sangrenta",
+     "atributos": [
+      {
+       "atributo": "CORREÇÃO DE BUG",
+       "depois": "Warwick agora recebe devidamente Velocidade de Ataque adicional contra todos os inimigos afetados por Caçada Sangrenta"
+      }
+     ],
+     "img": "Blood_Hunt.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Xayah",
+   "img": "Xayah.png",
+   "mod": "Armadura base reduzida. Tempo de Recarga do R aumentado.",
+   "nota": "Nos níveis mais altos de jogo, Xayah é uma escolha extremamente confiável devido ao seu dano e segurança no início de jogo. Reduziremos essa garantia para que exista riscos quando ela for escolhida.",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "ARMADURA",
+       "antes": "28",
+       "depois": "25"
+      }
+     ]
+    },
+    {
+     "nome": "\n\t\t\t\tR - Tempestade de Plumas\n\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "140/125/110s",
+       "depois": "160/145/130s"
+      }
+     ],
+     "img": "XayahR.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Zoe",
+   "img": "Zoe.png",
+   "mod": "Dano da Passiva aumentado.",
+   "nota": "No momento, o início da fase de rotas da Zoe é mais fraco do que o previsto, então vamos fortalecê-la sem aumentar seu dano explosivo.",
+   "habilidades": [
+    {
+     "nome": "Passiva - Brililim!",
+     "atributos": [
+      {
+       "atributo": "DANO",
+       "antes": "10/12/16/20/24/28/34/40/46/52/60/68/76/84/94/104/114/124",
+       "depois": "16/20/24/28/32/36/42/48/54/60/66/74/82/90/100/110/120/130"
+      }
+     ],
+     "img": "Zoe_P.png"
+    }
+   ]
+  }
+ ],
+ "runes": [],
+ "fixes": [
+  {
+   "note": "O E - Portão Acelerador do Jayce agora funciona devidamente quando conjurado sobre dele."
+  },
+  {
+   "note": "Pingar o R - Constelação Cadente de Pantheon informará aos aliados quais inimigos estão dentro do alcance."
+  },
+  {
+   "note": "O Lobo deixa de conceder visão adicional e não funcional aos Kindred quando estiver ao redor da Ovelha."
+  },
+  {
+   "note": "Campeões afetados por Estase deixam de se mover durante o efeito."
+  },
+  {
+   "note": "Aliados a caminho de entrarem no R - Viagem Abissal deixarão de ficarem presos quando Tahm Kench for atingido por um inimigo."
+  },
+  {
+   "note": "Quando Shaco amedrontar um alvo com W - Caixinha Surpresa, ele receberá devidamente uma assistência se este alvo for abatido logo depois."
+  },
+  {
+   "note": "A dica flutuante da Passiva - Espada de Prata Lunar de Diana agora é atualizada devidamente quando ela aumenta o nível de E - Colapso Minguante"
+  },
+  {
+   "note": "O E - Mordidinha Flamejante de Jinx agora impede devidamente que Akali se mova quando utilizar R - Execução Perfeita através da habilidade.",
+   "champs": [
+    "Akali"
+   ]
+  },
+  {
+   "note": "O Q - Voleio Entrelaçado de Taliyah agora consome devidamente o custo total de Mana depois que ela sair do Terreno Manipulado."
+  },
+  {
+   "note": "Illaoi não pode mais avançar uma curta distância utilizando W - Lição Dura quando estiver enraizada ou imobilizada."
+  },
+  {
+   "note": "Os ataques em cone com mipes do Bardo agora quebram escudos de feitiço devidamente."
+  },
+  {
+   "note": "Quando Karthus estiver sob o efeito de Passiva - Desafio da Morte, seu W - Barreira da Dor agora concede visão ao redor da parede devidamente."
+  }
+ ]
 }
