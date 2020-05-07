@@ -101,7 +101,7 @@ function crawPatches(patches) {
         })
     })
 }
-async function fetchPatchesImages(items) {
+async function fetchPatches(items) {
     let patches = await crawPatches(items)
     // map calls banners
     let bannersCalls = patches.reduce((patchesBanners, patch, p) => {
@@ -237,7 +237,7 @@ async function fetchPatchesImages(items) {
 // }, true)
 
 // --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
-fetchPatchesImages()
+fetchPatches()
 .then(results => {
     results.forEach(scrap => {
         fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {

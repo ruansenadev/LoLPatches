@@ -2,9 +2,26 @@ extends layout_amp
 
 append styles
     .
-        .title {
-            background-color: gray;
+        body {
+            
+        }
+        .banner {
+            position: relative;
+        }
+        .banner .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem .5rem;
+            white-space: nowrap;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, .6);
         }
 
 block content
-    h1.title= titulo
+    header
+        .banner
+            amp-img(src=banner width="16" height="9" layout="responsive")
+            amp-fit-text.title(layout="fixed-height" width="auto" height="70" min-font-size="16" max-font-size="40") Notas da Atualização #[b #{version}]
