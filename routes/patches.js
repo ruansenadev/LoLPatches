@@ -9,8 +9,7 @@ router.get('/', function (req, res) {
 });
 
 router.get('/:v', function (req, res, next) {
-  res.send('Versão ' + req.params.v)
-  // res.sendFile('patch.amp.html', { root: ampRoot })
+  res.render('testamp', { title: req.params.v, ref: `${req.headers.host}/patches/${req.params.v}`, titulo: 'Versão '+req.params.v })
 })
 
 module.exports = router
