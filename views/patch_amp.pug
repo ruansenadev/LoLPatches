@@ -19,9 +19,46 @@ append styles
             color: white;
             background-color: rgba(0, 0, 0, .6);
         }
+        .note {
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .mod {
+            line-height: 2;
+            text-align: center;
+        }
+        .champ {
+            margin-bottom: 2rem;
+        }
+        .champ-name {
+            padding: .8rem 1rem .5rem;
+            margin-bottom: 0;
+        }
+        .lead {
+            font-size: 1.125rem;
+        }
 
 block content
-    header
-        .banner
-            amp-img(src=banner width="16" height="9" layout="responsive")
-            amp-fit-text.title(layout="fixed-height" width="auto" height="70" min-font-size="16" max-font-size="40") Notas da Atualização #[b #{version}]
+    article
+        header
+            .banner
+                amp-img(src=banner width="16" height="9" layout="responsive")
+                amp-fit-text.title(layout="fixed-height" width="auto" height="70" min-font-size="16" max-font-size="36")= patch.title
+        section.container.p-3
+            amp-fit-text.note(layout="fixed-height" height="320" width="auto" min-font-size="18" max-font-size="26")= patch.note
+        section.container.p-4.pb-5
+            amp-fit-text.mod(layout="fixed-height" height="100" width="auto" min-font-size="18" max-font-size="22")= patch.ft.mod
+        section.container.p-3
+            each c in patch.champs
+                .champ
+                    .changes
+                        .mod
+                            .row.flex-column.align-items-center
+                                amp-img(src='/images/champs/'+c.img width="4rem" height="4rem" layout="fixed")
+                                h3.champ-name= c.campeao
+                            .mod-desc
+                                p.lead= c.mod
+                                p= c.nota
+                        .mod
+
+

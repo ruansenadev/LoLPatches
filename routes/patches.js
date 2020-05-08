@@ -13,7 +13,8 @@ router.get('/:v', function (req, res, next) {
   let v = req.params.v
   // sanitize version param
   let banner = '/'+JSON.parse(fs.readFileSync(path.join(__dirname, '../patches', 'data.json'), 'utf8')).items.filter(i => i.titulo === v)[0].img
-  res.render('patch_amp', { title: 'Atualização '+v, ref: `${req.headers.host}/patches/${v}`, version: v, banner })
+  let patch = JSON.parse(fs.readFileSync(path.join(__dirname, '../patches', v, 'data.json')))
+  res.render('patch_amp', { title: 'Atualização '+v, ref: `${req.headers.host}/patches/${v}`, version: v, banner, patch })
 })
 
 module.exports = router
