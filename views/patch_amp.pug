@@ -20,24 +20,77 @@ append styles
             background-color: rgba(0, 0, 0, .6);
         }
         .note {
-            line-height: 1.5;
+            line-height: 1.7;
             text-align: justify;
         }
-        .mod {
-            line-height: 2;
+        .ft {
             text-align: center;
+            letter-spacing: 1px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mod {
+            display: flex;
+            line-height: 1.6;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mod>.lead {
+            max-width: 26rem;
+        }
+        .mod>.note {
+            max-width: 30rem;
         }
         .champ {
-            margin-bottom: 2rem;
+            padding: 1rem 0;
+            border-radius: 2rem;
+            overflow: hidden;
         }
         .champ-name {
             padding: .8rem 1rem .5rem;
             margin-bottom: 0;
         }
         .lead {
+            line-height: 1.8;
             font-size: 1.125rem;
         }
-
+        .changes {
+            height: 100%;
+            padding: 1rem 0 0 1.5rem;
+            list-style: disc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .change {
+            margin-bottom: .8rem;
+        }
+        .skill {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .attrs {
+            list-style: circle;
+        }
+        .attr {
+            padding-right: .6rem;
+        }
+        .attr::after {
+            display: inline-block;
+            font-weight: bold;
+            content: ':';
+        }
+        .attr, .attr-bef, .attr-aft {
+            display: inline-block;
+            font-size: 1rem;
+        }
+        .attr-bef::after {
+            display: inline-block;
+            content: '>>';
+            padding: 0 .5rem;
+            color: black;
+        }
 block content
     article
         header
@@ -45,20 +98,30 @@ block content
                 amp-img(src=banner width="16" height="9" layout="responsive")
                 amp-fit-text.title(layout="fixed-height" width="auto" height="70" min-font-size="16" max-font-size="36")= patch.title
         section.container.p-3
-            amp-fit-text.note(layout="fixed-height" height="320" width="auto" min-font-size="18" max-font-size="26")= patch.note
-        section.container.p-4.pb-5
-            amp-fit-text.mod(layout="fixed-height" height="100" width="auto" min-font-size="18" max-font-size="22")= patch.ft.mod
+            amp-fit-text.note(layout="fixed-height" height="320" width="auto" min-font-size="18" max-font-size="24")= patch.note
+        section.container.p-4
+            amp-fit-text.ft(layout="fixed-height" height="140" width="auto" min-font-size="18" max-font-size="24")= patch.ft.mod
         section.container.p-3
             each c in patch.champs
                 .champ
-                    .changes
-                        .mod
+                    .row.row-cols-1.row-cols-md-2
+                        .col
                             .row.flex-column.align-items-center
                                 amp-img(src='/images/champs/'+c.img width="4rem" height="4rem" layout="fixed")
                                 h3.champ-name= c.campeao
-                            .mod-desc
+                            .mod
                                 p.lead= c.mod
-                                p= c.nota
-                        .mod
-
-
+                                p.note= c.nota
+                        .col
+                            ul.changes
+                                each h in c.habilidades
+                                    li.change
+                                        if h.nome
+                                            .skill= h.nome
+                                        ul.attrs
+                                            each a in h.atributos
+                                                li
+                                                    .attr= a.atributo
+                                                    if a.antes
+                                                        .attr-bef= a.antes
+                                                    .attr-aft= a.depois
