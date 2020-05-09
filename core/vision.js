@@ -69,7 +69,7 @@ exports.look = async function (img) {
     let phrases = detections[0].text.trim().split('\n')
     // sanitize
     phrases.forEach((txt, i) => {
-        if (/nota|atualização|\d+.\d*[a-z]*/ig.test(txt)) {
+        if (/nota|atualização|\d+\.\d+[a-z]*/ig.test(txt)) {
             phrases.splice(i, 1)
         }
     })

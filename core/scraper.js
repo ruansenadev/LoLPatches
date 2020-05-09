@@ -48,7 +48,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 				let title = page('h1').text()
 				SCRAP.title = title
 				try {
-					folder = title.match(/\d+.\d*[a-z]*/)[0]
+					folder = title.match(/\d+\.\d+[a-z]*/)[0]
 				} catch (error) {
 					throw createLog(error, "Title evaluating")
 				}
