@@ -9,6 +9,10 @@ append styles
             text-transform: uppercase;
             text-align: center;
         }
+        h3 {
+            padding: .8rem 1rem .5rem;
+            margin-bottom: 0;
+        }
         .banner {
             position: relative;
         }
@@ -46,14 +50,10 @@ append styles
         .mod>.note {
             max-width: 30rem;
         }
-        .champ {
+        .section-item {
             padding: 1rem 0;
             border-radius: 2rem;
             overflow: hidden;
-        }
-        .champ-name {
-            padding: .8rem 1rem .5rem;
-            margin-bottom: 0;
         }
         .lead {
             line-height: 1.8;
@@ -138,7 +138,7 @@ block content
             section.container.p-3
                 h2 Campeões
                 each c in patch.champs
-                    .champ
+                    .section-item
                         .row.row-cols-1.row-cols-md-2
                             .col
                                 .row.flex-column.align-items-center
@@ -167,6 +167,28 @@ block content
                                                 li.ref
                                                     a.ref-link(href=r.link target="_blank")= r.item
         
+        if patch.runes.length > 0
+            section.container-md.p-2
+                h2 Runas
+                each r in patch.runes
+                    .section-item
+                        .row.row-cols-1.row-cols-md-2
+                            .col
+                                .row.flex-column.align-items-center
+                                    amp-img(src='/images/runes/'+r.img width="4rem" height="4rem" layout="fixed")
+                                    h3= r.runa
+                                .mod
+                                    p.lead= r.mod
+                                    p.note= r.nota
+                            .col
+                                ul.changes
+                                    each a in r.alteracoes
+                                        li.change
+                                            .attr= a.atributo
+                                            if a.antes
+                                                .attr-bef= a.antes
+                                            .attr-aft= a.depois
+
         if patch.fixes.length > 0
             section.p-3
                 h2 Bug fixes
