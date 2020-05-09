@@ -516,7 +516,7 @@
  "runes": [
   {
    "runa": "Exaustão",
-   "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.3.1/img/spell/SummonerExhaust.png",
+   "img": "SummonerExhaust.png",
    "mod": "",
    "nota": "Pequeno fortalecimento, assim como melhorias na visibilidade.",
    "alteracoes": [
@@ -534,7 +534,7 @@
   },
   {
    "runa": "Chuva de Lâminas",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Hail_of_Blades_rune.png",
+   "img": "Hail_of_Blades_rune.png",
    "mod": "",
    "nota": "Tentaremos expandir o uso da Chuva de Lâminas já que, atualmente, a runa é utilizada especificamente por caçadores que conseguem combinar suas habilidades de CG com ataques básicos.",
    "alteracoes": [
@@ -552,7 +552,7 @@
   },
   {
    "runa": "Runas Lenda",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Legend-_Alacrity_rune.png",
+   "img": "Legend-_Alacrity_rune.png",
    "mod": "",
    "nota": "Observamos que a runa Linhagem foi a escolha dominante dos atiradores, especialmente no cenário profissional, durante todo o ano passado. Reduziremos os acúmulos de todas as runas Lenda envolvendo coleta de tropas vs. abate de Campeões, já que a Linhagem depende especificamente desses acúmulos. Além disso, já que os profissionais conseguem maior parte de seus acúmulos por meio da coleta de tropas e não dos abates, essa mudança deve ser mais impactante nesse nível de habilidade.",
    "alteracoes": [
@@ -565,7 +565,7 @@
   },
   {
    "runa": "Sincronia Perfeita",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Perfect_Timing_rune.png",
+   "img": "Perfect_Timing_rune.png",
    "mod": "",
    "nota": "No momento, muitos jogadores estão optando por Sincronia Perfeita, já que ela pode ser transformada em itens essenciais de vários Campeões diferentes (Ampulheta de Zhonya para os magos, Anjo Guardião para os atiradores e Placa Gargolítica para os tanques). Não nos entendam mal, ficamos felizes em ver isso, mas é muito mais satisfatório para o jogador/espectador quando ela é usada de forma agressiva, e não defensiva.",
    "alteracoes": [
@@ -588,7 +588,7 @@
   },
   {
    "runa": "Ímpeto Gradual",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Phase_Rush_rune.png",
+   "img": "Phase_Rush_rune.png",
    "mod": "",
    "nota": "Tentaremos aumentar o uso dessa runa, já que, atualmente, ela só é usada por magos de ataque à distância com Tempos de Recarga extremamente baixos.",
    "alteracoes": [
@@ -606,7 +606,7 @@
   },
   {
    "runa": "Protótipo: Onirruna",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Prototype-_Omnistone_rune.png",
+   "img": "Prototype-_Omnistone_rune.png",
    "mod": "",
    "nota": "As Runas Essenciais são muito difíceis de ativar no nível 1.",
    "alteracoes": [
@@ -618,7 +618,7 @@
   },
   {
    "runa": "Inabalável",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Unflinching_rune.png",
+   "img": "Unflinching_rune.png",
    "mod": "",
    "nota": "",
    "alteracoes": [

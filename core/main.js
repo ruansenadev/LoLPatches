@@ -175,6 +175,27 @@ async function fetchPatches(items) {
                 }
             })
         }
+        if(patch[0].runes.length) {
+            let runes = patch[0].runes
+            runes.forEach((rune, r) => {
+                let url = sanitizeUrl(rune.img)
+                rune.img = imgFile(rune.img)
+                try {
+                    fs.accessSync(path.join(imagesDir, runesDir, rune.img))
+                } catch (error) {
+                    calls.push(function(cb) {
+                        axios({method: 'get', url, responseType: 'stream'})
+                            .then(res => {
+                                fs.mkdir(path.join(imagesDir, runesDir), {recursive: true}, (err) => {
+                                    if(err) {throw err}
+                                    res.data.pipe(fs.createWriteStream(path.join(imagesDir, runesDir, rune.img)).on('close', () => { console.log('+ '+ rune.img); cb(null, rune.img) }))
+                                })
+                            })
+                            .catch(cb)
+                    })
+                }
+            })
+        }
         return calls
     }, [])
     let nCalls = bannersCalls.concat(patchesCalls).length
@@ -186,7 +207,7 @@ async function fetchPatches(items) {
                 banners: function (cb) {
                     async.parallel(bannersCalls, cb)
                 },
-                champs: function (cb) {
+                patches: function (cb) {
                     async.parallel(patchesCalls, cb)
                 }
             }, (err, im) => {
@@ -194,7 +215,7 @@ async function fetchPatches(items) {
                     createLog(err, 'Patch images')
                     return reject(err)
                 }
-                console.log(`${im.banners.length} Ft banners and ${im.champs.length} Champs images downloaded.`)
+                console.log(`${im.banners.length?im.banners.length+' new':'Not new'} banners and ${im.patches.length?im.patches.length+' new': 'not any new'} patches images.`)
                 // log results length
                 return resolve(patches)
             })

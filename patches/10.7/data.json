@@ -323,7 +323,7 @@
  "runes": [
   {
    "runa": "Condicionamento",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/March/pn107/Conditioning_rune.png",
+   "img": "Conditioning_rune.png",
    "mod": "Tempo de ativação aumentado.",
    "nota": "A runa Condicionamento disparou nossos alertas, principalmente quando utilizada por tanques ou lutadores. Achamos que seu custo deve ser um pouco maior devido ao que ela pode oferecer no fim de jogo, já que, além de ser uma boa escolha para qualquer um, ela é praticamente obrigatória para as classes mencionadas, destacando-se mais do que todas as outras runas.",
    "alteracoes": [
@@ -336,7 +336,7 @@
   },
   {
    "runa": "Ímpeto Gradual",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2020/january/pn104/Phase_Rush_rune.png",
+   "img": "Phase_Rush_rune.png",
    "mod": "Velocidade de Movimento para Campeões de ataque corpo a corpo aumentada.",
    "nota": "Ímpeto Gradual permanece sendo uma escolha ruim para atacantes corpo a corpo e até mesmo para os Campeões que tradicionalmente optavam por esse tipo de Runa Essencial. Com isso em mente, tentaremos aproximá-la do nível das outras.",
    "alteracoes": [

@@ -601,7 +601,7 @@
  "runes": [
   {
    "runa": "Conquistador",
-   "img": "https://am-a.akamaihd.net/image?f=https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png&resize=64:",
+   "img": "Conqueror.png",
    "mod": "Agora mostra o total de cura na dica flutuante. ",
    "nota": "",
    "alteracoes": [
@@ -613,7 +613,7 @@
   },
   {
    "runa": "Protótipo: Onirruna",
-   "img": "https://am-a.akamaihd.net/image?f=https://news-a.akamaihd.net/public/images/articles/2019/november/pn23/Prototype_Omnistone.png&resize=64:",
+   "img": "Prototype_Omnistone.png",
    "mod": "Tempo de Recarga reduzido. ",
    "nota": "A Onirruna continua tendo um desempenho significativamente ruim, então vamos fortalecê-la para que tenha poder o suficiente para competir com as outras escolhas.",
    "alteracoes": [
