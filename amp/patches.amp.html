@@ -235,7 +235,7 @@
     <main>
         <div class="container">
             <!-- starts with same content of amp list -->
-            <amp-state id="patches" src="/resources/patches"></amp-state>
+            <amp-state id="patches" src="/resources/patches?page=1&items=4"></amp-state>
             <amp-state id="more">
                 <script type="application/json">
                     {
@@ -249,7 +249,7 @@
                     <div class="categoria">Notas de atualização</div>
                 </header>
                 <!-- item 156 height, margin and button height -->
-                <amp-list src="/resources/patches" height="656" [src]="patches.items" binding="refresh" [height]="patches.items.length * (156 + 16) + 40" width="auto" layout="fixed-height">
+                <amp-list src="/resources/patches?page=1&items=4" height="656" [src]="patches.items" binding="refresh" [height]="patches.items.length * (156 + 16) + 40" width="auto" layout="fixed-height">
                     <template type="amp-mustache">
                         {{#destaques}}
                         <div class="my-3">
