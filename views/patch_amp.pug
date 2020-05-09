@@ -6,6 +6,7 @@ append styles
             
         }
         h2 {
+            text-transform: uppercase;
             text-align: center;
         }
         .banner {
@@ -92,23 +93,34 @@ append styles
         .attr-bef {
             font-style: oblique;
         }
-        .attr-bef::after {
+        .attr-bef + .attr-aft::before {
             display: inline-block;
             content: '⟹';
             padding: 0 .5rem;
             color: black;
         }
+        .refs {
+            list-style: cjk-ideographic inside;
+
+        }
+        .ref {
+            padding: .5rem 1rem;
+            margin: .5rem auto;
+        }
+        .ref-link {
+            
+        }
         .fixes {
+            padding-left: 1rem;
             list-style: square inside;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             flex-flow: row wrap;
         }
         .fixe {
             margin-top: 1rem;
-            text-align: right;
             max-width: 32rem;
-            padding-right: 1.5rem;
+            padding-right: 1rem;
         }
 
 block content
@@ -121,9 +133,10 @@ block content
             amp-fit-text.note(layout="fixed-height" height="320" width="auto" min-font-size="18" max-font-size="24")= patch.note
         section.container.p-4
             amp-fit-text.ft(layout="fixed-height" height="140" width="auto" min-font-size="18" max-font-size="24")= patch.ft.mod
+        
         if patch.champs.length > 0
             section.container.p-3
-                h2 Champions
+                h2 Campeões
                 each c in patch.champs
                     .champ
                         .row.row-cols-1.row-cols-md-2
@@ -136,20 +149,27 @@ block content
                                     p.note= c.nota
                             .col
                                 ul.changes
-                                    each h in c.habilidades
-                                        li.change
-                                            if h.nome
-                                                .skill= h.nome
-                                            ul.attrs
-                                                each a in h.atributos
-                                                    li
-                                                        .attr= a.atributo
-                                                        if a.antes
-                                                            .attr-bef= a.antes
-                                                        .attr-aft= a.depois
+                                    if c.habilidades
+                                        each h in c.habilidades
+                                            li.change
+                                                if h.nome
+                                                    .skill= h.nome
+                                                ul.attrs
+                                                    each a in h.atributos
+                                                        li
+                                                            .attr= a.atributo
+                                                            if a.antes
+                                                                .attr-bef= a.antes
+                                                            .attr-aft= a.depois
+                                    else if c.links
+                                        ul.refs
+                                            each r in c.links
+                                                li.ref
+                                                    a.ref-link(href=r.link target="_blank")= r.item
+        
         if patch.fixes.length > 0
             section.p-3
-                h2 Fixes
+                h2 Bug fixes
                 ul.fixes
                     each f in patch.fixes
                         li.fixe= f.note
