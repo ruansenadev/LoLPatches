@@ -70,7 +70,7 @@ append styles
         .change {
             margin-bottom: .8rem;
         }
-        .skill {
+        .change-name {
             font-size: 1.1rem;
             font-weight: bold;
         }
@@ -153,7 +153,7 @@ block content
                                         each h in c.habilidades
                                             li.change
                                                 if h.nome
-                                                    .skill= h.nome
+                                                    .change-name= h.nome
                                                 ul.attrs
                                                     each a in h.atributos
                                                         li
@@ -162,10 +162,16 @@ block content
                                                                 .attr-bef= a.antes
                                                             .attr-aft= a.depois
                                     else if c.links
-                                        ul.refs
-                                            each r in c.links
-                                                li.ref
-                                                    a.ref-link(href=r.link target="_blank")= r.item
+                                        li.change
+                                            ul.refs
+                                                each r in c.links
+                                                    li.ref
+                                                        a.ref-link(href=r.link target="_blank")= r.item
+                                    else if c.efeitos
+                                        each e in c.efeitos
+                                            li.change
+                                                .change-name= e.atributo
+                                                .attr-aft= e.agora
         
         if patch.runes.length > 0
             section.container-md.p-2
