@@ -1,0 +1,111 @@
+extends layout_amp
+
+append styles
+	.
+		.card-body {
+			color: #0D1B0A;
+		}
+		.destaque {
+			padding: .5rem 1rem;
+			border: none;
+			outline: none;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			text-align: center;
+			font-weight: 400;
+			font-size: 1rem;
+			background-color: #FAFBF7;
+			border-bottom: 1px solid #EAF2DA;
+			color: #D6A918;
+		}
+		section:last-child>.destaque {
+			border-bottom: none;
+		}
+		.destaque-item {
+			display: inline-block;
+			white-space: nowrap;
+			padding: 1rem;
+			text-align: center;
+		}
+		.buffs {
+		}
+		.nerfs {
+		}
+		.novidades {
+		}
+append scripts
+	script(async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js")
+
+block content
+	.container
+		amp-state(id="patches" src="/resources/patches")
+		amp-state(id="more")
+			script(type="application/json").
+				{
+					"pageIndex": 2,
+					"hasMore": true
+				}
+		section.patches
+			header
+				.categoria Notas de atualização
+			//- <!-- item 156 height, margin and button height -->
+			amp-list(src="/resources/patches", height="656", [src]="patches.items", binding="refresh", [height]="patches.items.length * (156 + 16) + 40", width="auto", layout="fixed-height")
+				template(type="amp-mustache")
+					| {{#destaques}}
+					.my-3
+						amp-accordion(animate)
+							section
+								header.card-header
+									.row.align-items-center.justify-content-between.px-3
+										amp-fit-text.card-title.col-4(width="120" height="96" max-font-size="64") {{titulo}}
+										a.col-4.col-sm-3.button.button-primary(href="/patches/{{titulo}}" role="button") Ler
+									.row.flex-row-reverse.justify-content-between.py-1
+										amp-timeago(datetime="{{data}}" locale="ptBR" width="auto" height="20") {{data}}
+										small {{autor}}
+								.card-body
+									amp-selector.tabs-with-flex(role="tablist" keyboard-select-mode="focus")
+										| {{#buffs}}
+										#tab1(role="tab" aria-controls="tabpanel1" option) Buffs
+										#tabpanel1(role="tabpanel" aria-labelledby="tab1")
+											| {{#items}}
+											.destaque-item.buff {{nome}}
+											| {{/items}}
+										| {{/buffs}}
+										| {{#novidades}}
+										#tab2(role="tab" aria-controls="tabpanel2" option) Destaques
+										#tabpanel2(role="tabpanel" aria-labelledby="tab2")
+											| {{#items}}
+											.destaque-item.new {{nome}}
+											| {{/items}}
+										| {{/novidades}}
+										| {{#ajustes}}
+										#tab4(role="tab" aria-controls="tabpanel4" option) Ajustes
+										#tabpanel4(role="tabpanel" aria-labelledby="tab4")
+											| {{#items}}
+											.destaque-item.adjust {{nome}}
+											| {{/items}}
+										| {{/ajustes}}
+										| {{#nerfs}}
+										#tab3(role="tab" aria-controls="tabpanel3" option) Nerfs
+										#tabpanel3(role="tabpanel" aria-labelledby="tab3")
+											| {{#items}}
+											.destaque-item.nerf {{nome}}
+											| {{/items}}
+										| {{/nerfs}}
+
+					| {{/destaques}}
+					| {{^destaques}}
+					section.my-3
+						header.card-header
+							.row.align-items-center.justify-content-between.px-3
+								amp-fit-text.card-title.col-4(width="120", height="96", max-font-size="64") {{titulo}}
+								a.col-4.col-sm-3.button.button-primary(href="/patches/{{titulo}}", role="button") Ler
+							.row.flex-row-reverse.justify-content-between.py-1
+								amp-timeago(datetime="{{data}}", locale="pt", width="auto", height="20") {{data}}
+								small {{autor}}
+					| {{/destaques}}
+
+		form.row.justify-content-center(action="/resources/patches", action-xhr="/resources/patches", target="_top", method="get", on="submit-success: AMP.setState({patches: {items: patches.items.concat(event.response.items)}, more: {pageIndex: more.pageIndex + 1, hasMore: event.response.left}})")
+			input(type="hidden", name="items", value="4")
+			input(type="hidden", name="page", value="2", [value]="more.pageIndex")
+			input.button.button-primary.load-more.col-2(value="Ver mais", type="submit", [hidden]="!more.hasMore")

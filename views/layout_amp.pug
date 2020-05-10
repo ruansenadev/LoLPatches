@@ -8,8 +8,6 @@ html(⚡ lang="pt-br")
         link(rel="canonical" href=ref)
         link(rel="favicon icon" href="/lp_favicon.png")
         script(async src="https://cdn.ampproject.org/v0.js")
-        block schema
-            
         style(amp-boilerplate) body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
         noscript
             style(amp-boilerplate) body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
@@ -59,6 +57,9 @@ html(⚡ lang="pt-br")
                         color: var(--tomate);
                     }
                     .brand {
+                        width: 36px;
+                        height: 36px;
+                        display: inline-block;
                         margin: .5rem auto;
                     }
                     .patches {
@@ -160,19 +161,24 @@ html(⚡ lang="pt-br")
                         display: flex;
                     }
                     amp-selector[role=tablist].tabs-with-selector [role=tab] {
-                    /* custom styling, feel free to change */
-                    width: 100%;
-                    text-align: center;
-                    padding: .5rem;
+                        /* custom styling, feel free to change */
+                        width: 100%;
+                        text-align: center;
+                        padding: .5rem;
                     }
                     amp-selector.tabpanels [role=tabpanel] {
-                    display: none;
-                    /* custom styling, feel free to change */
-                    padding: 1.5rem;
+                        display: none;
+                        /* custom styling, feel free to change */
+                        padding: 1.5rem;
                     }
                     amp-selector.tabpanels [role=tabpanel][selected] {
-                    outline: none;
-                    display: block;
+                        outline: none;
+                        display: block;
+                    }
+                    .load-more {
+                        min-width: 9.75rem;
+                        margin-top: 1rem;
+                        margin-bottom: 1.5rem;
                     }
 
         block scripts
@@ -187,7 +193,8 @@ html(⚡ lang="pt-br")
     body
         header.top
             block header
-                amp-img.brand(src="../images/icons/015-knight.svg" alt="LoL Patches" attribution="Icon made by Eucalyp from www.flaticon.com" width="36" height="36" layout="fixed" noloading)
+                a(href="/").brand
+                    amp-img(src="../images/icons/015-knight.svg" alt="LoL Patches" attribution="Icon made by Eucalyp from www.flaticon.com" width="36" height="36" layout="fixed" noloading)
         main
             block content
             
