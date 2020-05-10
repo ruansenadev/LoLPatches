@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debugenv": "set DEBUG=scraper:* DEBUG_DEPTH=1",
+    "debugenv": "set DEBUG=lolpatches:* DEBUG_DEPTH=3",
     "devstart": "npm run debugenv & nodemon ./bin/www"
   },
   "repository": {

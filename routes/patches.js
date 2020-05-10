@@ -4,10 +4,9 @@ var fs = require('fs')
 var path = require('path')
 var {param, validationResult} = require('express-validator')
 
-var ampRoot = path.join(__dirname, '../amp')
 
 router.get('/', function (req, res) {
-  res.sendFile('patches.amp.html', { root: ampRoot })
+  res.render('patches_amp', {tite: 'LoL Patches', ref: `${req.headers.host}/patches`})
 });
 
 router.get('/:version', [
