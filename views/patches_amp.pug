@@ -21,9 +21,11 @@ append styles
 		section:last-child>.destaque {
 			border-bottom: none;
 		}
+		.patch[expanded] {
+			border: .2rem solid rgba(214, 169, 24, .7);
+		}
 		.destaque-item {
 			display: inline-block;
-			white-space: nowrap;
 			padding: 1rem;
 			text-align: center;
 		}
@@ -49,63 +51,62 @@ block content
 			header
 				.categoria Notas de atualização
 			//- <!-- item 156 height, margin and button height -->
-			amp-list(src="/resources/patches", height="656", [src]="patches.items", binding="refresh", [height]="patches.items.length * (156 + 16) + 40", width="auto", layout="fixed-height")
+			amp-list(src="/resources/patches" height="656", [src]="patches.items" binding="refresh", [height]="patches.items.length * (156 + 16) + 40" width="auto" layout="fixed-height")
 				template(type="amp-mustache")
 					| {{#destaques}}
-					.my-3
-						amp-accordion(animate)
-							section
-								header.card-header
-									.row.align-items-center.justify-content-between.px-3
-										amp-fit-text.card-title.col-4(width="120" height="96" max-font-size="64") {{titulo}}
-										a.col-4.col-sm-3.button.button-primary(href="/patches/{{titulo}}" role="button") Ler
-									.row.flex-row-reverse.justify-content-between.py-1
-										amp-timeago(datetime="{{data}}" locale="ptBR" width="auto" height="20") {{data}}
-										small {{autor}}
-								.card-body
-									amp-selector.tabs-with-flex(role="tablist" keyboard-select-mode="focus")
-										| {{#buffs}}
-										#tab1(role="tab" aria-controls="tabpanel1" option) Buffs
-										#tabpanel1(role="tabpanel" aria-labelledby="tab1")
-											| {{#items}}
-											.destaque-item.buff {{nome}}
-											| {{/items}}
-										| {{/buffs}}
-										| {{#novidades}}
-										#tab2(role="tab" aria-controls="tabpanel2" option) Destaques
-										#tabpanel2(role="tabpanel" aria-labelledby="tab2")
-											| {{#items}}
-											.destaque-item.new {{nome}}
-											| {{/items}}
-										| {{/novidades}}
-										| {{#ajustes}}
-										#tab4(role="tab" aria-controls="tabpanel4" option) Ajustes
-										#tabpanel4(role="tabpanel" aria-labelledby="tab4")
-											| {{#items}}
-											.destaque-item.adjust {{nome}}
-											| {{/items}}
-										| {{/ajustes}}
-										| {{#nerfs}}
-										#tab3(role="tab" aria-controls="tabpanel3" option) Nerfs
-										#tabpanel3(role="tabpanel" aria-labelledby="tab3")
-											| {{#items}}
-											.destaque-item.nerf {{nome}}
-											| {{/items}}
-										| {{/nerfs}}
+					amp-accordion(animate).my-3
+						section.patch
+							header.card-header
+								.row.align-items-center.justify-content-between.px-3
+									amp-fit-text.card-title.col-4(width="120" height="96" max-font-size="64") {{titulo}}
+									a.col-4.col-sm-3.button.button-primary(href="/patches/{{titulo}}" role="button") Ler
+								.row.flex-row-reverse.justify-content-between.py-1
+									amp-timeago(datetime="{{data}}" locale="ptBR" width="auto" height="20") {{data}}
+									small {{autor}}
+							.card-body
+								amp-selector.tabs-with-flex(role="tablist" keyboard-select-mode="focus")
+									| {{#buffs}}
+									#tab1(role="tab" aria-controls="tabpanel1" option) Buffs
+									#tabpanel1(role="tabpanel" aria-labelledby="tab1")
+										| {{#items}}
+										.destaque-item.buff {{nome}}
+										| {{/items}}
+									| {{/buffs}}
+									| {{#novidades}}
+									#tab2(role="tab" aria-controls="tabpanel2" option) Destaques
+									#tabpanel2(role="tabpanel" aria-labelledby="tab2")
+										| {{#items}}
+										.destaque-item.new {{nome}}
+										| {{/items}}
+									| {{/novidades}}
+									| {{#ajustes}}
+									#tab4(role="tab" aria-controls="tabpanel4" option) Ajustes
+									#tabpanel4(role="tabpanel" aria-labelledby="tab4")
+										| {{#items}}
+										.destaque-item.adjust {{nome}}
+										| {{/items}}
+									| {{/ajustes}}
+									| {{#nerfs}}
+									#tab3(role="tab" aria-controls="tabpanel3" option) Nerfs
+									#tabpanel3(role="tabpanel" aria-labelledby="tab3")
+										| {{#items}}
+										.destaque-item.nerf {{nome}}
+										| {{/items}}
+									| {{/nerfs}}
 
 					| {{/destaques}}
 					| {{^destaques}}
-					section.my-3
+					section.my-3.patch
 						header.card-header
 							.row.align-items-center.justify-content-between.px-3
-								amp-fit-text.card-title.col-4(width="120", height="96", max-font-size="64") {{titulo}}
-								a.col-4.col-sm-3.button.button-primary(href="/patches/{{titulo}}", role="button") Ler
+								amp-fit-text.card-title.col-4(width="120" height="96" max-font-size="64") {{titulo}}
+								a.col-4.col-sm-3.button.button-primary(href="/patches/{{titulo}}" role="button") Ler
 							.row.flex-row-reverse.justify-content-between.py-1
-								amp-timeago(datetime="{{data}}", locale="pt", width="auto", height="20") {{data}}
+								amp-timeago(datetime="{{data}}" locale="pt" width="auto" height="20") {{data}}
 								small {{autor}}
 					| {{/destaques}}
 
-		form.row.justify-content-center(action="/resources/patches", action-xhr="/resources/patches", target="_top", method="get", on="submit-success: AMP.setState({patches: {items: patches.items.concat(event.response.items)}, more: {pageIndex: more.pageIndex + 1, hasMore: event.response.left}})")
-			input(type="hidden", name="items", value="4")
-			input(type="hidden", name="page", value="2", [value]="more.pageIndex")
-			input.button.button-primary.load-more.col-2(value="Ver mais", type="submit", [hidden]="!more.hasMore")
+		form.row.justify-content-center(action="/resources/patches" action-xhr="/resources/patches" target="_top" method="get" on="submit-success: AMP.setState({patches: {items: patches.items.concat(event.response.items)}, more: {pageIndex: more.pageIndex + 1, hasMore: event.response.left}})")
+			input(type="hidden" name="items" value="4")
+			input(type="hidden" name="page" value="2", [value]="more.pageIndex")
+			input.button.button-primary.load-more.col-2(value="Ver mais" type="submit", [hidden]="!more.hasMore")

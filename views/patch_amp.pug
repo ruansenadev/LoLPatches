@@ -3,12 +3,29 @@ extends layout_amp
 append styles
     .
         h2 {
+            max-width: 50rem;
+            margin: 1rem auto .5rem;
+            padding-bottom: .5rem;
             text-transform: uppercase;
             text-align: center;
+            color: white;
+            text-shadow: 0 2px 1px rgba(0, 0, 0, .5);
+            border-bottom: 4px solid;
         }
         h3 {
             padding: .8rem 1rem .5rem;
             margin-bottom: 0;
+        }
+        body {
+            background-image: url(#{banner});
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .notes {
+            background-color: rgba(255, 255, 255, .6);
+            backdrop-filter: blur(3rem);
         }
         .banner {
             position: relative;
@@ -25,6 +42,7 @@ append styles
             background-color: rgba(0, 0, 0, .6);
         }
         .note {
+            padding: .5rem .5rem 0;
             line-height: 1.7;
             text-align: justify;
         }
@@ -42,41 +60,51 @@ append styles
             align-items: center;
         }
         .mod>.lead {
-            max-width: 26rem;
+            max-width: 28rem;
+            background-color: rgba(255, 255, 255, .3);
         }
         .mod>.note {
             max-width: 30rem;
         }
         .section-item {
-            padding: 1rem 0;
-            border-radius: 2rem;
+            padding: 1.5rem 0 1rem;
+            border-bottom: 2px solid rgba(255, 255, 255, .2);
             overflow: hidden;
         }
         .lead {
+            padding: 0 1rem;
             line-height: 1.8;
             font-size: 1.125rem;
         }
         .changes {
             height: 100%;
-            padding: 1rem 0 0 1.5rem;
-            list-style: disc;
+            margin: 0;
+            padding: 1rem 0 0 0;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
         }
         .change {
+            padding: .5rem 1rem .5rem 1.5rem;
             margin-bottom: .8rem;
+            border-left: .5rem solid var(--amarelo);
+            background-color: rgba(255, 255, 255, .3);
         }
         .change-name {
             font-size: 1.1rem;
             font-weight: bold;
         }
         .attrs {
-            list-style: circle;
+            padding-left: 1rem;
         }
         .attr, .attr-bef, .attr-aft {
             display: inline-block;
             font-size: 1rem;
+        }
+        .attr-item {
+            border-left: .2rem solid var(--bege);
+            padding-left: 1rem;
+            margin-top: 1rem;
         }
         .attr {
             padding-right: .6rem;
@@ -108,8 +136,7 @@ append styles
             
         }
         .fixes {
-            padding-left: 1rem;
-            list-style: square inside;
+            padding: 0;
             display: flex;
             justify-content: space-evenly;
             flex-flow: row wrap;
@@ -117,23 +144,24 @@ append styles
         .fixe {
             margin-top: 1rem;
             max-width: 32rem;
-            padding-right: 1rem;
+            padding: 0 1rem;
+            border-left: .2rem solid var(--vinho)
         }
 
 block content
-    article
+    article.notes
         header
             .banner
                 amp-img(src=banner width="16" height="9" layout="responsive")
-                amp-fit-text.title(layout="fixed-height" width="auto" height="70" min-font-size="16" max-font-size="36")= patch.title
-        section.container.p-3
-            amp-fit-text.note(layout="fixed-height" height="320" width="auto" min-font-size="18" max-font-size="24")= patch.note
-        section.container.p-4
+                amp-fit-text.title(layout="fixed-height" width="auto" height="4rem" min-font-size="16" max-font-size="36")= patch.title
+        section.py-4.px-3(style="background-color:rgba(0,0,0,.65);box-shadow:inset 0 -1rem 1rem rgba(0, 0, 0, .2);color:white;")
+            amp-fit-text.note(layout="fixed-height" height="360" width="auto" min-font-size="18" max-font-size="24")= patch.note
+        section.container.p-3.mt-2.mb-3
             amp-fit-text.ft(layout="fixed-height" height="140" width="auto" min-font-size="18" max-font-size="24")= patch.ft.mod
         
         if patch.champs.length > 0
             section.container.p-3
-                h2 Campeões
+                h2(style="border-image: radial-gradient(ellipse at center, rgb(214,169,24) 0%,rgb(255,224,112) 100%) 1;") Campeões
                 each c in patch.champs
                     .section-item
                         .row.row-cols-1.row-cols-md-2
@@ -153,7 +181,7 @@ block content
                                                     .change-name= h.nome
                                                 ul.attrs
                                                     each a in h.atributos
-                                                        li
+                                                        li.attr-item
                                                             .attr= a.atributo
                                                             if a.antes
                                                                 .attr-bef= a.antes
@@ -172,7 +200,7 @@ block content
         
         if patch.runes.length > 0
             section.container-md.p-2
-                h2 Runas
+                h2(style="border-image: radial-gradient(ellipse at center, rgb(91,24,1) 0%,rgb(49,139,28) 100%) 1;") Runas
                 each r in patch.runes
                     .section-item
                         .row.row-cols-1.row-cols-md-2
@@ -186,7 +214,7 @@ block content
                             .col
                                 ul.changes
                                     each a in r.alteracoes
-                                        li.change
+                                        li.change(style="border-color:var(--verde);")
                                             .attr= a.atributo
                                             if a.antes
                                                 .attr-bef= a.antes
@@ -194,7 +222,7 @@ block content
 
         if patch.fixes.length > 0
             section.p-3
-                h2 Bug fixes
+                h2(style="border-image: radial-gradient(ellipse at center, rgb(13,27,10) 0%,rgb(213,67,17) 100%) 1;") Bug fixes
                 ul.fixes
                     each f in patch.fixes
                         li.fixe= f.note

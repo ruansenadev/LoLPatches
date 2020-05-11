@@ -29,12 +29,12 @@ html(⚡ lang="pt-br")
                         --bege: #FFE070;
                     }
                     *, *::before, *::after {
-                            box-sizing: border-box;
+                        box-sizing: border-box;
                     }
                     a:hover {
-                            color: var(--vinho);
-                            text-decoration: none;
-                        }
+                        color: var(--vinho);
+                        text-decoration: none;
+                    }
                     body {
                         /*font-family: 'Bangers', cursive;*/
                         font-family: 'Raleway', sans-serif;
@@ -55,6 +55,10 @@ html(⚡ lang="pt-br")
                     }
                     a {
                         color: var(--tomate);
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 0;
                     }
                     .brand {
                         width: 36px;
@@ -145,7 +149,9 @@ html(⚡ lang="pt-br")
                         padding: 1.5rem;
                     }
                     amp-selector[role=tablist].tabs-with-flex [role=tab][selected] + [role=tabpanel] {
-                        display: block;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
                     }
 
                     /* Styles for the selector based tabs */
