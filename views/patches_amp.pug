@@ -21,8 +21,10 @@ append styles
 		section:last-child>.destaque {
 			border-bottom: none;
 		}
-		.patch[expanded] {
-			border: .2rem solid rgba(214, 169, 24, .7);
+		.patch {
+			max-width: 50rem;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		.destaque-item {
 			display: inline-block;
@@ -54,13 +56,13 @@ block content
 			amp-list(src="/resources/patches" height="656", [src]="patches.items" binding="refresh", [height]="patches.items.length * (156 + 16) + 40" width="auto" layout="fixed-height")
 				template(type="amp-mustache")
 					| {{#destaques}}
-					amp-accordion(animate).my-3
-						section.patch
+					amp-accordion(animate style="border: 2px solid rgba(214, 169, 24, .6);").my-3.patch
+						section
 							header.card-header
 								.row.align-items-center.justify-content-between.px-3
-									amp-fit-text.card-title.col-4(width="120" height="96" max-font-size="64") {{titulo}}
+									amp-fit-text.card-title.col-5(width="120" height="96" max-font-size="64") {{titulo}}
 									a.col-4.col-sm-3.button.button-primary(href="/patches/{{titulo}}" role="button") Ler
-								.row.flex-row-reverse.justify-content-between.py-1
+								.row.justify-content-between.py-1
 									amp-timeago(datetime="{{data}}" locale="ptBR" width="auto" height="20") {{data}}
 									small {{autor}}
 							.card-body
