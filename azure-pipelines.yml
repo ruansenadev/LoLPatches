@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'b1014914-891a-4572-93ef-e0355e7d1cdc'
   
   # Web app name
-  webAppName: ''
+  webAppName: 'LoLPatches'
   
   # Environment name
-  environmentName: ''
+  environmentName: 'lolpatches'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
