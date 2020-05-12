@@ -4,10 +4,10 @@ var cors = require('cors')
 var fs = require('fs')
 var path = require('path')
 
-var whiteList = ['cdn.ampproject.org', 'www.bing-amp.com']
+var whiteList = ['https://lolpatches.azurewebsites.net', 'https://lolpatches-azurewebsites-net.cdn.ampproject.org', 'https://lolpatches-azurewebsites-net.www.bing-amp.com', 'cdn.ampproject.org', 'www.bing-amp.com']
 var corsOptions = {
     origin: function(origin, callback) {
-        if(whiteList.indexOf(origin) !== -1 || !origin) {
+        if(whiteList.indexOf(origin) !== -1 || origin) {
             callback(null, true)
         } else {
             callback(new Error('Not allowed by CORS'))

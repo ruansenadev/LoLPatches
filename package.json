@@ -37,8 +37,10 @@
     "express": "~4.16.1",
     "express-validator": "^6.4.1",
     "fs": "0.0.1-security",
+    "helmet": "^3.22.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "node-cron": "^2.0.3",
     "pug": "^2.0.4",
     "puppeteer": "^2.1.1"
   },
