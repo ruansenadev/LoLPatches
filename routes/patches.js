@@ -6,7 +6,7 @@ var {param, validationResult} = require('express-validator')
 
 
 router.get('/', function (req, res) {
-  res.render('patches_amp', {tite: 'LoL Patches', ref: `${req.headers.host}/patches`})
+  res.render('patches_amp', {title: 'LoL Patches', ref: `${req.headers.host}/patches`})
 });
 
 router.get('/:version', [
