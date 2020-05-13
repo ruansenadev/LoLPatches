@@ -10,6 +10,7 @@ const d = new Date()
 const errorsDir = 'erros'
 const patchesDir = 'patches'
 const imagesDir = 'public/images'
+const bannersDir = 'imagens'
 const champsDir = 'champs'
 const spellsDir = 'skills'
 const runesDir = 'runes'
@@ -42,7 +43,7 @@ async function fetchPatches(callback = (data = { items: [] }) => { return data }
 
     if (data[0].items.length) {
         try {
-            fs.mkdir(path.join(patchesDir, imagesDir), { recursive: true }, (err) => {
+            fs.mkdir(path.join(patchesDir, bannersDir), { recursive: true }, (err) => {
                 if (err) throw err
             })
             console.log("Trynna download banners")
@@ -50,9 +51,9 @@ async function fetchPatches(callback = (data = { items: [] }) => { return data }
                 axios({ method: 'get', url: patch.img, responseType: 'stream' })
                     .then(res => {
                         let img = res.headers['content-disposition'].split('filename=')[1]
-                        fs.access(path.join(patchesDir, imagesDir, img), fs.constants.F_OK, (err) => {
+                        fs.access(path.join(patchesDir, bannersDir, img), fs.constants.F_OK, (err) => {
                             // image doesnt exist
-                            if (err) { res.data.pipe(fs.createWriteStream(path.join(patchesDir, imagesDir, img)).on('open', () => console.log('downloading ' + img)).on('close', () => cb(null, img))) }
+                            if (err) { res.data.pipe(fs.createWriteStream(path.join(patchesDir, bannersDir, img)).on('open', () => console.log('downloading ' + img)).on('close', () => cb(null, img))) }
                             else { cb(null, img) }
                         })
                     })
@@ -258,18 +259,18 @@ async function fetchPatchesImages(items) {
 // }, true)
 
 // --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
-// fetchPatches()
-// .then(results => {
-//     results.forEach(scrap => {
-//         fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
-//             if (err) { throw err }
-//             fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
-//                 if (err) { throw err }
-//                 console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
-//             })
-//         })
-//     })
-// })
+fetchPatchesImages()
+.then(results => {
+    results.forEach(scrap => {
+        fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
+            if (err) { throw err }
+            fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
+                if (err) { throw err }
+                console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+            })
+        })
+    })
+})
 
 function lookAround(patches) {
     patches = patches || JSON.parse(fs.readFileSync(path.join(patchesDir, 'data.json')))
@@ -303,4 +304,4 @@ function lookAround(patches) {
     })
 }
 
-lookAround()
+// lookAround()

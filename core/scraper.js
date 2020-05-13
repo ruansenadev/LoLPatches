@@ -67,7 +67,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 			let patchFeatured = $('h2[id*="highlights"]').filter((i, title) => { let txt = $(title).text().toLowerCase(); return txt.includes('destaques') || txt.includes('highlights') }).parent().next().not(':not(div)').first()
 			try {
 				SCRAP.ft.img = patchFeatured.find('img').first().attr('src')
-				SCRAP.ft.mod = patchFeatured.text().trim()
+				SCRAP.ft.mod = patchFeatured.find('p').first().text().trim()
 			} catch (error) {
 				createLog(error, 'Featured')
 			}
