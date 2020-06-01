@@ -1,390 +1,390 @@
 {
- "title": "Notas da Atualização 10.10",
- "note": "Mais uma atualização! Quem diria, hein?! Hoje, na passarela dos Campeões que estão sofrendo já faz um tempinho, apresentamos: Udyr, Nidalee e Sivir! Vamos tentar melhorar a situação deles, prometemos! Também ajustaremos alguns dos personagens mais fortes que estão passando dos limites quando o assunto é balanceamento. Dica: eles gostam de árvores, adagas e gemas (pura emoção!). Ah, e o URF está de volta! Não percam a chance de jogar partidas mais ultrarrápidas e furiosas do que nunca! Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
- "ft": {
-  "img": "Patch_10.10_Infographic_1080x1080_v3_ptBR.jpg",
-  "mod": "Pantheon, Lucian (+ Edição de Prestígio), Fiora e Ekko Pulsefire estarão disponíveis no dia 14 de maio de 2020."
- },
- "champs": [
-  {
-   "campeao": "Annie",
-   "img": "Annie.png",
-   "mod": "Redução de dano do E aumentada e aura de queima do Tibbers fortalecida.",
-   "nota": "Fortaleceremos o Tibbers para encorajar quem joga de Annie a brincar mais com ele (e nunca com fósforos). Também aumentaremos a redução de dano do Escudo Fundido, já que a habilidade estava um pouco fraca desde sua pequena atualização na 9.18.",
-   "habilidades": [
+  "title": "Notas da Atualização 10.10",
+  "note": "Mais uma atualização! Quem diria, hein?! Hoje, na passarela dos Campeões que estão sofrendo já faz um tempinho, apresentamos: Udyr, Nidalee e Sivir! Vamos tentar melhorar a situação deles, prometemos! Também ajustaremos alguns dos personagens mais fortes que estão passando dos limites quando o assunto é balanceamento. Dica: eles gostam de árvores, adagas e gemas (pura emoção!). Ah, e o URF está de volta! Não percam a chance de jogar partidas mais ultrarrápidas e furiosas do que nunca! Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
+  "ft": {
+    "img": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4c70ac489f00a7e3/5ebad9e377057176bdb90e5a/Patch_10.10_Infographic_1080x1080_v3_ptBR.jpg",
+    "mod": "Pantheon, Lucian (+ Edição de Prestígio), Fiora e Ekko Pulsefire estarão disponíveis no dia 14 de maio de 2020."
+  },
+  "champs": [
     {
-     "nome": "E - Escudo Fundido",
-     "atributos": [
-      {
-       "atributo": "REDUÇÃO DE DANO",
-       "antes": "10/13/16/19/22%",
-       "depois": "13/17/21/25/29%"
-      }
-     ],
-     "img": "AnnieE.png"
+      "campeao": "Annie",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Annie.png&resize=64:",
+      "mod": "Redução de dano do E aumentada e aura de queima do Tibbers fortalecida.",
+      "nota": "Fortaleceremos o Tibbers para encorajar quem joga de Annie a brincar mais com ele (e nunca com fósforos). Também aumentaremos a redução de dano do Escudo Fundido, já que a habilidade estava um pouco fraca desde sua pequena atualização na 9.18.",
+      "habilidades": [
+        {
+          "nome": "E - Escudo Fundido",
+          "atributos": [
+            {
+              "atributo": "REDUÇÃO DE DANO",
+              "antes": "10/13/16/19/22%",
+              "depois": "13/17/21/25/29%"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/AnnieE.png&resize=32:"
+        },
+        {
+          "nome": "R - Invocar: Tibbers",
+          "atributos": [
+            {
+              "atributo": "DANO DA AURA DO TIBBERS",
+              "antes": "10/15/20 (+0,1 de Poder de Habilidade)",
+              "depois": "20/30/40 (+0,12 de Poder de Habilidade)"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/AnnieR.png&resize=32:"
+        }
+      ]
     },
     {
-     "nome": "R - Invocar: Tibbers",
-     "atributos": [
-      {
-       "atributo": "DANO DA AURA DO TIBBERS",
-       "antes": "10/15/20 (+0,1 de Poder de Habilidade)",
-       "depois": "20/30/40 (+0,12 de Poder de Habilidade)"
-      }
-     ],
-     "img": "AnnieR.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Diana",
-   "img": "Diana.png",
-   "mod": "Vida base e Dano de Ataque reduzidos.",
-   "nota": "Diana está se mostrando o terror das partidas de alto e médio nível de habilidade e, Apesar de sua agressividade na rota ser algo planejado, achamos que ela não está pagando o preço certo por se colocar em risco.",
-   "habilidades": [
-    {
-     "nome": "Atributos base",
-     "atributos": [
-      {
-       "atributo": "VIDA",
-       "antes": "594",
-       "depois": "570"
-      },
-      {
-       "atributo": "DANO DE ATAQUE",
-       "antes": "57,04",
-       "depois": "57"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "campeao": "Irelia",
-   "img": "Irelia.png",
-   "mod": "Dano base do E aumentado.",
-   "nota": "Irelia permaneceu enfraquecida em todos os níveis de jogo por conta do cenário profissional, mas finalmente deixou de dominar as escolhas. Isso pede um empurrãozinho na direção certa.",
-   "habilidades": [
-    {
-     "nome": "E - Dueto Impecável",
-     "atributos": [
-      {
-       "atributo": "DANO BASE",
-       "antes": "70/110/150/190/230",
-       "depois": "80/125/170/215/260"
-      }
-     ],
-     "img": "IreliaE.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Katarina",
-   "img": "Katarina.png",
-   "mod": "Multiplicador de PdH das adagas da Passiva reduzido.",
-   "nota": "Por outro lado, essa outra fanática por lâminas anda aparecendo consistentemente no limite do balanceamento e, portanto, reduziremos os multiplicadores de PdH. Adagas mais afiadas serão necessárias se ela quiser continuar explodindo os inimigos por aí.",
-   "habilidades": [
-    {
-     "nome": "Passiva - Voracidade",
-     "atributos": [
-      {
-       "atributo": "MULTIPLICADOR DE DANO DA ADAGA",
-       "antes": "0,55/0,70/0,85/1,0 de Poder de Habilidade",
-       "depois": "0,55/0,66/0,77/0,88 de Poder de Habilidade"
-      }
-     ],
-     "img": "Katarina_Passive.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Kayn",
-   "img": "Kayn.png",
-   "mod": "Cura da Passiva do Rhaast reduzida.",
-   "nota": "Embora o Assassino das Sombras pareça estar no lugar certo, o Darkin anda atravessando demais os ̶i̶n̶i̶m̶i̶g̶o̶s̶ limites. Isso pede um enfraquecimento específico na utilidade da forma.",
-   "habilidades": [
-    {
-     "nome": "Passiva - A Foice Darkin",
-     "atributos": [
-      {
-       "atributo": "CURA DO RHAAST",
-       "antes": "34,5% - 43% do dano causado (níveis 1 a 18)",
-       "depois": "30% - 40% do dano causado (níveis 1 a 18)"
-      }
-     ],
-     "img": "Kayn_Passive_Primary.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Kled",
-   "img": "Kled.png",
-   "mod": "Tempo de Recarga do Q aumentado.",
-   "nota": "Aumentar o Tempo de Recarga significa que esse corajoso yordle e sua não-tão-corajosa montaria precisarão pensar duas vezes antes de tentar pescar alguém nos primeiros níveis.",
-   "habilidades": [
-    {
-     "nome": "Q - Armadilha na Corda",
-     "atributos": [
-      {
-       "atributo": "TEMPO DE RECARGA",
-       "antes": "9/8,5/8/7,5/7s",
-       "depois": "11/10/9/8/7s"
-      }
-     ],
-     "img": "KledQ.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Miss Fortune",
-   "img": "MissFortune.png",
-   "mod": "Velocidade de Movimento adicional máxima do W reduzida.",
-   "nota": "Faremos essa pirata poderosa pisar menos... ̶L̶I̶T̶E̶R̶A̶L̶M̶E̶N̶T̶E̶!",
-   "habilidades": [
-    {
-     "nome": "W - Desfilando",
-     "atributos": [
-      {
-       "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL MÁXIMA",
-       "antes": "60/70/80/90/100",
-       "depois": "50/60/70/80/90"
-      }
-     ],
-     "img": "MissFortuneViciousStrikes.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Maokai",
-   "img": "Maokai.png",
-   "mod": "Mana base reduzida. Custo do Q aumentado.",
-   "nota": "Maokai anda no topo da rota superior! Daremos a ele um pequeno enfraquecimento na esperança de cortar o mal pela raiz. (ba dum, tss)",
-   "habilidades": [
-    {
-     "nome": "Atributos base",
-     "atributos": [
-      {
-       "atributo": "MANA",
-       "antes": "377,28",
-       "depois": "375"
-      }
-     ]
+      "campeao": "Diana",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Diana.png&resize=64:",
+      "mod": "Vida base e Dano de Ataque reduzidos.",
+      "nota": "Diana está se mostrando o terror das partidas de alto e médio nível de habilidade e, Apesar de sua agressividade na rota ser algo planejado, achamos que ela não está pagando o preço certo por se colocar em risco.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "VIDA",
+              "antes": "594",
+              "depois": "570"
+            },
+            {
+              "atributo": "DANO DE ATAQUE",
+              "antes": "57,04",
+              "depois": "57"
+            }
+          ]
+        }
+      ]
     },
     {
-     "nome": "Q - Esmagamento Espinhoso",
-     "atributos": [
-      {
-       "atributo": "CUSTO",
-       "antes": "50 de Mana",
-       "depois": "60 de Mana"
-      }
-     ],
-     "img": "MaokaiQ.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Nidalee",
-   "img": "Nidalee.png",
-   "mod": "Multiplicador de dano do Q aumentado.",
-   "nota": "Tentaremos colocar a Nida de volta na caçada fortalecendo sua habilidade mais famosa conforme ela escala para o fim de jogo.",
-   "habilidades": [
-    {
-     "nome": "Q - Arremessar Lança",
-     "atributos": [
-      {
-       "atributo": "MULTIPLICADOR DE DANO",
-       "antes": "0,4 de Poder de Habilidade (máximo de 1,2 de Poder de Habilidade)",
-       "depois": "0,5 de Poder de Habilidade (máximo de 1,5 de Poder de Habilidade)"
-      }
-     ],
-     "img": "JavelinToss.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Sivir",
-   "img": "Sivir.png",
-   "mod": "Restauração de Mana do E aumentada.",
-   "nota": "Fortaleceremos o restauração de Mana para encorajar os jogadores de Sivir a dominar a arte de mandar os inimigos \"pra trás\" ou elogiar uma \"bela tentativa\".",
-   "habilidades": [
-    {
-     "nome": "E - Escudo de Feitiço",
-     "atributos": [
-      {
-       "atributo": "RESTAURAÇÃO DE MANA",
-       "antes": "80/95/110/125/140",
-       "depois": "110/120/130/140/150"
-      }
-     ],
-     "img": "SivirE.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Soraka",
-   "img": "Soraka.png",
-   "mod": "Dano base do Q aumentado. Redução do custo de Vida do W aumentado.",
-   "nota": "Segundo nosso setor de astrologia, as próximas duas semanas serão mais complicadas para os inimigos da Sorakinha.",
-   "habilidades": [
-    {
-     "nome": "Q - Chamado Estelar",
-     "atributos": [
-      {
-       "atributo": "DANO BASE",
-       "antes": "75/110/145/180/215",
-       "depois": "85/120/155/190/225"
-      }
-     ],
-     "img": "SorakaQ.png"
+      "campeao": "Irelia",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Irelia.png&resize=64:",
+      "mod": "Dano base do E aumentado.",
+      "nota": "Irelia permaneceu enfraquecida em todos os níveis de jogo por conta do cenário profissional, mas finalmente deixou de dominar as escolhas. Isso pede um empurrãozinho na direção certa.",
+      "habilidades": [
+        {
+          "nome": "E - Dueto Impecável",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "70/110/150/190/230",
+              "depois": "80/125/170/215/260"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/IreliaE.png&resize=32:"
+        }
+      ]
     },
     {
-     "nome": "W - Infusão Astral",
-     "atributos": [
-      {
-       "atributo": "REDUÇÃO DO CUSTO DE VIDA",
-       "antes": "60/70/80/90/100%",
-       "depois": "80/85/90/95/100%"
-      }
-     ],
-     "img": "SorakaW.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Taric",
-   "img": "Taric.png",
-   "mod": "Crescimento de Vida base reduzido. Multiplicador de Armadura adicional do W reduzido nos últimos níveis.",
-   "nota": "Faremos com que a sobrevivência de Taric dependa mais do uso de habilidades e reduziremos os atributos defensivos brutos dele e de seu aliado conectado.",
-   "habilidades": [
-    {
-     "nome": "Atributos base",
-     "atributos": [
-      {
-       "atributo": "CRESCIMENTO DE VIDA",
-       "antes": "90",
-       "depois": "85"
-      }
-     ]
+      "campeao": "Katarina",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Katarina.png&resize=64:",
+      "mod": "Multiplicador de PdH das adagas da Passiva reduzido.",
+      "nota": "Por outro lado, essa outra fanática por lâminas anda aparecendo consistentemente no limite do balanceamento e, portanto, reduziremos os multiplicadores de PdH. Adagas mais afiadas serão necessárias se ela quiser continuar explodindo os inimigos por aí.",
+      "habilidades": [
+        {
+          "nome": "Passiva - Voracidade",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO DA ADAGA",
+              "antes": "0,55/0,70/0,85/1,0 de Poder de Habilidade",
+              "depois": "0,55/0,66/0,77/0,88 de Poder de Habilidade"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/passive/Katarina_Passive.png&resize=32:"
+        }
+      ]
     },
     {
-     "nome": "W - Bastião",
-     "atributos": [
-      {
-       "atributo": "ADICIONAL ARMADURA",
-       "antes": "10/12,5/15/17,5/20% da Armadura de Taric",
-       "depois": "10/11/12/13/14% da Armadura de Taric"
-      }
-     ],
-     "img": "TaricW.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Twisted Fate",
-   "img": "TwistedFate.png",
-   "mod": "Dano de Ataque base e Armadura aumentados. Custo de Mana do R reduzido.",
-   "nota": "Nosso TF anda sem sorte nas cartas e está bem sumido, apesar de ter conseguido escapar daquela bruxa do mar. Vamos ajudá-lo reduzindo um pouco o custo da ult, deixando-a mais alinhada com seus oponentes. Também daremos uma alavancada em seus atributos base para aumentar a capacidade de coleta e presença no início de jogo.",
-   "habilidades": [
-    {
-     "nome": "Atributos base",
-     "atributos": [
-      {
-       "atributo": "DANO DE ATAQUE",
-       "antes": "49,954",
-       "depois": "52"
-      },
-      {
-       "atributo": "ARMADURA",
-       "antes": "20,542",
-       "depois": "21"
-      }
-     ]
+      "campeao": "Kayn",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Kayn.png&resize=64:",
+      "mod": "Cura da Passiva do Rhaast reduzida.",
+      "nota": "Embora o Assassino das Sombras pareça estar no lugar certo, o Darkin anda atravessando demais os ̶i̶n̶i̶m̶i̶g̶o̶s̶ limites. Isso pede um enfraquecimento específico na utilidade da forma.",
+      "habilidades": [
+        {
+          "nome": "Passiva - A Foice Darkin",
+          "atributos": [
+            {
+              "atributo": "CURA DO RHAAST",
+              "antes": "34,5% - 43% do dano causado (níveis 1 a 18)",
+              "depois": "30% - 40% do dano causado (níveis 1 a 18)"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/passive/Kayn_Passive_Primary.png&resize=32:"
+        }
+      ]
     },
     {
-     "nome": "R - Destino",
-     "atributos": [
-      {
-       "atributo": "CUSTO",
-       "antes": "150 de Mana",
-       "depois": "100 de Mana"
-      }
-     ],
-     "img": "Destiny.png"
-    }
-   ]
-  },
-  {
-   "campeao": "Udyr",
-   "img": "Udyr.png",
-   "mod": "Vida base, Mana e Velocidade de Movimento aumentadas. Regeneração de Mana reduzida.",
-   "nota": "Esse andarilho espiritual tem trilhado uma jornada solitária e não está se saindo bem em lugar algum. Para alguém que é historicamente um dos Campeões mais rápidos quando o assunto é sair correndo por aí, ele foi deixado bem para trás. Aumentaremos sua VdM base para que ele possa alcançar suas presas e arredondaremos alguns outros atributos.",
-   "habilidades": [
+      "campeao": "Kled",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Kled.png&resize=64:",
+      "mod": "Tempo de Recarga do Q aumentado.",
+      "nota": "Aumentar o Tempo de Recarga significa que esse corajoso yordle e sua não-tão-corajosa montaria precisarão pensar duas vezes antes de tentar pescar alguém nos primeiros níveis.",
+      "habilidades": [
+        {
+          "nome": "Q - Armadilha na Corda",
+          "atributos": [
+            {
+              "atributo": "TEMPO DE RECARGA",
+              "antes": "9/8,5/8/7,5/7s",
+              "depois": "11/10/9/8/7s"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/KledQ.png&resize=32:"
+        }
+      ]
+    },
     {
-     "nome": "Atributos base",
-     "atributos": [
-      {
-       "atributo": "VELOCIDADE DE MOVIMENTO",
-       "antes": "345",
-       "depois": "350"
-      },
-      {
-       "atributo": "VIDA",
-       "antes": "593,32",
-       "depois": "594"
-      },
-      {
-       "atributo": "MANA",
-       "antes": "270,4",
-       "depois": "271"
-      },
-      {
-       "atributo": "REGENERAÇÃO DE MANA",
-       "antes": "7,506",
-       "depois": "7,5"
-      }
-     ]
+      "campeao": "Miss Fortune",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/MissFortune.png&resize=64:",
+      "mod": "Velocidade de Movimento adicional máxima do W reduzida.",
+      "nota": "Faremos essa pirata poderosa pisar menos... ̶L̶I̶T̶E̶R̶A̶L̶M̶E̶N̶T̶E̶!",
+      "habilidades": [
+        {
+          "nome": "W - Desfilando",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO ADICIONAL MÁXIMA",
+              "antes": "60/70/80/90/100",
+              "depois": "50/60/70/80/90"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/MissFortuneViciousStrikes.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Maokai",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Maokai.png&resize=64:",
+      "mod": "Mana base reduzida. Custo do Q aumentado.",
+      "nota": "Maokai anda no topo da rota superior! Daremos a ele um pequeno enfraquecimento na esperança de cortar o mal pela raiz. (ba dum, tss)",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "MANA",
+              "antes": "377,28",
+              "depois": "375"
+            }
+          ]
+        },
+        {
+          "nome": "Q - Esmagamento Espinhoso",
+          "atributos": [
+            {
+              "atributo": "CUSTO",
+              "antes": "50 de Mana",
+              "depois": "60 de Mana"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/MaokaiQ.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Nidalee",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Nidalee.png&resize=64:",
+      "mod": "Multiplicador de dano do Q aumentado.",
+      "nota": "Tentaremos colocar a Nida de volta na caçada fortalecendo sua habilidade mais famosa conforme ela escala para o fim de jogo.",
+      "habilidades": [
+        {
+          "nome": "Q - Arremessar Lança",
+          "atributos": [
+            {
+              "atributo": "MULTIPLICADOR DE DANO",
+              "antes": "0,4 de Poder de Habilidade (máximo de 1,2 de Poder de Habilidade)",
+              "depois": "0,5 de Poder de Habilidade (máximo de 1,5 de Poder de Habilidade)"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/JavelinToss.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Sivir",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Sivir.png&resize=64:",
+      "mod": "Restauração de Mana do E aumentada.",
+      "nota": "Fortaleceremos o restauração de Mana para encorajar os jogadores de Sivir a dominar a arte de mandar os inimigos \"pra trás\" ou elogiar uma \"bela tentativa\".",
+      "habilidades": [
+        {
+          "nome": "E - Escudo de Feitiço",
+          "atributos": [
+            {
+              "atributo": "RESTAURAÇÃO DE MANA",
+              "antes": "80/95/110/125/140",
+              "depois": "110/120/130/140/150"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/SivirE.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Soraka",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Soraka.png&resize=64:",
+      "mod": "Dano base do Q aumentado. Redução do custo de Vida do W aumentado.",
+      "nota": "Segundo nosso setor de astrologia, as próximas duas semanas serão mais complicadas para os inimigos da Sorakinha.",
+      "habilidades": [
+        {
+          "nome": "Q - Chamado Estelar",
+          "atributos": [
+            {
+              "atributo": "DANO BASE",
+              "antes": "75/110/145/180/215",
+              "depois": "85/120/155/190/225"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/SorakaQ.png&resize=32:"
+        },
+        {
+          "nome": "W - Infusão Astral",
+          "atributos": [
+            {
+              "atributo": "REDUÇÃO DO CUSTO DE VIDA",
+              "antes": "60/70/80/90/100%",
+              "depois": "80/85/90/95/100%"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/SorakaW.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Taric",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Taric.png&resize=64:",
+      "mod": "Crescimento de Vida base reduzido. Multiplicador de Armadura adicional do W reduzido nos últimos níveis.",
+      "nota": "Faremos com que a sobrevivência de Taric dependa mais do uso de habilidades e reduziremos os atributos defensivos brutos dele e de seu aliado conectado.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "CRESCIMENTO DE VIDA",
+              "antes": "90",
+              "depois": "85"
+            }
+          ]
+        },
+        {
+          "nome": "W - Bastião",
+          "atributos": [
+            {
+              "atributo": "ADICIONAL ARMADURA",
+              "antes": "10/12,5/15/17,5/20% da Armadura de Taric",
+              "depois": "10/11/12/13/14% da Armadura de Taric"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/TaricW.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Twisted Fate",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/TwistedFate.png&resize=64:",
+      "mod": "Dano de Ataque base e Armadura aumentados. Custo de Mana do R reduzido.",
+      "nota": "Nosso TF anda sem sorte nas cartas e está bem sumido, apesar de ter conseguido escapar daquela bruxa do mar. Vamos ajudá-lo reduzindo um pouco o custo da ult, deixando-a mais alinhada com seus oponentes. Também daremos uma alavancada em seus atributos base para aumentar a capacidade de coleta e presença no início de jogo.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "DANO DE ATAQUE",
+              "antes": "49,954",
+              "depois": "52"
+            },
+            {
+              "atributo": "ARMADURA",
+              "antes": "20,542",
+              "depois": "21"
+            }
+          ]
+        },
+        {
+          "nome": "R - Destino",
+          "atributos": [
+            {
+              "atributo": "CUSTO",
+              "antes": "150 de Mana",
+              "depois": "100 de Mana"
+            }
+          ],
+          "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/spell/Destiny.png&resize=32:"
+        }
+      ]
+    },
+    {
+      "campeao": "Udyr",
+      "img": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/10.9.1/img/champion/Udyr.png&resize=64:",
+      "mod": "Vida base, Mana e Velocidade de Movimento aumentadas. Regeneração de Mana reduzida.",
+      "nota": "Esse andarilho espiritual tem trilhado uma jornada solitária e não está se saindo bem em lugar algum. Para alguém que é historicamente um dos Campeões mais rápidos quando o assunto é sair correndo por aí, ele foi deixado bem para trás. Aumentaremos sua VdM base para que ele possa alcançar suas presas e arredondaremos alguns outros atributos.",
+      "habilidades": [
+        {
+          "nome": "Atributos base",
+          "atributos": [
+            {
+              "atributo": "VELOCIDADE DE MOVIMENTO",
+              "antes": "345",
+              "depois": "350"
+            },
+            {
+              "atributo": "VIDA",
+              "antes": "593,32",
+              "depois": "594"
+            },
+            {
+              "atributo": "MANA",
+              "antes": "270,4",
+              "depois": "271"
+            },
+            {
+              "atributo": "REGENERAÇÃO DE MANA",
+              "antes": "7,506",
+              "depois": "7,5"
+            }
+          ]
+        }
+      ]
     }
-   ]
-  }
- ],
- "runes": [],
- "fixes": [
-  {
-   "note": "Os efeitos visuais e sonoros da passiva do W - Escudo de Durand do Galio foram atualizados."
-  },
-  {
-   "note": "Penalidades por abandono agora contarão o tempo de penalidade correto entre abandonos (o temporizador da punição agora será devidamente redefinido depois de 23 horas)."
-  },
-  {
-   "note": "As sombras do W - Sombra Viva e R - Marca Fatal do Zed deixam de ficar sobrepostas ao serem conjuradas rapidamente no mesmo alvo."
-  },
-  {
-   "note": "Sett agora termina de conjurar seu R - Hora do Show em clones de Campeões mesmo quando eles estiverem quase expirando."
-  },
-  {
-   "note": "Soraka não pode mais silenciar permanentemente um Campeão inimigo com o E - Equinócio até que ele morra e ressurja.",
-   "champs": [
-    "Soraka"
-   ]
-  },
-  {
-   "note": "Lissandra agora cria corretamente um Servo Congelado do Master Yi quando ele é abatido durante o Q - Ataque Alpha."
-  },
-  {
-   "note": "Kalista não pode mais realizar ataques básicos enquanto canaliza o feitiço Teleporte ao inserir comandos de ataque repetidamente."
-  },
-  {
-   "note": "Fiddlesticks não consegue mais andar enquanto canaliza W - Colheita Farta se seu alvo entra em um estado inalvejável."
-  },
-  {
-   "note": "Elise agora consegue conjurar o E - Rapel corretamente em alvos como sentinelas, Pinstouros, Florividentes etc."
-  },
-  {
-   "note": "Conjurar o W - Guerreiro Trapaceiro do Wukong enquanto o Campeão inimigo está preparando um ataque básico fortalecido deixa de fazer com que ele perca o controle do personagem."
-  },
-  {
-   "note": "O clone do R - Alucinação do Shaco agora causa corretamente 60% de dano proveniente de itens com efeitos ao contato."
-  }
- ]
+  ],
+  "runes": [],
+  "fixes": [
+    {
+      "note": "Os efeitos visuais e sonoros da passiva do W - Escudo de Durand do Galio foram atualizados."
+    },
+    {
+      "note": "Penalidades por abandono agora contarão o tempo de penalidade correto entre abandonos (o temporizador da punição agora será devidamente redefinido depois de 23 horas)."
+    },
+    {
+      "note": "As sombras do W - Sombra Viva e R - Marca Fatal do Zed deixam de ficar sobrepostas ao serem conjuradas rapidamente no mesmo alvo."
+    },
+    {
+      "note": "Sett agora termina de conjurar seu R - Hora do Show em clones de Campeões mesmo quando eles estiverem quase expirando."
+    },
+    {
+      "note": "Soraka não pode mais silenciar permanentemente um Campeão inimigo com o E - Equinócio até que ele morra e ressurja.",
+      "champs": [
+        "Soraka"
+      ]
+    },
+    {
+      "note": "Lissandra agora cria corretamente um Servo Congelado do Master Yi quando ele é abatido durante o Q - Ataque Alpha."
+    },
+    {
+      "note": "Kalista não pode mais realizar ataques básicos enquanto canaliza o feitiço Teleporte ao inserir comandos de ataque repetidamente."
+    },
+    {
+      "note": "Fiddlesticks não consegue mais andar enquanto canaliza W - Colheita Farta se seu alvo entra em um estado inalvejável."
+    },
+    {
+      "note": "Elise agora consegue conjurar o E - Rapel corretamente em alvos como sentinelas, Pinstouros, Florividentes etc."
+    },
+    {
+      "note": "Conjurar o W - Guerreiro Trapaceiro do Wukong enquanto o Campeão inimigo está preparando um ataque básico fortalecido deixa de fazer com que ele perca o controle do personagem."
+    },
+    {
+      "note": "O clone do R - Alucinação do Shaco agora causa corretamente 60% de dano proveniente de itens com efeitos ao contato."
+    }
+  ]
 }

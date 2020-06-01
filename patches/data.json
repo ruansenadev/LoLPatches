@@ -1,6 +1,63 @@
 {
  "items": [
   {
+   "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-11/",
+   "img": "Standard_Patch_10_11_Notes_Article.jpg",
+   "titulo": "10.11",
+   "autor": "Anacronista e Natchy",
+   "data": "2020-05-27T19:00:00.000Z",
+   "destaques": {
+    "buffs": {
+     "items": [
+      {
+       "nome": "Fiddlesticks"
+      },
+      {
+       "nome": "Gangplank"
+      },
+      {
+       "nome": "Hecarim"
+      },
+      {
+       "nome": "Kai'Sa"
+      },
+      {
+       "nome": "Lux"
+      }
+     ]
+    },
+    "nerfs": {
+     "items": [
+      {
+       "nome": "Graves"
+      },
+      {
+       "nome": "Janna"
+      },
+      {
+       "nome": "Syndra"
+      },
+      {
+       "nome": "Talon"
+      }
+     ]
+    },
+    "novidades": {
+     "items": [
+      {
+       "nome": "Poppy Astronauta"
+      },
+      {
+       "nome": "Gnar Astronauta"
+      },
+      {
+       "nome": "Bardo Astronauta"
+      }
+     ]
+    }
+   }
+  },
+  {
    "url": "https://br.leagueoflegends.com/pt-br/news/game-updates/notas-da-atualizacao-10-10/",
    "img": "patch_10_10_notes_banner.jpg",
    "titulo": "10.10",

@@ -1,0 +1,634 @@
+{
+ "title": "Notas da Atualização 10.11",
+ "note": "Saudações, queridas crianças estelares. Antes de começarmos, queremos lembrar a todos que essa atualização será lançada um dia depois do que o normal. Vocês já devem ter percebido que as Notas de Atualização também foram adiadas, mas basta acessar este artigo do Suporte ao Jogador para conferir nosso cronograma de atualizações sempre que quiserem.Depois de muita expectativa, a tempestade finalmente chegou e o Volibear finalmente está em sua forma final. Esperamos que vocês tenham gostado de toda aquela loucura envolvendo nosso urso no evento de Howling Abyss! Nesta atualização, nos esforçamos muito para acertar nas alterações. Passamos longas tardes em uma sala fria e escura, entoando palavras que ninguém entendia em volta de uma única vela acesa. Tudo isso com distanciamento social e máscaras, claro. Então, não se preocupem, bebês. Indo ao que interessa: temos alguns ajustes que vão desde o Fiddle até a Lux, mas o foco mesmo são os atiradores (finalmente, eu sei!). Não é novidade para ninguém que os Campeões dessa classe têm sofrido já faz um bom tempo. A fragilidade deles faz com que tenham problemas para sobreviver na rota, principalmente durante as primeiras fases da partida. Para consertar isso, fortaleceremos a classe de duas formas: aumentando os atributos de Vida e a mobilidade de fim de jogo por meio de itens. Dessa forma, esperamos que os jogadores se arrisquem mais em jogadas emocionantes sem sofrer tanta punição. Um pouquinho mais de confiança não faz mal a ninguém, não é mesmo? Dito isso, analisamos mais profundamente os atiradores que conseguem optar por rotas solo e não são tão dependentes do suporte, como Lucian, Vayne, Tristana e Kalista. Para eles, o objetivo era conceder a mesma quantidade de poder dos outros, mas sem que os fortalecimentos fossem direcionados às suas funções nas rotas solo, o que resultou em alterações diferentes para que eles também pudessem acertar seus alvos! Depois de ler tudo isso, é só entrar numa partida, usar todo esse conhecimento e botar pra quebrar! Partiu pintar a tela dos inimigos de cinza! Pule neste portal se você está procurando pelas Notas de Atualização do TFT!",
+ "ft": {
+  "img": "Patch-10.11-Infographic-1080x1080_por-BRlght.jpg",
+  "mod": "Bardo, Gnar e Poppy Astronautas estarão disponíveis no dia 28 de maio de 2020."
+ },
+ "champs": [
+  {
+   "campeao": "Volibear",
+   "img": "Volibear_Icon.png",
+   "mod": "A Tempestade Implacável",
+   "nota": "O espírito guerreiro de Freljord chega com mais trovões e garras brutais na 10.11!Ilustrações atualizadas do Volibear em alta definição estão disponíveis no League Displays!",
+   "links": [
+    {
+     "item": "Biografia do Volibear",
+     "link": "https://universe.leagueoflegends.com/pt_BR/champion/volibear/"
+    },
+    {
+     "item": "Resumo da live de revelação do Volibear",
+     "link": "https://www.youtube.com/watch?v=cMlp0xeU4cw"
+    }
+   ]
+  },
+  {
+   "campeao": "Fiddlesticks",
+   "img": "Fiddlesticks.png",
+   "mod": "Tempo para entrar em pose de Efígie da Passiva aumentado. Habilidades conjuradas quando estiver em pose de Efígie agora aterrorizam inimigos. Dano do W a tropas aumentado. ",
+   "nota": "Adicionamos uma mecânica natural ao efeito passivo do Q do Fiddlesticks para fortalecer a identidade do espantalho mais assustador de todos. Além disso, facilitaremos as coisas para quem joga com ele na rota do meio e na rota superior, aumentando sua limpeza de tropas (o que era bem difícil).",
+   "habilidades": [
+    {
+     "nome": "Passiva - Um Espantalho Inofensivo",
+     "atributos": [
+      {
+       "atributo": "TEMPO NECESSÁRIO PARA ENTRAR NA POSE DE EFÍGIE",
+       "antes": "1s",
+       "depois": "2s"
+      }
+     ],
+     "img": "A_Harmless_Scarecrow.png"
+    },
+    {
+     "nome": "Q - Aterrorizar",
+     "atributos": [
+      {
+       "atributo": "CÉÉÉREBROS",
+       "rotulo": "novo",
+       "depois": "As habilidades do Fiddlesticks agora aterrorizam inimigos se forem conjuradas enquanto ele estiver na pose de Efígie."
+      }
+     ],
+     "img": "Terrify.png"
+    },
+    {
+     "nome": "W - Colheita Farta",
+     "atributos": [
+      {
+       "atributo": "REDUÇÃO DE DANO A TROPAS",
+       "antes": "60%",
+       "depois": "40%"
+      }
+     ],
+     "img": "Bountiful_Harvest.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Gangplank",
+   "img": "Gangplank.png",
+   "mod": "Multiplicador de VdA base aumentado.",
+   "nota": "Aumentaremos um pouco a VdA do Gangplank para que ele possa realizar combos de barris mais rápidos e até arriscar uma itemização de Zelo em vez de DdA, ou seja: mais Acertos Críticos, mais explosões e mais pancadaria corpo a corpo! Isso também aumentará o pico de poder envolvendo a Força da Trindade (FICA A DICA!).",
+   "habilidades": [
+    {
+     "nome": "Atributos base",
+     "atributos": [
+      {
+       "atributo": "MULTIPLICADOR DE VELOCIDADE DE ATAQUE",
+       "antes": "0,658",
+       "depois": "0,69"
+      }
+     ]
+    },
+    {
+     "nome": "E - Barril de Pólvora",
+     "atributos": [
+      {
+       "atributo": "CORREÇÃO DE BUG",
+       "depois": "Os barris de Gangplank deixam de acumular dano adicional de Fulgor quando posicionados em cadeia."
+      }
+     ],
+     "img": "GangplankE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Graves",
+   "img": "Graves.png",
+   "mod": "Multiplicador de dano do primeiro disparo do Q reduzido.",
+   "nota": "Os oponentes do Graves andam comendo muita fumaça nas partidas de nível mais elevado, então limitaremos um pouco a força com base em Letalidade dele diminuindo o multiplicador de DdA do Q, reduzindo também o enorme efeito bola de neve do Campeão quando o assunto é ouro. Essa mudança não deve afetar muito as outras itemizações, já que elas não dependem tanto de dano adicional, e esperamos que isso estimule os jogadores a tentar outras opções para que possam continuar metendo bala nos oponentes.",
+   "habilidades": [
+    {
+     "nome": "Q - Fim da Linha",
+     "atributos": [
+      {
+       "atributo": "MULTIPLICADOR DE DANO DO PRIMEIRO DISPARO",
+       "antes": "1,0 de Dano de Ataque adicional",
+       "depois": "0,8 de Dano de Ataque adicional"
+      }
+     ],
+     "img": "GravesQLineSpell.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Hecarim",
+   "img": "Hecarim.png",
+   "mod": "Dano base do Q aumentado e redução de dano a tropas aumentada.",
+   "nota": "Apesar dos nossos esforços para deixar o pônei maldito mais ameaçador na 10.6, ele ainda está com o desempenho baixo em todos os níveis de habilidade. Fortaleceremos seu poder de limpeza na selva e dano em lutas mais longas, mas tomaremos muito cuidado para não exagerar no dano contra tropas.",
+   "habilidades": [
+    {
+     "nome": "Q - Enfurecido",
+     "atributos": [
+      {
+       "atributo": "DANO BASE",
+       "antes": "55/95/135/175/215",
+       "depois": "60/102/144/186/228"
+      },
+      {
+       "atributo": "REDUÇÃO DE DANO A TROPAS",
+       "antes": "33,3%",
+       "depois": "40%"
+      }
+     ],
+     "img": "HecarimRapidSlash.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Janna",
+   "img": "Janna.png",
+   "mod": "Dano base do W reduzido nos últimos níveis. ",
+   "nota": "Apesar de acreditarmos que a Janna agressiva é o melhor estilo de jogo na rota, achamos que seus oponentes estão sofrendo demais. Logo, reduziremos um pouco o poder de cutucada da nossa adorável meteorologista.",
+   "habilidades": [
+    {
+     "nome": "W - Zéfiro",
+     "atributos": [
+      {
+       "atributo": "DANO BASE",
+       "antes": "55/90/125/160/195",
+       "depois": "55/85/115/145/175"
+      }
+     ],
+     "img": "SowTheWind.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Kai'Sa",
+   "img": "Kaisa.png",
+   "mod": "Multiplicador de DdA adicional do Q aumentado. Alcance do R aumentado nos últimos níveis. ",
+   "nota": "Já que a filha do Vazio é uma atiradora que não utiliza o item Zelo (além de estar relativamente fraca em comparação aos outros atiradores), achamos que ela merece uma atenção especial nessa atualização, algo diferente dos outros Campeões da mesma classe.",
+   "habilidades": [
+    {
+     "nome": "Q - Chuva Icathiana",
+     "atributos": [
+      {
+       "atributo": "MULTIPLICADOR DE DANO",
+       "antes": "0,35 de Dano de Ataque adicional",
+       "depois": "0,4 de Dano de Ataque adicional"
+      }
+     ],
+     "img": "KaisaQ.png"
+    },
+    {
+     "nome": "R - Instinto Assassino",
+     "atributos": [
+      {
+       "atributo": "ALCANCE",
+       "antes": "1500/2000/2500",
+       "depois": "1500/2250/3000"
+      }
+     ],
+     "img": "KaisaR.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Lux",
+   "img": "Lux.png",
+   "mod": "Duração da redução de velocidade do E2 aumentada.",
+   "nota": "A Luzinha anda sofrendo tanto na rota inferior como suporte (em todos os níveis de habilidade) quanto na rota do meio (no alto nível de habilidade). Com uma redução de velocidade maior, esperamos que isso gere mais confiança e poder em seu combo e traga mais utilidade à equipe.",
+   "habilidades": [
+    {
+     "nome": "E - Singularidade Lucente",
+     "atributos": [
+      {
+       "atributo": "REDUÇÃO DE VELOCIDADE DA DETONAÇÃO",
+       "antes": "0,25s adicional após sofrer dano do E2",
+       "depois": "1s adicional após sofrer dano do E2"
+      }
+     ],
+     "img": "LuxLightStrikeKugel.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Syndra",
+   "img": "Syndra.png",
+   "mod": "Tempo de Recarga do E aumentado.",
+   "nota": "Syndra é uma das Campeãs mais fortes da rota do meio no momento, sendo vista como uma escolha bem segura. Reduziremos o acesso ao atordoamento dela para que os inimigos possam aproveitar o período de vulnerabilidade dela quando ele estiver em Tempo de Recarga.",
+   "habilidades": [
+    {
+     "nome": "E - Dispersar os Fracos",
+     "atributos": [
+      {
+       "atributo": "TEMPO DE RECARGA",
+       "antes": "16/15/14/13/12s",
+       "depois": "18/17/16/15/14s"
+      }
+     ],
+     "img": "SyndraE.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Talon",
+   "img": "Talon.png",
+   "mod": "Custo do Q aumentado e cura ao abater reduzida nos primeiros níveis.",
+   "nota": "Talon continua sendo um dos Campeões mais fortes da rota do meio nas partidas de alto nível (normalmente, maximizando o Q primeiro). Diminuiremos parte da sustentação para que ele não fique tão tranquilo no início de jogo sabendo que poderá comprar seus itens.",
+   "habilidades": [
+    {
+     "nome": "Q - Diplomacia Noxiana",
+     "atributos": [
+      {
+       "atributo": "CUSTO",
+       "antes": "30 de Mana",
+       "depois": "40 de Mana"
+      },
+      {
+       "atributo": "CURA AO ABATER",
+       "antes": "20 - 71 (níveis 1 - 18)",
+       "depois": "10 - 70 (níveis 1 - 18)"
+      }
+     ],
+     "img": "TalonQ.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Itens",
+   "img": "",
+   "mod": "",
+   "nota": "Não é novidade que os atiradores sofrem grandes problemas de durabilidade, especialmente no começo da fase de rotas, quando parece que toda a força deles depende do suporte. Isso tem sido um grande problema na satisfação de mecânica de jogo, já que a força dessa classe depende diretamente do tempo em que eles conseguem se manter vivos (para coletar bem e criar itens). Aumentando a mobilidade (com itens) e a Vida base, esperamos que tais Campeões não sejam punidos tão severamente caso falhem e que ainda tenham chances de voltar para o jogo e lutar.Além disso, estamos cientes das preocupações a respeito dos atiradores que também são vistos nas rotas solo, como Lucian e Vayne. Para esses casos, temos um conjunto de mudanças diferente (detalhes logo abaixo). Campeões como Corki, Kindred, Quinn, Senna e Graves foram omitidos por terem sua maior frequência de jogo em outras rotas/funções, embora Senna ainda possa ser uma forte candidata a mudanças semelhantes nas próximas atualizações.Cada Campeão listado aqui receberá um aumento parecido nos atributos base de Vida e crescimento de Vida.Os Campeões a seguir receberão fortalecimentos mais específicos devido às suas habilidades e frequência de escolha nas rotas solo. Achamos que eles sofrem dos mesmos problemas de força e satisfação geral dos outros atiradores, mas reconhecemos que precisam de mudanças específicas para que os problemas sejam resolvidos, já que apenas fortalecimentos diretos de durabilidade não seriam o bastante.",
+   "habilidades": [
+    {
+     "nome": "Aphelios",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "500",
+       "depois": "530"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "86",
+       "depois": "88"
+      }
+     ],
+     "img": "Aphelios.png"
+    },
+    {
+     "nome": "Ashe",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "539",
+       "depois": "570"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "85",
+       "depois": "87"
+      }
+     ],
+     "img": "Ashe.png"
+    },
+    {
+     "nome": "Caitlyn",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "481",
+       "depois": "510"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "91",
+       "depois": "93"
+      }
+     ],
+     "img": "Caitlyn.png"
+    },
+    {
+     "nome": "Draven",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "574",
+       "depois": "605"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "88",
+       "depois": "90"
+      }
+     ],
+     "img": "Draven.png"
+    },
+    {
+     "nome": "Ezreal",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "500",
+       "depois": "530"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "86",
+       "depois": "88"
+      }
+     ],
+     "img": "Ezreal.png"
+    },
+    {
+     "nome": "Jhin",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "556",
+       "depois": "585"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "91",
+       "depois": "93"
+      }
+     ],
+     "img": "Jhin.png"
+    },
+    {
+     "nome": "Jinx",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "581",
+       "depois": "610"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "84",
+       "depois": "86"
+      }
+     ],
+     "img": "Jinx.png"
+    },
+    {
+     "nome": "Kai'Sa\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "571",
+       "depois": "600"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "86",
+       "depois": "88"
+      }
+     ],
+     "img": "Kaisa.png"
+    },
+    {
+     "nome": "Kog'Maw\n\t\t\t\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "534",
+       "depois": "565"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "88",
+       "depois": "90"
+      }
+     ],
+     "img": "KogMaw.png"
+    },
+    {
+     "nome": "Miss Fortune\n\t\t\t\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "541",
+       "depois": "570"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "91",
+       "depois": "93"
+      }
+     ],
+     "img": "MissFortune.png"
+    },
+    {
+     "nome": "Sivir",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "532",
+       "depois": "562"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "88",
+       "depois": "90"
+      }
+     ],
+     "img": "Sivir.png"
+    },
+    {
+     "nome": "Twitch",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "582",
+       "depois": "612"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "84",
+       "depois": "86"
+      }
+     ],
+     "img": "Twitch.png"
+    },
+    {
+     "nome": "Varus",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "500",
+       "depois": "530"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "89",
+       "depois": "91"
+      }
+     ],
+     "img": "Varus.png"
+    },
+    {
+     "nome": "Xayah",
+     "atributos": [
+      {
+       "atributo": "VIDA BASE",
+       "antes": "561",
+       "depois": "590"
+      },
+      {
+       "atributo": "CRESCIMENTO DE VIDA BASE",
+       "antes": "86",
+       "depois": "88"
+      }
+     ],
+     "img": "Xayah.png"
+    },
+    {
+     "nome": "Lucian",
+     "atributos": [
+      {
+       "atributo": "ACERTO CRÍTICO DO SEGUNDO DISPARADO DA PASSIVA - DISPARO ILUMINADO",
+       "antes": "75%",
+       "depois": "100%"
+      },
+      {
+       "atributo": "CORREÇÃO DE BUG DA PASSIVA - DISPARO ILUMINADO",
+       "depois": "Corrigimos um bug em que os ataques básicos de Disparo Iluminado não aconteciam se o alvo saísse do alcance."
+      }
+     ],
+     "img": "Lucian.png"
+    },
+    {
+     "nome": "Kalista",
+     "atributos": [
+      {
+       "atributo": "DANO MÁGICO ADICIONAL DA MARCA DA ALMA DO W - VIGIA",
+       "antes": "10/12/14/16/18% da Vida máxima do alvo",
+       "depois": "14/15/16/17/18% da Vida máxima do alvo"
+      },
+      {
+       "atributo": "CUSTO DO W - VIGIA",
+       "antes": "20 de Mana",
+       "depois": "Sem custo"
+      }
+     ],
+     "img": "Kalista.png"
+    },
+    {
+     "nome": "Vayne",
+     "atributos": [
+      {
+       "atributo": "DANO ADICIONAL DO ATAQUE BÁSICO DO Q - ROLAMENTO",
+       "antes": "50/55/60/65/70% do Dano de Ataque total",
+       "depois": "60/65/70/75/80% do Dano de Ataque total"
+      }
+     ],
+     "img": "Vayne.png"
+    },
+    {
+     "nome": "Tristana",
+     "atributos": [
+      {
+       "atributo": "MULTIPLICADOR DE VELOCIDADE DE ATAQUE BASE",
+       "antes": "0,656",
+       "depois": "0,679"
+      }
+     ],
+     "img": "Tristana.png"
+    },
+    {
+     "nome": "Zelo\n\t\t\t\t\t\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "5%",
+       "depois": "7%"
+      }
+     ],
+     "img": "3086.png"
+    },
+    {
+     "nome": "Dançarina Fantasma\n\t\t\t\t\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "5%",
+       "depois": "7%"
+      }
+     ],
+     "img": "3046.png"
+    },
+    {
+     "nome": "Canhão Fumegante \n\t\t\t\t\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "5%",
+       "depois": "7%"
+      }
+     ],
+     "img": "Rapid_Firecannon_Icon.png"
+    },
+    {
+     "nome": "Faca de Statikk\n\t\t\t\t\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "5%",
+       "depois": "7%"
+      }
+     ],
+     "img": "3087.png"
+    },
+    {
+     "nome": "Furacão de Runaan\n\t\t\t\t\t\t\t\t",
+     "atributos": [
+      {
+       "atributo": "VELOCIDADE DE MOVIMENTO",
+       "antes": "7%",
+       "depois": "9%"
+      }
+     ],
+     "img": "3085.png"
+    }
+   ]
+  },
+  {
+   "campeao": "Cassiopeia",
+   "img": "Cassiopeia.png",
+   "mod": "",
+   "nota": "Estamos testando mudanças menores em Campeões com efeitos visuais bons, mas que poderiam ter caixas de colisão mais claras. No caso da Cassiopeia, era difícil (tanto para ela quanto para seus oponentes) saber o tamanho exato da ultimate e das partículas de fumaça do Q. Logo, as duas habilidades foram atualizadas garantir maior precisão. Além disso, os jogadores de Cassiopeia às vezes tinham dificuldades para distinguir quais alvos estavam envenenados (e, consequentemente, quais sofreriam dano adicional do E). Então, Cassiopeia agora verá um indicador de veneno mais claro sobre os alvos."
+  }
+ ],
+ "runes": [],
+ "fixes": [
+  {
+   "note": "O quarto disparo da Passiva - Sussurro do Jhin não pode mais ser cancelado contra tropas e monstros."
+  },
+  {
+   "note": "Jhin não focará inimigos e monstros automaticamente com seu quarto disparo quando estiver em ócio."
+  },
+  {
+   "note": "Jogadores sendo rebaixados do Mestre agora serão mandados para o Diamante I com 75 de PdL."
+  },
+  {
+   "note": "Corrigimos um bug em que as molduras das bandeiras recém-adquiridas do Clash não eram exibidas dentro do jogo e nem na aba Perfil."
+  },
+  {
+   "note": "Sylas agora recebe Velocidade de Ataque adicional da Passiva - Explosão de Petricita corretamente ao obter Poder do Grão-Mestre do Jax através de R - Usurpar."
+  },
+  {
+   "note": "Corrigimos um bug em que Sylas não causava dano a todos os inimigos com a ultimate roubada do Karthus (R - Réquiem)."
+  },
+  {
+   "note": "Singed não é mais capaz de utilizar o E - Lançar enquanto estiver suprimido pelo R - Coerção Infinita do Warwick."
+  },
+  {
+   "note": "O efeito negativo do E - Visões Maléficas do Malzahar agora se espalha corretamente para o alvo mais próximo mesmo depois de abater o Sion zumbi durante o efeito da habilidade."
+  },
+  {
+   "note": "Aatrox agora se cura corretamente com a Passiva - Postura do Arauto da Morte ou E - Avanço Umbral ao atacar um Malphite inimigo com a Passiva - Escudo de Granito ativada."
+  },
+  {
+   "note": "Gragas não é mais capaz de atordoar inimigos razoavelmente separados ao conjurar o E - Barrigada através de uma parede em um alvo e utilizar Flash em outro."
+  },
+  {
+   "note": "Os Servos Congelados da Lissandra não são mais considerados aliados, deixando de receber uma porção do ouro de barricadas dela quando estiverem por perto."
+  },
+  {
+   "note": "Quando um jogador for executado por uma fonte de dano neutra (tropas, monstros, torres etc.), ele não receberá mais a Guarda Territorial por morte no início de jogo."
+  }
+ ]
+}
