@@ -238,44 +238,44 @@ async function fetchPatchesImages(items) {
 // })
 
 // --FETCH NEWS PATCHES SCRAP THEM AND WRITE--
-// fetchPatches((data) => {
-//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0], null, 1), 'utf-8', (err) => {
-//         if (err) { throw err }
-//         console.log('\nPatches updated with success ^-^')
-//         console.log("News images saved at " + path.join(patchesDir, imagesDir))
-//     })
-//     fetchPatchesImages(data[1])
-//         .then(results => {
-//             results.forEach(scrap => {
-//                 fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
-//                     if (err) { throw err }
-//                     fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
-//                         if (err) { throw err }
-//                         console.log(`Writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
-//                     })
-//                 })
-//             })
-//         })
-// }, true)
-
-// --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
-fetchPatchesImages()
-.then(results => {
-    results.forEach(scrap => {
-        fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
-            if (err) { throw err }
-            fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
-                if (err) { throw err }
-                console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+fetchPatches((data) => {
+    fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0], null, 1), 'utf-8', (err) => {
+        if (err) { throw err }
+        console.log('\nPatches updated with success ^-^')
+        console.log("News images saved at " + path.join(patchesDir, imagesDir))
+    })
+    fetchPatchesImages(data[1])
+        .then(results => {
+            results.forEach(scrap => {
+                fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
+                    if (err) { throw err }
+                    fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
+                        if (err) { throw err }
+                        console.log(`Writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+                    })
+                })
             })
         })
-    })
-})
+}, true)
+
+// --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
+// fetchPatchesImages()
+// .then(results => {
+//     results.forEach(scrap => {
+//         fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
+//             if (err) { throw err }
+//             fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
+//                 if (err) { throw err }
+//                 console.log(`Re-writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+//             })
+//         })
+//     })
+// })
 
 function lookAround(patches) {
     patches = patches || JSON.parse(fs.readFileSync(path.join(patchesDir, 'data.json')))
     // filter patches with ft banners
-    let patchesFt = patches.items.reduce((patchesFt, patch, i) => {
+    let patchesFt = patches.items.filter(p => !p.destaques).reduce((patchesFt, patch, i) => {
         let img = JSON.parse(fs.readFileSync(path.join(patchesDir, patch.titulo, 'data.json'))).ft.img
         if (img) {
             patchesFt.push(function(cb) {
