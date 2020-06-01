@@ -76,7 +76,7 @@ exports.scrap = async function (url = '', callback = (data, message) => {
 			// --Champions--
 			patchFeatured = $('h3[id^="patch-"]')
 			// filter by patch id with only a followed name that's the champ
-			const champions = patchFeatured.toArray().filter((cEl) => $(cEl).attr('id').indexOf('-') == $(cEl).attr('id').lastIndexOf('-'))
+			const champions = patchFeatured.toArray().filter((cEl) => $(cEl).attr('id').indexOf('-') == $(cEl).attr('id').lastIndexOf('-') && !($(cEl).text().includes('Itens')) )
 			msg += $(champions).length + ' champions\n'
 			// format data for each note
 			champions.reduce((champs, champ, i) => {

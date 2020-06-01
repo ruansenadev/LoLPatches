@@ -238,25 +238,25 @@ async function fetchPatchesImages(items) {
 // })
 
 // --FETCH NEWS PATCHES SCRAP THEM AND WRITE--
-fetchPatches((data) => {
-    fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0], null, 1), 'utf-8', (err) => {
-        if (err) { throw err }
-        console.log('\nPatches updated with success ^-^')
-        console.log("News images saved at " + path.join(patchesDir, imagesDir))
-    })
-    fetchPatchesImages(data[1])
-        .then(results => {
-            results.forEach(scrap => {
-                fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
-                    if (err) { throw err }
-                    fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
-                        if (err) { throw err }
-                        console.log(`Writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
-                    })
-                })
-            })
-        })
-}, true)
+// fetchPatches((data) => {
+//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data[0], null, 1), 'utf-8', (err) => {
+//         if (err) { throw err }
+//         console.log('\nPatches updated with success ^-^')
+//         console.log("News images saved at " + path.join(patchesDir, imagesDir))
+//     })
+//     fetchPatchesImages(data[1])
+//         .then(results => {
+//             results.forEach(scrap => {
+//                 fs.mkdir(path.join(patchesDir, scrap[1]), { recursive: true }, (err) => {
+//                     if (err) { throw err }
+//                     fs.writeFile(path.join(patchesDir, scrap[1], 'data.json'), JSON.stringify(scrap[0], null, 1), (err) => {
+//                         if (err) { throw err }
+//                         console.log(`Writed data: ${path.join(patchesDir, scrap[1], 'data.json')}`)
+//                     })
+//                 })
+//             })
+//         })
+// }, true)
 
 // --RESCRAP ALL LOCAL PATCHES AND REWRITE DATA--
 // fetchPatchesImages()
@@ -304,4 +304,4 @@ function lookAround(patches) {
     })
 }
 
-// lookAround()
+lookAround()
