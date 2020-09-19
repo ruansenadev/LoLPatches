@@ -105,3 +105,6 @@ dist
 
 # Windows image thumbnails
 Thumbs.db
+
+# Linux temporary editor files
+*~

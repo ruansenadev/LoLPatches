@@ -229,13 +229,13 @@ async function fetchPatchesImages(items) {
 }
 
 // --fetch news patches--
-// fetchPatches(data => {
-//     fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data, null, 1), 'utf-8', (err) => {
-//         if (err) { throw err }
-//         console.log('\nPatches updated with success ^-^')
-//         console.log("News images saved at " + path.join(patchesDir, imagesDir))
-//     })
-// })
+fetchPatches(data => {
+    fs.writeFile(path.join(patchesDir, 'data.json'), JSON.stringify(data, null, 1), 'utf-8', (err) => {
+        if (err) { throw err }
+        console.log('\nPatches updated with success ^-^')
+        console.log("News images saved at " + path.join(patchesDir, imagesDir))
+    })
+})
 
 // --FETCH NEWS PATCHES SCRAP THEM AND WRITE--
 // fetchPatches((data) => {
@@ -304,4 +304,4 @@ function lookAround(patches) {
     })
 }
 
-lookAround()
+// lookAround()

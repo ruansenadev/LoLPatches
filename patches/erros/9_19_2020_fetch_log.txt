@@ -1,0 +1,11 @@
+(10:23:36 AM): 
+ - Fetching/Scraping
+TypeError: Cannot read property 'length' of undefined
+🔚🔚🔚🔚
+(10:23:36 AM): 
+ - Preview patch scraping
+Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:56
+    at Array.reduce (<anonymous>)
+    at __puppeteer_evaluation_script__:2:10
+🔚🔚🔚🔚
